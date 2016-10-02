@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 
-gem 'slim-rails', '3.0.7'
+gem 'slim-rails'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
