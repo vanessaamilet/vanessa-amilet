@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html>
+<!--[if IEMobile 7 ]> <html lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html lang="en-US" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html lang="en">
 <head>
-  <title>VanessaAmilet</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	<meta name="MobileOptimized" content="320">
+	<meta name="HandheldFriendly" content="True">
+ 	<title>Vanessa Amilet | Web & Graphic Designer</title>
+ 	<%= metamagic %>
+
+ 	<!-- Bootstrap core CSS -->
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 	<!-- Custom styles for this template -->
+ 	<link href="http://www.vanessaamilet.com/css/main.css" rel="stylesheet">
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+		<link rel="shortcut icon" type="image/x-icon" href=<%= asset_path "favicon.ico" %>>
+		<link rel="icon" type="image/png" href=<%= asset_path "favicon.png" %>>
+
+		<!-- Opengraph Tags -->
+		<meta property="og:locale" content="en_US"/>
+		<meta property="og:title" content="Vanessa Amilet - Web & Graphic Designer"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="http://www.vanessaamilet.com/images/vanessaamilet-avatar.gif"/>
+		<meta property="og:url" content="https://www.vanessaamilet.com/"/>
+		<meta property="og:site_name" content="Vanessa Amilet - Web & Graphic Designer"/>
+		<meta property="og:description" content="Welcome to the Portfolio of Vanessa Amilet Santos, Web & Graphic Designer located in Houston, Texas." />
+
+		<!-- Twitter Cards -->
+		<meta name="twitter:card" value="summary" content="summary_large_image">
+		<meta name="twitter:site" content="@vanessaamilet">
+		<meta name="twitter:creator" content="@vanessaamilet">
+		<meta name="twitter:title" content="Vanessa Amilet - Web & Graphic Designer">
+		<meta name="twitter:description" content="Welcome to the Portfolio of Vanessa Amilet Santos, Web & Graphic Designer located in Houston, Texas.">
+		<meta name="twitter:image:src" content="http://www.vanessaamilet.com/images/vanessaamilet-avatar.gif">
+
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+
+		<div id="wrap">
+			<header class="header">
+				<!-- Static navbar -->
+				 <div class="navbar navbar-default navbar-static-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!--
+							<a class="navbar-brand" href="http://www.vanessaamilet.com/"><img id="logo" src="images/vanessa-amilet-logo-icon.png" alt="Vanessa Amilet" align="left" width="70" height="70" /></a>
+							-->
+							<a class="navbar-brand" href="http://www.vanessaamilet.com/">Vanessa Amilet</a>
+
+						</div><!--/ .navbar-header -->
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+								<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "ABOUT", about_path %></li>
+								<li><a href="websites.html">Websites</a></li>
+								<li><a href="graphics.html">Graphics</a></li>
+								<li><a href="media-and-interactivity.html">Media</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div><!--/.nav-collapse -->
+					</div><!--/.container -->
+				</div><!--/ .navbar-static-top -->
 </head>
 <body>
 

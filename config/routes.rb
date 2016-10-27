@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   get 'static/index'
   root 'static#index'
 
+  get '/about'       => 'static#about'
+  get '/websites'    => 'static#websites'
+  get "/graphics"    => "static#graphics"
+  get "/media-and-interactivity"=> "static#media"
+  get "/contact"     => "static#contact"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
