@@ -71,10 +71,10 @@
 							<ul class="nav navbar-nav">
 								<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
 								<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "ABOUT", about_path %></li>
-								<li><a href="websites.html">Websites</a></li>
-								<li><a href="graphics.html">Graphics</a></li>
-								<li><a href="media-and-interactivity.html">Media</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li class="<%= 'active' if current_page?(websites_path) %>"><%= link_to "Websites", websites_path %></li>
+								<li class="<%= 'active' if current_page?(graphics_path) %>"><%= link_to "Graphics", graphics_path %></li>
+								<li class="<%= 'active' if current_page?(media_and_interactivity_path) %>"><%= link_to "Media", media_and_interactivity_path %></li>
+								<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
 							</ul>
 						</div><!--/.nav-collapse -->
 					</div><!--/.container -->
