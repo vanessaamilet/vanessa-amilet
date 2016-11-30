@@ -8,6 +8,7 @@ gem 'slim-rails'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
