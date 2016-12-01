@@ -583,7 +583,7 @@ h4{
 /* HOME IMAGE
 -------------------------------------------------- */
 .home-image{
-	background: url(../images/homepage/home-img.svg) no-repeat scroll;
+	background: url(homepage/home-img.svg) no-repeat scroll;
 	margin: 0;
 	padding: 0;
 	background-size: 100% auto;
@@ -600,7 +600,7 @@ h4{
 
 @media (max-width:980px){
 	.home-image{
-		background: url(../images/homepage/home-img-tablet.svg) no-repeat scroll;
+		background: url(homepage/home-img-tablet.svg) no-repeat scroll;
 		margin: 0;
 		padding: 0;
 		background-size: 100% auto;

@@ -1,3 +1,55 @@
-	<!-- Section Main Content -->
-	.section-main.homepage
-		.home-image
+
+<!-- Section Main Content -->
+.section-main.homepage
+	.home-image
+</header>
+.section-gray.cd-intro
+	.container
+		.home-heading
+			h1.cd-headline
+				span Vanessa Amilet Santos
+				span.cd-words-wrapper.hidden-sm.hidden-xs
+					b.is-visible 
+						| Web Designer
+					b Full Stack Designer
+					b Graphic Designer
+					b Creative
+					b Coffee Addict
+					b #vanessaamilet
+			h3 I make websites in Texas.
+.container
+	.row
+		.col-lg-6
+			h2 Websites
+			= image_tag "", :class=>"img-responsive center-block"
+		.col-lg-6
+			br
+			p.lead I create clean elegant websites that are built with modern technologies like HTML5, CSS3, JavaScript, Bootstrap, and much more.
+			= link_to "View Websites", root_path, :class=>"btn btn-transparent-pink"
+.section-pink
+	.container
+		.row
+			.col-lg-6
+				h2 Graphics
+			.col-lg-6
+				br
+				p.lead I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
+				= link_to "View Graphics", graphics_path, :class=>"btn btn-transparent"
+.container
+	.row
+		.col-lg-6
+			h2 Media & Interactivity
+		.col-lg-6
+			br
+			p.lead I also create videos, animations, and e-learning applications using tools such as Adobe Edge, Premiere, and After Effects.
+			= link_to "View Media", media_and_interactivity_path, :class=>"btn btn-transparent-pink"
+	hr
+	.row
+		.col-lg-1
+		.col-lg-4
+			= link_to "Know Me Better", about_path, :class=>"btn btn-about center-block"
+		.col-lg-4
+			= link_to "Lets Work Together!", contact_path, :class=>"btn btn-contact center-block"
+		.col-lg-1
+
+

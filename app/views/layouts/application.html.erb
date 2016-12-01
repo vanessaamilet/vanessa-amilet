@@ -17,8 +17,6 @@
  	<!-- Bootstrap core CSS -->
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
- 	<!-- Custom styles for this template -->
- 	<link href="http://www.vanessaamilet.com/css/main.css" rel="stylesheet">
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -48,41 +46,43 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-
-		<div id="wrap">
-			<header class="header">
-				<!-- Static navbar -->
-				 <div class="navbar navbar-default navbar-static-top" role="navigation">
-					<div class="container">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<!--
-							<a class="navbar-brand" href="http://www.vanessaamilet.com/"><img id="logo" src="images/vanessa-amilet-logo-icon.png" alt="Vanessa Amilet" align="left" width="70" height="70" /></a>
-							-->
-							<a class="navbar-brand" href="http://www.vanessaamilet.com/">Vanessa Amilet</a>
-
-						</div><!--/ .navbar-header -->
-						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav">
-								<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
-								<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "ABOUT", about_path %></li>
-								<li class="<%= 'active' if current_page?(websites_path) %>"><%= link_to "Websites", websites_path %></li>
-								<li class="<%= 'active' if current_page?(graphics_path) %>"><%= link_to "Graphics", graphics_path %></li>
-								<li class="<%= 'active' if current_page?(media_and_interactivity_path) %>"><%= link_to "Media", media_and_interactivity_path %></li>
-								<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
-							</ul>
-						</div><!--/.nav-collapse -->
-					</div><!--/.container -->
-				</div><!--/ .navbar-static-top -->
 </head>
 <body>
+<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<div id="wrap">
+	<header class="header">
+		<!-- Static navbar -->
+		 <div class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--
+					<a class="navbar-brand" href="http://www.vanessaamilet.com/"><img id="logo" src="images/vanessa-amilet-logo-icon.png" alt="Vanessa Amilet" align="left" width="70" height="70" /></a>
+					-->
+					<a class="navbar-brand" href="http://www.vanessaamilet.com/">Vanessa Amilet</a>
+
+				</div><!--/ .navbar-header -->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+						<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "ABOUT", about_path %></li>
+						<li class="<%= 'active' if current_page?(websites_path) %>"><%= link_to "Websites", websites_path %></li>
+						<li class="<%= 'active' if current_page?(graphics_path) %>"><%= link_to "Graphics", graphics_path %></li>
+						<li class="<%= 'active' if current_page?(media_and_interactivity_path) %>"><%= link_to "Media", media_and_interactivity_path %></li>
+						<li class="<%= 'active' if current_page?(contact_path) %>"><%= link_to "Contact", contact_path %></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container -->
+		</div><!--/ .navbar-static-top -->
 
 <%= yield %>
-
+<%= render :partial => "shared/footer" %>
 </body>
 </html>
