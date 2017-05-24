@@ -16,7 +16,7 @@
 
  	<!-- Bootstrap core CSS -->
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -83,6 +83,8 @@
 		</div><!--/ .navbar-static-top -->
 
 <%= yield %>
+</div><!--/ #wrap -->
+<%= render :partial => "shared/preloader" if current_page?(root_path) %>
 <%= render :partial => "shared/footer" %>
 </body>
 </html>
