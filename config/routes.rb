@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/websites'    => 'static#websites'
   get "/graphics"    => "static#graphics"
   get "/media-and-interactivity"=> "static#media"
+  get "/portfolio"     => "static#portfolio"
   get "/contact"     => "static#contact"
 
   # Example of regular route:
