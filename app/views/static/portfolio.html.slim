@@ -1,1 +1,65 @@
-h1 Portfolio
+= metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Portfolio", description: "Results of experience helping businesses with their web presence. View my design portfolio, experience and other resources.", keywords: [:keywords, "web design services", "responsive web design", "houston web design", "wordpress web design", "custom wordpress themes", "vanessa amilet", "#vanessaamilet", "freelance web designer", "freelance developer", "graphic design"]
+
+/!  Section Main Content 
+.section-main
+	
+</header>
+
+.section-gray.cd-intro
+	.container
+		.home-heading
+			h1.cd-headline
+				span Portfolio
+			h3	LOREM IPSUM
+
+/!  Begin Page Content
+.container
+	.row
+		.col-lg-12
+			h2 Technologies Used:
+			.tech-icons
+				ul
+					li 
+						p 
+							i.fa.fa-pencil
+							br
+							span Illustrator
+					li 
+						p 
+							i.fa.fa-columns
+							br
+							span InDesign
+					li 
+						p 
+							i.fa.fa-crop
+							br
+							span Photoshop
+	hr
+	.row
+		.col-lg-12
+			section.ff-container.container
+				input#select-type-all.ff-selector-type-all name="radio-set-1" type="radio" checked="checked"
+				label.ff-label-type-all for="select-type-all" 
+					| All
+				input#select-type-1.ff-selector-type-1 name="radio-set-1" type="radio" checked="checked"
+				label.ff-label-type-1 for="select-type-1" 
+					| Illustrator
+				input#select-type-2.ff-selector-type-2 name="radio-set-1" type="radio" checked="checked"
+				label.ff-label-type-2 for="select-type-2" 
+					| InDesign
+				input#select-type-3.ff-selector-type-3 name="radio-set-1" type="radio" checked="checked"
+				label.ff-label-type-3 for="select-type-3" 
+					| Illustrator
+			.clr
+				ul.ff-items
+					li.ff-item-type-1
+						= link_to ""
+							span Halloween Illustration
+	hr
+	.row
+		.col-lg-1
+		.col-lg-4
+			= link_to "Know Me Better", about_path, :class=>"btn btn-about center-block"
+		.col-lg-4
+			= link_to "Lets Work Together!", contact_path, :class=>"btn btn-contact center-block"
+		.col-lg-1

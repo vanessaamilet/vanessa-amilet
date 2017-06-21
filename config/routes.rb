@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
   get '/about'       => 'static#about'
   get '/websites'    => 'static#websites'
-  get "/graphics"    => "static#graphics"
-  get "/media-and-interactivity"=> "static#media"
   get "/portfolio"     => "static#portfolio"
   get "/contact"     => "static#contact"
 
