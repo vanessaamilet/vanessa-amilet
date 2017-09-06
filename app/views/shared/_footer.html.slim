@@ -7,7 +7,7 @@
 
 					p Web & Graphic Designer that enjoys creating beautiful things with the latest technologies.
 					p
-						= link_to "Learn More &#65515;", "http://www.vanessaamilet.com/about"
+						= link_to "Learn More »", about_path
 				.col-md-3.col-sm-6
 					h4 Get In Touch 
 					ul.contacts
@@ -19,7 +19,7 @@
 							<a href="tel:+12819089361">(281) 908 - 9361</a>
 						li
 							i.fa.fa-envelope-o.contact
-							<a href="mailto:vanessa.amilet@gmail.com">vanessaamilet@gmail.com</a>
+							<a href="mailto:vanessa.amilet@gmail.com">vanessaamilet[@]gmail.com</a>
 
 				.col-md-3.col-sm-6
 					h4 Follow
@@ -40,20 +40,19 @@
 	.sub-footer
 		.container
 			.row
-				.col-md-
-					<p class="credit pull-left">Made with <i class="fa fa-heart"></i> in Texas. &copy; 2016 Vanessa Amilet Santos.</p>
+				.col-md-6
+					p.credit.pull-left
+						| Made with <i class="fa fa-heart"></i> in Texas. &copy;&nbsp;
+						= Time.zone.now.year
+						| &nbsp;Vanessa Amilet Santos.
 				.col-md-6
 					nav.footer-nav
 						ul.pull-right
 							li
-								<a href="http://www.vanessaamilet.com/">Home</a>
+								= link_to "Home", root_path
 							li
-								<a href="http://www.vanessaamilet.com/about">About</a>
+								= link_to "About", about_path
 							li
-								<a href="http://www.vanessaamilet.com/websites">Websites</a>
+								= link_to "Work", portfolio_path
 							li
-								<a href="http://www.vanessaamilet.com/graphics">Graphics</a>
-							li
-								<a href="http://www.vanessaamilet.com/media-and-interactivity">Media</a>
-							li
-								<a href="http://www.vanessaamilet.com/contact">Contact</a>
+								= link_to "Contact", contact_path

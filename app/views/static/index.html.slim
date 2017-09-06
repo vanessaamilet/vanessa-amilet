@@ -7,53 +7,43 @@
 .section-gray.cd-intro
 	.container
 		.home-heading
-			h1.cd-headline.zoom
-				span 
-					| Vanessa Amilet Santos
-				span.cd-words-wrapper.hidden-sm.hidden-xs
-					b.is-visible 
-						| Web Designer
-					b Full Stack Designer
-					b Graphic Designer
-					b Creative
-					b Coffee Addict
-					b #vanessaamilet
-			h3 I make websites in Texas.
+			h1 Vanessa Amilet Santos
+			h3 Designer & Developer
 /!  Begin Page Content
 .container
-	.row
-		.col-lg-6
-			h2 Websites
-			= image_tag "", :class=>"img-responsive center-block"
-		.col-lg-6
-			br
-			p.lead I create clean elegant websites that are built with modern technologies like HTML5, CSS3, JavaScript, Bootstrap, and much more.
-			= link_to "View Websites", portfolio_path, :class=>"btn btn-transparent-pink"
-.section-pink
+	.row.services
+		.row
+			.col-lg-12
+				h2.center Services
+		.col-md-4
+			= image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
+			h4.center Graphic & Web Design
+			p.center.lead I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
+
+		.col-md-4
+			= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
+			h4.center Web Development
+			p.center.lead I create clean elegant websites with modern technologies such as HTML5, CSS3, JavaScript, Bootstrap, and much more.
+		
+		.col-md-4
+			= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
+			h4.center Media & Interactivity
+			p.center.lead I also create videos, animations, and e-learning applications using tools such as Adobe Animate, Premiere, and After Effects.
+		.row
+			.col-lg-12
+				.center
+					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline"
+
+.portfolio
 	.container
 		.row
-			.col-lg-6
-				h2 Graphics
-			.col-lg-6
-				br
-				p.lead I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
-				= link_to "View Graphics", portfolio_path, :class=>"btn btn-transparent"
-.container
-	.row
-		.col-lg-6
-			h2 Media & Interactivity
-		.col-lg-6
-			br
-			p.lead I also create videos, animations, and e-learning applications using tools such as Adobe Edge, Premiere, and After Effects.
-			= link_to "View Media", portfolio_path, :class=>"btn btn-transparent-pink"
-	hr
-	.row
-		.col-lg-1
-		.col-lg-4
-			= link_to "Know Me Better", about_path, :class=>"btn btn-about center-block"
-		.col-lg-4
-			= link_to "Lets Work Together!", contact_path, :class=>"btn btn-contact center-block"
-		.col-lg-1
+			h3 Latest Work
+.row
+	ul.home-footer-links	
+		li 
+			= link_to "Know Me Better", about_path
+		li 
+			= link_to "Lets Work Together!", contact_path
 
 /!  Preloader Content 
 / = render :partial => "shared/preloader"

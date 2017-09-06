@@ -5,36 +5,14 @@
 	
 </header>
 
-.section-gray.cd-intro
+.section-teal
 	.container
-		.home-heading
-			h1.cd-headline
-				span Portfolio
-			h3	LOREM IPSUM
+		span.lead.center I like to challenge myself by experimenting with different web technologies. My specific skills and experience allows me to deal with different types of projects. I have been involved in projects such as static and dynamic websites, graphics, and interactive media.
+
+		= link_to "VIEW SKILLS »", about_path, :class=>"center"
 
 /!  Begin Page Content
 .container
-	.row
-		.col-lg-12
-			h2 Technologies Used:
-			.tech-icons
-				ul
-					li 
-						p 
-							i.fa.fa-pencil
-							br
-							span Illustrator
-					li 
-						p 
-							i.fa.fa-columns
-							br
-							span InDesign
-					li 
-						p 
-							i.fa.fa-crop
-							br
-							span Photoshop
-	hr
 	.row
 		.col-lg-12
 			section.ff-container.container
@@ -43,18 +21,26 @@
 					| All
 				input#select-type-1.ff-selector-type-1 name="radio-set-1" type="radio" checked="checked"
 				label.ff-label-type-1 for="select-type-1" 
-					| Illustrator
+					| Web Design
 				input#select-type-2.ff-selector-type-2 name="radio-set-1" type="radio" checked="checked"
 				label.ff-label-type-2 for="select-type-2" 
-					| InDesign
+					| Development
 				input#select-type-3.ff-selector-type-3 name="radio-set-1" type="radio" checked="checked"
 				label.ff-label-type-3 for="select-type-3" 
-					| Illustrator
+					| Graphics
+				input#select-type-4.ff-selector-type-4 name="radio-set-1" type="radio" checked="checked"
+				label.ff-label-type-4 for="select-type-4" 
+					| Media
 			.clr
 				ul.ff-items
 					li.ff-item-type-1
 						= link_to ""
 							span Halloween Illustration
+					li.ff-item-type-2
+						<a href="websites/ecmg-landing-page.html" title="">
+							<span>Content Admin Landing Page</span>
+							<img src="http://www.vanessaamilet.com/images/websites/website-filter-img/ecmg-landing-pg.jpg" alt="Content Administrator Landing Page"/>
+						</a>
 	hr
 	.row
 		.col-lg-1
