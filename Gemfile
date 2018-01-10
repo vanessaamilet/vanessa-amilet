@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.7.1'
 
 gem 'slim-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'

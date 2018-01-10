@@ -7,10 +7,10 @@ Rails.application.routes.draw do
   root 'static#index'
 
   get '/about'       => 'static#about'
-  get '/websites'    => 'static#websites'
-  get "/portfolio"     => "static#portfolio"
-  get "/contact"     => "static#contact"
-  get "/privacy-policy"     => "static#privacy"
+  get '/portfolio'     => 'static#portfolio'
+  get '/contact'     => 'static#contact'
+  get '/privacy-policy'     => 'static#privacy-policy'
+  get '/faqs' => 'static#faqs'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
