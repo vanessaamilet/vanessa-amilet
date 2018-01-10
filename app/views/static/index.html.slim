@@ -4,46 +4,52 @@
 .section-main.homepage
 	.home-image
 </header>
-.section-gray.cd-intro
+/!.section-gray
 	.container
 		.home-heading
 			h1 Vanessa Amilet Santos
 			h3 Designer & Developer
 /!  Begin Page Content
-.container
-	.row.services
+section
+	.container
+		.row
+			.col-md-12.text-center
+				p.lead I am a award winning designer & developer based in Houston, Texas. I pride myself on my eagerness and ability to learn. Over the last few years, I have allowed myself to delve into a design and art centric lifestyle. Due to my attention to detail, I am constantly absorbing ideas from everyday life. I am very passionate about my work and driven to satisfy my clients.
+
+
+section.services
+	.container
 		.row
 			.col-lg-12
 				h2.center Services
+		.row
 		.col-md-4
 			= image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
 			h4.center Graphic & Web Design
-			p.center.lead I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
+			p.center I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
 
 		.col-md-4
 			= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
 			h4.center Web Development
-			p.center.lead I create clean elegant websites with modern technologies such as HTML5, CSS3, JavaScript, Bootstrap, and much more.
+			p.center I create clean elegant websites with modern technologies such as HTML5, CSS3, JavaScript, Bootstrap, and much more.
 		
 		.col-md-4
 			= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
 			h4.center Media & Interactivity
-			p.center.lead I also create videos, animations, and e-learning applications using tools such as Adobe Animate, Premiere, and After Effects.
+			p.center I also create videos, animations, and e-learning applications using tools such as Adobe Animate, Premiere, and After Effects.
 		.row
 			.col-lg-12
 				.center
 					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline"
+.container
+	.row
+		h2 Reviews
 
-.portfolio
+section.portfolio
 	.container
 		.row
 			h3 Latest Work
-.row
-	ul.home-footer-links	
-		li 
-			= link_to "Know Me Better", about_path
-		li 
-			= link_to "Lets Work Together!", contact_path
+
 
 /!  Preloader Content 
 / = render :partial => "shared/preloader"

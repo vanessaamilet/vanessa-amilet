@@ -1,6 +1,6 @@
 /*! Vanessa Amilet's Custom Bootstrap
  *  by Vanessa A. Santos (@vanessaamilet)
- * Copyright 2017 Vanessa Amilet
+ *  Copyright 2017 Vanessa Amilet
  */
 
 /* # Table of Contents
@@ -73,7 +73,7 @@ html {
 	/* Negative indent footer by its height */
 	margin: 0 auto -100px;
 	/* Pad bottom by footer height */
-	padding: 0 0 150px;
+	padding: 0 0 100px;
 }
 
 /* ## Box Sizing
@@ -250,7 +250,6 @@ img::selection {
 
 .lead{
 	font-size: 16px !important;
-	margin-bottom: 30px;
 }
 
 .center {
@@ -1090,6 +1089,9 @@ textarea:focus ~ .bar {
 
 /* ## Sections
 -------------------------------------------------- */
+section{
+	padding: 40px 0;
+}
 
 .section-gray {
 	background-color: #FAFAFA;
@@ -1162,7 +1164,7 @@ textarea:focus ~ .bar {
 
 .services{
 	padding: 40px 0;
-	/* background: url(/assets/backgrounds/tiny-grid.png); */
+	background: url(/assets/backgrounds/tiny-grid.png);
 	background-repeat: repeat;
 	background-position: center center;
 	h2{
@@ -1184,7 +1186,6 @@ textarea:focus ~ .bar {
 
 .portfolio{
 	padding: 40px 0;
-	background: $light-gray;
 	h2{
 		margin-bottom: 35px !important;
 	}
@@ -1404,6 +1405,8 @@ textarea:focus ~ .bar {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	margin-right: -15px;
+	margin-left: -15px;
 	li {
 		float: left;
 		width: 50%;
@@ -1411,9 +1414,9 @@ textarea:focus ~ .bar {
 		text-align: center;
 		font-family: 'Gotham', Georgia, Serif;
 		a {
-			background: #353535;
-			color: #666;
-			color: rgba(255,255,255,.2) !important;
+			/*background: #353535;*/
+			background: #3a3a3a;
+			color: rgba(255,255,255,.4) !important;
 			padding: 3em 0;
 			display: block;
 			font-family: 'Gotham', Helvetica, Arial;
@@ -1436,22 +1439,23 @@ textarea:focus ~ .bar {
 
 #footer {
   /*height: 80px;*/
-  background-color: #262B2C;
-  color: #bbb;
+  background-color: #F5F7F8;
+  color: #333;
   padding-top: 15px;
   a {
-	color: #bbb !important;
+	color: $blue;
 	text-decoration: none;
 	&:hover {
-	  color: #ccc !important;
+	  color: $dark-blue;
 	}
   }
   h4 {
-	color: #FFF;
-	margin-bottom: 20px;
+	color: #333;
+	font-size: 18px;
+	margin-bottom: 15px;
   }
   p {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
   }
   > .container {
 	padding-left: 15px;
@@ -1465,7 +1469,7 @@ textarea:focus ~ .bar {
 	padding: 25px 0;
   }
   .sub-footer {
-	background-color: #222;
+	background-color: #F5F7F8;
 	padding: 15px;
 	margin-top: 15px;
   }
@@ -1486,15 +1490,14 @@ textarea:focus ~ .bar {
 	display: block;
 	height: 35px;
 	li {
-	  display: inline-block;
-	  float: left;
-	  margin-right: 15px;
+	  display: block;
+	  margin-bottom: 5px;
 	  padding: 0;
 	  a {
-		color: #bbb !important;
+		color: #868f98 !important;
 		text-decoration: none;
 		&:hover {
-		  color: #ccc !important;
+		  color: $dark-blue !important;
 		}
 	  }
 	}
@@ -1507,7 +1510,7 @@ textarea:focus ~ .bar {
 	padding-left: 0px;
 	li {
 	  border-radius: 4px;
-	  color: #FFFFFF !important;
+	  color: $white !important;
 	  display: inline-block;
 	  font-size: 18px;
 	  height: 32px;
@@ -1517,9 +1520,9 @@ textarea:focus ~ .bar {
 	  text-align: center;
 	  width: 32px;
 	  border: none;
-	  opacity: .6;
+	  opacity: 1;
 	  &:hover {
-		opacity: 1;
+		opacity: .7;
 	  }
 	}
   }
@@ -1537,13 +1540,16 @@ textarea:focus ~ .bar {
 	  background-color: #c63d2d;
 	}
 	&.instagram {
-	  background-color: #675144;
+	  background-color: #fb3958;
 	}
 	&.github {
 	  background-color: #000;
 	}
 	a {
-	  color: #FFF !important;
+	  color: $white !important;
+	}
+	&:hover{
+		color: $white !important;
 	}
   }
 }
@@ -1858,6 +1864,11 @@ i.contact {
 		0%{background-position:0% 47%}
 		50%{background-position:100% 54%}
 		100%{background-position:0% 47%}
+	}
+	h4{
+		text-transform: capitalize;
+		font-weight: 600;
+		letter-spacing: 0;
 	}
 }
 

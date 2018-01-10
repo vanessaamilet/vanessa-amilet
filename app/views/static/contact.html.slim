@@ -2,45 +2,43 @@
 .section-main
 	
 </header>
-.section-gray
+section
 	.container
-		.home-heading
-			h1 Get In Touch
+		h1 Get In Touch
 /!  Begin Page Content 
-.container
-	.row
-		.col-md-6
-			h3 LET’S BUILD SOMETHING TOGETHER
-			p For a project quotation, or to learn more about me, please fill out the form below. I will contact you as soon as possible!
-
-			form class="form-horizontal" id="contact-form" action="thank-you" method="post"
-				.input-group
-				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-				  <input name="name" class="form-control input-md" id="name" maxlength="50" placeholder="" type="text" tabindex="1" required="">
-				  <span class="bar"></span>
-				  label Please enter your full name!
-
-				.input-group
-				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-at"></i></span>
-				  <input name="email" class="form-control input-md" id="email" maxlength="50" placeholder="" type="email" tabindex="2" required="">
-				  <span class="bar"></span>
-				  label What's your email?
-				
-				.input-group
-				  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-				  <input name="telephone" class="form-control input-md" id="telephone" placeholder="" type="tel" tabindex="3" required="">
-				  <span class="bar"></span>
-				  label Numero por favor?
-				
-				.input-group
-				  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-				  <textarea name="comments" class="form-control input-md" placeholder="Message/Describe your project." tabindex="5" required=""></textarea>
-				  <span class="bar"></span>
-				
-				.form-group
-				  <button name="submit" type="submit" class="btn btn-transparent-pink contact-submit" id="contact-submit"><i class="fa fa-paper-plane"></i></button><!-- <a href="sendForm.php">Email Form</a>-->
-
-		.col-md-6
-			h3 Contact Info
-
-			h3 Follow Me
+section
+	.container
+		.row
+			.col-md-6
+				h4 LET’S BUILD SOMETHING TOGETHER
+				p For a project quotation, or to learn more about me, please fill out the form. I will contact you as soon as possible!
+	
+				h3 Contact Information
+			.col-md-6
+	
+				form class="form-horizontal" id="contact-form" action="thank-you" method="post"
+					.input-group
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+					  <input name="name" class="form-control input-md" id="name" maxlength="50" placeholder="" type="text" tabindex="1" required="">
+					  <span class="bar"></span>
+					  label Please enter your full name!
+	
+					.input-group
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-at"></i></span>
+					  <input name="email" class="form-control input-md" id="email" maxlength="50" placeholder="" type="email" tabindex="2" required="">
+					  <span class="bar"></span>
+					  label What's your email?
+					
+					.input-group
+					  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+					  <input name="telephone" class="form-control input-md" id="telephone" placeholder="" type="tel" tabindex="3" required="">
+					  <span class="bar"></span>
+					  label Telephone Number
+					
+					.input-group
+					  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					  <textarea name="comments" class="form-control input-md" placeholder="Message/Describe your project." tabindex="5" required=""></textarea>
+					  <span class="bar"></span>
+					
+					.form-group
+					  <button name="submit" type="submit" class="btn btn-transparent-pink contact-submit" id="contact-submit"><i class="fa fa-paper-plane"></i>  Send Message</button><!-- <a href="sendForm.php">Email Form</a>-->

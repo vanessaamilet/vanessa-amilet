@@ -5,11 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 
 gem 'slim-rails'
-gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
-gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'font-awesome-sass'
+gem 'bootstrap', '~> 4.0.0.beta3'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'

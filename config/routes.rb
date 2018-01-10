@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/websites'    => 'static#websites'
   get "/portfolio"     => "static#portfolio"
   get "/contact"     => "static#contact"
+  get "/privacy-policy"     => "static#privacy"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

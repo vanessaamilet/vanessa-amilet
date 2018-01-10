@@ -6,7 +6,7 @@
 </header>
 
 /!  Begin Page Content 
-.about
+section
 	.container
 		.row
 			.col-md-7
@@ -30,12 +30,8 @@
 							p 
 								i.fa.fa-pencil
 								span Design
-						li 
-							p 
-								i.fa.fa-code
-								span Coding
 			
-.process
+section.process
 	.container
 		.row
 			.col-lg-12
@@ -55,13 +51,13 @@
 				p.center To guarantee success, the final process involves thorough testing on all major browsers, operating systems, and devices.
 		.row
 
-.skillset
+section.skillset
 	.container
 		.row
 			.col-lg-12
 				h2 Skillset
 		.row.row-eq-height
-			.col-lg-4
+			.col-md-4
 				.row
 					.skillset-info
 						h4.purple Scripting
@@ -71,7 +67,7 @@
 							.about-skills
 								ul#selector
 									li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			.col-lg-4
+			.col-md-4
 				.row
 					.skillset-info
 						h4.purple Web Tools
@@ -81,12 +77,12 @@
 							.about-skills
 								ul#selector
 									li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			.col-lg-4
+			.col-md-4
 				.row
 					.skillset-info
 						h4.purple Software
 						p
-							| Sublime  • Dreamweaver • Illustrator • Flash • Animate • Adobe XD • InDesign • After Effects • Premeire • Photoshop • Audition
+							| Sublime • Coda • Dreamweaver • Illustrator • Flash • Animate • Adobe XD • InDesign • After Effects • Premeire • Photoshop • Audition
 						.row
 							.about-skills
 								ul#selector
@@ -97,8 +93,9 @@
 		.row
 			.col-lg-12
 				h2 Resume
+				= link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "http://www.vanessaamilet.com/about/resume.pdf"
 		.row
-			.col-lg-4
+			.col-md-4
 				.resume-info
 					h4 Experiences
 
@@ -133,7 +130,7 @@
 						= link_to "ECMG LLC", "http://www.ecmg.com"
 					p November 2013 - June 2016
 
-			.col-lg-4
+			.col-md-4
 				.resume-info
 					h4 Education
 
@@ -162,7 +159,7 @@
 					p June 2014
 
 
-			.col-lg-4
+			.col-md-4
 				.resume-info
 					h4 Certifications
 

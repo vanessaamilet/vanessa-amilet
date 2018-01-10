@@ -1,3 +1,9 @@
+.row
+	ul.home-footer-links	
+		li 
+			= link_to "Know Me Better", about_path
+		li 
+			= link_to "Lets Work Together!", contact_path
 #footer
 	.footer-wrapper
 		.container
@@ -8,21 +14,23 @@
 					p Web & Graphic Designer that enjoys creating beautiful things with the latest technologies.
 					p
 						= link_to "Learn More »", about_path
-				.col-md-3.col-sm-6
-					h4 Get In Touch 
-					ul.contacts
-						li
-							i.fa.fa-map-marker.contact 
-							| Houston, Texas
-						li
-							i.fa.fa-mobile.contact
-							<a href="tel:+12819089361">(281) 908 - 9361</a>
-						li
-							i.fa.fa-envelope-o.contact
-							<a href="mailto:vanessa.amilet@gmail.com">vanessaamilet[@]gmail.com</a>
+				.col-md-4.col-sm-6
+					h4 Menu
+					nav.footer-nav
+						ul
+							li
+								= link_to "Portfolio", portfolio_path
+							li
+								= link_to "Schedule a Consultation", root_path
+							li
+								= link_to "Contact", contact_path
+							li
+								= link_to "FAQs", root_path
+							li
+								= link_to "Privacy Policy", privacy_policy_path
 
-				.col-md-3.col-sm-6
-					h4 Follow
+				.col-md-4.col-sm-6
+					h4 Connect
 					ul.social
 						li.facebook
 							<a href="https://www.facebook.com/vanessaamilet"><i class="fa fa-facebook"></i></a>
@@ -30,8 +38,6 @@
 							<a href="https://twitter.com/vanessaamilet"><i class="fa fa-twitter"></i></a>
 						li.linkedin
 							<a href="https://www.linkedin.com/in/vanessaamilet"><i class="fa fa-linkedin"></i></a>
-						li.google-plus
-							<a href="https://plus.google.com/+VanessaAmiletSantos1/"><i class="fa fa-google-plus"></i></a>
 						li.instagram
 							<a href="https://instagram.com/van_amilet/"><i class="fa fa-instagram"></i></a>
 						li.github
@@ -40,19 +46,8 @@
 	.sub-footer
 		.container
 			.row
-				.col-md-6
-					p.credit.pull-left
+				.col-md-12
+					p.credit.center
 						| Made with <i class="fa fa-heart"></i> in Texas. &copy;&nbsp;
 						= Time.zone.now.year
-						| &nbsp;Vanessa Amilet Santos.
-				.col-md-6
-					nav.footer-nav
-						ul.pull-right
-							li
-								= link_to "Home", root_path
-							li
-								= link_to "About", about_path
-							li
-								= link_to "Work", portfolio_path
-							li
-								= link_to "Contact", contact_path
+						= link_to " Vanessa Amilet Santos", root_path
