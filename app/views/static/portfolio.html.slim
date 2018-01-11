@@ -13,37 +13,30 @@ section
 .section-teal
 	.container
 		span.lead.center I like to challenge myself by experimenting with different web technologies. My specific skills and experience allows me to deal with different types of projects. I have been involved in projects such as static and dynamic websites, graphics, and interactive media.
-
-		= link_to "VIEW SKILLS »", about_path, :class=>"center"
+		br
+		= link_to "View Skills »", about_path, :class=>"center"
 
 /!  Begin Page Content
-.container
-	.row
-		.col-lg-12
-			section.ff-container.container
-				input#select-type-all.ff-selector-type-all name="radio-set-1" type="radio" checked="checked"
-				label.ff-label-type-all for="select-type-all" 
-					| All
-				input#select-type-1.ff-selector-type-1 name="radio-set-1" type="radio" checked="checked"
-				label.ff-label-type-1 for="select-type-1" 
-					| Web Design
-				input#select-type-2.ff-selector-type-2 name="radio-set-1" type="radio" checked="checked"
-				label.ff-label-type-2 for="select-type-2" 
-					| Development
-				input#select-type-3.ff-selector-type-3 name="radio-set-1" type="radio" checked="checked"
-				label.ff-label-type-3 for="select-type-3" 
-					| Graphics
-				input#select-type-4.ff-selector-type-4 name="radio-set-1" type="radio" checked="checked"
-				label.ff-label-type-4 for="select-type-4" 
-					| Media
-			.clr
-				ul.ff-items
-					li.ff-item-type-1
-						= link_to ""
-							span Halloween Illustration
-					li.ff-item-type-2
-						<a href="websites/ecmg-landing-page.html" title="">
-							<span>Content Admin Landing Page</span>
-							<img src="http://www.vanessaamilet.com/images/websites/website-filter-img/ecmg-landing-pg.jpg" alt="Content Administrator Landing Page"/>
-						</a>
-						
+section.portfolio
+	.container	
+		.row
+			.col-md-4
+				.portfolio-hovereffect.card.text-white
+				  <img class="card-img" src="http://www.vanessaamilet.com/images/websites/website-filter-img/ecmg-landing-pg.jpg" alt="Card image">
+				  .card-img-overlay
+				    h5.card-title Project Title
+				    p.card-text This is a wider card with supporting text below as a natural lead-in.
+				    = link_to "View Project", root_path
+
+			.col-md-4
+				.portfolio-hovereffect.card.text-white
+				  <img class="card-img" src="http://via.placeholder.com/350x265" alt="Card image">
+				  .card-img-overlay
+				    h5.card-title Project Title
+				    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+			.col-md-4
+				.portfolio-hovereffect.card.text-white
+				  <img class="card-img" src="http://via.placeholder.com/350x265" alt="Card image">
+				  .card-img-overlay
+				    h5.card-title Project Title
+				    p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
