@@ -1260,6 +1260,29 @@ section{
 	margin: 15px;
 }
 
+/* ### FAQs */
+
+section.faqs{
+	background: $white;
+}
+
+.faqs #accordion .card{
+	margin-bottom: 15px;
+	border: transparent;
+	a{
+		text-decoration: none;
+		&:active{
+			color: $teal;
+		}
+	}
+	.card-header{
+		border-bottom: transparent;
+	}
+}
+
+section.get-started{
+	background: $light-gray;
+}
 
 
 /* # Site Navigation
@@ -1700,6 +1723,9 @@ i.contact {
   position: relative;
   text-align: center;
   cursor: default;
+  .card{
+  	border: transparent !important;
+  }
   .overlay {
     position: absolute;
     overflow: hidden;
