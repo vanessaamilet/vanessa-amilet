@@ -378,7 +378,7 @@ h6{
 }
 
 
-.section-gray .home-heading h1, h1 {
+.section-gray .home-heading h1 {
   font-size: 40px;
   font-weight: normal;
   line-height: 1;
@@ -1062,30 +1062,13 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after{
 --------------------------------------------- */
 
 .header {
-  background-color: #00B2CA;
-  background: -webkit-linear-gradient(#00B2CA, #7DCFB6);
-  background: -o-linear-gradient(#00B2CA, #7DCFB6);
-  background: -moz-linear-gradient(#00B2CA, #7DCFB6);
-  background: linear-gradient(#00B2CA, #7DCFB6);
+/* 	background-color: #00B2CA;
+	background: -webkit-linear-gradient(#00B2CA, #7DCFB6);
+	background: -o-linear-gradient(#00B2CA, #7DCFB6);
+	background: -moz-linear-gradient(#00B2CA, #7DCFB6);
+	background: linear-gradient(#00B2CA, #7DCFB6); */
 }
 
-.section-main {
-  padding-top: 15px;
-  padding-bottom: 0;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 2.1428571435;
-  /*background-color: #00B2CA;
-  background: url(../images/homepage/website-background.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index:5;
-  background: -webkit-linear-gradient(#00B2CA,#7DCFB6);
-  background: -o-linear-gradient(#00B2CA,#7DCFB6);
-  background: -moz-linear-gradient(#00B2CA,#7DCFB6);
-  background: linear-gradient(#00B2CA,#7DCFB6); */
-}
 
 @media (max-width: 980px) {
   .homepage {
@@ -1192,44 +1175,27 @@ section{
 	}
 }
 
-.portfolio{
-	padding: 40px 0;
-	background: url(/assets/backgrounds/tiny-grid.png);
-	background-repeat: repeat;
-	background-position: center center;
-	h2{
-		margin-bottom: 35px !important;
-	}
-	.row{
-		padding: 15px 0;
-	}
-}
 
 /* ### About */
 
 .about{
 	background-color: $purple;
+	background: url(/assets/backgrounds/tiny-grid.png);
 	background-attachment: fixed;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-position: center center;
-	background-size: cover;
-	color: $white;
+	/* background-size: cover; 
+	color: $white; */
 	padding: 40px 0;
 }
 
 .resume{
 	background-color: $white;
-	background: url(/assets/va-background-pattern.png);
+	/* background: url(/assets/va-background-pattern.png); */
 	/* background: url(<%= asset_path "va-background-pattern.png" %>); */
 	background-repeat: repeat;
 	background-position: center center;
 	padding: 40px 0;
-}
-
-.resume::after{
-	content: "";
-	background: url(/assets/va-background-pattern.png);
-	opacity: 0.5;
 }
 
 .skillset{
@@ -1260,7 +1226,27 @@ section{
 	margin: 15px;
 }
 
+/* ### Portfolio */
+
+.portfolio{
+	padding: 40px 0;
+	background: url(/assets/backgrounds/tiny-grid.png);
+	background-repeat: repeat;
+	background-position: center center;
+	h2{
+		margin-bottom: 35px !important;
+	}
+	.row{
+		padding: 15px 0;
+	}
+}
+
 /* ### FAQs */
+
+section.faqs-header{
+	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/subtlenet2.png");
+	padding: 60px 0;
+}
 
 section.faqs{
 	background: $white;
