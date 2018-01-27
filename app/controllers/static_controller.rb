@@ -8,10 +8,20 @@ class StaticController < ApplicationController
 	def about
 	end
 	
-	def websites
+	def portfolio
+	end
+
+	def portfolio_ecmg
+	end
+
+	def portfolio_lsc
+	end
+
+	def portfolio_greenwood
 	end
 	
 	def privacy_policy
 	end
+	
 
 end

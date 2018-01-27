@@ -11,6 +11,8 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
 	<meta name="MobileOptimized" content="320">
 	<meta name="HandheldFriendly" content="True">
+	<meta name="theme-color" content="#6050C7">
+    <meta name="msapplication-TileColor" content="#6050C7">
  	<%= metamagic %>
 
  	<!-- Bootstrap core CSS -->
@@ -54,18 +56,18 @@
 <![endif]-->
 <div id="wrap">
 	<!-- Static navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between d-flex" role="navigation mr-auto">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between d-flex" role="navigation">
 		<div class="container">
 			<div class="navbar-brand">
 				<%= link_to(root_path) do %>
 					<div id="logo"></div>
 				<% end %>
 			</div>
-			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				   <span class="navbar-toggler-icon"></span>
 			</button>
 			<!-- <a class="navbar-brand" href="http://www.vanessaamilet.com/">Vanessa Amilet</a> -->
-			<div class="collapse navbar-collapse float-right flex-column-reverse" id="navbarNav">
+			<div class="collapse navbar-collapse float-right d-flex justify-content-end" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="<%= 'active' if current_page?(root_path) %> nav-item"><%= link_to "Home", root_path, :class=>"nav-link" %></li>
 					<li class="<%= 'active' if current_page?(about_path) %> nav-item"><%= link_to "About", about_path, :class=>"nav-link" %></li>

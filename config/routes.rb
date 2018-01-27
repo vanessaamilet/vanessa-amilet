@@ -8,9 +8,27 @@ Rails.application.routes.draw do
 
   get '/about'       => 'static#about'
   get '/portfolio'     => 'static#portfolio'
-  get '/contact'     => 'static#contact'
+  get '/portfolio/ecmg' => 'static#portfolio_ecmg'
+  get '/portfolio/hcss' => 'static#portfolio_hcss'
+  get '/portfolio/laura-conley' => 'static#portfolio_lsc'
+  get '/portfolio/leeward-team' => 'static#portfolio_leewardteam'
+  get '/portfolio/jumpix' => 'static#portfolio_jumpix'
+  get '/portfolio/iba-ohio' => 'static#portfolio_ibo'
+  get '/portfolio/tch-video' => 'static#portfolio_tch'
+  get '/portfolio/hcss-careers' => 'static#portfolio_hcss_careers'
+  # get '/portfolio/village-clothier' => 'static#portfolio_village_clothier'
+  get '/portfolio/832video' => 'static#portfolio_832video'
+  get '/portfolio/captivecolour' => 'static#portfolio_captivecolour'
+  get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'
+  get '/portfolio/snapple-video' => 'static#portfolio_snapple'
+
+
+  # get '/contact'     => 'static#contact'
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/faqs' => 'static#faqs'
+
+  match '/contact',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

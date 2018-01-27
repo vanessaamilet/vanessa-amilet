@@ -2,13 +2,17 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.7.1'
+gem 'rails', '~> 5.0'
 
 gem 'slim-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
 gem 'bootstrap', '~> 4.0.0.beta3'
+
+# Gems for Contact Form & Mail
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'simple_form', '~> 3.5'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
