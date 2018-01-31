@@ -2195,6 +2195,18 @@ section.portfolio-info{
 	background-image: url(/assets/hero-images/lsc-hero-bg.jpg);
 }
 
+#portfolio-832video .portfolio-img {
+	background-image: url(/assets/hero-images/832video-hero-bg.jpg);
+}
+
+#portfolio-leewardteam .portfolio-img {
+	background-image: url(/assets/hero-images/leeward-team-hero-bg.jpg);
+}
+
+#portfolio-jumpix .portfolio-img {
+	background-image: url(/assets/hero-images/jumpix-hero-bg.jpg);
+}
+
 /* ### Colors */
 
 section.colors{
@@ -2271,6 +2283,18 @@ section.showcase{
 
 .lsc{
 	background: url(/assets/portfolio-backgrounds/background-lsc.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.agency-832video{
+	background: url(/assets/portfolio-backgrounds/background-832video.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.leeward-team{
+	background: url(/assets/portfolio-backgrounds/background-832video.jpg) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
 }
