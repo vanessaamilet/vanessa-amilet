@@ -2,18 +2,18 @@
 
 /!  Begin Page Content 
 #portfolio-hcss.portfolio-single
-	.portfolio-hero data-0="transform: translate3d(0,0%,0)" data-1000="transform: translate3d(0,-70%,0)"
+	.portfolio-hero
 		.portfolio-gradient-top
 		.vertical.portfolio-box
-			.portfolio-img data-0="transform: translate3d(0,0%,0)" data-1000="transform: translate3d(0,25%,0)"
+			.portfolio-img.zoomout
 			.vertical-middle
 				.container
 					.row
 						.col-lg-12.col-md-12
-							= image_tag "client-logos/client-ecmg.svg", :class=>"logo center-img", :alt=>"ECMG"
-		<a class="btn-viewport-discover" href="#skrollr-body"><i class="fa fa-chevron-down"></i></a>
+							= image_tag "client-logos/client-hcss.svg", :class=>"logo center-img", :alt=>"HCSS"
+		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
 
-section.portfolio-info
+section.portfolio-info#info
 	.container
 		.row
 			.col-lg-3
@@ -31,7 +31,7 @@ section.portfolio-info
 		.row
 			.col-lg-12
 				.center
-					p.lead ECMG provides innovative software and world-class consulting services focused exclusively on simplifying the processes of Content Migration, Repository Consolidation, Metadata Transformation, and Bulk Import/Export within the ECMG industry.
+					p.lead HCSS provides an entire suite of integrated software to help contractors all the way through project completion, including programs to manage daily activities in the field, track labor and equipment, keep workers safe on the job, and much more.
 					= link_to "View Website »", 'https://www.hcss.com/'
 
 section.colors
@@ -66,3 +66,9 @@ section.fonts
 
 			.col-md-6
 				= image_tag "typography/roboto-type.svg", :class=>"img-responsive center-block"
+
+section.showcase.hcss
+	.container
+		.row
+			.col-lg-12
+				= image_tag "portfolio-showcases/ecmg-showcase.png", :class=>"img-fluid center-img", :alt=>"HCSS Showcase"
