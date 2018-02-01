@@ -2215,6 +2215,10 @@ section.portfolio-info{
 	background-image: url(/assets/hero-images/greenwood-hero-bg.jpg);
 }
 
+#portfolio-captivecolour .portfolio-img {
+	background-image: url(/assets/hero-images/captivecolour-hero-bg.jpg);
+}
+
 /* ### Colors */
 
 section.colors{
@@ -2327,6 +2331,12 @@ section.showcase{
 
 .greenwood{
 	background: url(/assets/portfolio-backgrounds/background-greenwood.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.captivecolour{
+	background: url(/assets/portfolio-backgrounds/background-captivecolour.jpg) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
 }
