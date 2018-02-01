@@ -2223,6 +2223,14 @@ section.portfolio-info{
 	background-image: url(/assets/hero-images/hcss-careers-hero-bg.jpg);
 }
 
+#portfolio-tch .portfolio-img {
+	background-color: #E61B29;
+}
+
+#portfolio-village-clothier .portfolio-img {
+	background-image: url(/assets/hero-images/village-clothier-hero-bg.jpg);
+}
+
 /* ### Colors */
 
 section.colors{
@@ -2347,6 +2355,18 @@ section.showcase{
 
 .hcss-careers{
 	background: url(/assets/portfolio-backgrounds/background-hcss-careers.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.tch{
+	background: url(/assets/portfolio-backgrounds/background-hcss-careers.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.village-clothier{
+	background: url(/assets/portfolio-backgrounds/background-village-clothier.jpg) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
 }

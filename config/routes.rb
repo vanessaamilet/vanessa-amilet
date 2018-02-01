@@ -16,12 +16,12 @@ Rails.application.routes.draw do
   get '/portfolio/iba-ohio' => 'static#portfolio_ibo'
   get '/portfolio/tch-video' => 'static#portfolio_tch'
   get '/portfolio/hcss-careers' => 'static#portfolio_hcss_careers'
-  # get '/portfolio/village-clothier' => 'static#portfolio_village_clothier'
   get '/portfolio/832video' => 'static#portfolio_832video'
   get '/portfolio/captivecolour' => 'static#portfolio_captivecolour'
   get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'
   get '/portfolio/snapple-video' => 'static#portfolio_snapple'
   get '/portfolio/hcss-ugm-video' => 'static#portfolio_ugm_video'
+  get '/portfolio/village-clothier' => 'static#portfolio_village_clothier'
 
 
   # get '/contact'     => 'static#contact'
