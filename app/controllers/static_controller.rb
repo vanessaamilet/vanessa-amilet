@@ -19,6 +19,9 @@ class StaticController < ApplicationController
 
 	def portfolio_greenwood
 	end
+
+	def portfolio_ugm
+	end
 	
 	def privacy_policy
 	end

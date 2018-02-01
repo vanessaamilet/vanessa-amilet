@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/portfolio/captivecolour' => 'static#portfolio_captivecolour'
   get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'
   get '/portfolio/snapple-video' => 'static#portfolio_snapple'
+  get '/portfolio/hcss-ugm-video' => 'static#portfolio_ugm_video'
 
 
   # get '/contact'     => 'static#contact'

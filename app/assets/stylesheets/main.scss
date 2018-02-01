@@ -2219,6 +2219,10 @@ section.portfolio-info{
 	background-image: url(/assets/hero-images/captivecolour-hero-bg.jpg);
 }
 
+#portfolio-hcsscareers .portfolio-img {
+	background-image: url(/assets/hero-images/hcss-careers-hero-bg.jpg);
+}
+
 /* ### Colors */
 
 section.colors{
@@ -2337,6 +2341,12 @@ section.showcase{
 
 .captivecolour{
 	background: url(/assets/portfolio-backgrounds/background-captivecolour.jpg) !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.hcss-careers{
+	background: url(/assets/portfolio-backgrounds/background-hcss-careers.jpg) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
 }
