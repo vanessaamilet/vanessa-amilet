@@ -1,5 +1,5 @@
 = metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Designer & Developer", description: "Vanessa Amilet is a Houston freelance web designer & developer helping businesses and organizations in different industries.", keywords: [:keywords, "web design services", "responsive web design", "houston web design", "wordpress web design", "wordpress themes", "vanessa amilet", "#vanessaamilet", "freelance web designer", "freelance developer"]
-	
+</header>
 /!  Section Main Content 
 section.about.center
 	h1 About Vanessa Amilet
@@ -9,9 +9,15 @@ section.about.center
 section
 	.container
 		.row
+			.col-md-12
+				p.lead.center
+					| I am a award winning designer & developer based in Houston, Texas with a good business judgement and a sense of responsibility. My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
+section.wheel-house
+	.container
+		.row
 			.col-md-7
-				p.lead
-					| I am a award winning designer & developer based in Houston, Texas with a good business judgement and a sense of responsibility. My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design. 
+				/ p.lead
+				/ 	| I am a award winning designer & developer based in Houston, Texas with a good business judgement and a sense of responsibility. My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design. 
 				h3  My Wheel House
 				ul
 					li Branding & Logo
@@ -37,6 +43,7 @@ section.process
 				h2 Process
 		.row
 			.col-md-3
+				= render :partial => "shared/wireframe"
 				h5 WIREFRAMING
 				p The sketching of wireframes is integral in the beginning to realize concepts and ideas into readable, managed design.
 			.col-md-3
@@ -59,9 +66,9 @@ section.skillset
 			.col-md-4
 				.row
 					.skillset-info
-						h4.purple Scripting
+						h5.purple Scripting
 						p
-							| HTML5 • CSS3 • JS • PHP • ActionScript • Ruby On Rails • Slim Lang
+							| HTML5 • CSS3/Sass • JS • PHP • ActionScript • Ruby On Rails • Slim Lang
 						.row
 							.about-skills
 								ul#selector
@@ -69,9 +76,9 @@ section.skillset
 			.col-md-4
 				.row
 					.skillset-info
-						h4.purple Web Tools
+						h5.purple Web Tools
 						p
-							| Google Analytics • Responsive Web Design • Twitter Bootstrap • SEO • Social Media • Wordpress • phpMyAdmin • Github
+							| Google Analytics • Responsive Web Design • Twitter Bootstrap • SEO • Social Media • Wordpress • Github
 						.row
 							.about-skills
 								ul#selector
@@ -79,9 +86,9 @@ section.skillset
 			.col-md-4
 				.row
 					.skillset-info
-						h4.purple Software
+						h5.purple Software
 						p
-							| Sublime • Coda • Dreamweaver • Illustrator • Flash • Animate • Adobe XD • InDesign • After Effects • Premeire • Photoshop • Audition
+							| Sublime • Dreamweaver • Illustrator • Adobe XD • Sketch • Animate • InDesign • After Effects • Premeire • Photoshop
 						.row
 							.about-skills
 								ul#selector
