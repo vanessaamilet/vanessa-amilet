@@ -1,7 +1,7 @@
 = metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Designer & Developer", description: "Vanessa Amilet is a Houston freelance web designer & developer helping businesses and organizations in different industries.", keywords: [:keywords, "web design services", "responsive web design", "houston web design", "wordpress web design", "wordpress themes", "vanessa amilet", "#vanessaamilet", "freelance web designer", "freelance developer"]
 </header>
 /!  Section Main Content 
-section.about.center
+section.about
 	h1 About Vanessa Amilet
 	p.lead Graphics • Web • Front-End Development • Media
 
@@ -10,15 +10,15 @@ section
 	.container
 		.row
 			.col-md-12
-				p.lead.center
+				p.lead.text-center
 					| I am a award winning designer & developer based in Houston, Texas with a good business judgement and a sense of responsibility. My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
 section.wheel-house
 	.container
 		.row
+			.col-md-12
+				h2 My Wheel House
+		.row
 			.col-md-7
-				/ p.lead
-				/ 	| I am a award winning designer & developer based in Houston, Texas with a good business judgement and a sense of responsibility. My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design. 
-				h3  My Wheel House
 				ul
 					li Branding & Logo
 					li Interface Design
@@ -29,12 +29,6 @@ section.wheel-house
 					li Iconography
 					li Multimedia
 			.col-md-5
-				.about-me
-					ul
-						li 
-							p 
-								i.fa.fa-pencil
-								span Design
 			
 section.process
 	.container
@@ -43,7 +37,7 @@ section.process
 				h2 Process
 		.row
 			.col-md-3
-				= render :partial => "shared/wireframe"
+				/ = render :partial => "shared/wireframe"
 				h5 WIREFRAMING
 				p The sketching of wireframes is integral in the beginning to realize concepts and ideas into readable, managed design.
 			.col-md-3
@@ -78,7 +72,7 @@ section.skillset
 					.skillset-info
 						h5.purple Web Tools
 						p
-							| Google Analytics • Responsive Web Design • Twitter Bootstrap • SEO • Social Media • Wordpress • Github
+							| Google Analytics • Twitter Bootstrap • Wordpress • Github • SEO • Social Media
 						.row
 							.about-skills
 								ul#selector
@@ -88,7 +82,7 @@ section.skillset
 					.skillset-info
 						h5.purple Software
 						p
-							| Sublime • Dreamweaver • Illustrator • Adobe XD • Sketch • Animate • InDesign • After Effects • Premeire • Photoshop
+							| Sublime • Illustrator • Adobe XD • Sketch • Animate • InDesign • After Effects • Premeire • Photoshop
 						.row
 							.about-skills
 								ul#selector
@@ -97,13 +91,13 @@ section.skillset
 .resume
 	.container
 		.row
-			.col-lg-12
-				h2.center Resume
-				= link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "http://www.vanessaamilet.com/about/resume.pdf", :class => "center"
+			.col-lg-12.text-center
+				h2 Resume
+				= link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "http://www.vanessaamilet.com/about/resume.pdf"
 		.row
 			.col-md-4
 				.resume-info
-					h4 Experiences
+					h4 Experience
 
 					h5 Web Developer
 					p
@@ -115,23 +109,17 @@ section.skillset
 						= link_to "832Video", "http://www.832video.com"
 					p June 2015 - Present
 
-					h5
-						i.fa.fa-desktop
-						|  Freelance Full Stack Designer
+					h5 Freelance Full Stack Designer
 					p
 						= link_to "Vanessa Amilet", "http://www.vanessaamilet.com"
 					p June 2013 - Present
 
-					h5
-						i.fa.fa-desktop
-						|  UX & Web Designer
+					h5 UX & Web Designer
 					p
 						= link_to "Jumpix", "http://www.jumpix.com"
 					p November 2013 - June 2016
 
-					h5
-						i.fa.fa-desktop
-						|  Lead Web & Graphic Designer
+					h5 Lead Web & Graphic Designer
 					p
 						= link_to "ECMG LLC", "http://www.ecmg.com"
 					p November 2013 - June 2016
@@ -140,9 +128,7 @@ section.skillset
 				.resume-info
 					h4 Education
 
-					h5
-						i.fa.fa-graduation-cap
-						|  Bachelor of Fine Arts: Web Design & Interactive Media
+					h5 Bachelor of Fine Arts: Web Design & Interactive Media
 					p The Art Institute of Houston
 					p Summer 2011 - Spring 2014
 
@@ -159,9 +145,7 @@ section.skillset
 					p MarketingSherpa
 					p Sep 2016
 
-					h5
-						i.fa.fa-trophy
-						|  Best of Show - Portfolio Show
+					h5 Best of Show - Portfolio Show
 					p The Art Institute of Houston
 					p June 2014
 
@@ -170,23 +154,19 @@ section.skillset
 				.resume-info
 					h4 Certifications
 
-					h5
+					h6
 						i.fa.fa-certificate
 						|  Git
 					p 
 						= link_to "Code School", ""
 					p November 2016
 
-					h5
-						i.fa.fa-certificate
-						|  HTML/CSS
+					h6 HTML/CSS
 					p 
 						= link_to "TestDome", "http://www.testdome.com//cert/6w7z35sbd2"
 					p November 2015
 
-					h5
-						i.fa.fa-certificate
-						|  HTML/CSS, JS
+					h6 HTML/CSS, JS
 					p 
 						= link_to "TestDome", "http://www.testdome.com//cert/yfv1rwzigh"
 					p November 2015

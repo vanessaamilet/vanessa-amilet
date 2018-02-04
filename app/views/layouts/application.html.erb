@@ -17,9 +17,10 @@
 
  	<!-- Bootstrap core CSS -->
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -64,11 +65,11 @@
 						<div id="logo"></div>
 					<% end %>
 				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					   <span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				<!-- <a class="navbar-brand" href="http://www.vanessaamilet.com/">Vanessa Amilet</a> -->
-				<div class="collapse navbar-collapse float-right d-flex justify-content-end" id="navbarNav">
+
+				<div class="navbar-collapse collapse justify-content-end" id="navbarNav" aria-expanded="false">
 					<ul class="navbar-nav">
 						<li class="<%= 'active' if current_page?(root_path) %> nav-item"><%= link_to "Home", root_path, :class=>"nav-link" %></li>
 						<li class="<%= 'active' if current_page?(about_path) %> nav-item"><%= link_to "About", about_path, :class=>"nav-link" %></li>
@@ -82,5 +83,6 @@
 </div><!--/ #wrap -->
 <!-- <%= render :partial => "shared/preloader" if current_page?(root_path) %> -->
 <%= render :partial => "shared/footer" %>
+<a href="" class="to-top">Scroll</a>
 </body>
 </html>
