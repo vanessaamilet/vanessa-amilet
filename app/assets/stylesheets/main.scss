@@ -25,6 +25,8 @@
 	- Sections
 - Site Navigation
 - Site Footer
+- Homepage
+	- Services
 - Portfolio
 	- Portfolio Template
 - Preloader
@@ -975,15 +977,18 @@ textarea.form-control {
 		}
 	}
 	input {
-		&:focus ~ label/* ,
-		&:valid ~ label  */{
+		&:focus ~ label,
+		&:valid ~ label {
 			top: -20px;
 			font-size: 12px;
-			color: $teal !important;
+			color: $teal!important;
 			font-weight: 600;
 		}
+		&:invalid{
+			color: red;
+		}
 	}
-  textarea{
+	textarea{
 		&:focus ~ label,
 		&:valid ~ label{
 			top: -20px;
@@ -991,6 +996,13 @@ textarea.form-control {
 			color: $teal !important;
 			font-weight: 600;
 		}
+	}
+	.help-block{
+		width: 100%;
+		margin-left: 25px;
+		padding: 10px;
+		color: red;
+		font-size: 12px;
 	}
 }
 
@@ -1215,20 +1227,6 @@ section{
 	color: $black !important;
 }
 
-/*.section-green {
-	background-color: #7DCFB6;
-	padding: 40px 15px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	margin-bottom: 25px;
-	margin-top: 25px;
-	color: #FFF !important;
-}*/
-
 .section-blue {
 	background-color: #00B2CA;
 	background: url(../images/homepage/website-background.svg);
@@ -1270,71 +1268,6 @@ section{
 .section-puple{
 	color: $white !important;
 }
-
-/* ### Homepage */
-
-.services{
-	padding: 40px 0;
-	background: url(/assets/backgrounds/tiny-grid.png);
-	background-repeat: repeat;
-	background-position: center center;
-	h2{
-		margin-bottom: 35px !important;
-	}
-	h4{
-		margin-bottom: .5rem !important;
-	}
-	.service-icon{
-		width: 80px;
-		height: 80px;
-		margin-bottom: 15px;
-		transition: ease-in-out .25s;
-		&:hover {
-		  transition: ease-in-out .25s;
-		  transform: scale(1.1);
-		  -ms-transform: scale(1.1);
-		  -webkit-transform: scale(1.1);
-		}
-	}
-	#design .cls-1,
-	#design .cls-2{
-		fill:none;
-		stroke: $teal;
-		stroke-linecap:round;
-		stroke-linejoin:round;
-		stroke-dasharray: 100;
-		stroke-dashoffset: 1000;
-		stroke-miterlimit: 5;
-		animation: dash 6s linear forwards;
-	}
-	#design .cls-2{
-		fill: none;
-		stroke-width:0.55;
-		stroke-dasharray: 1000;
-		stroke-dashoffset: 1000;
-		stroke-miterlimit: 5;
-		animation: dash 6s linear forwards;
-	}
-
-	#web-dev .cls-2 {
-		fill: none;
-  		stroke: $blue;
-  		stroke-width: 1;
-		stroke-dasharray: 100;
-		stroke-dashoffset: 1000;
-		stroke-miterlimit: 10;
-		animation: dash 10s linear forwards;
-
-	}
-	@keyframes dash {
-	  	from {
-	  		stroke-dasharray: 1000;
-	  	    stroke-dashoffset: 1000; }
-	  	to {
-	  	    stroke-dashoffset: 0; } 
-	}
-}
-
 
 /* ### About */
 
@@ -1664,6 +1597,11 @@ section.contact{
 }
 
 
+.portfolio-template a.nav-link,
+.homepage-template a.nav-link{
+	color: #fff !important;
+}
+
 /* ## Sticky Footer Styles
 -------------------------------------------------- */
 
@@ -1810,25 +1748,97 @@ i.contact {
 
 
 
-/* ## HOME IMAGE
+/* ## Homepage
 -------------------------------------------------- */
+section.home-hero{
+	padding: 100px 0;
+}
 
-.home-image {
-  background: url(homepage/home-img.svg) no-repeat scroll;
+
+.home-hero {
+  background: url(/assets/homepage/homepage-hero-img.jpg) no-repeat scroll;
   margin: 0;
   padding: 0;
   background-size: 100% auto;
   background-size: cover;
   position: relative;
   top: 0;
+  margin-top: -90px;
   left: 0;
   z-index: 1;
-  /*height: 800px;*/
   height: 640px;
-  /*background: url("../images/homepage/home-img.svg") no-repeat scroll 0% 0% / 1520px 640px transparent;*/
+  color: $white;
 }
 
-@media (max-width: 980px) {
+.texture-overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: $purple;
+	background: -moz-linear-gradient(top, $purple 0%, #53c2ca 90%);
+	background: -webkit-linear-gradient(top, $purple 0%,#53c2ca 90%);
+	background: linear-gradient(to bottom, $purple 0%,#53c2ca 90%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$purple', endColorstr='#53c2ca',GradientType=0 );
+	opacity: 0.5;
+}
+
+.intro-wrapper{
+	display: block;
+	position: relative;
+	width: 75%;
+	padding: 0;
+	text-align: center;
+	margin: 100px 0 70px 0;
+	transition: all .3s ease;
+	.logo{
+		margin-bottom: 45px;
+	}
+	.cls-1{
+		fill: $white;
+		stroke: $white;
+		stroke-width: 0.5px;
+		stroke-dasharray: 853;
+		animation: 6s draw forwards;
+	}
+	@keyframes draw {
+		0% {
+			fill-opacity: 0;
+			stroke-dashoffset: 853;
+		}
+		100% {
+			fill-opacity: 1;
+			stroke: $white;
+			stroke-dashoffset: 0;
+			stroke: none;
+		}
+	}
+	h1.lead{
+		font-size: 21px !important;
+		font-weight: 600;
+		-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	}
+	@-webkit-keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+	  	100% {
+			opacity: 1;
+	  	}
+	}
+	@keyframes fade-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
+
+/* @media (max-width: 980px) {
   .home-image {
 	background: url(homepage/home-img-tablet.svg) no-repeat scroll;
 	margin: 0;
@@ -1854,7 +1864,87 @@ i.contact {
 	left: 0;
 	z-index: 1;
   }
+} */
+
+/* ## Services */
+
+.services{
+	padding: 40px 0;
+	background: url(/assets/backgrounds/tiny-grid.png);
+	background-repeat: repeat;
+	background-position: center center;
+	h2{
+		margin-bottom: 35px !important;
+	}
+	h4{
+		margin-bottom: .5rem !important;
+	}
+	.services-icon{
+		display: inline-block;
+		margin-right: 25px;
+		width: 90px;
+		height: 90px;
+		vertical-align: top;
+		text-align: center;
+		font-size: 25px;
+		line-height: 90px;
+	}
+	.services-content{
+		display: inline-block;
+		margin-left: 0;
+		width: 65%;
+	}
+	.service-icon{
+		width: 80px;
+		height: 80px;
+		margin-bottom: 15px;
+		transition: ease-in-out .25s;
+		&:hover {
+		  transition: ease-in-out .25s;
+		  transform: scale(1.1);
+		  -ms-transform: scale(1.1);
+		  -webkit-transform: scale(1.1);
+		}
+	}
+	#design .cls-1,
+	#design .cls-2{
+		fill:none;
+		stroke: $teal;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke-dasharray: 100;
+		stroke-dashoffset: 1000;
+		stroke-miterlimit: 5;
+		animation: dash 6s linear forwards;
+	}
+	#design .cls-2{
+		fill: none;
+		stroke-width:0.55;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		stroke-miterlimit: 5;
+		animation: dash 6s linear forwards;
+	}
+
+	#web-dev .cls-2 {
+		fill: none;
+		stroke: $blue;
+		stroke-width: 1;
+		stroke-dasharray: 100;
+		stroke-dashoffset: 1000;
+		stroke-miterlimit: 10;
+		animation: dash 10s linear forwards;
+
+	}
+	@keyframes dash {
+		from {
+			stroke-dasharray: 1000;
+			stroke-dashoffset: 1000; }
+		to {
+			stroke-dashoffset: 0; } 
+	}
 }
+
 
 
 /* # Portfolio
@@ -1993,11 +2083,6 @@ i.contact {
 
 /* ## Portfolio Template
 --------------------------------------------- */
-
-/* ### Navigation */
-.portfolio-template a.nav-link{
-	color: #fff !important;
-}
 
 section.portfolio-info{
 	padding: 60px 0;

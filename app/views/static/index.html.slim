@@ -1,8 +1,14 @@
 = metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Designer & Developer", description: "Portfolio of Vanessa Amilet, a freelance web designer & developer based in Houston, providing custom web and graphic design services to businesses nationwide.", keywords: [:keywords, "web design services", "responsive web design", "houston web design", "wordpress web design", "wordpress themes", "vanessa amilet", "#vanessaamilet", "amilet", "freelance web designer", "freelance developer"]
-
+= content_for :body_class, 'homepage-template'
 /!  Section Main Content 
-.section-main.homepage
-	.home-image
+section.home-hero.center
+	.texture-overlay
+	.container
+		.row
+			.col-lg-12.col-md-12
+				.intro-wrapper
+					= render :partial => "shared/svg"
+					h1.lead WEB DESIGNER & DEVELOPER
 </header>
 /!.section-gray
 	.container
@@ -23,22 +29,28 @@ section.services
 			.col-lg-12
 				h2.center Services
 		.row
-			.col-md-4.center
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.74 28.78" class="img-responsive service-icon" id="design"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Desgin_Icon" data-name="Desgin Icon"><path id="Path_20" data-name="Path 20" class="cls-1" d="M24.42,25.41s0-4.3,3.82-5.26c-4.78-4.78-8.6-13.86-8.6-13.86s-3.82,8.6-8.6,13.39c3.82,1,3.82,5.74,3.82,5.74"/><line id="Line_2" data-name="Line 2" class="cls-2" x1="19.64" y1="17.76" x2="19.64" y2="6.28"/><rect id="Rectangle_47" data-name="Rectangle 47" class="cls-1" x="18.27" y="1.06" width="2.72" height="2.72" transform="translate(4.04 14.6) rotate(-45)"/><circle id="Ellipse_43" data-name="Ellipse 43" class="cls-1" cx="1.47" cy="2.46" r="0.96"/><line id="Line_3" data-name="Line 3" class="cls-1" x1="17.72" y1="2.46" x2="2.43" y2="2.46"/><circle id="Ellipse_44" data-name="Ellipse 44" class="cls-2" cx="19.64" cy="19.67" r="1.91"/><path id="Path_21" data-name="Path 21" class="cls-1" d="M13.9,28.28v-1H25.37v1"/><path id="Path_22" data-name="Path 22" class="cls-1" d="M17.72,2.46A15.28,15.28,0,0,0,2.43,17.73s0,0,0,0"/><rect id="Rectangle_48" data-name="Rectangle 48" class="cls-1" x="1.06" y="18.27" width="2.72" height="2.72" transform="translate(-13.17 7.47) rotate(-45)"/></g></g></g></svg>
-				/ = image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
-				h4 Graphic Design
-				p I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
+			.col-md-4
+				.services-icon
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.74 28.78" class="img-responsive service-icon" id="design"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Desgin_Icon" data-name="Desgin Icon"><path id="Path_20" data-name="Path 20" class="cls-1" d="M24.42,25.41s0-4.3,3.82-5.26c-4.78-4.78-8.6-13.86-8.6-13.86s-3.82,8.6-8.6,13.39c3.82,1,3.82,5.74,3.82,5.74"/><line id="Line_2" data-name="Line 2" class="cls-2" x1="19.64" y1="17.76" x2="19.64" y2="6.28"/><rect id="Rectangle_47" data-name="Rectangle 47" class="cls-1" x="18.27" y="1.06" width="2.72" height="2.72" transform="translate(4.04 14.6) rotate(-45)"/><circle id="Ellipse_43" data-name="Ellipse 43" class="cls-1" cx="1.47" cy="2.46" r="0.96"/><line id="Line_3" data-name="Line 3" class="cls-1" x1="17.72" y1="2.46" x2="2.43" y2="2.46"/><circle id="Ellipse_44" data-name="Ellipse 44" class="cls-2" cx="19.64" cy="19.67" r="1.91"/><path id="Path_21" data-name="Path 21" class="cls-1" d="M13.9,28.28v-1H25.37v1"/><path id="Path_22" data-name="Path 22" class="cls-1" d="M17.72,2.46A15.28,15.28,0,0,0,2.43,17.73s0,0,0,0"/><rect id="Rectangle_48" data-name="Rectangle 48" class="cls-1" x="1.06" y="18.27" width="2.72" height="2.72" transform="translate(-13.17 7.47) rotate(-45)"/></g></g></g></svg>
+					/ = image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
+				.services-content
+					h4 Graphic Design
+					p I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
 	
-			.col-md-4.center
+			.col-md-4
 				/ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.67 27.57" class="img-responsive service-icon" id="web-dev"><defs><style>.cls-1{fill:#179dd9;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Web"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1-2"><path class="cls-1" d="M15.83,20.86a.55.55,0,1,0-.55-.55h0A.55.55,0,0,0,15.83,20.86Z"/><path class="cls-1" d="M7.07,7.62a.55.55,0,1,0,.55.55.55.55,0,0,0-.55-.55Z"/><path class="cls-1" d="M3.4,5.4,5.31,3a.56.56,0,1,0-.91-.65h0L2.26,5.09a.54.54,0,0,0,0,.68L4.4,8.51a.55.55,0,0,0,.86-.68Z"/><path class="cls-1" d="M7.07,2.14a.55.55,0,0,0-.55.55h0V6a.55.55,0,0,0,1.1,0h0V2.69a.55.55,0,0,0-.55-.55Z"/><path class="cls-1" d="M10.4,7.62H9.26a.55.55,0,0,0,0,1.1H10.4a.55.55,0,0,0,0-1.1Z"/><path class="cls-1" d="M13.64,7.62h-1.1a.55.55,0,0,0,0,1.1h1.1a.55.55,0,0,0,0-1.1Z"/><path class="cls-2" d="M11.25,25.88H20.4a3.84,3.84,0,0,1-1.48-3.28H12.74A3.85,3.85,0,0,1,11.25,25.88Z"/><path class="cls-2" d="M21.86,26h-12a.55.55,0,1,0,0,1.1h12a.55.55,0,0,0,0-1.1Z"/><path class="cls-2" d="M.5,21.13A1.38,1.38,0,0,0,1.86,22.5H29.8a1.37,1.37,0,0,0,1.37-1.37V18.67H.5Z"/><path class="cls-2" d="M29.8.5H1.86A1.37,1.37,0,0,0,.5,1.86V18.57H31.17V1.87A1.37,1.37,0,0,0,29.8.5Z"/></g></g></g></g></svg>
-				= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
-				h4 Web Development
-				p I create clean elegant websites with modern technologies such as HTML5, CSS3, JavaScript, Bootstrap, and much more.
+				.services-icon
+					= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
+				.services-content
+					h4 Web Development
+					p I create clean elegant websites with modern technologies such as HTML5, CSS3, JavaScript, Bootstrap, and much more.
 			
-			.col-md-4.center
-				= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
-				h4 Media & Interactivity
-				p I also create videos, animations, and e-learning applications using tools such as Adobe Animate, Premiere, and After Effects.
+			.col-md-4
+				.services-icon
+					= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
+				.services-content
+					h4 Media & Interactivity
+					p I also create videos, animations, and e-learning applications using tools such as Adobe Animate, Premiere, and After Effects.
 		br
 		.row
 			.col-lg-12

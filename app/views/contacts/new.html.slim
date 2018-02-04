@@ -25,7 +25,7 @@ section
 					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
 
 			.col-lg-6
-				= simple_form_for @contact, :html => {:class => 'form-horizontal', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
+				= simple_form_for @contact, :html => {:class => 'form-horizontal needs-validation', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
 					
 					= f.input :name do
 						span.input-group-addon#basic-addon1
@@ -36,7 +36,7 @@ section
 					= f.input :email do
 						span.input-group-addon#basic-addon2
 							i.fa.fa-at
-						= f.input :email, :label => false, :placeholder => "Email" , :hint => false, :wrapper => false, :error => false
+						= f.input :email, :label => false, :hint => false, :wrapper => false, :error => false
 						span.bar
 
 					= f.input :phone do
