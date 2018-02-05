@@ -15,7 +15,11 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'simple_form', '~> 3.5'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+#gem 'sqlite3'
+
+# Use PostgreSQL as the database for Active Record
+gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -54,5 +58,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Use sqlite3 as the database for Active Record
+  # gem 'sqlite3'
 end
+
+# group :production do
+#     gem 'pg'
+# end
 
