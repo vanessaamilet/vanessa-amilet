@@ -2648,7 +2648,7 @@ section.showcase{
 	overflow:hidden;
 	text-indent:100%;
 	white-space:nowrap;
-	background: url("/assets/to-top.svg") no-repeat center 50%;
+	background: url(asset_path('to-top.svg')) no-repeat center 50%;
 	visibility:hidden;
 	opacity:0;
 	-webkit-transition:all .3s;
