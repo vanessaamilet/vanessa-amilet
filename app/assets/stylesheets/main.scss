@@ -1239,7 +1239,7 @@ section{
 
 .about{
 	background-color: $purple;
-	background: url(/assets/backgrounds/tiny-grid.png);
+	background: url(asset_path('backgrounds/tiny-grid.png'));
 	background-attachment: fixed;
 	background-repeat: repeat;
 	background-position: center center;
@@ -1310,7 +1310,7 @@ section{
 
 .portfolio{
 	padding: 40px 0;
-	background: url(/assets/backgrounds/tiny-grid.png);
+	background: url(asset_path('backgrounds/tiny-grid.png'));
 	background-repeat: repeat;
 	background-position: center center;
 	h2{
@@ -1702,7 +1702,8 @@ section.home-hero{
 }
 
 .home-hero {
-	background: url(/assets/homepage/homepage-hero-img.jpg) no-repeat scroll;
+	background: url(asset_path('homepage/homepage-hero-img.jpg')) no-repeat scroll;
+	/* background: url(/assets/homepage/homepage-hero-img.jpg) no-repeat scroll; */
 	margin: 0;
 	padding: 0;
 	background-size: cover;
@@ -1831,7 +1832,7 @@ section.home-hero{
 
 .services{
 	padding: 40px 0;
-	background: url(/assets/backgrounds/tiny-grid.png);
+	background: url(asset_path('backgrounds/tiny-grid.png'));
 	background-repeat: repeat;
 	background-position: center center;
 	h2{
