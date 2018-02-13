@@ -31,6 +31,9 @@ Rails.application.routes.draw do
   match '/contact',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
+  # get 'contact', to: 'contact#new', as: 'new_message'
+  # post 'contact', to: 'contact#create', as: 'create_message'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

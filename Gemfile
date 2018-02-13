@@ -18,7 +18,7 @@ gem 'simple_form', '~> 3.5'
 # gem 'sqlite3', group: :development
 
 # Use PostgreSQL as the database for Active Record
-# gem 'pg'
+#gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -64,6 +64,7 @@ group :development, :test do
 end
 
 group :production do
-    gem 'pg'
+    gem 'pg', '~> 0.18'
+    gem 'rails_12factor'
 end
 
