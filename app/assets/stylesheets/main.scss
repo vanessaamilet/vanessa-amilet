@@ -2429,7 +2429,7 @@ section.showcase{
 }
 
 .tch{
-	background: url(/assets/portfolio-backgrounds/background-tch.jpg) !important;
+	background: url(asset_path('/assets/portfolio-backgrounds/background-tch.jpg')) !important;
 	background-size: cover !important;
 	background-repeat: no-repeat;
 }
