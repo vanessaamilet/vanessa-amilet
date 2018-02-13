@@ -951,6 +951,11 @@ textarea.form-control {
 	}
 }
 
+.form-control.is-invalid{
+	color: red;
+}
+
+
 // The Styles for the form
 fieldset {
 	margin: $mf-fieldset-margin;
@@ -1139,10 +1144,6 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after{
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
-	.col-md-4{
-		flex: 1;
-		padding: 16px;
-	}
 }
 
 
@@ -2283,6 +2284,10 @@ section.portfolio-info{
 	background-image: url(asset_path('hero-images/village-clothier-hero-bg.jpg'));
 }
 
+#portfolio-snapple .portfolio-img {
+	background-color: #EAB00F;
+}
+
 /* ### Colors */
 
 section.colors{
@@ -2354,6 +2359,8 @@ section.fonts{
 	}
 	img{
 		margin: 15px;
+		max-height: 190px;
+		width: auto;
 	}
 }
 
