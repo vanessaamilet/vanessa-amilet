@@ -2372,6 +2372,8 @@ section.fonts{
 
 section.showcase{
 	background: $light-gray;
+	background-size: cover !important;
+	background-repeat: no-repeat;
 	img{
 		width: 750px;
 		height: auto;
@@ -2380,76 +2382,43 @@ section.showcase{
 
 .ecmg{
 	background: url(asset_path('portfolio-backgrounds/background-ecmg.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .hcss{
 	background: url(asset_path('portfolio-backgrounds/background-hcss.jpg'))  !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .lsc{
 	background: url(asset_path('portfolio-backgrounds/background-lsc.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .agency-832video{
 	background: url(asset_path('portfolio-backgrounds/background-832video.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .leeward-team{
 	background: url(asset_path('portfolio-backgrounds/background-leewardteam.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .jumpix{
 	background: url(asset_path('portfolio-backgrounds/background-jumpix.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .greenwood{
 	background: url(asset_path('portfolio-backgrounds/background-greenwood.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .captivecolour{
 	background: url(asset_path('portfolio-backgrounds/background-captivecolour.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .hcss-careers{
 	background: url(asset_path('portfolio-backgrounds/background-hcss-careers.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .tch{
 	background: url(asset_path('portfolio-backgrounds/background-tch.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .village-clothier{
 	background: url(asset_path('portfolio-backgrounds/background-village-clothier.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
 .ibo{
 	background: url(asset_path('portfolio-backgrounds/background-ibuildohio.jpg')) !important;
-	background-size: cover !important;
-	background-repeat: no-repeat;
 }
-
+.ugm{
+	background-image: url(asset_path('hero-images/ugm-hero-bg.jpg')) !important;
+}
 
 /* # Preloader
 ---------------------------------------------------------------------------------------------------- */
