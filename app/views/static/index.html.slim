@@ -38,7 +38,6 @@ section.services
 					p I design and create graphics using Adobe Illustrator, Photoshop, and InDesign.
 	
 			.col-md-4
-				/ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.67 27.57" class="img-responsive service-icon" id="web-dev"><defs><style>.cls-1{fill:#179dd9;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Web"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1-2"><path class="cls-1" d="M15.83,20.86a.55.55,0,1,0-.55-.55h0A.55.55,0,0,0,15.83,20.86Z"/><path class="cls-1" d="M7.07,7.62a.55.55,0,1,0,.55.55.55.55,0,0,0-.55-.55Z"/><path class="cls-1" d="M3.4,5.4,5.31,3a.56.56,0,1,0-.91-.65h0L2.26,5.09a.54.54,0,0,0,0,.68L4.4,8.51a.55.55,0,0,0,.86-.68Z"/><path class="cls-1" d="M7.07,2.14a.55.55,0,0,0-.55.55h0V6a.55.55,0,0,0,1.1,0h0V2.69a.55.55,0,0,0-.55-.55Z"/><path class="cls-1" d="M10.4,7.62H9.26a.55.55,0,0,0,0,1.1H10.4a.55.55,0,0,0,0-1.1Z"/><path class="cls-1" d="M13.64,7.62h-1.1a.55.55,0,0,0,0,1.1h1.1a.55.55,0,0,0,0-1.1Z"/><path class="cls-2" d="M11.25,25.88H20.4a3.84,3.84,0,0,1-1.48-3.28H12.74A3.85,3.85,0,0,1,11.25,25.88Z"/><path class="cls-2" d="M21.86,26h-12a.55.55,0,1,0,0,1.1h12a.55.55,0,0,0,0-1.1Z"/><path class="cls-2" d="M.5,21.13A1.38,1.38,0,0,0,1.86,22.5H29.8a1.37,1.37,0,0,0,1.37-1.37V18.67H.5Z"/><path class="cls-2" d="M29.8.5H1.86A1.37,1.37,0,0,0,.5,1.86V18.57H31.17V1.87A1.37,1.37,0,0,0,29.8.5Z"/></g></g></g></g></svg>
 				.services-icon
 					= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
 				.services-content
@@ -69,7 +68,10 @@ section.reviews
 							| Show More
 						#more.collapse
 							| She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors. Vanessa Amilet Santos is the reason I am getting such positive feedback after launching the new Leeward Team company website."
-						footer.blockquote-footer Julyan Lee - Founder, <cite title="Source Title">The Leeward Team</cite>
+						footer.blockquote-footer 
+							| Julyan Lee - Founder, 
+							cite
+								= link_to "The Leeward Team", "http://leewardteam.com/"
 
 
 			.col-md-6
@@ -78,7 +80,8 @@ section.reviews
 						p "Vanessa is AMAZING to work with! Her work is professional and creative and the final results of my completed website is outstanding. I have received numerous compliments about the layout and design. I highly recommend Vanessa for Website design! My recommendation is not only for her creativity and professionalism but also because of her patience and willingness to work with my budget! :)"
 						footer.blockquote-footer 
 							| Kristie C. - Founder, 
-							cite Kristie Inc.
+							cite 
+								= link_to "Kristie Inc.", "http://kristieinc.com/"
 
 
 
