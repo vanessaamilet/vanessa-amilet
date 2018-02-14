@@ -1,5 +1,32 @@
-flash.each do |name, msg|
-	<div class="alert alert-<%= name == :notice ? "success" : "error" %>">
-	   <a class="close" data-dismiss="alert">×</a>
-	      <%= msg %>
-	</div>
+</header>
+section.contact
+	.container
+		h1 Let's Build Something Together
+		p.lead For a project quotation, or to learn more about me, please fill out the form. I will contact you as soon as possible!
+/!  Begin Page Content
+section
+	.container
+		.row
+			.col-md-6
+				h3 Get In Touch
+				p Feel free to say hello via the form. Please allow up to 48 hours to respond to your message.
+				p 
+					| Want to setup a time to talk?  
+					= link_to "Click here", "https://calendly.com/vanessa-amilet"
+					|  to schedule a consultation.
+				p 
+					| You can also check out the 
+					= link_to "FAQs", faqs_path 
+					|  page to see if your question has been answered.
+	
+				h6 Hate filling out forms? Email Me: 
+				p 
+					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
+			.col-lg-6
+				<% flash.each do |key, value| %>
+					<div>
+					   <a href="#" data-dismiss="alert">×</a>
+						  <%= value %>
+					</div>
+				<% end %>
+				

@@ -28,8 +28,8 @@ Rails.application.routes.draw do
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/faqs' => 'static#faqs'
 
-  match '/contact',     to: 'contacts#new',             via: 'get'
-  resources "contacts", only: [:new, :create]
+  match '/contact', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:create]
 
   # get 'contact', to: 'contact#new', as: 'new_message'
   # post 'contact', to: 'contact#create', as: 'create_message'
