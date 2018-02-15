@@ -69,4 +69,19 @@ section.showcase.jumpix
 		.row
 			.col-lg-12
 				= image_tag "portfolio-showcases/jumpix-showcase.png", :class=>"img-fluid center-img", :alt=>"Jumpix Showcase"
-			
+				<!-- Button trigger modal -->
+				button.btn-play.mx-auto type="button" data-toggle="modal" data-target="#videoModal"
+
+/! Modal
+.modal.fade#videoModal tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+	.modal-content
+	  .modal-header
+		h5.modal-title id="videoModalTitle"
+			| Jumpix Animation Video
+		button type="button" class="close" data-dismiss="modal" aria-label="Close"
+		  <span aria-hidden="true">&times;</span>
+	  .modal-body
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/OXDCorXseHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	  .modal-footer
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

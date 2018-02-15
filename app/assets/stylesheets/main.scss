@@ -602,6 +602,7 @@ a {
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
+    display: block;
     position: relative;
     vertical-align: center;
     -webkit-transition: background-color .4s ease,-webkit-box-shadow .6s ease,-webkit-transform .4s ease;
@@ -2441,6 +2442,11 @@ section.showcase{
 }
 .jumpix{
 	background: url(asset_path('portfolio-backgrounds/background-jumpix.jpg')) !important;
+	.btn-play{
+		position: absolute;
+		top: 40%;
+		left: 45%;
+	}
 }
 .greenwood{
 	background: url(asset_path('portfolio-backgrounds/background-greenwood.jpg')) !important;
