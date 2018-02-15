@@ -10,18 +10,18 @@ $('#toggle').click(function() {
 /* ## Preloader
 ---------------------------------------------------------------------------------------------------- */
 
-$(window).load(function() {
+/*$(window).load(function() {
 	$("#status").delay(2e3).fadeOut("slow"),
 	$("#preloader").delay(1400).fadeOut("slow")
 }),
 $(window).scroll(function() {
 	$(this).scrollTop() > 50 ? $(".before-color").addClass("after-color") : $(".before-color").removeClass("after-color")
-});
+});*/
 
 /* ## Smooth Scrolling
 ---------------------------------------------------------------------------------------------------- */
 
-$(function() {
+$(document).on('turbolinks:load', function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -40,7 +40,7 @@ $(function() {
 /* ## Scroll to Top
 ---------------------------------------------------------------------------------------------------- */
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
 	// Scroll (in pixels) after which the "To Top" link is shown
 	var offset = 300,
 		//Scroll (in pixels) after which the "back to top" link opacity is reduced
@@ -67,4 +67,20 @@ $(document).ready(function(){
 		);
 	});
 
+});
+
+/* ## Bootstrap Modal
+---------------------------------------------------------------------------------------------------- */
+
+$(document).on('turbolinks:load', function(){
+    $('.modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
+
+        $(this).on('click', function(){
+
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
 });
