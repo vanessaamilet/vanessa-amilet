@@ -2462,7 +2462,10 @@ section.showcase{
 	background: url(asset_path('hero-images/ibo-hero-bg.jpg')) !important;
 }
 .ugm{
-	background-image: url(asset_path('hero-images/ugm-hero-bg.jpg')) !important;
+	background: url(asset_path('hero-images/ugm-hero-bg.jpg')) !important;
+	background-position: center center;
+	min-height: 400px;
+	padding: 150px 0;
 }
 .snapple{
 	background: url(asset_path('portfolio-backgrounds/background-snapple.jpg')) !important;
