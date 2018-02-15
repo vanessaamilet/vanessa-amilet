@@ -62,5 +62,20 @@ section.fonts
 section.showcase.tch
 	.container
 		.row
-			.col-lg-12
-				= image_tag "portfolio-showcases/ecmg-showcase.png", :class=>"img-fluid center-img", :alt=>"TCH Showcase"
+			.mx-auto
+				<!-- Button trigger modal -->
+				button.btn-play type="button" data-toggle="modal" data-target="#videoModal"
+
+/! Modal
+.modal.fade#videoModal tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true"
+  .modal-dialog.modal-dialog-centered role="document"
+	.modal-content
+	  .modal-header
+		h5.modal-title id="videoModalTitle"
+			| Snapple Commercial
+		button type="button" class="close" data-dismiss="modal" aria-label="Close"
+		  <span aria-hidden="true">&times;</span>
+	  .modal-body
+		<iframe src="https://player.vimeo.com/video/146439786" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	  .modal-footer
+		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
