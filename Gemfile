@@ -14,6 +14,9 @@ gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'simple_form', '~> 3.5'
 
+gem 'mailgun-ruby', '~>1.1.6'
+gem "figaro"
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', group: :development
 
