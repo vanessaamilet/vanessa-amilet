@@ -1908,7 +1908,12 @@ section.home-hero{
 	.services-content{
 		display: inline-block;
 		margin-left: 0;
-		width: 65%;
+		p{
+			margin-bottom: 2em;
+		}
+		@media (max-width: 768px){
+			width: 65%;
+		}
 	}
 	.service-icon{
 		width: 80px;
@@ -1971,6 +1976,7 @@ section.home-hero{
 
 .reviews .card{
 	padding: 20px;
+	margin-bottom: 30px;
 }
 
 
