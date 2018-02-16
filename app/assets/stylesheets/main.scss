@@ -2141,6 +2141,9 @@ section.portfolio-info{
 	.btn-viewport-discover {
 		bottom: 15px;
 	}
+	@media (max-width:981px){
+		margin-top: -236px;
+	}
 }
 	
 .portfolio-hero{
@@ -2152,6 +2155,9 @@ section.portfolio-info{
 	text-align: center;
 	width: 100%;
 	padding: 60px 0;
+	@media (max-width:981px){
+		padding: 220px 0 100px 0;
+	}
 	.logo, h1{
 		max-width: 300px;
 		max-height: 350px;
