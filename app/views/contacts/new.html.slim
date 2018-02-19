@@ -25,12 +25,18 @@ section
 					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
 
 			.col-lg-6
+				- flash.each do |key, value| %
+					- if value.is_a?(String)
+					    	div.alert.fade.show
+					    		<a class="close" href="#" data-dismiss="alert">×</a>
+					        	= content_tag :div, value, :id => "flash_#{key}"
+				
 				= simple_form_for @contact, :html => {:class => 'form-horizontal needs-validation', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
 					
 					= f.input :name do
 						span.input-group-addon#basic-addon1
 							i.fa.fa-user
-						= f.input :name, :label => false ,:hint => false, :wrapper => false, :error => false, :class=>"validate"
+						= f.input :name, :label => false ,:hint => false, :wrapper => false, :error => false, :class=>"validate", :required => true
 						span.bar
 
 					= f.input :email do
@@ -39,16 +45,16 @@ section
 						= f.input :email, :label => false, :hint => false, :wrapper => false, :error => false
 						span.bar
 
-					= f.input :phone do
+					= f.input :phone_number do
 						span.input-group-addon#basic-addon3
 							i.fa.fa-phone
-						= f.input :phone, :label => false, :hint => false, :wrapper => false, :error => false
+						= f.input :phone_number, :label => false, :hint => false, :wrapper => false, :error => false
 						span.bar
 
 					= f.input :message do
 						span.input-group-addon#basic-addon4
 							i.fa.fa-envelope
-						= f.input :message, label: 'Message/Describe your project.', :as => :text, :input_html => {:rows => 10, :placeholder =>"" }, :wrapper => false
+						= f.input :message, label: 'Message/Describe your project.', :as => :text, :input_html => {:rows => 10, :placeholder =>"" }, :wrapper => false,  :required => true
 
 					.hidden
 					  = f.input :nickname, :hint => 'Leave this field blank!'
