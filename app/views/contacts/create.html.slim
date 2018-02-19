@@ -23,9 +23,9 @@ section
 				p 
 					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
 			.col-lg-6
-				- flash.each do |name, msg| %
-					- if msg.is_a?(String)
-					    	div, :html => {:class => "alert alert-#{name == :notice ? "success" : "error"}"}
+				- flash.each do |key, value| %
+					- if value.is_a?(String)
+					    	div.alert
 					    		<a class="close" href="#" data-dismiss="alert">×</a>
-					        	= content_tag :div, msg, :id => "flash_#{name}"
+					        	= content_tag :div, value, :id => "flash_#{key}"
 				
