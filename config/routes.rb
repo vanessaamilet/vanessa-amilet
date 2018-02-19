@@ -22,17 +22,12 @@ Rails.application.routes.draw do
   get '/portfolio/snapple-video' => 'static#portfolio_snapple'
   get '/portfolio/hcss-ugm-video' => 'static#portfolio_ugm_video'
   get '/portfolio/village-clothier' => 'static#portfolio_village_clothier'
-
-
-  # get '/contact'     => 'static#contact'
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/faqs' => 'static#faqs'
 
   match '/contact', to: 'contacts#new', via: 'get'
   resources "contacts", only: [:create]
 
-  # get 'contact', to: 'contact#new', as: 'new_message'
-  # post 'contact', to: 'contact#create', as: 'create_message'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
