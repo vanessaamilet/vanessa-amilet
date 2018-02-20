@@ -1,10 +1,10 @@
 class ContactsController < ApplicationController
-  def new
+    def new
       @contact = Contact.new
     end
 
     def create
-      @contact = Contact.new contact_params
+      @contact = Contact.new(contact_params)
       @contact.request = request
       if @contact.deliver
       	flash.now[:error] = nil

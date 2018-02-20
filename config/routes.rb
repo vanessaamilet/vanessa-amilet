@@ -25,8 +25,10 @@ Rails.application.routes.draw do
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/faqs' => 'static#faqs'
 
+  resources :contacts, only: :create
   match '/contact', to: 'contacts#new', via: 'get'
-  resources "contacts", only: [:create]
+  #resources "contacts", only: [:create]
+
 
 
   # Example of regular route:

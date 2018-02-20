@@ -42,13 +42,13 @@ section
 					= f.input :email do
 						span.input-group-addon#basic-addon2
 							i.fa.fa-at
-						= f.input :email, :label => false, :hint => false, :wrapper => false, :error => false
+						= f.input :email, :label => false, :hint => false, :wrapper => false, :error => false, :required => true
 						span.bar
 
 					= f.input :phone_number do
 						span.input-group-addon#basic-addon3
 							i.fa.fa-phone
-						= f.input :phone_number, :label => false, :hint => false, :wrapper => false, :error => false
+						= f.input :phone_number, as: :tel, :label => false, :hint => false, :wrapper => false, :error => true, :type => "tel", :required => true
 						span.bar
 
 					= f.input :message do
