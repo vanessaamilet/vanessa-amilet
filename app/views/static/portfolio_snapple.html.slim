@@ -33,7 +33,7 @@ section.portfolio-info#info
 			.col-lg-12
 				.center
 					p.lead This is a 30 second commercial that I made for my After Effects class while attending the Art Institute of Houston. I decided to make a commercial of the Snapple beverages. The Snapple Illustrations were all created using Adobe Illustrator. The logo is a copyright of Snapple Beverage Corp.
-					p.offline Temporarily Offline
+					= link_to "Watch Video »", '#video'
 
 section.colors
 	.container
@@ -64,7 +64,7 @@ section.fonts
 			.col-md-6
 				= image_tag "typography/roboto-type.svg", :class=>"img-responsive center-block"
 
-section.showcase.snapple.align-middle
+section.showcase.snapple.align-middle#video
 	.container
 		.row
 			.mx-auto

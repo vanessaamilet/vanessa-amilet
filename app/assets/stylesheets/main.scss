@@ -1801,6 +1801,9 @@ section.home-hero{
 	}
 	.logo{
 		margin-bottom: 45px;
+		@media (max-width: 768px){
+			margin-bottom: 15px;
+		}
 	}
 	.cls-1{
 		fill: $white;
@@ -1826,6 +1829,9 @@ section.home-hero{
 		font-weight: 600;
 		-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 			animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			@media (max-width: 768px){
+				font-size: 16px !important;
+			}
 	}
 	@-webkit-keyframes fade-in {
 		0% {
