@@ -7,6 +7,11 @@ class ContactsController < ApplicationController
       @contact = Contact.new(contact_params)
       @contact.request = request
       if @contact.deliver
+      	name = params[:contact][:name]
+      	email = params[:contact][:email]
+      	#phone = params[:contact][:phone_number]
+      	body = params[:contact][:message]
+      	ContactMailer.contact_email(name, email, body).deliver
       	# flash.now[:error] = nil
        	# flash.now[:notice] = 'Thank you for your message. I will contact you soon!'
        	flash[:success] = "Thank you for your message. I will contact you soon!"
