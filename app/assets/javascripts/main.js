@@ -84,3 +84,22 @@ $(document).on('turbolinks:load', function(){
         });
     });
 });
+
+
+/* ## Detect Snooping Web Developers
+---------------------------------------------------------------------------------------------------- */
+
+var counter = 0,
+    back = !1;
+
+$(window).resize(function () {
+    var e = $(window).width();
+    if (counter == 3) {
+        alert("Hey, stop messing around. It's responsive, I promise.")
+        counter++
+    } else if (!back && e < 450) back = !0;
+    else if (back && e > 700) {
+        back = !1;
+        counter++
+    }
+});

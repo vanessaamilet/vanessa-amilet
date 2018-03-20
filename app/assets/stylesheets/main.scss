@@ -66,6 +66,25 @@ $mf-font-size: 1rem !default;
 $mf-active-font-size: $mf-font-size * 0.8 !default;
 $mf-active-top: -$mf-font-size !default;
 
+/* ## Font Weights
+--------------------------------------------- */
+$hairline-weight: 100;
+$thin-weight:     200;
+$light-weight:    300;
+$normal-weight:   400;
+$medium-weight:   500;
+$semibold-weight: 600;
+$bold-weight:     700;
+$xbold-weight:    800;
+$black-weight:    900;
+
+//** Synonyms
+$regular-weight:    $normal-weight;
+$book-weight:       $light-weight;
+$xlight-weight:     $hairline-weight;
+$ultralight-weight: $hairline-weight;
+$heavy-weight:      $xbold-weight;
+
 /* ## Margin & Paddings
 --------------------------------------------- */
 $mf-gap: $mf-font-size * 1.5 !default;
@@ -121,6 +140,7 @@ input[type="search"]{
 
 /* ## Fonts
 --------------------------------------------- */
+//** Order matters: normal, bold, italic, bold+italic
 
 @font-face {  
 	font-family: 'Gotham';  
@@ -134,16 +154,6 @@ input[type="search"]{
 
 @font-face {  
 	font-family: 'Gotham';  
-	src: font-url('Gotham-BookItalic.eot');  
-	src: font-url('Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),  
-		 font-url('Gotham-BookItalic.woff') format('woff'),  
-		 font-url('Gotham-BookItalic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {  
-	font-family: 'Gotham';  
 	src: font-url('Gotham-Bold.eot');  
 	src: font-url('Gotham-Bold.eot?#iefix') format('embedded-opentype'),  
 		 font-url('Gotham-Bold.woff') format('woff'),  
@@ -151,6 +161,16 @@ input[type="search"]{
 	font-weight: 700; 
 	font-weight: bold; 
 	font-style: normal;
+}
+
+@font-face {  
+	font-family: 'Gotham';  
+	src: font-url('Gotham-BookItalic.eot');  
+	src: font-url('Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),  
+		 font-url('Gotham-BookItalic.woff') format('woff'),  
+		 font-url('Gotham-BookItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
 }
 
 /* @font-face {  
