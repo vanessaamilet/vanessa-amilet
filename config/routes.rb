@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'
   get '/portfolio/snapple-video' => 'static#portfolio_snapple'
   get '/portfolio/hcss-ugm-video' => 'static#portfolio_ugm_video'
+  get '/portfolio/crossroads-decision' => 'static#portfolio_crossroads_decision'
   get '/portfolio/village-clothier' => 'static#portfolio_village_clothier'
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/faqs' => 'static#faqs'
