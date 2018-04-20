@@ -1211,6 +1211,12 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after{
 	flex-wrap: wrap;
 }
 
+.container{
+	@media (max-width: 767px){
+		padding: 0 25px;
+	}
+}
+
 
 /* ## Hero Units
 --------------------------------------------- */
