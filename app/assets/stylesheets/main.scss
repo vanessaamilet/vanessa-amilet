@@ -53,6 +53,7 @@ $bondi-blue: #01A3B2;
 $bg-color: #fff;
 //** Global text color on `<body>`.
 $text-color: #000;
+$link-color: $purple;
 
 
 /* ## Fonts
@@ -1362,7 +1363,7 @@ section{
 	h5{
 		span{
 			font-size: 28px;
-			color: $purple;
+			color: $dark-blue;
 		}
 	}
 }
