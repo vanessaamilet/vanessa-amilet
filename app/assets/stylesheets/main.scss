@@ -63,6 +63,8 @@ $facebook: #3b5998;
 $youtube: #bb0000;
 $linkedin: #007bb5;
 $instagram: #fb3958;
+$github: $black;
+$google: #d34836;
 
 
 /* ## Fonts
@@ -822,17 +824,17 @@ a {
 
 .social-media-linkedin i {
 	background-color: #ffffff !important;
-	color: #0077B5;
+	color: $linkedin;
 }
 
 .social-media-facebook i {
 	background-color: #ffffff !important;
-	color: #3B5998;
+	color: $facebook;
 }
 
 .social-media-twitter i {
 	background-color: #ffffff;
-	color: #55acee;
+	color: $twitter;
 }
 
 .social-media-google i {
@@ -842,23 +844,23 @@ a {
 
 .social-media-github i {
 	background-color: #ffffff;
-	color: #000000;
+	color: $github;
 }
 
 .social-media-linkedin i:hover {
-	background-color: #0077B5 !important;
+	background-color: $linkedin !important;
 	color: #ffffff;
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .social-media-facebook i:hover {
-	background-color: #3B5998 !important;
+	background-color: $facebook !important;
 	color: #ffffff;
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 .social-media-twitter i:hover {
-	background-color: #55acee;
+	background-color: $twitter;
 	color: #ffffff;
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1827,22 +1829,22 @@ section.contact{
 
   .social li {
 	&.facebook {
-		background-color: #3c5fac;
+		background-color: $facebook;
 	}
 	&.twitter {
-		background-color: #00aced;
+		background-color: $twitter;
 	}
 	&.linkedin {
-		background-color: #2089b5;
+		background-color: $linkedin;
 	}
 	&.google-plus {
 		background-color: #c63d2d;
 	}
 	&.instagram {
-		background-color: #fb3958;
+		background-color: $instagram;
 	}
 	&.github {
-		background-color: #000;
+		background-color: $github;
 	}
 	a {
 		color: $white !important;
