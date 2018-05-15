@@ -1322,7 +1322,7 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after{
 /* ## Sections
 -------------------------------------------------- */
 section{
-	padding: 40px 0;
+	padding: 50px 0;
 }
 
 .section-gray {
@@ -2026,7 +2026,7 @@ section.home-hero{
 		margin-bottom: 35px !important;
 	}
 	h4{
-		margin-bottom: .5rem !important;
+		margin-bottom: 1rem !important;
 	}
 	.services-icon{
 		display: inline-block;
@@ -2051,7 +2051,7 @@ section.home-hero{
 	.service-icon{
 		width: 80px;
 		height: 80px;
-		margin-bottom: 15px;
+		margin-bottom: 1.5rem;
 		transition: ease-in-out .25s;
 		&:hover {
 		  transition: ease-in-out .25s;
