@@ -35,7 +35,7 @@
 - Alerts
 */
 
-/* # Variables
+/* # Variables & Mixins
 ---------------------------------------------------------------------------------------------------- */
 
 /* ## Colors
@@ -52,8 +52,17 @@ $bondi-blue: #01A3B2;
 //** Background color for `<body>`.
 $bg-color: #fff;
 //** Global text color on `<body>`.
-$text-color: #000;
+$text-color: $black;
 $link-color: $purple;
+
+$color-primary: $purple;
+
+//** Social Media Colors
+$twitter: #55acee;
+$facebook: #3b5998;
+$youtube: #bb0000;
+$linkedin: #007bb5;
+$instagram: #fb3958;
 
 
 /* ## Fonts
@@ -98,6 +107,82 @@ $mf-radio-margin: $mf-font-size / -4 !default;
 /* ## Animation
 --------------------------------------------- */
 $mf-transition-speed: 0.28s !default;
+
+/* ## Media Queries
+--------------------------------------------- */
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+/* ## Z-Index
+--------------------------------------------- */
+
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+    "outdated-browser",
+    "modal",
+    "site-header",
+    "page-wrapper",
+    "site-footer"
+);
+
+/* ## Misc
+--------------------------------------------- */
+
+@mixin antialias {
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-size($sizes) {
+	@each $breakpoint, $size in $sizes {
+		@if $breakpoint == base {
+			font-size: $size;
+		} @else {
+			@include mq($breakpoint) {
+				font-size: $size;
+			}
+		}
+	}
+}
+
+@mixin selection {
+	::-moz-selection { @content; }
+	::selection { @content; }
+}
+
+@mixin unselectable {
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+
 
 
 /* # HTML5 Reset
