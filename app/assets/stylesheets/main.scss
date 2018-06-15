@@ -6,7 +6,12 @@
 /* # Table of Contents
 - Variables
 	- Colors
-	- Fonts
+	- Font Sizes
+	- Font Weights
+	- Margins & Paddings
+	- Media Queries
+	- Z-ondex
+	- Misc
 - HTML5 Reset
 	- Box Sixing
 - Defaults
@@ -54,8 +59,6 @@ $bg-color: #fff;
 //** Global text color on `<body>`.
 $text-color: $black;
 $link-color: $purple;
-
-$color-primary: $purple;
 
 //** Social Media Colors
 $twitter: #55acee;
@@ -480,7 +483,7 @@ h2 {
 	font-size: 3rem;
 	font-weight: $semibold-weight !important;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	letter-spacing: 2px;
 }
 
 h3{
@@ -1451,6 +1454,9 @@ section{
 		span{
 			font-size: 28px;
 			color: $dark-blue;
+			-webkit-text-stroke-color: $dark-blue;
+			-webkit-text-stroke-width: 1px;
+			color: transparent;
 		}
 	}
 }
