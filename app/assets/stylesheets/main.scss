@@ -277,7 +277,7 @@ input[type="search"]{
 	src: font-url('Gotham-BoldItalic.eot');  
 	src: font-url('Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'),  
 		 font-url('Gotham-BoldItalic.woff') format('woff'),  
-		 font-url('Gotham-BoldItalic.ttf') format('truetype'),  
+		 font-url('Gotham-BoldItalic.ttf') format('truetype'); 
 	font-weight: $bold-weight;
 	font-style: italic;
 }
