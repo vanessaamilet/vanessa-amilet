@@ -100,6 +100,12 @@ $xlight-weight:     $hairline-weight;
 $ultralight-weight: $hairline-weight;
 $heavy-weight:      $xbold-weight;
 
+/* ## Font Styles
+--------------------------------------------- */
+$normal-style: normal;
+$italic-style: italic;
+$bold-style: bold;
+
 /* ## Margin & Paddings
 --------------------------------------------- */
 $mf-gap: $mf-font-size * 1.5 !default;
@@ -266,15 +272,15 @@ input[type="search"]{
 	font-style: italic;
 }
 
-/* @font-face {  
+@font-face {  
 	font-family: 'Gotham';  
-	src: url('/assets/Gotham-BoldItalic.eot');  
-	src: url('/assets/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'),  
-		 url('/assets/Gotham-MediumItalic.woff') format('woff'),  
-		 url('/assets/Gotham-MediumItalic.ttf') format('truetype'),  
+	src: font-url('Gotham-BoldItalic.eot');  
+	src: font-url('Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'),  
+		 font-url('Gotham-BoldItalic.woff') format('woff'),  
+		 font-url('Gotham-BoldItalic.ttf') format('truetype'),  
 	font-weight: $bold-weight;
 	font-style: italic;
-} */
+}
 
 @font-face {  
 	font-family: 'Gotham';  
