@@ -164,6 +164,7 @@ $z-indexes: (
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 @mixin font-size($sizes) {
@@ -180,6 +181,7 @@ $z-indexes: (
 
 @mixin selection {
 	::-moz-selection { @content; }
+	::-webkit-selection { @content }
 	::selection { @content; }
 }
 
@@ -300,7 +302,7 @@ input[type="search"]{
 	src: font-url('Gotham-Light.eot?#iefix') format('embedded-opentype'),  
 		 font-url('Gotham-Light.woff') format('woff'),  
 		 font-url('Gotham-Light.ttf') format('truetype');
-	font-weight: 300;
+	font-weight: $light-weight;
 	font-style: normal;
 }
 
@@ -323,12 +325,10 @@ body {
 	font-family: $gotham;
 	font-size: 14px;
 	line-height: 1.42857143;
-	font-weight: 500;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	font-weight: $medium-weight;
 	color: $text-color;
 	background: $bg-color;
+	@include antialias
 }
 
 a,
@@ -359,17 +359,7 @@ a {
 	}
 }
 
-::selection {
-	color: $white;
-	background: none repeat scroll 0 0 $teal;
-}
-
-::-moz-selection{
-	color: $white;
-	background: none repeat scroll 0 0 $teal;
-}
-
-::-webkit-selection{
+@include selection {
 	color: $white;
 	background: none repeat scroll 0 0 $teal;
 }
@@ -394,7 +384,7 @@ img::selection {
 
 b,
 strong {
-	font-family: "Gotham", sans-serif;
+	font-family: $gotham;
 	font-weight: $bold-weight;
 }
 
@@ -402,8 +392,8 @@ blockquote,
 cite,
 em,
 i {
-	font-family: "Gotham", sans-serif;
-	font-weight: 300;
+	font-family: $gotham;
+	font-weight: $light-weight;
 	font-style: italic;
 }
 
