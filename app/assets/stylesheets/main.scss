@@ -2469,8 +2469,13 @@ section.portfolio-info{
 	background-image: url(asset_path('hero-images/greenwood-hero-bg.jpg'));
 }
 
-#portfolio-captivecolour .portfolio-img {
-	background-image: url(asset_path('hero-images/captivecolour-hero-bg.jpg'));
+#portfolio-captivecolour {
+	.portfolio-img {
+		background-image: url(asset_path('hero-images/captivecolour-hero-bg.jpg'));
+	}
+	.logo{
+		max-width: 450px !important;
+	}
 }
 
 #portfolio-hcsscareers .portfolio-img {
