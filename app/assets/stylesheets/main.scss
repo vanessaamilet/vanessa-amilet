@@ -2474,7 +2474,7 @@ section.portfolio-info{
 		background-image: url(asset_path('hero-images/captivecolour-hero-bg.jpg'));
 	}
 	.logo{
-		max-width: 450px !important;
+		max-width: 420px !important;
 	}
 }
 
@@ -2516,7 +2516,7 @@ section.colors{
 			width: 150px;
 			height: 150px;
 			margin: 0 auto;
-			background-color: #fff;
+			background-color: $white;
 			box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.25);
 			border-radius: 50%;
 			position: relative;
