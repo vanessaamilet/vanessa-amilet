@@ -1940,7 +1940,7 @@ section.home-hero{
 	.cls-1{
 		fill: $white;
 		stroke: $white;
-		stroke-width: 0.5px;
+		stroke-width: 0.25px;
 		stroke-dasharray: 853;
 		animation: 6s draw forwards;
 	}
@@ -1953,7 +1953,7 @@ section.home-hero{
 			fill-opacity: 1;
 			stroke: $white;
 			stroke-dashoffset: 0;
-			/* stroke: none; */
+			// stroke: none;
 		}
 	}
 	h1.lead{
