@@ -17,7 +17,7 @@ gem 'slim-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
-gem 'bootstrap', '~> 4.0.0.beta3'
+gem "bootstrap", ">= 4.1.2"
 
 # Gems for Contact Form & Mail
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
