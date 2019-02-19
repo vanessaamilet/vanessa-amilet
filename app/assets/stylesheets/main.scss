@@ -55,7 +55,7 @@ $dark-blue: #1676D3;
 $teal: #53C2CA;
 $bondi-blue: #01A3B2;
 //** Background color for `<body>`.
-$bg-color: #fff;
+$bg-color: $white;
 //** Global text color on `<body>`.
 $text-color: $black;
 $link-color: $purple;
@@ -508,7 +508,7 @@ h6{
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: $semibold-weight;
-	color: #000;
+	color: $black;
 }
 
 .header-divider {
@@ -2383,7 +2383,7 @@ section.portfolio-info{
 		line-height: 60px;
 		color: #f4f3f5;
 		text-decoration: none;
-		background-color: #000;
+		background-color: $black;
 		background-color: rgba(0,0,0,.1);
 		border-radius: 100px;
 		-webkit-transition: background-color .4s ease,-webkit-box-shadow .6s ease,-webkit-transform .4s ease;
