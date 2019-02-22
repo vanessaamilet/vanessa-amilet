@@ -584,7 +584,7 @@ h6{
 	color: $blue !important;
 	transition: all 0.2s linear;
 	font-weight: $bold-weight;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	&:hover, &:focus {
 		border: 1px solid #0192CE;
 		border-bottom: 3px solid #0192CE;
@@ -602,7 +602,7 @@ h6{
 	color: $purple !important;
 	transition: all 0.2s linear;
 	font-weight: $bold-weight;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	&:hover, &:focus {
 		border: 1px solid #5244AC;
 		border-bottom: 3px solid #5244AC;
@@ -692,7 +692,7 @@ a {
 	-webkit-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 	font-weight: $bold-weight;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	&:hover, &:focus {
 		border: 1px solid #53C2CA;
 		border-bottom: 3px solid $bondi-blue;
