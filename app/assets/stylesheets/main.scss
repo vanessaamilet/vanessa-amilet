@@ -430,21 +430,21 @@ caption, th {
 }
 
 q {
-  &:before, &:after {
-	content: '';
-  }
+	&:before, &:after {
+		content: '';
+	}
 }
 
 abbr, acronym {
-  border: 0;
+	border: 0;
 }
 
 section, header {
-  display: block;
+	display: block;
 }
 
 .clr {
-  clear: both;
+	clear: both;
 }
 
 .hidden{
@@ -609,73 +609,73 @@ h6{
 }
 
 a {
-  &.btn-about {
-	color: #E6929A !important;
-	background-color: $white;
-	box-shadow: none;
-	border: 1px solid #E6929A;
-	border-bottom: 5px solid #CC7981;
-	font-size: 21px;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 15px 0px;
-	margin-bottom: 20px;
-	display: block;
-	border-radius: 8px;
-	text-decoration: none;
-	-webkit-transition: background-color 0.3s, color 0.3s;
-	-moz-transition: background-color 0.3s, color 0.3s;
-	-ms-transition: background-color 0.3s, color 0.3s;
-	transition: background-color 0.3s, color 0.3s;
-	&:hover, &:focus, &:active, &.active {
-		background-color: #E3868F;
-		color: $white !important;
+	&.btn-about {
+		color: #E6929A !important;
+		background-color: $white;
+		box-shadow: none;
+		border: 1px solid #E6929A;
 		border-bottom: 5px solid #CC7981;
+		font-size: 21px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 15px 0px;
 		margin-bottom: 20px;
 		display: block;
 		border-radius: 8px;
 		text-decoration: none;
-		background-color: #E6929A;
-		box-shadow: none;
-		transform: scale(1.02);
-		-webkit-transform: scale(1.02);
-		-moz-transform: scale(1.02);
-		-ms-transform: scale(1.02);
+		-webkit-transition: background-color 0.3s, color 0.3s;
+		-moz-transition: background-color 0.3s, color 0.3s;
+		-ms-transition: background-color 0.3s, color 0.3s;
+		transition: background-color 0.3s, color 0.3s;
+		&:hover, &:focus, &:active, &.active {
+			background-color: #E3868F;
+			color: $white !important;
+			border-bottom: 5px solid #CC7981;
+			margin-bottom: 20px;
+			display: block;
+			border-radius: 8px;
+			text-decoration: none;
+			background-color: #E6929A;
+			box-shadow: none;
+			transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-moz-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+		}
+		&:focus {
+			border-bottom: 5px solid #E3868F;
+		}
 	}
-	&:focus {
-		border-bottom: 5px solid #E3868F;
+	&.btn-contact {
+		background-color: $white !important;
+		color: #70BAA4 !important;
+		font-size: 21px;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 15px 0px;
+		border: 1px solid #70BAA4;
+		border-bottom: 5px solid #70BAA4;
+		margin-bottom: 20px;
+		display: block;
+		border-radius: 8px;
+		text-decoration: none;
+		-webkit-transition: background-color 0.3s, color 0.3s;
+		-moz-transition: background-color 0.3s, color 0.3s;
+		-ms-transition: background-color 0.3s, color 0.3s;
+		transition: background-color 0.3s, color 0.3s;
+		&:hover, &:focus, &:active, &.active {
+			color: $white !important;
+			background-color: #7DCFB6 !important;
+			box-shadow: none;
+			transform: scale(1.02);
+			-webkit-transform: scale(1.02);
+			-moz-transform: scale(1.02);
+			-ms-transform: scale(1.02);
+		}
+		&:focus {
+			border-bottom: 5px solid #7DCFB6;
+		}
 	}
-  }
-  &.btn-contact {
-	background-color: $white !important;
-	color: #70BAA4 !important;
-	font-size: 21px;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 15px 0px;
-	border: 1px solid #70BAA4;
-	border-bottom: 5px solid #70BAA4;
-	margin-bottom: 20px;
-	display: block;
-	border-radius: 8px;
-	text-decoration: none;
-	-webkit-transition: background-color 0.3s, color 0.3s;
-	-moz-transition: background-color 0.3s, color 0.3s;
-	-ms-transition: background-color 0.3s, color 0.3s;
-	transition: background-color 0.3s, color 0.3s;
-	&:hover, &:focus, &:active, &.active {
-		color: $white !important;
-		background-color: #7DCFB6 !important;
-		box-shadow: none;
-		transform: scale(1.02);
-		-webkit-transform: scale(1.02);
-		-moz-transform: scale(1.02);
-		-ms-transform: scale(1.02);
-	}
-	&:focus {
-		border-bottom: 5px solid #7DCFB6;
-	}
-  }
 }
 
 .btn-contact{
@@ -832,11 +832,6 @@ a {
 	color: $twitter;
 }
 
-.social-media-google i {
-	background-color: $white;
-	color: #d34836;
-}
-
 .social-media-github i {
 	background-color: $white;
 	color: $github;
@@ -856,12 +851,6 @@ a {
 
 .social-media-twitter i:hover {
 	background-color: $twitter;
-	color: $white;
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-}
-
-.social-media-google i:hover {
-	background-color: #d34836;
 	color: $white;
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1400,7 +1389,6 @@ section{
 
 .skillset{
 	background-color: $black;
-	//background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23444444' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
 	padding: 40px 0;
 	color: $white;
 	h2{
@@ -1920,6 +1908,9 @@ i.contact {
 -------------------------------------------------- */
 section.home-hero{
 	padding: 100px 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 .home-hero {
@@ -1935,6 +1926,7 @@ section.home-hero{
 	left: 0;
 	z-index: 1;
 	height: 640px;
+	height: 92vh;
 	color: $white;
 	@media (max-width: 981px){
 		margin-top: -236px;
@@ -1965,6 +1957,7 @@ section.home-hero{
 	transition: all .3s ease;
 	@media (max-width: 981px){
 		margin-top: 200px;
+		width: 90%;
 	}
 	.logo{
 		margin-bottom: 45px;
