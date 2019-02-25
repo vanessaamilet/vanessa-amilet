@@ -54,13 +54,14 @@ section.services
 		.row
 			.col-lg-12
 				.text-center
-					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline"
+					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
+					= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
 section.reviews
 	.container
 		.row
 			h3.center.mx-auto What Clients Are Saying
-		.row
-			.col-md-6
+		.row.d-flex
+			.col-md-6.row-eq-height
 				.card
 					.card-body
 						p "I am extremely happy to provide a recommendation for the web development services that Vanessa Amilet Santos provided. My current website was created in 2014 and I felt it was time for an update. My cry for help was answered by Vanessa Amilet Santos. From the initial meeting where she explained her services and capabilities to the final design and launch, Vanessa Amilet Santos was exceptional. The best part about the experience was the collaboration and recommendations she provided.
@@ -74,9 +75,9 @@ section.reviews
 								= link_to "The Leeward Team", "http://leewardteam.com/"
 
 
-			.col-md-6
+			.col-md-6.row-eq-height
 				.card
-					.card-body
+					.card-body.align-middle
 						p "Vanessa is AMAZING to work with! Her work is professional and creative and the final results of my completed website is outstanding. I have received numerous compliments about the layout and design. I highly recommend Vanessa for Website design! My recommendation is not only for her creativity and professionalism but also because of her patience and willingness to work with my budget! :)"
 						footer.blockquote-footer 
 							| Kristie C. - Founder, 
