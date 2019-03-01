@@ -1281,6 +1281,16 @@ textarea:focus ~ .bar:before, textarea:focus ~ .bar:after{
 	display: -ms-flexbox;
 	display:         flex;
 	flex-wrap: wrap;
+	>.col{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: stretch;
+		-webkit-align-items: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+	}
 }
 
 .container{

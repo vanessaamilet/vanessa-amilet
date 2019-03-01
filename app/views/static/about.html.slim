@@ -6,7 +6,13 @@ section.about
 		h1 About Vanessa Amilet
 		p.lead Graphics • Web • Front-End Development • Media
 
-/!  Begin Page Content 
+/!  Begin Page Content
+/ .container-fluid.d-flex.h-100
+/ 	.row.justify-content-center.h-100
+/ 		.col-6.p-5
+/ 		 	p.lead
+/ 				| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
+/ 		.col-6
 section
 	.container
 		.row
@@ -66,7 +72,7 @@ section.process
 	.container
 		.row
 			.col-lg-12
-				h2 Process
+				h2 My Process
 		.row
 			.col-md-3
 				/ = render :partial => "shared/wireframe"
@@ -182,7 +188,7 @@ section.skillset
 		.row
 			.col-lg-12.text-center
 				h2 Resume
-				= link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "/resume.pdf"
+				/ = link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "/resume.pdf"
 		.row
 			.col-lg-4
 				.resume-info
