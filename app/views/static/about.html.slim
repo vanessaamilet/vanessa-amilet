@@ -7,68 +7,112 @@ section.about
 		p.lead Graphics • Web • Front-End Development • Media
 
 /!  Begin Page Content
-.d-none
-	.container-fluid.d-flex.h-100
-		.row.justify-content-center.h-100
-			.col-6.p-5
-				p.lead
-					| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
-			.col-6
-section
-	.container
-		.row
-			.col-md-12
-				p.lead.text-center
-					| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
-section.wheel-house
-	.container
-		.row
-			.col-md-12
-				h2 My Wheel House
-		.row
-			.col-md-3
-				li 
-					p 
-						= image_tag "about/wheel-house-branding.svg", :class=>"img-responsive"
+.wheel-house.container-fluid.d-flex
+	.row.justify-content-center
+		.col-md-6.col-img
+			.texture-overlay
+		.col-md-6.p-5
+			p.lead
+				| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
+			br
+			h5 My Wheel House
+			.row
+				.col-sm-6
+					li 
+						p 
+							= image_tag "about/wheel-house-branding.svg", :class=>"img-responsive"
+							| Branding
+				.col-sm-6
+					li 
+						p
+							= image_tag "about/wheel-house-development.svg", :class=>"img-responsive"
+							| Development
+				.col-sm-6
+					li 
+						p
+							= image_tag "about/wheel-house-interface.svg", :class=>"img-responsive"
+							| Design
+				.col-sm-6
+					li 
+						p
+							= image_tag "about/wheel-house-wordpress.svg", :class=>"img-responsive"
+							| Wordpress
+				.col-sm-6
+					li
+						p
+							= image_tag "about/wheel-house-woocommerce.svg", :class=>"img-responsive"
+							| E-Commerce
+				.col-sm-6
+					li
+						p
+							= image_tag "about/wheel-house-illustration.svg", :class=>"img-responsive"
+							| Illustration
+				.col-sm-6
+					li 
+						p
+							= image_tag "about/wheel-house-media.svg", :class=>"img-responsive"
+							| Multimedia
+				.col-sm-6
+					li 
+						p
+							= image_tag "about/wheel-house-icon.svg", :class=>"img-responsive"
+							| Iconography
+/!		
+	section
+		.container
+			.row
+				.col-md-12
+					p.lead.text-center
+						| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
+	section.wheel-house
+		.container
+			.row
+				.col-md-12
+					h2 My Wheel House
+			.row
+				.col-md-3
+					li 
+						p 
+							= image_tag "about/wheel-house-branding.svg", :class=>"img-responsive"
 
-						| Branding & Logo
-			.col-md-3
-				li 
-					p
-						= image_tag "about/wheel-house-development.svg", :class=>"img-responsive"
-						| Development
-			.col-md-3
-				li 
-					p
-						= image_tag "about/wheel-house-wordpress.svg", :class=>"img-responsive"
-						| Wordpress
-			.col-md-3
-				li
-					p
-						= image_tag "about/wheel-house-woocommerce.svg", :class=>"img-responsive"
-						| E-Commerce
-		.row
-			.col-md-3
-				li
-					p
-						= image_tag "about/wheel-house-illustration.svg", :class=>"img-responsive"
-						| Illustration
-			.col-md-3
-				li 
-					p
-						= image_tag "about/wheel-house-icon.svg", :class=>"img-responsive"
-						| Iconography
-			.col-md-3
-				li 
-					p
-						= image_tag "about/wheel-house-interface.svg", :class=>"img-responsive"
-						| Interface Design
-			.col-md-3
-				li 
-					p
-						= image_tag "about/wheel-house-media.svg", :class=>"img-responsive"
-						| Multimedia
-			
+							| Branding
+				.col-md-3
+					li 
+						p
+							= image_tag "about/wheel-house-development.svg", :class=>"img-responsive"
+							| Development
+				.col-md-3
+					li 
+						p
+							= image_tag "about/wheel-house-wordpress.svg", :class=>"img-responsive"
+							| Wordpress
+				.col-md-3
+					li
+						p
+							= image_tag "about/wheel-house-woocommerce.svg", :class=>"img-responsive"
+							| E-Commerce
+			.row
+				.col-md-3
+					li
+						p
+							= image_tag "about/wheel-house-illustration.svg", :class=>"img-responsive"
+							| Illustration
+				.col-md-3
+					li 
+						p
+							= image_tag "about/wheel-house-icon.svg", :class=>"img-responsive"
+							| Iconography
+				.col-md-3
+					li 
+						p
+							= image_tag "about/wheel-house-interface.svg", :class=>"img-responsive"
+							| Interface Design
+				.col-md-3
+					li 
+						p
+							= image_tag "about/wheel-house-media.svg", :class=>"img-responsive"
+							| Multimedia
+				
 section.process
 	.container
 		.row
@@ -102,7 +146,7 @@ section.skillset
 	.container
 		.row
 			.col-lg-12
-				h2 Skillset
+				h2 Favorite Tools
 		.row.row-eq-height
 			.col-md-3.col-sm-4.col-6
 				ul

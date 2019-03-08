@@ -1,12 +1,14 @@
 = metamagic meta title: "Portfolio | Vanessa Amilet - Web & Graphic Design Services", description: "Results of experience helping businesses with their web presence. View my design portfolio, experience and other resources.", keywords: ["web design services", "responsive web design", "houston web design", "wordpress web design", "custom wordpress themes", "vanessa amilet", "#vanessaamilet", "freelance web designer", "freelance developer", "graphic design"]	
 </header>
-section.section-teal
+section.section-teal.d-flex.justify-content-center
 	.container
 		.row.center.text-center
-			h1 My Work
-			span.lead I like to challenge myself by experimenting with different web technologies. My specific skills and experience allows me to deal with different types of projects. I have been involved in projects such as static and dynamic websites, graphics, and interactive media.
-			br
-			= link_to "View Skills »", about_path, :class=>"text-center"
+			.col-md-10.offset-md-1
+				h1 My Work
+				span.lead I like to challenge myself by experimenting with different web technologies. My specific skills and experience allows me to deal with different types of projects. I have been involved in projects such as static and dynamic websites, graphics, and interactive media.
+				br
+				= link_to "View Skills »", about_path, :class=>"text-center"
+			.col-2
 
 /!  Begin Page Content
 section.portfolio
