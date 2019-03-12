@@ -1,9 +1,11 @@
 = metamagic meta title: "Contact | Vanessa Amilet - Web & Graphic Design Services"
 </header>
-section.contact
+section.contact.d-flex.justify-content-center
 	.container
-		h1 Lets Work Together
-		p.lead For a project quotation, or to learn more about me, please fill out the form. I will contact you as soon as possible!
+		.row.center.text-center
+			.col-md-10.offset-md-1
+				h1 Lets Work Together
+				p.lead For a project quotation, or to learn more about me, please fill out the form. I will contact you as soon as possible!
 /!  Begin Page Content 
 section
 	.container
@@ -24,7 +26,7 @@ section
 				p 
 					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
 
-			.col-lg-6
+			.col-md-6
 				- flash.each do |key, value| %
 					- if value.is_a?(String)
 					    	div.alert.fade.show
