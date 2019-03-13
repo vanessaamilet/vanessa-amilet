@@ -2265,12 +2265,12 @@ section.home-hero{
 			text-align: center;
 			width: auto;
 			max-height: 70px;
-			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-			  filter: grayscale(0%);
+			-webkit-filter: opacity(100%); /* Safari 6.0 - 9.0 */
+			  filter: opacity(100%);
 			  transition: ease-in-out .25s;
 			&:hover{
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(100%);
+				-webkit-filter: opacity(75%); /* Safari 6.0 - 9.0 */
+				filter: opacity(75%);
 			  }
 		}
 	}
