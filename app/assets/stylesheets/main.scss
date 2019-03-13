@@ -486,8 +486,8 @@ h3{
 	font-size: 24px;
 	font-size: 2.4rem;
 	font-weight: $semibold-weight;
-	letter-spacing: 2.4px;
-	text-transform: uppercase;
+	/* letter-spacing: 2.4px;
+	text-transform: uppercase; */
 }
 
 h4{
@@ -1982,6 +1982,8 @@ i.contact {
 
 /* ## Homepage
 -------------------------------------------------- */
+
+/* ### Hero */
 section.home-hero{
 	padding: 100px 0;
 	align-items: center;
@@ -2124,7 +2126,7 @@ section.home-hero{
 }
 
 
-/* ## Services */
+/* ### Services */
 
 .services{
 	padding: 40px 0;
@@ -2136,6 +2138,8 @@ section.home-hero{
 		margin-bottom: 35px !important;
 	}
 	h4{
+		text-transform: capitalize;
+		letter-spacing: normal;
 		margin-bottom: 1rem !important;
 	}
 	.services-icon{
@@ -2209,6 +2213,26 @@ section.home-hero{
 	}
 }
 
+.design-services{
+	background-color: $light-gray;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23f5f7f8' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	h3{
+		font-size: 2.1rem;
+		font-size: 21px;
+	}
+	.row{
+		align-items: center;
+	}
+	.col-img{
+		background-image: url(asset_path('homepage/services-design.jpg'));
+		min-height: 70vh;
+	}
+}
+
 
 /* ## Reviews */
 
@@ -2223,6 +2247,32 @@ section.home-hero{
 	}
 	a:not([href]):not([tabindex]){
 		cursor: pointer;
+	}
+	hr{
+		margin-bottom: 3.5rem;
+	}
+	.client-logos{
+		display: -ms-flexbox;
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		.col-md-3{
+			text-align: center;
+		}
+		img{
+			margin-bottom: 2rem;
+			margin-bottom: 20px;
+			text-align: center;
+			width: auto;
+			max-height: 70px;
+			-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+			  filter: grayscale(0%);
+			  transition: ease-in-out .25s;
+			&:hover{
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
+			  }
+		}
 	}
 }
 

@@ -55,6 +55,36 @@ section.services
 				.text-center
 					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
 					= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
+/!
+	.design-services
+		.container-fluid
+			.row.justify-content-center
+				.col-md-6.p-5
+					h3 Design Services
+					p I design and create graphics and branding collateral using programs such as Adobe Illustrator, Photoshop, and InDesign.
+					ul 
+						li Visual Brand Identity
+						li Print Design
+						li Packaging Design
+						li Vetor Graphics
+						li Iconography
+				.col-md-6.col-img
+					.texture-overlay
+	.design-services
+		.container-fluid
+			.row.justify-content-center
+				.col-md-6.col-img
+				.col-md-6.p-5
+					h3 Web Development Services
+					p I build clean elegant websites using modern technologies such as Bootstrap, Wordpress, Shopify, and much more.
+					ul
+						li Responsive, Mobile-Optimized Websites
+						li Customized Wordpress Websites
+						li E-Commerce
+						li Email Designs
+						li UX/UI Design
+			
+
 section.reviews
 	.container
 		.row
@@ -73,7 +103,6 @@ section.reviews
 							cite
 								= link_to "The Leeward Team", "http://leewardteam.com/"
 
-
 			.col-md-6.row-eq-height
 				.card
 					.card-body.align-middle
@@ -82,7 +111,24 @@ section.reviews
 							| Kristie C. - Founder, 
 							cite 
 								= link_to "Kristie Inc.", "http://kristieinc.com/"
-
+		hr
+		.row.client-logos
+			.col-md-3.col-sm-6
+				= link_to 'http://www.captivecolour.com/' do
+					= image_tag 'client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'
+			.col-md-3.col-sm-6
+				= link_to 'http://www.jumpix.com/' do
+					= image_tag 'client-logos/client-jumpix.svg', alt: 'Jumpix'
+			.col-md-3.col-sm-6
+				= link_to 'http://www.leewardteam.com/' do
+					= image_tag 'client-logos/leewardteam-logo.svg', alt: 'The Leeward Team'
+			.col-md-3.col-sm-6
+				= link_to 'http://www.kristieinc.com/' do
+					= image_tag 'client-logos/client-kristieinc.svg', alt: 'Kristie Inc'
+			/ .col
+			/ 	= link_to 'http://www.kristieinc.com/' do
+			/ 		= image_tag 'client-logos/client-kristieinc.svg', height: 70, alt: 'Kristie Inc'
+			
 
 
 
