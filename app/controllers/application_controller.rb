@@ -14,11 +14,11 @@ class ApplicationController < ActionController::Base
   end
 
   # Force SSL
-  # before_filter :force_ssl
+  before_filter :force_ssl
 
-  # def force_ssl
-  #   if Rails.env.production?
-  #     redirect_to :protocol => 'https' unless request.ssl?
-  #   end
-  # end
+  def force_ssl
+    if Rails.env.production?
+      redirect_to :protocol => 'https' unless request.ssl?
+    end
+  end
 end
