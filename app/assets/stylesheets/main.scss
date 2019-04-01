@@ -1,6 +1,6 @@
 /*! Vanessa Amilet's Custom Bootstrap
  *  by Vanessa A. Santos (@vanessaamilet)
- *  Copyright 2018 Vanessa Amilet
+ *  Copyright 2019 Vanessa Amilet
  */
 
 /* # Table of Contents
@@ -67,7 +67,6 @@ $youtube: #bb0000;
 $linkedin: #007bb5;
 $instagram: #fb3958;
 $github: $black;
-$google: #d34836;
 
 
 /* ## Fonts
@@ -1939,9 +1938,6 @@ section.contact{
 	&.linkedin {
 		background-color: $linkedin;
 	}
-	&.google-plus {
-		background-color: #c63d2d;
-	}
 	&.instagram {
 		background-color: $instagram;
 	}
@@ -2229,7 +2225,41 @@ section.home-hero{
 	}
 	.col-img{
 		background-image: url(asset_path('homepage/services-design.jpg'));
-		min-height: 70vh;
+		min-height: 75vh;
+	}
+	ul{
+		list-style: none;
+		padding-left:2.5rem;
+		margin-bottom: 3rem;
+		li{
+			&:before{
+				// color: $teal;
+				font-family: 'FontAwesome';
+				content: '\f101';
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+
+.development-services{
+	background-color: $light-gray;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23f5f7f8' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	background-repeat: repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	h3{
+		font-size: 2.1rem;
+		font-size: 21px;
+	}
+	.row{
+		align-items: center;
+	}
+	.col-img{
+		background-image: url(asset_path('homepage/services-development.jpg'));
+		background-position: center center;
+		min-height: 75vh;
 	}
 	ul{
 		list-style: none;
