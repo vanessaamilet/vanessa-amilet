@@ -22,68 +22,73 @@ section
 			.col-md-12.text-center
 				p.lead I am an award winning designer & developer based in Houston, Texas. I pride myself on my eagerness and ability to learn. Over the last few years, I have allowed myself to delve into a design and art centric lifestyle. Due to my attention to detail, I am constantly absorbing ideas from everyday life. I am very passionate about my work and driven to satisfy my clients.
 
-
-section.services
-	.container
-		.row
-			.col-lg-12
-				h2.text-center Services
-		.row
-			.col-md-4
-				.services-icon
-					= image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
-				.services-content
-					h4 Graphic Design
-					p I design and create graphics and branding collateral using Adobe Illustrator, Photoshop, and InDesign.
-	
-			.col-md-4
-				.services-icon
-					= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
-				.services-content
-					h4 Web Development
-					p I build clean elegant websites with modern technologies such as Bootstrap, Wordpress, and much more.
-			
-			.col-md-4
-				.services-icon
-					= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
-				.services-content
-					h4 Media & Interactivity
-					p I also create videos and animations using tools such as Adobe Animate, Premiere, and After Effects.
-		br
-		.row
-			.col-lg-12
-				.text-center
-					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
-					= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
 /!
-	.design-services
-		.container-fluid
-			.row.justify-content-center
-				.col-md-6.p-5
-					h3 Design Services
-					p I design and create graphics and branding collateral using programs such as Adobe Illustrator, Photoshop, and InDesign.
-					ul 
-						li Visual Brand Identity
-						li Print Design
-						li Packaging Design
-						li Vetor Graphics
-						li Iconography
-				.col-md-6.col-img
-					.texture-overlay
-	.design-services
+	section.services
+		.container
+			.row
+				.col-lg-12
+					h2.text-center Services
+			.row
+				.col-md-4
+					.services-icon
+						= image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
+					.services-content
+						h4 Graphic Design
+						p I design and create graphics and branding collateral using Adobe Illustrator, Photoshop, and InDesign.
+		
+				.col-md-4
+					.services-icon
+						= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
+					.services-content
+						h4 Web Development
+						p I build clean elegant websites with modern technologies such as Bootstrap, Wordpress, and much more.
+				
+				.col-md-4
+					.services-icon
+						= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
+					.services-content
+						h4 Media & Interactivity
+						p I also create videos and animations using tools such as Adobe Animate, Premiere, and After Effects.
+			br
+			.row
+				.col-lg-12
+					.text-center
+						= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
+						= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
+.services.development-services
 		.container-fluid
 			.row.justify-content-center
 				.col-md-6.col-img
 				.col-md-6.p-5
 					h3 Web Development Services
-					p I build clean elegant websites using modern technologies such as Bootstrap, Wordpress, Shopify, and much more.
+					p A well designed website should be intuitive, inspire trust, promote your brand, and drive conversions and sales. I specialize in creating simple and elegant designs that will get your visitors engaged. I use modern technologies such as Bootstrap, Wordpress, Shopify, and much more.
 					ul
 						li Responsive, Mobile-Optimized Websites
 						li Customized Wordpress Websites
 						li E-Commerce
+						li Website Redesigns
 						li Email Designs
 						li UX/UI Design
-			
+					.text-center
+					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
+					= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
+.services.design-services
+		.container-fluid
+			.row.d-flex.justify-content-center
+				.col-md-6.p-5
+					h3 Design & Media Services
+					p Media is a great way to generate interest in your products and services and drive qualified visitors to your website. I design graphics and branding collateral using programs such as Adobe Illustrator, Photoshop, and InDesign. I also create motion graphic videos and animations using tools such as Adobe Animate, Premiere, and After Effects.
+					ul 
+						li Visual Brand Identity
+						li Print Design
+						li Packaging Design
+						li Vetor Graphics
+						li Short Animation Videos
+						li And More
+					.text-center
+					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
+					= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
+				.col-md-6.col-img
 
 section.reviews
 	.container
