@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # URL Redirect
-  APP_DOMAIN = 'www.vanessaamilet.com'
+  APP_DOMAIN = 'www.amilet.com'
   before_filter :ensure_domain
 
   def ensure_domain

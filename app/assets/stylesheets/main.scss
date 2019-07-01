@@ -2124,7 +2124,7 @@ section.home-hero{
 
 /* ### Services */
 
-.services{
+/* .services{
 	padding: 40px 0;
 	background-color: $light-gray;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23f5f7f8' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
@@ -2207,9 +2207,9 @@ section.home-hero{
 		to {
 			stroke-dashoffset: 0; } 
 	}
-}
+} */
 
-.design-services{
+.services{
 	background-color: $light-gray;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23f5f7f8' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 	background-repeat: repeat;
@@ -2224,8 +2224,10 @@ section.home-hero{
 		align-items: center;
 	}
 	.col-img{
-		background-image: url(asset_path('homepage/services-design.jpg'));
 		min-height: 75vh;
+		@media only screen and (max-width: 767px){
+			min-height: 60vh;
+		}
 	}
 	ul{
 		list-style: none;
@@ -2233,45 +2235,31 @@ section.home-hero{
 		margin-bottom: 3rem;
 		li{
 			&:before{
-				// color: $teal;
 				font-family: 'FontAwesome';
 				content: '\f101';
 				margin-right: 1rem;
 			}
 		}
 	}
-}
-
-.development-services{
-	background-color: $light-gray;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 4 4'%3E%3Cpath fill='%23f5f7f8' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-	background-repeat: repeat;
-	background-position: center center;
-	display: flex;
-	align-items: center;
-	h3{
-		font-size: 2.1rem;
-		font-size: 21px;
+	&.development-services{
+		.col-img{
+			background-image: url(asset_path('homepage/services-development.jpg'));
+			background-position: center center;
+		}
 	}
-	.row{
-		align-items: center;
-	}
-	.col-img{
-		background-image: url(asset_path('homepage/services-development.jpg'));
-		background-position: center center;
-		min-height: 75vh;
-	}
-	ul{
-		list-style: none;
-		padding-left:2.5rem;
-		margin-bottom: 3rem;
-		li{
-			&:before{
-				// color: $teal;
-				font-family: 'FontAwesome';
-				content: '\f101';
-				margin-right: 1rem;
+	&.design-services{
+		.row{
+			@media only screen and (max-width: 767px){
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				flex-direction: column-reverse;
+				-webkit-box-direction: reverse;
+				-ms-flex-direction: column-reverse;
 			}
+		}
+		.col-img{
+			background-image: url(asset_path('homepage/services-design.jpg')) !important;
 		}
 	}
 }
