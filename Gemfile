@@ -22,7 +22,7 @@ gem 'bootstrap', '>= 4.3.1'
 
 # Gems for Contact Form & Mail
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
-gem 'simple_form', '~> 3.5'
+gem 'simple_form', '~> 5.0.0'
 
 gem 'mailgun-ruby', '~>1.1.6'
 gem "figaro"
