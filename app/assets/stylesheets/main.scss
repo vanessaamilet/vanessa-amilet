@@ -2334,8 +2334,19 @@ section.home-hero{
 .portfolio{
 	padding: 40px 70px;
 	.col-md-4{
+		&.load-card{
+			display: none;
+		}
 		@media (max-width: 767px){
 			margin-bottom: 30px;
+		}
+	}
+	a.btn.btn-loadmore{
+		text-align:center;
+		background-color: $purple;
+		color: $white !important;
+		&:hover, &:focus{
+			background-color: #8174D2;
 		}
 	}
 }
@@ -2345,7 +2356,7 @@ section.home-hero{
 	height: 100%;
 	float: left;
 	position: relative;
-	text-align: center;
+	text-align: left;
 	box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
 	transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 	transition-delay: .1s;
@@ -2360,12 +2371,14 @@ section.home-hero{
 		transform: translate(0, -4px);
 		z-index: 999;
 		text-decoration: none !important;
+		cursor: pointer;
 	}
 	.card{
 		border: transparent !important;
 	}
 	.card-body{
-		padding: 2.5rem 1.25rem;
+		//padding: 2.5rem 1.25rem;
+		padding: 2.5rem;
 		h5.card-title, p.card-text{
 			color: $dark-gray !important;
 			&:hover, &:focus{
@@ -2376,21 +2389,6 @@ section.home-hero{
 			font-weight: $normal-style;
 		}
 	}
-	/* .overlay {
-		position: absolute;
-		overflow: hidden;
-		width: 80%;
-		height: 80%;
-		left: 10%;
-		top: 10%;
-		border-bottom: 1px solid $white;
-		border-top: 1px solid $white;
-		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-		transition: opacity 0.35s, transform 0.35s;
-		-webkit-transform: scale(0, 1);
-		-ms-transform: scale(0, 1);
-		transform: scale(0, 1);
-	  } */
 	.card-img-overlay{
 		padding: 2rem;
 	}
@@ -2407,16 +2405,11 @@ section.home-hero{
 		-webkit-transition: -webkit-transform 1.2s ease;
 		-o-transition: -o-transform 1.2s ease;
 		transition: transform 1.2s ease;
-		/* -webkit-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		-o-transform: scale(1.1);
-		transform: scale(1.1); */
+		cursor: pointer;
 	}
 	h2,h5 {
-		text-align: center;
-		position: relative;
+		text-align: left;
 		font-size: 17px;
-		background-color: transparent;
 		/* opacity: 0;
 		filter: alpha(opacity = 0);
 		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
