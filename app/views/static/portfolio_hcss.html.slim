@@ -17,23 +17,30 @@
 section.portfolio-info#info
 	.container
 		.row
-			.col-lg-3
-				h6 Client
-				p HCSS
-			.col-lg-3
-				h6 Year
-				p 2018
-			.col-lg-3
-				h6 Technologies
-				p HTML/CSS, Wordpress, Studiopress Genesis Framework
-			.col-lg-3
-				h6 Services
-				p Website Design & Development, Blog
+			.col-lg-6.py-3.px-lg-5
+				p.lead HCSS provides an entire suite of integrated software to help contractors all the way through project completion, including programs to manage daily activities in the field, track labor and equipment, keep workers safe on the job, and much more. HCSS needed a whole website restructure and redesign that would be more organized, user-friendly, and loaded faster than the previous one.
+				= link_to "View Website »", 'https://www.hcss.com/', target: "_blank"
+			.col-lg-6.py-3.px-lg-5
+				.row
+					.col-sm-6
+						h6 Client
+						p HCSS
+					.col-sm-6
+						h6 Year
+						p 2018 - Present
+				.row
+					.col-sm-6
+						h6 Technologies
+						p HTML/CSS, Wordpress, Studiopress Genesis Framework
+					.col-sm-6
+						h6 Services
+						p Website Design & Development, Blog
+	/!	
 		.row
 			.col-lg-12
 				.center
-					p.lead HCSS provides an entire suite of integrated software to help contractors all the way through project completion, including programs to manage daily activities in the field, track labor and equipment, keep workers safe on the job, and much more.
-					= link_to "View Website »", 'https://www.hcss.com/'
+					p.lead HCSS provides an entire suite of integrated software to help contractors all the way through project completion, including programs to manage daily activities in the field, track labor and equipment, keep workers safe on the job, and much more. HCSS needed a whole website restructure and redesign that would be more organized, user-friendly, and loaded faster than the previous one.
+					= link_to "View Website »", 'https://www.hcss.com/', target: "_blank"
 
 section.colors
 	.container
@@ -42,19 +49,22 @@ section.colors
 				h6 COLORS
 				.col-sm-2.color-palette-container
 					.color-palette style="--color-palette-var: #009639;"
-					p.color-palette-name #009639
+					p.color-palette-name $hcss-green
 				.col-sm-2.color-palette-container
 					.color-palette style="--color-palette-var: #ff9e1b;"
-					p.color-palette-name #ff9e1b
+					p.color-palette-name $orange
+				.col-sm-2.color-palette-container
+					.color-palette style="--color-palette-var: #005eb8;"
+					p.color-palette-name $heavyjob
 				.col-sm-2.color-palette-container
 					.color-palette style="--color-palette-var: #e35205;"
-					p.color-palette-name #e35205
+					p.color-palette-name $dispatcher
 				.col-sm-2.color-palette-container
 					.color-palette style="--color-palette-var: #007681;"
-					p.color-palette-name #007681
+					p.color-palette-name $e360
 				.col-sm-2.color-palette-container
 					.color-palette style="--color-palette-var: #642f6c;"
-					p.color-palette-name #642f6c
+					p.color-palette-name $fuelerplus
 
 section.fonts
 	.container

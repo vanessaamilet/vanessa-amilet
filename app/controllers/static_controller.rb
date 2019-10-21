@@ -20,6 +20,9 @@ class StaticController < ApplicationController
 	def portfolio_greenwood
 	end
 
+	def portfolio_cia
+	end
+
 	def portfolio_ugm
 	end
 	
