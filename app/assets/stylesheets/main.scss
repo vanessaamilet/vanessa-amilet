@@ -2417,6 +2417,9 @@ section.home-hero{
 section.portfolio-info{
 	padding: 60px 0;
 	background: #FAFAFA;
+	.col-md-6, .col-sm-6{
+		margin-bottom: 25px;
+	}
 	h6{
 		font-size: 14px;
 		text-transform: uppercase;
@@ -2435,7 +2438,6 @@ section.portfolio-info{
 		}
 	}
 	p.lead{
-		//margin-top: 35px;
 		font-weight: $medium-weight;
 		text-align: left;
 	}
