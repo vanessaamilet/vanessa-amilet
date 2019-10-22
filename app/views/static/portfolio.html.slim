@@ -46,11 +46,18 @@ section.portfolio
 					
 		.row
 			.col-md-4
-				= link_to portfolio_leeward_team_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
+				= link_to portfolio_cia_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
 				  .card-body
-					h5.card-title The Leeward Team
-					p.card-text Web Design - Wordpress - Graphic Design - Social Media
+						h5.card-title Construction Intern Awards
+						p.card-text Web Design & Development - Wordpress
+						p View Project »
+			.col-md-4
+				= link_to portfolio_joshespin_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-joshespin.jpg", :class=>"card-img", :alt=>"Josh Espinoza Photography"
+				  .card-body
+					h5.card-title Josh Espinoza Photography
+					p.card-text Web Design & Development - Wordpress
 					p View Project »
 			.col-md-4
 				= link_to portfolio_artofgreenwood_path, class: 'portfolio-card card' do
@@ -59,6 +66,22 @@ section.portfolio
 						h5.card-title Art of Greenwood
 						p.card-text Website Design & Development - Wordpress - E-Commerce
 						p View Project »
+					
+		.row
+			.col-md-4
+				= link_to portfolio_tch_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-tch.jpg", :class=>"card-img", :alt=>"Texas Children's Hospital"
+				  .card-body
+					h5.card-title Texas Children's Hospital
+					p.card-text Interactive Media - After Effects
+					p View Project »
+			.col-md-4
+				= link_to portfolio_iba_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
+				  .card-body
+					h5.card-title I Build America
+					p.card-text Web Design & Development - Wordpress
+					p View Project »
 			.col-md-4
 				= link_to portfolio_crossroads_decision_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-crossroads-decision.jpg", :class=>"card-img", :alt=>"Crossroads Decision"
@@ -66,76 +89,75 @@ section.portfolio
 						h5.card-title Crossroads Decision
 						p.card-text Web Design & Development - Wordpress
 						p View Project »
-			
-			/ .col-md-4
-			/ 	.portfolio-card.card.text-white
-			/ 	  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Laura S Conley"
-			/ 	  .card-img-overlay
-			/ 		h5.card-title Laura S. Conley
-			/ 		p.card-text Web Design & Development - Wordpress
-			/ 		= link_to "View Project", portfolio_laura_conley_path
 					
 		.row
-			.col-md-4
-				= link_to portfolio_tch_video_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-tch.jpg", :class=>"card-img", :alt=>"Texas Children's Hospital"
+			.col-md-4.load-card
+				= link_to portfolio_leeward_team_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
 				  .card-body
-					h5.card-title Texas Children's Hospital
-					p.card-text Interactive Media - After Effects
+					h5.card-title The Leeward Team
+					p.card-text Web Design - Wordpress - Graphic Design - Social Media
 					p View Project »
-
-			.col-md-4
-				= link_to portfolio_laura_conley_path, class: 'portfolio-card card' do
+			.col-md-4.load-card
+				= link_to portfolio_snapple_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-snapple.jpg", :class=>"card-img", :alt=>"Snapple Commercial"
+				  .card-body
+					h5.card-title Snapple Commercial
+					p.card-text Graphic Design - Motion Graphics - Multimedia
+					p View Project » 
+			.col-md-4.load-card
+				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
+				  .card-body
+					h5.card-title Jarrod Lee
+					p.card-text Web Design & Development - Wordpress
+					p View Project »
+		.row
+			.col-md-4.load-card
+				= link_to portfolio_lsc_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Laura S Conley"
 				  .card-body
 					h5.card-title Laura S. Conley
 					p.card-text Web Design & Development - Wordpress
 					p View Project »
-			.col-md-4
+			.col-md-4.load-card
+				= link_to portfolio_caw_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-caw.jpg", :class=>"card-img", :alt=>"Construction Appreciation Week Website"
+				  .card-body
+					h5.card-title Construction Appreciation Week
+					p.card-text Web Design & Development - Wordpress
+					p View Project »
+			.col-md-4.load-card
 				= link_to portfolio_832video_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-832video.jpg", :class=>"card-img", :alt=>"832Video"
 				  .card-body
 						h5.card-title 832Video
 						p.card-text Website Design & Development - Wordpress
 						p View Project »
-					
 		.row
-			/ .col-md-4
-			/ 	.portfolio-card.card.text-white
-			/ 	  = image_tag "portfolio/portfolio-832video.jpg", :class=>"card-img", :alt=>"832Video"
-			/ 	  .card-img-overlay
-			/ 		h5.card-title Kristie Inc.
-			/ 		p.card-text Website Design & Development - Wordpress
-			/ 		= link_to "View Project", portfolio_832video_path
-			.col-md-4
-				= link_to portfolio_iba_ohio_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-iba-ohio.jpg", :class=>"card-img", :alt=>"I Build Ohio"
+			.col-md-4.load-card
+				= link_to portfolio_village_clothier_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-villageclothier.jpg", :class=>"card-img", :alt=>"The Village Clothier"
 				  .card-body
-					h5.card-title I Build Ohio
+					h5.card-title The Village Clothier
 					p.card-text Web Design & Development - Wordpress
 					p View Project »
-			.col-md-4
-				= link_to portfolio_snapple_video_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-snapple.jpg", :class=>"card-img", :alt=>"Snapple Commercial"
-				  .card-body
-					h5.card-title Snapple Commercial
-					p.card-text Graphic Design - Motion Graphics - Multimedia
-					p View Project » 
+			/ .col-md-4.load-card
+			/ 	= link_to portfolio_lsc_path, class: 'portfolio-card card' do
+			/ 	  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Turner Mining Group"
+			/ 	  .card-body
+			/ 		h5.card-title Turner Mining Group
+			/ 		p.card-text Web Design & Development - Wordpress
+			/ 		p View Project »
+			/ .col-md-4.load-card
+			/ 	= link_to portfolio_ugm_path, class: 'portfolio-card card' do
+			/ 	  = image_tag "portfolio/portfolio-ugm-video.jpg", :class=>"card-img", :alt=>"UGM Promotional Video"
+			/ 	  .card-body
+			/ 		h5.card-title UGM Video
+			/ 		p.card-text Motion Graphics - Multimedia
+			/ 		p View Project »
+		.row
+			#loadMore.mx-auto
+      			<a href="#" class="btn btn-loadmore">Load More Projects</a>
 
-		/ .row
-		/ 	.col-md-4
-		/ 		.portfolio-card.card.text-white
-		/ 		  = image_tag "portfolio/portfolio-ugm-video.jpg", :class=>"card-img", :alt=>"UGM Promotional Video"
-		/ 		  .card-img-overlay
-		/ 			h5.card-title UGM Video
-		/ 			p.card-text Motion Graphics - Multimedia
-		/ 			= link_to "View Project", portfolio_hcss_ugm_video_path
-
-		/ 	.col-md-4
-		/ 		.portfolio-card.card.text-white
-		/ 		  = image_tag "portfolio/portfolio-villageclothier.jpg", :class=>"card-img", :alt=>"The Village Clothier"
-		/ 		  .card-img-overlay
-		/ 			h5.card-title The Village Clothier
-		/ 			p.card-text Web Design & Development - Wordpress
-		/ 			= link_to "View Project", portfolio_village_clothier_path
 

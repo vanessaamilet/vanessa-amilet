@@ -18,10 +18,12 @@ $(window).scroll(function() {
 	$(this).scrollTop() > 50 ? $(".before-color").addClass("after-color") : $(".before-color").removeClass("after-color")
 });*/
 
-/* ## Smooth Scrolling
+/* ## Scripts - Turbolinks (Loaded through All Pages)
 ---------------------------------------------------------------------------------------------------- */
 
 $(document).on('turbolinks:load', function() {
+    /* ## Smooth Scrolling
+    ---------------------------------------------------------------------------------------------------- */
     $('a[href*="#info"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -34,47 +36,39 @@ $(document).on('turbolinks:load', function() {
             }
         }
     });
-});
 
-
-/* ## Scroll to Top
----------------------------------------------------------------------------------------------------- */
-
-$(document).on('turbolinks:load', function(){
-	// Scroll (in pixels) after which the "To Top" link is shown
+    /* ## Scroll to Top
+    ---------------------------------------------------------------------------------------------------- */
+    // Scroll (in pixels) after which the "To Top" link is shown
 	var offset = 300,
-		//Scroll (in pixels) after which the "back to top" link opacity is reduced
-		offset_opacity = 1200,
-		//Duration of the top scrolling animation (in ms)
-		scroll_top_duration = 700,
-		//Get the "To Top" link
-		$back_to_top = $('.to-top');
+    //Scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //Duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //Get the "To Top" link
+    $back_to_top = $('.to-top');
 
-	//Visible or not "To Top" link
-	$(window).scroll(function(){
-		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('top-is-visible') : $back_to_top.removeClass('top-is-visible top-fade-out');
-		if( $(this).scrollTop() > offset_opacity ) { 
-			$back_to_top.addClass('top-fade-out');
-		}
-	});
+    //Visible or not "To Top" link
+    $(window).scroll(function(){
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('top-is-visible') : $back_to_top.removeClass('top-is-visible top-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) { 
+            $back_to_top.addClass('top-fade-out');
+        }
+    });
 
-	//Smoothy scroll to top
-	$back_to_top.on('click', function(event){
-		event.preventDefault();
-		$('body,html').animate({
-			scrollTop: 0 ,
-		 	}, scroll_top_duration
-		);
-	});
+    //Smoothy scroll to top
+    $back_to_top.on('click', function(event){
+        event.preventDefault();
+        $('body,html').animate({
+            scrollTop: 0 ,
+            }, scroll_top_duration
+        );
+    });
 
-});
-
-/* ## Bootstrap Modal
----------------------------------------------------------------------------------------------------- */
-
-$(document).on('turbolinks:load', function(){
+    /* ## Bootstrap Modal
+    ---------------------------------------------------------------------------------------------------- */
     $('.modal').each(function(){
-            var src = $(this).find('iframe').attr('src');
+        var src = $(this).find('iframe').attr('src');
 
         $(this).on('click', function(){
 
@@ -83,8 +77,21 @@ $(document).on('turbolinks:load', function(){
 
         });
     });
-});
 
+    /* ## Load More Btn (For Portfolio)
+    ---------------------------------------------------------------------------------------------------- */
+    //$(function(){
+        $(".col-md-4").slice(0, 9).show(); // select the first twelve
+        $("#loadMore").click(function(e){ // click event for load more
+            e.preventDefault();
+            $(".col-md-4.load-card:hidden").slice(0, 9).fadeIn(950).show(); // select next 10 hidden divs and show them
+            if($(".col-md-4.load-card:hidden").length == 0){ // check if any hidden divs still exist
+                $("#loadMore").fadeOut('slow');
+                //alert("No more divs"); // alert if there are none left
+            }
+        });
+    //});
+});
 
 /* ## Detect Snooping Web Developers
 ---------------------------------------------------------------------------------------------------- */
@@ -103,3 +110,7 @@ $(window).resize(function () {
         counter++
     }
 });
+
+/* ## Random
+---------------------------------------------------------------------------------------------------- */
+console.info("\nDesigned and Developed By Vanessa Amilet Santos")

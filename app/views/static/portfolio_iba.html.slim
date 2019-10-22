@@ -1,0 +1,71 @@
+= metamagic meta title: "I Build America | Vanessa Amilet - Web & Graphic Design Services"
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+#portfolio-iba.portfolio-single
+	.portfolio-hero
+		.portfolio-gradient-top
+		.vertical.portfolio-box
+			.portfolio-img.zoomout
+			.vertical-middle
+				.container
+					.row
+						.col-lg-12.col-md-12
+							= image_tag "client-logos/client-iba.svg", :class=>"logo center-img", :alt=>"I Build America"
+		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+</header>
+section.portfolio-info#info
+	.container
+		.row
+			.col-lg-6.py-3.px-lg-5
+				p.lead I Build America is a national movement focused on building pride in the construction industry, educating the public about the value of construction and recruiting the next generation of construction professionals. This movement was started by HCSS. I Build America needed a whole website redesign that was more user friendly, responsive, and easier to manage. The solution was to create a brand new custom Wordpress theme with the I Build America branding. ACF was implemented to organize information such as construction projects and companies.
+				= link_to "View Website »", 'https://www.ibuildamerica.com/', target: "_blank"
+			.col-lg-6.py-3.px-lg-5
+				.row
+					.col-sm-6
+						h6 Client
+						p I Build America
+					.col-sm-6
+						h6 Year
+						p 2016 - Present
+				.row
+					.col-sm-6
+						h6 Technologies
+						p HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
+					.col-sm-6
+						h6 Services
+						p Website Design & Development
+
+section.colors
+	.container
+		.row
+			.col-lg-12
+				h6 COLORS
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #C32A27;"
+					p.color-palette-name $red
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #02334e;"
+					p.color-palette-name $navy
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #e7a824;"
+					p.color-palette-name $gold
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #222222;"
+					p.color-palette-name $dark-gray
+section.fonts
+	.container
+		.row
+			.col-lg-12
+				h6 TYPOGRAPHY
+		.row
+			.col-md-6
+				= image_tag "typography/industry-type.svg", :class=>"img-responsive center-block", :alt=>"Industry"
+			.col-md-6
+				= image_tag "typography/roboto-type.svg", :class=>"img-responsive center-block"
+
+section.showcase.iba
+	.container
+		.row
+			.col-lg-12
+				= image_tag "portfolio-showcases/showcase-iba.jpg", :class=>"img-fluid center-img", :alt=>"I Build America Showcase"

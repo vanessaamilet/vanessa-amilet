@@ -55,6 +55,7 @@ $blue: #009EE0;
 $dark-blue: #1676D3;
 $teal: #53C2CA;
 $bondi-blue: #01A3B2;
+$green: #0AAB73;
 //** Background color for `<body>`.
 $bg-color: $white;
 //** Global text color on `<body>`.
@@ -2429,7 +2430,7 @@ section.portfolio-info{
 			display: block;
 			width: 12px;
 			height: 2px;
-			background: #0c9;
+			background: #0AAB73;
 			position: absolute;
 			top: .7em;
 			left: 0;
@@ -2633,6 +2634,9 @@ section.portfolio-info{
 #portfolio-leewardteam .portfolio-img {
 	background-image: url(asset_path('hero-images/leeward-team-hero-bg.jpg'));
 }
+#portfolio-jarrodlee .portfolio-img {
+	background-image: url(asset_path('hero-images/jarrodlee-hero-bg.jpg'));
+}
 
 #portfolio-crossroads-decision .portfolio-img {
 	background-image: url(asset_path('hero-images/crossroads-decision-hero-bg.jpg'));
@@ -2644,6 +2648,9 @@ section.portfolio-info{
 
 #portfolio-iba .portfolio-img {
 	background-image: url(asset_path('hero-images/iba-hero-bg.jpg'));
+}
+#portfolio-caw .portfolio-img {
+	background-image: url(asset_path('hero-images/caw-hero-bg.jpg'));
 }
 
 #portfolio-greenwood .portfolio-img {
@@ -2762,7 +2769,7 @@ section.showcase{
 	background-size: cover !important;
 	background-repeat: no-repeat;
 	img{
-		width: 750px;
+		width: 775px;
 		height: auto;
 	}
 }
@@ -2771,7 +2778,7 @@ section.showcase{
 	background: url(asset_path('portfolio-backgrounds/background-ecmg.jpg')) !important;
 }
 .hcss{
-	background: url(asset_path('portfolio-backgrounds/background-hcss.jpg'))  !important;
+	background: #009639 !important;
 }
 .lsc{
 	background: url(asset_path('portfolio-backgrounds/background-lsc.jpg')) !important;
@@ -2797,7 +2804,7 @@ section.showcase{
 	background: url(asset_path('portfolio-backgrounds/background-greenwood.jpg')) !important;
 }
 .captivecolour{
-	background: url(asset_path('portfolio-backgrounds/background-captivecolour.jpg')) !important;
+	background: #4f2b84 !important;
 }
 .hcss-careers{
 	background: url(asset_path('portfolio-backgrounds/background-hcss-careers.jpg')) !important;
@@ -2821,9 +2828,11 @@ section.showcase{
 }
 .snapple{
 	background: url(asset_path('portfolio-backgrounds/background-snapple.jpg')) !important;
-	background-position: center center;
-	min-height: 400px;
-	padding: 150px 0;
+	background-position: center center !important;
+	min-height: 65vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* # Preloader
