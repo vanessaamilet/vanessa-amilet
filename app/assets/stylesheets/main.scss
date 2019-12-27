@@ -422,9 +422,9 @@ address, caption, cite, code, dfn, th, var {
 	font-weight: normal;
 }
 
-ol, ul {
-	/*list-style: none;*/
-}
+// ol, ul {
+// 	/*list-style: none;*/
+// }
 
 caption, th {
 	text-align: left;
@@ -1465,7 +1465,7 @@ section{
 }
 
 .skillset{
-	background-color: $black;
+	background-color: $dark-gray;
 	padding: 40px 0;
 	color: $white;
 	h2{
@@ -1527,6 +1527,18 @@ section{
 	h2{
 		text-align: center;
 	}
+	.resume-info{
+		padding: 25px 35px;
+		background: $light-gray;
+		border-radius: 3px;
+		margin: 15px;
+		div{
+			h5{
+				font-size: 16px;
+			}
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .skillset-info{
@@ -1535,13 +1547,6 @@ section{
 	border-radius: 3px;
 	margin: 15px;
 	color: $white;
-}
-
-.resume-info{
-	padding: 25px 35px;
-	background: $light-gray;
-	border-radius: 3px;
-	margin: 15px;
 }
 
 /* ### Portfolio */
