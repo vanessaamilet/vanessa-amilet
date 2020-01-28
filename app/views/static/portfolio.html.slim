@@ -114,13 +114,6 @@ section.portfolio
 					p View Project »
 		.row
 			.col-md-4.load-card
-				= link_to portfolio_lsc_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Laura S Conley"
-				  .card-body
-					h5.card-title Laura S. Conley
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
-			.col-md-4.load-card
 				= link_to portfolio_caw_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-caw.jpg", :class=>"card-img", :alt=>"Construction Appreciation Week Website"
 				  .card-body
@@ -134,14 +127,21 @@ section.portfolio
 						h5.card-title 832Video
 						p.card-text Website Design & Development - Wordpress
 						p View Project »
-		.row
 			.col-md-4.load-card
-				= link_to portfolio_village_clothier_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-villageclothier.jpg", :class=>"card-img", :alt=>"The Village Clothier"
+				= link_to portfolio_lsc_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Laura S Conley"
 				  .card-body
-					h5.card-title The Village Clothier
+					h5.card-title Laura S. Conley
 					p.card-text Web Design & Development - Wordpress
 					p View Project »
+		/ .row
+		/ 	.col-md-4.load-card
+		/ 		= link_to picnics_city_path, class: 'portfolio-card card' do
+		/ 		  = image_tag "portfolio/portfolio-villageclothier.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+		/ 		  .card-body
+		/ 			h5.card-title Picnics in the City
+		/ 			p.card-text Web Design & Development - Shopify
+		/ 			p View Project »
 			/ .col-md-4.load-card
 			/ 	= link_to portfolio_lsc_path, class: 'portfolio-card card' do
 			/ 	  = image_tag "portfolio/portfolio-laurasconley.jpg", :class=>"card-img", :alt=>"Turner Mining Group"
