@@ -1481,6 +1481,9 @@ section{
 		text-align: center;
 		margin-bottom: 35px !important;
 	}
+	.step{
+		margin-bottom: 15px;
+	}
 	h5{
 		span{
 			font-size: 28px;
@@ -1984,7 +1987,8 @@ section.home-hero{
 	left: 0;
 	z-index: 1;
 	height: 640px;
-	height: 92vh;
+	//height: 92vh;
+	height: 80vh;
 	color: $white;
 	@media (max-width: 981px){
 		margin-top: -236px;
