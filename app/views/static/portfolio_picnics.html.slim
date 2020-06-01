@@ -1,0 +1,73 @@
+= metamagic meta title: "Picnics in the City | Vanessa Amilet - Web & Graphic Design Services"
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+#portfolio-captivecolour.portfolio-single
+	.portfolio-hero
+		.portfolio-gradient-top
+		.vertical.portfolio-box
+			.portfolio-img.zoomout
+			.vertical-middle
+				.container
+					.row
+						.col-lg-12.col-md-12
+							= image_tag "client-logos/client-captivecolour.svg", :class=>"logo center-img", :alt=>"CaptiveColour Cosmetics"
+		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+</header>
+section.portfolio-info#info
+	.container
+		.row
+			.col-lg-6.py-3.px-lg-5
+				p.lead Picnics in the City is a start up cosmetic company in Houston, Texas that specializes in providing individuals with a experience of a luxury picnic. I had the pleasure to work on their branding (coming up with the brand name, colors, aesthetic), creating the design for the lipstick packaging, and creating social media posts. I also built out landing pages using Rails, Gibbon, and Heroku. The e-commerce website was designed & developed using Shopify.
+				= link_to "View Website »", 'https://picnicsinthecity.com/', target: "_blank"
+			.col-lg-6.py-3.px-lg-5
+				.row
+					.col-md-6
+						h6 Client
+						p Picnics in the City
+					.col-md-6
+						h6 Year
+						p 2020 - Present
+				.row
+					.col-md-6
+						h6 Services
+						p Website Design & Development, Graphic Design, Branding, Social Media, Photography
+					.col-md-6
+						h6 Technologies
+						p Shopify, HTML/SCSS, Rails, Heroku, Mailchimp, Adobe Illustrator
+					
+section.colors
+	.container
+		.row
+			.col-lg-12
+				h6 COLORS
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #4f2b84;"
+					p.color-palette-name Pantone Medium Purple
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #72256b;"
+					p.color-palette-name Pantone 255 C
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #000;"
+					p.color-palette-name Black
+				.col-sm-3.color-palette-container
+					.color-palette style="--color-palette-var: #fff;"
+					p.color-palette-name White
+				
+section.fonts
+	.container
+		.row
+			.col-lg-12
+				h6 TYPOGRAPHY
+		.row
+			.col-md-6
+				= image_tag "typography/gotham-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham"
+			.col-md-6
+				= image_tag "typography/gothambold-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham Bold"
+				
+/!-- Showcase --/
+section.showcase.captivecolour
+	.container
+		.row
+			.col-lg-12
+				= image_tag "portfolio-showcases/showcase-captivecolour.jpg", :class=>"img-fluid center-img", :alt=>"CaptiveColour Showcase"
