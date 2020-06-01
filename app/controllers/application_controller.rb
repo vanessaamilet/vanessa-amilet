@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
 
   # URL Redirect
   APP_DOMAIN = 'www.amilet.com'
-  before_filter :ensure_domain
+  # before_filter :ensure_domain
+  before_action :ensure_domain
 
   def ensure_domain
     unless request.env['HTTP_HOST'] == APP_DOMAIN || Rails.env.development?

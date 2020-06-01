@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby "2.6.5"
+ruby "2.7.1"
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0'
+gem 'rails', '~> 6.0', '>= 6.0.2.2'
 
 # Use Puma as the app server
-gem "puma", ">= 4.3.5"
+gem 'puma', '>= 4.3.5'
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'sass-rails', '~> 6.0'
@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 #gem 'execjs'
 gem 'libv8', '~> 3.16', '>= 3.16.14.7'
+gem 'sprockets', '~> 3.0' # add this pessimistic operator with twiddle-wakka
 
 gem 'slim-rails'
 gem 'bootstrap', '>= 4.3.1'
@@ -39,7 +40,8 @@ gem "figaro"
 #gem 'pg'
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+# gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
