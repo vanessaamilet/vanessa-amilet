@@ -119,8 +119,9 @@ section.reviews
 		hr
 		.row.client-logos
 			.col-md-3.col-sm-6
-				= link_to 'http://www.captivecolour.com/' do
-					= image_tag 'client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'
+				/ = link_to 'http://www.captivecolour.com/' do
+				/ 	= image_tag 'client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'
+				= link_to image_tag('client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'), 'http://www.captivecolour.com/'
 			.col-md-3.col-sm-6
 				= link_to 'http://www.jumpix.com/' do
 					= image_tag 'client-logos/client-jumpix.svg', alt: 'Jumpix'
