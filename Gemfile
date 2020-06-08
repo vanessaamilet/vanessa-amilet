@@ -29,7 +29,8 @@ gem 'sitemap_generator', '~> 5.2'
 gem 'metamagic', '~> 3.1', '>= 3.1.7'
 
 # Gems for Contact Form & Mail
-gem 'mail_form', '~> 1.5', '>= 1.5.1'
+#gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'mail_form', '~> 1.8'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
 gem 'mailgun-ruby', '~> 1.2'
