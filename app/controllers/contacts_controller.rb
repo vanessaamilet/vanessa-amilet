@@ -1,6 +1,4 @@
 class ContactsController < ApplicationController
-	skip_forgery_protection :verify_authenticity_token
-
     def new
       @contact = Contact.new
     end
