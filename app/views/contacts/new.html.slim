@@ -33,7 +33,7 @@ section
 					    		<a class="close" href="#" data-dismiss="alert">×</a>
 					        	= content_tag :div, value, :id => "flash_#{key}"
 				
-				= simple_form_for @contact, authenticity_token: true, :html => {:class => 'form-horizontal needs-validation', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
+				= simple_form_for @contact, :html => {:class => 'form-horizontal needs-validation', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
 					
 					= f.input :name do
 						span.input-group-addon#basic-addon1
