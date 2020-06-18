@@ -1,4 +1,9 @@
 class ContactsController < ApplicationController
+	skip_before_filter :verify_authenticity_token
+	protect_from_forgery prepend: true, with: :exception
+	before_action :authenticate_user!
+	before_action :set_contact, only: [:show, :edit, :update]
+	
     def new
       @contact = Contact.new
     end
