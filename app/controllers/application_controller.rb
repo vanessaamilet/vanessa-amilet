@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception
+
+  skip_before_action :verify_authenticity_token
+  protect_from_forgery prepend: true, with: :exception
 
   # URL Redirect
   APP_DOMAIN = 'www.amilet.com'
