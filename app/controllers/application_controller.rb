@@ -7,15 +7,15 @@ class ApplicationController < ActionController::Base
   protect_from_forgery unless: -> { request.format.json? }
 
   # URL Redirect
-  APP_DOMAIN = 'www.amilet.com'
-  # before_filter :ensure_domain
-  before_action :ensure_domain
+  # APP_DOMAIN = 'www.amilet.com'
+  # # before_filter :ensure_domain
+  # before_action :ensure_domain
 
-  def ensure_domain
-    unless request.env['HTTP_HOST'] == APP_DOMAIN || Rails.env.development?
-      redirect_to "https://#{APP_DOMAIN}", :status => 301
-    end
-  end
+  # def ensure_domain
+  #   unless request.env['HTTP_HOST'] == APP_DOMAIN || Rails.env.development?
+  #     redirect_to "https://#{APP_DOMAIN}", :status => 301
+  #   end
+  # end
 
   # Force SSL
   # before_filter :force_ssl
