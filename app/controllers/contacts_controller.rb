@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
       	ContactMailer.contact_email(name, email, body).deliver
       	# flash.now[:error] = nil
        	# flash.now[:notice] = 'Thank you for your message. I will contact you soon!'
-       	flash.now[:success] = "Thank you for your message. I will contact you soon!"
+       	flash[:success] = "Thank you for your message. I will contact you soon!"
      	redirect_to contact_path
       else
       	#flash.now[:error] = 'There was an error sending your message. Please try again.'
