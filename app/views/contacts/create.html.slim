@@ -1,27 +1,37 @@
-</header>
-section.contact
+/!  Contact Page
+section.hero.d-flex
 	.container
-		h1 Let's Build Something Together
-		p.lead For a project quotation, or to learn more about me, please fill out the form. I will contact you as soon as possible!
-/!  Begin Page Content
+		.row.justify-content-center
+			.col-md-10.col-lg-8.pt-5
+				h6.mb-5 Get In Touch
+				h1 Let's Work Together
+				p.lead I would love to hear about your project and how I could help bring it to life. Fill out the contact form below to get the conversation started. Please allow up to 48 hours to respond to your message.
+/!  Begin Page Content 
 section
 	.container
+		.offset-md-1.col-md-10.mb-5
+			.row
+				.col-md.py-md-4.mb-6.mb-md-0.center
+					i.fad.fa-envelope-open-text
+					h6 Hate filling out forms?
+					p
+						| Email me:  
+						= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
+						| .
+				.col-md.py-md-4.mb-6.mb-md-0.border-start.center
+					i.fad.fa-phone
+					h6 Want to setup a time to talk? 
+					p
+						= link_to "Click here", "https://calendly.com/vanessa-amilet", target: "_blank"
+						|  to schedule a consultation.
+				.col-md.py-md-4.border-start.center
+					i.fad.fa-question-circle
+					h6 Need help?
+					p 
+						| Check out the 
+						= link_to "FAQs", faqs_path 
+						|  page to see if your question has been answered.
 		.row
-			.col-md-6
-				h3 Get In Touch
-				p Feel free to say hello via the form. Please allow up to 48 hours to respond to your message.
-				p 
-					| Want to setup a time to talk?  
-					= link_to "Click here", "https://calendly.com/vanessa-amilet"
-					|  to schedule a consultation.
-				p 
-					| You can also check out the 
-					= link_to "FAQs", faqs_path 
-					|  page to see if your question has been answered.
-	
-				h6 Hate filling out forms? Email Me: 
-				p 
-					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
 			.col-lg-6
 				- flash.each do |key, value| %
 					- if value.is_a?(String)

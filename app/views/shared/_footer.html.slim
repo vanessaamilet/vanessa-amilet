@@ -1,10 +1,10 @@
-.container-fluid
-	.row
-		ul.home-footer-links	
-			li 
-				= link_to "Know Me Better", about_path
-			li 
-				= link_to "Let's Work Together!", contact_path
+/ .container-fluid
+/ 	.row
+/ 		ul.home-footer-links	
+/ 			li 
+/ 				= link_to "Know Me Better", about_path
+/ 			li 
+/ 				= link_to "Let's Work Together!", contact_path
 #footer
 	.footer-wrapper
 		.container
@@ -12,7 +12,7 @@
 				.col-md-4.col-sm-12
 					h4 About
 
-					p Web Designer & Developer that enjoys creating beautiful things with the latest technologies.
+					p Vanessa Amilet Santos is a Houston based designer & developer that enjoys creating beautiful things with the latest technologies.
 					p
 						= link_to "Learn More »", about_path
 				.col-md-4.col-sm-6
@@ -27,36 +27,39 @@
 								= link_to "Contact", contact_path
 							li
 								= link_to "FAQs", faqs_path
-							li
-								= link_to "Privacy Policy", privacy_policy_path
 
 				.col-md-4.col-sm-6
 					h4 Connect
 					ul.social
-						/ li.facebook
-						/ 	= link_to "https://www.facebook.com/vanessaamilet" do
-						/ 		i.fa.fa-facebook
 						/ li.twitter
 						/ 	= link_to "https://twitter.com/vanessaamilet" do
 						/ 		i.fa.fa-twitter
 						li.linkedin
-							= link_to "https://www.linkedin.com/in/vanessaamilet" do 
+							= link_to "https://www.linkedin.com/in/vanessaamilet", target:"_blank" do 
 								i.fa.fa-linkedin
 						li.instagram
-							= link_to "https://www.instagram.com/vanessaamilet/" do
+							= link_to "https://www.instagram.com/vanessaamilet/", target:"_blank" do
 								i.fa.fa-instagram
 						li.github
-							= link_to "https://github.com/vanessaamilet" do
+							= link_to "https://github.com/vanessaamilet", target:"_blank" do
 								i.fa.fa-github
 						li.dribbble
-							= link_to "https://dribbble.com/vanessaamilet" do
+							= link_to "https://dribbble.com/vanessaamilet", target:"_blank" do
 								i.fa.fa-dribbble
 
-	.sub-footer
+	.sub-footer.d-flex.align-items-center
 		.container
 			.row
-				.col-md-12.center
-					p.credit
-						| Made with <i class="fa fa-heart"></i> in Texas. &copy;&nbsp;
+				.col-lg-4
+					p.credit.text-left
+						| &copy;&nbsp;
 						= Time.zone.now.year
 						= link_to " Vanessa Amilet Santos", root_path
+				.col-lg-4
+					p.credit.text-lg-center
+						| Made with <i class="fa fa-heart"></i> in Texas.
+				.col-lg-4
+					p.credit.text-lg-right
+						= link_to "Privacy Policy", privacy_policy_path
+						|  • 
+						= link_to "Terms of Service", terms_path

@@ -1,215 +1,195 @@
-= metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Designer & Developer", description: "Vanessa Amilet is a Houston freelance web designer & developer helping businesses and organizations in different industries.", keywords: ["web design services", "responsive web design", "houston web design", "wordpress web design", "wordpress themes", "vanessa amilet", "#vanessaamilet", "freelance web designer", "freelance developer"]
-</header>
+= content_for :body_class, 'about dark-nav'
+
 /!  Section Main Content 
-section.about
-	.container
-		h1 About Vanessa Amilet
-		p.lead Graphics • Web • Front-End Development • Media
+section.hero
+	.container-lg
+		.row.justify-content-between.align-items-center.mt-5
+			.col-lg-7
+				.px-4.mb-4
+					h1 About
+					p.lead.mb-4
+						| I am Houston-native visual designer with 8 years of experience helping mission-driven individuals & businesses establish an authentic online presence. My passion is to help my clients turn their virtual visitors into engaged customers through captivating visuals.
+					= link_to "Schedule a Consultation", contact_path, :class=>"btn btn-primary"
+					= link_to 'LinkedIn Profile <i class="fad fa-external-link-alt"></i>'.html_safe, "https://www.linkedin.com/in/vanessaamilet", :class=>"mx-3 cta",  target:"_blank"
+					/= link_to 'Download Resume <i class="fad fa-download"></i>'.html_safe, "/vsantos-resume.pdf", :class=>"mx-3 cta"
+			.col-lg-5.position-relative
+				.top-0.start-0.end-0.right-0
+					= image_tag  "about/about-vanessaamilet.jpg", alt: 'About Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"	
 
 /!  Begin Page Content
-.wheel-house.container-fluid.d-flex
-	.row.justify-content-center
-		.col-md-6.col-img
-			.texture-overlay
-		.col-md-6.p-5
-			p.lead
-				| My mission is to help companies of all sizes to establish a strong brand identity by providing visual solutions that will launch and grow their business. I strive to create usable and polished products through passionate and deliberate design.
-			br
-			h5 My Wheel House
-			.row
-				.col-sm-6
-					li 
-						p 
-							= image_tag "about/wheel-house-branding.svg", :class=>"img-responsive"
-							| Branding
-				.col-sm-6
-					li 
-						p
-							= image_tag "about/wheel-house-development.svg", :class=>"img-responsive"
-							| Development
-				.col-sm-6
-					li 
-						p
-							= image_tag "about/wheel-house-interface.svg", :class=>"img-responsive"
-							| Design
-				.col-sm-6
-					li 
-						p
-							= image_tag "about/wheel-house-wordpress.svg", :class=>"img-responsive"
-							| Wordpress
-				.col-sm-6
-					li
-						p
-							= image_tag "about/wheel-house-woocommerce.svg", :class=>"img-responsive"
-							| E-Commerce
-				.col-sm-6
-					li
-						p
-							= image_tag "about/wheel-house-illustration.svg", :class=>"img-responsive"
-							| Illustration
-				.col-sm-6
-					li 
-						p
-							= image_tag "about/wheel-house-media.svg", :class=>"img-responsive"
-							| Multimedia
-				.col-sm-6
-					li 
-						p
-							= image_tag "about/wheel-house-icon.svg", :class=>"img-responsive"
-							| Iconography
+section.values
+	.container
+		.row
+			.col-md-12
+				h2 Core Values
+		.row
+			.col-md-3
+				<i class="fad fa-hands-helping"></i>
+				h5 Building Meaningful Connections
+			.col-md-3
+				<i class="fad fa-comments"></i>
+				h5 Communication
+			.col-md-3
+				<i class="fad fa-spa"></i>
+				h5 Mindfulness
+			.col-md-3
+				<i class="fad fa-hands-heart"></i>
+				h5 Dedication
+section.capabilities
+	.container
+		.row
+			.col-lg-5.col-md-6.bg
+				h2 My Capabilities
+				.row.mb-4
+					.col-sm-6
+						i.fad.fa-swatchbook
+						p Branding
+					.col-sm-6
+						i.fad.fa-code
+						p Development
+					.col-sm-6
+						i.fad.fa-pen-nib
+						p Design
+					.col-sm-6
+						i.fab.fa-wordpress-simple
+						p Wordpress
+					.col-sm-6
+						i.fab.fa-shopify
+						p E-Commerce
+					.col-sm-6
+						i.fad.fa-pen-nib
+						p Illustration
+					.col-sm-6
+						i.fad.fa-photo-video
+						p Multimedia
+					.col-sm-6
+						i.fad.fa-icons
+						p Iconography
+				= link_to "View Services", services_path, :class=>"btn btn-white"
 				
 section.process
 	.container
 		.row
 			.col-lg-12
-				h2 My Process
+				h2 My Creative Process
 		.row
-			.col-md-3
-				/ = render :partial => "shared/wireframe"
-				/ Add Research to process
+			.col-md-6.mb-5
+				i.fad.fa-seedling
 				h5 
 					span 01. 
-					| WIREFRAMING
-				p The sketching of wireframes is integral in the beginning to realize concepts and ideas into readable, managed design.
-			.col-md-3
-				h5 
+					| DISCOVERY
+				p We explore innovative design concepts that define your mission and research competitors in the marketplace to create an authentic digital presence. 
+			.col-md-6.mb-5
+				i.fad.fa-water
+				h5
 					span 02. 
-					| DESIGN
-				p My design will reflect your unique brand identity while achieving the maximum aesthetic impact.
-			.col-md-3
+					| FLOW
+				p I create intuitive online customer journeys that turn your visitors into engaged customers.
+		.row
+			.col-md-6.mb-5
+				i.fad.fa-pencil-paintbrush
 				h5 
 					span 03. 
-					| DEVELOPMENT
-				p Responsive design that adheres to today’s technical standards, ensuring desktop and mobile users.
-			.col-md-3
+					| DESIGN
+				p I help you illustrate your brand identity with user-focused designs.
+			.col-md-6.mb-5
+				i.fad.fa-hand-holding-seedling
+				h5 
+					span 04. 
+					| DEPLOYMENT + HANDOFF
+				p Experience the delight of having a website that uniquely represents you, your business & your customers.
+		.row
+			.col-lg-12
+				.text-center
+					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center"
+	/!
+		.row
+			.col-md-4
+				i.fad.fa-browser
 				h5 
 					span 04. 
 					| TESTING
 				p To guarantee success, the final process involves thorough testing on all major browsers, operating systems, and devices.
-		.row
-
-section.skillset
-	.container
-		.row
-			.col-lg-12
-				h2 Skillset
-		.row.row-eq-height
 			.col-md-4
-				h5 Design
-				ul
-					li Wireframes
-					li High-fidelity Mockups
-					li Icons
-					li Vector Graphics
-					li Packaging Design
-					li Short Animation Videos
-			.col-md-4
-				h5 Front-End Development
-				ul
-					li Responsive, Mobile-Optimized Websites
-					li Wordpress Development (ACF & Genesis Framework)
-					li HTML/SCSS/JS
-					li PHP
-					li Ruby on Rails
-					li Slim Lang
-					li Shopify Theme Development
-					li Git
-			.col-md-4
-				h5 Tools
-				ul
-					li Visual Studio Code 
-					li Adobe Illustrator
-					li Adobe XD/Sketch
-					li Github
-					li Heroku
-					li Bootstrap Framework
-					li Adobe Animate
-					li Adobe InDesign
-					li After Effects
-					li Adobe Photoshop
+				i.fad.fa-flower-daffodil
+				h5 
+					span 06. 
+					| DEVELOPMENT
+				p Responsive design that adheres to today’s technical standards, ensuring desktop and mobile users.
+/!
+	.resume
+		.container
+			.row
+				.col-lg-4
+					.resume-info
+						h4 Experience
+						div
+							h5 Freelance Full Stack Designer
+							p
+								= link_to "Vanessa Amilet", "http://www.vanessaamilet.com"
+							p June 2013 - Present
+						div
+							h5 UI Designer + Developer
+							p
+								= link_to "NRG", "http://www.nrg.com"
+							p March 2020 - April 2021
+						div
+							h5 Web Developer
+							p
+								= link_to "HCSS", "http://www.hcss.com"
+							p June 2016 - March 2020
+						div
+							h5 Front-End Web Developer
+							p
+								= link_to "832Video", "http://www.832video.com"
+							p June 2015 - Present
+						div
+							h5 UX & Web Designer
+							p
+								= link_to "Jumpix", "http://www.jumpix.com"
+							p November 2013 - June 2016
+						div
+							h5 Lead Web & Graphic Designer
+							p
+								= link_to "ECMG LLC", "http://www.ecmg.com"
+							p November 2013 - June 2016
 
-.resume
-	.container
-		.row
-			.col-lg-12.text-center
-				h2 Resume
-				= link_to 'Download Resume <i class="fa fa-download"></i>'.html_safe, "/vsantos-resume.pdf"
-		.row
-			.col-lg-4
-				.resume-info
-					h4 Experience
-					div
-						h5 UI Designer + Developer
-						p
-							= link_to "NRG", "http://www.nrg.com"
-						p March 2020 - Present
-					div
-						h5 Freelance Full Stack Designer
-						p
-							= link_to "Vanessa Amilet", "http://www.vanessaamilet.com"
-						p June 2013 - Present
-					div
-						h5 Web Developer
-						p
-							= link_to "HCSS", "http://www.hcss.com"
-						p June 2016 - March 2020
-					div
-						h5 Front-End Web Developer
-						p
-							= link_to "832Video", "http://www.832video.com"
-						p June 2015 - Present
-					div
-						h5 UX & Web Designer
-						p
-							= link_to "Jumpix", "http://www.jumpix.com"
-						p November 2013 - June 2016
-					div
-						h5 Lead Web & Graphic Designer
-						p
-							= link_to "ECMG LLC", "http://www.ecmg.com"
-						p November 2013 - June 2016
+				.col-lg-4
+					.resume-info
+						h4 Education
+						div
+							h5 Bachelor of Fine Arts: Web Design & Interactive Media
+							p The Art Institute of Houston
+							p Summer 2011 - Spring 2014
+						hr
+						br
 
-			.col-lg-4
-				.resume-info
-					h4 Education
-					div
-						h5 Bachelor of Fine Arts: Web Design & Interactive Media
-						p The Art Institute of Houston
-						p Summer 2011 - Spring 2014
-					hr
-					br
-
-					h4 Honors & Awards
-					div
-						h5 WebAward for Outstanding Achievement in Web Development
-						p Web Marketing Association
-						p Sep 2016
-					div
-						h5 2017 MarketingSherpa Best In Show 
-						p MarketingSherpa
-						p Sep 2016
-					div
-						h5 Best of Show - Portfolio Show
-						p The Art Institute of Houston
-						p June 2014
+						h4 Honors & Awards
+						div
+							h5 WebAward for Outstanding Achievement in Web Development
+							p Web Marketing Association
+							p Sep 2016
+						div
+							h5 2017 MarketingSherpa Best In Show 
+							p MarketingSherpa
+							p Sep 2016
+						div
+							h5 Best of Show - Portfolio Show
+							p The Art Institute of Houston
+							p June 2014
 
 
-			.col-lg-4
-				.resume-info
-					h4 Certifications
-					div
-						h6 Git
-						p 
-							= link_to "Code School", ""
-						p November 2016
-					div
-						h6 HTML/CSS
-						p 
-							= link_to "TestDome", "http://www.testdome.com//cert/6w7z35sbd2"
-						p November 2015
-					div
-						h6 HTML/CSS, JS
-						p 
-							= link_to "TestDome", "http://www.testdome.com//cert/yfv1rwzigh"
-						p November 2015
+				.col-lg-4
+					.resume-info
+						h4 Certifications
+						div
+							h6 HTML/CSS
+							p 
+								= link_to "TestDome", "http://www.testdome.com//cert/6w7z35sbd2"
+							p November 2015
+						div
+							h6 HTML/CSS, JS
+							p 
+								= link_to "TestDome", "http://www.testdome.com//cert/yfv1rwzigh"
+							p November 2015
 

@@ -23,10 +23,10 @@ gem 'libv8', '~> 7.3', '>= 7.3.492.27.1'
 gem 'sprockets', '~> 3.0' # add this pessimistic operator with twiddle-wakka
 
 gem 'slim-rails'
-gem 'bootstrap', '>= 4.3.1'
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
-gem 'sitemap_generator', '~> 5.2'
-gem 'metamagic', '~> 3.1', '>= 3.1.7'
+gem 'bootstrap', '~> 5.0.0.alpha3'
+# gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'sitemap_generator', '~> 6.1', '>= 6.1.2'
+gem 'meta-tags', '~> 2.14'
 
 # Gems for Contact Form & Mail
 #gem 'mail_form', '~> 1.5', '>= 1.5.1'

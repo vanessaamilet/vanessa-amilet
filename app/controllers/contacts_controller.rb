@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
-    def new
-      @contact = Contact.new
+	def new
+		@page_title = 'Contact Vanessa Amilet'
+    	@contact = Contact.new
     end
 
     def create

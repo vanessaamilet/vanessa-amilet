@@ -1,0 +1,114 @@
+= content_for :body_class, 'services'
+/!  Section Main Content 
+section.hero
+	.container-lg
+		.row.justify-content-between.align-items-center.mt-5
+			.col-lg-6.position-relative.pe-3
+				.top-0.start-0.end-0.left-0
+					= image_tag  "services/services-vanessaamilet.jpg", alt: 'Vanessa Amilet - Design & Media Services', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"
+			.col-lg-6
+				.px-4.mb-4
+					h6.mb-5 Services
+					h1 How I Can Help
+					= link_to "Schedule a Consultation", contact_path, :class=>"btn btn-primary"
+
+/ section.hero
+/ 	.container
+/         h6.mb-5 Services
+/ 		h1 How I Can Help
+
+/!  Begin Page Content
+section.quote
+	.container
+		.row.justify-content-center
+			.col-lg-9
+				= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+				p.lead
+					| "Vanessa is AMAZING to work with! Her work is professional and creative and the final results of my completed website is outstanding. I have received numerous compliments about the layout and design. I highly recommend Vanessa for Website design!"
+				h6 
+					| - Kristie Castilow, Founder of 
+					= link_to "Kristie Inc.", "http://kristieinc.com/"
+
+section.webdesign
+	.container
+		.row.justify-content-center
+			.col-lg-6
+				h3 Web Design
+				p A well designed website is intuitive, and converts visitors to new customers. Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
+				p Offerings:
+				ul.mb-4
+					li Responsive, Mobile-Optimized Websites
+					li Wireframes
+					li High-fidelity Mockups
+					li Interactive Prototypes
+					li Customized Wordpress Themes
+					li E-Commerce Websites (Shopify or Woocommerce)
+					li Website Redesigns
+					li Landing Page Design
+					li Website Maintenance
+				= link_to "Let's Work Together", contact_path, :class=>"btn btn-secondary d-lg-none"
+			.col-lg-6
+				.top-0
+					= link_to image_tag('portfolio/picnics/picnicsinthecity-showcase.jpg', alt: 'Vanessa Amilet - Web Design Services', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"), portfolio_picnics_path
+			
+
+section.branddesign
+	.container
+		.row.justify-content-center
+			.col-lg-6.position-relative
+				.top-0
+					= link_to image_tag('portfolio/captivecolour/captivecolour-infocard.jpg', alt: 'Vanessa Amilet - Brand Design Services', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"), portfolio_captivecolour_path
+			.col-lg-6.
+				h3 Brand Design
+				p A unique and memorable brand is aligned with the heart of your business. I help business owners bring their authentic vision to life by developing a holistic brand identity that reasonates with their ideal audience.
+				p Offerings:
+				ul
+					li Email Designs
+					li Visual Identity
+					li Iconography
+					li Vector Illustrations
+					li Marketing Collateral
+					li Business Cards
+					li Packaging Design
+			
+section.media
+	.container
+		.row.justify-content-center
+			.col-lg-6
+				h3 Interactive Media
+				p Customer clarity leads to sales. Clarify your vision with innovative motion graphics that resonates with your ideal clients and communicates your brand story.
+				p Offerings:
+				ul
+					li Animated GIF Images
+					li Instagram Ads or Stories
+					li Short Animation Videos
+				= link_to "View Work", portfolio_path, :class=>"btn btn-secondary d-lg-none"
+			.col-lg-6.position-relative
+				.top-0
+					= link_to image_tag('services/services-media.jpg', alt: 'Vanessa Amilet - Media Services', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"), portfolio_reliantsecurity_path
+
+section.steps
+	.container
+		.row
+			.col-lg-12
+				h2 How It Works
+		.row.mb-5
+			.col-md-4
+				i.fad.fa-phone
+				h5 
+					span 01.
+				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
+			.col-md-4
+				i.fad.fa-comments
+				h5
+					span 02. 
+				p We’ll discuss the direction for your brand & website.
+			.col-md-4
+				i.fad.fa-pencil-paintbrush
+				h5 
+					span 03. 
+				p After a few weeks, you’ll receive your elevated brand materials or website!
+		.row
+			.col-lg-12
+				.text-center
+					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center"

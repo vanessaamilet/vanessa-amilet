@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery unless: -> { request.format.json? }
 
   # URL Redirect
-  APP_DOMAIN = 'www.amilet.com'
+  APP_DOMAIN = 'www.vanessaamilet.com'
   # before_filter :ensure_domain
   before_action :ensure_domain
 

@@ -1,0 +1,64 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Reliant Home Security
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Reliant needed a revamp to their Security brand for their 2020 Mass campaign. I worked alongside with members of my team to create assets such as webpages, graphics for social posts, videos for social media, and much more. 
+					hr.my-5
+					.row
+						.col-sm-6
+							h6 Client
+							p NRG Reliant
+						.col-sm-6
+							h6 Year
+							p 2020
+					.row
+						.col-sm-12
+							h6 Services
+							p Social Media
+							p Motion Graphics Videos
+					.row
+							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.hcss.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to "#video1", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Story Video Ad" do
+						button.btn-play.position-absolute.top-50.start-50.translate-middle
+						= image_tag "portfolio/reliant-security/reliant-security-instagram-story-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Security by Reliant - Instagram Story Video Ad"
+					
+
+					= link_to "#video2", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Video Ad" do
+						button.btn-play.position-absolute.top-50.start-50.translate-middle
+						= image_tag "portfolio/reliant-security/reliant-security-instagram-post.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Security by Reliant - Instagram Video Ad"
+/! Videos
+// Instagram Story Video Ad
+video width="1080" height="1920" id="video1" controls="" style="display:none;" 
+	source src="/videos/reliant-security-instagram-ad.mp4" type="video/mp4"
+	/ source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm"
+	/ source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg"
+	p Your browser doesn't support HTML5 video tag.
+
+// Instagram Post Video Ad
+video width="1080" height="1080" id="video2" controls="" style="display:none;" 
+	source src="/videos/reliant-security-DYK-social.mp4" type="video/mp4"
+	/ source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm"
+	/ source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg"
+	p Your browser doesn't support HTML5 video tag.
+
+
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
+		

@@ -1,96 +1,87 @@
-= metamagic meta title: "FAQs | Vanessa Amilet - Web & Graphic Design Services"
-</header>
+= content_for :body_class, 'faqs dark-nav'
+
 /!  Begin Page Content
-section.faqs-header.d-flex.justify-content-center
+section.hero.justify-content-center
 	.container
-		.row
-			.col-md-10.offset-md-1
-				h2 Frequently Asked Questions
+		.row.justify-content-center
+			.col-md-10.col-lg-8.pt-5
+				h6.mb-5 FAQS
+				h1 Frequently Asked Questions
 				p.lead 
-					| Need help? Here you can find answers and general information quickly about my work and services. If you don't find an answer to your question here, please contact me at 
-					= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet[@]gmail.com"
-					| .
+					| Need help? Here you can find answers and general information quickly about my work and services.
 section.faqs
 	.container
-		.row
-			.col
-				#accordion role="tablist"
-					.card
-						.card-header#headingOne role="tab"
-						  h5.mb-0
-							<a data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">I am interested in working with you, how do we get started?</a>
-					
-						#collapseOne.collapse.show role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion"
-						  .card-body
-							p If you are interested in working with me, you may fill out my contact form and provide a short description of what you are looking for on your website. You may also set up a 15 minute consulation.
+		.row.justify-content-center
+			.col-md-10
+				#accordion.accordion.accordion-flush role="tablist"
+					.accordion-item
+						h2.accordion-header#headingOne
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+								| I am interested in working with you, how do we get started?
+						#collapseOne.accordion-collapse.collapse aria-labelledby="headingOne" data-bs-parent="#accordion"
+							.accordion-body
+								p If you are interested in working with me, you may fill out my contact form and provide a short description of what you are looking for on your website. You may also set up a 15 minute consultation.
 
-					.card
-						.card-header#headingTwo role="tab"
-						  h5.mb-0
-							<a class="collapsed" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Do you accept PayPal?</a>
-		
-						#collapseTwo.collapse role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion"
-						  .card-body
-							p Yes, I do accept Paypal Payments.
-				  
-					.card
-						.card-header#headingThree role="tab"
-						  h5.mb-0
-							<a class="collapsed" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">What is a responsive website?</a>
-						#collapseThree.collapse role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion"
-						  .card-body
-							p A responsive website is designed to automatically shrink and expand when viewed on a desktop, a tablet or a smartphone. By having a website that is easily viewed on mobile devices means that you give far greater access to your online content to your viewer. With the introduction of the iPhone and iPad, the use of mobile website viewing has had a staggering increase of users. Getting your website designed as a responsive site is almost essential for the future viewing of your site as more and more people go mobile. Yes, I do design responsive websites!
-						
-				  
-					.card
-						.card-header#headingFour role="tab"
-						  h5.mb-0
-							<a data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="true" aria-controls="collapseFour">Do you need all of my content before you can get started?
-							</a>
-					
-						#collapseFour.collapse role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion"
-						  .card-body
-							p I certainly do! Almost all projects will require content up front. Design is a little like the love child of tetris and a jigsaw puzzle – we have to consider all elements and understand the overall intended outcome before we even start to fit the pieces together. I don’t only have to consider the relationship between images and text (for example) but things like the amount of copy you provide, the number of images and even the orientation of the photos effects the design we produce. After I receive your brief, I’ll have a chat to you to discuss if we need to tailor elements of our process to suit your project.
-					.card
-						.card-header#headingFive role="tab"
-						  h5.mb-0
-							<a data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">Can I update my website on my own?
-							</a>
-					
-						#collapseFive.collapse role="tabpanel" aria-labelledby="headingFive" data-parent="#accordion"
-						  .card-body
-							p Yes, you will be able to update your website as you wish. I build all websites with a user-friendly content management system, such as Wordpress.  A content management system is software that keeps track of every piece of content on your website, much like your local library keeps track of books and stores them. Content can be simple text, photos, music, video, documents, or just about anything you can think of.
-	
-					.card
-						.card-header#headingSix role="tab"
-						  h5.mb-0
-							<a data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="true" aria-controls="collapseSix">I’m new to WordPress, can you walk me through how to use it?
-							</a>
-					
-						#collapseSix.collapse role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion"
-						  .card-body
-						  	p Don’t stress! Once your website project is complete, I’ll walk you through the custom aspects of your site and how to utilize tools on Wordpress.
-					.card
-						.card-header#headingSeven role="tab"
-						  h5.mb-0
-							<a data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="true" aria-controls="collapseSix">What kinds of websites do you design?
-							</a>
-					
-						#collapseSeven.collapse role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion"
-						  .card-body
-						  	p I design & develop a different range of websites. I worked on everything from ecommerce websites to microsites. I have also worked with clients from different industries, such as software, human resources, arts, and much more.
+					.accordion-item
+						h2.accordion-header#headingSeven
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven"
+								| What kinds of websites do you design?
+						#collapseSeven.accordion-collapse.collapse aria-labelledby="headingSeven" data-bs-parent="#accordion"
+							.accordion-body
+								p I design & develop a different range of websites. I worked on everything from ecommerce websites to microsites. I have also worked with clients from different industries, such as software, human resources, arts, and much more.
 
-					/ .card
-					/ 	.card-header#headingSix role="tab"
-					/ 	  h5.mb-0
-					/ 		<a class="collapsed" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">What are your payment terms?</a>
-		
-					/ 	#collapseSix.collapse role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion"
-					/ 	  .card-body
-					/ 		p To kick off a project, we require a 50% deposit. The remaining 50% is paid half-way through your project. On occasions, we are happy to negotiate (where possible) payment terms that suit both parties.
+					.accordion-item
+						h2.accordion-header#headingFour
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour"
+								| Do you need all of my content before you can get started?
+						#collapseFour.accordion-collapse.collapse aria-labelledby="headingFour" data-bs-parent="#accordion"
+							.accordion-body
+								p I certainly do! Almost all projects will require content up front. Design is a little like the love child of tetris and a jigsaw puzzle – we have to consider all elements and understand the overall intended outcome before we even start to fit the pieces together. I don’t only have to consider the relationship between images and text (for example) but things like the amount of copy you provide, the number of images and even the orientation of the photos effects the design I produce. After I receive your brief, I’ll have a chat to you to discuss if we need to tailor elements of my process to suit your project.
+
+					.accordion-item
+						h2.accordion-header#headingThree
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree"
+								| What is a responsive website?
+						#collapseThree.accordion-collapse.collapse aria-labelledby="headingThree" data-bs-parent="#accordion"
+							.accordion-body
+								p A responsive website is designed to automatically shrink and expand when viewed on a desktop, a tablet or a smartphone. By having a website that is easily viewed on mobile devices means that you give far greater access to your online content to your viewer. With the introduction of the iPhone and iPad, the use of mobile website viewing has had a staggering increase of users. Getting your website designed as a responsive site is almost essential for the future viewing of your site as more and more people go mobile. Yes, I do design responsive websites!
+
+					.accordion-item
+						h2.accordion-header#headingFive
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive"
+								| Can I update my website on my own?
+						#collapseFive.accordion-collapse.collapse aria-labelledby="headingFive" data-bs-parent="#accordion"
+							.accordion-body
+								p Yes, you will be able to update your website as you wish. I build all websites with a user-friendly content management system, such as Wordpress.  A content management system is software that keeps track of every piece of content on your website, much like your local library keeps track of books and stores them. Content can be simple text, photos, music, video, documents, or just about anything you can think of.
+					.accordion-item
+						h2.accordion-header#headingSix
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix"
+								| I’m new to WordPress, can you walk me through how to use it?
+						#collapseSix.accordion-collapse.collapse aria-labelledby="headingSix" data-bs-parent="#accordion"
+							.accordion-body
+								p Don’t stress! Once your website project is complete, I’ll walk you through the custom aspects of your site and how to utilize tools on Wordpress.
+					
+					.accordion-item
+						h2.accordion-header#headingEight
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight"
+								| How soon can we get started?
+						#collapseEight.accordion-collapse.collapse aria-labelledby="headingEight" data-bs-parent="#accordion"
+							.accordion-body
+								p Typically, I am booked out 1-2 months in advance, but sometimes I have project spots that may begin sooner than that. Fill out our contact form to book a consultation call and we can discuss when you'd like to get started.
+					
+					.accordion-item
+						h2.accordion-header#headingTwo
+							button.accordion-button.collapsed type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"
+								| Do you accept PayPal?
+						#collapseTwo.accordion-collapse.collapse aria-labelledby="headingTwo" data-bs-parent="#accordion"
+							.accordion-body
+								p Yes, I do accept Paypal Payments.
+				
+
+
 		br
 		section.get-started
 			.row
 				.col.text-center
-					p.lead Have any more questions or would like to get started?	   
-					= link_to "Get In Touch", contact_path, :class=>"btn btn-blue-outline"
+					h3 Ready to transform your brand?	   
+					= link_to "Get In Touch", contact_path, :class=>"btn btn-secondary"

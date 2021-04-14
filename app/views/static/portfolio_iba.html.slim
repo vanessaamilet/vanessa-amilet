@@ -1,72 +1,50 @@
-= metamagic meta title: "I Build America | Vanessa Amilet - Web & Graphic Design Services"
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
-#portfolio-iba.portfolio-single
-	.portfolio-hero
-		.portfolio-gradient-top
-		.vertical.portfolio-box
-			.portfolio-img.zoomout
-			.vertical-middle
-				.container
-					.row
-						.col-lg-12.col-md-12
-							= image_tag "client-logos/client-iba.svg", :class=>"logo center-img", :alt=>"I Build America"
-		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
-</header>
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 I Build America
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
 section.portfolio-info#info
-	.container
-		.row
-			.col-lg-6.py-3.px-lg-5
-				p.lead I Build America is a national movement focused on building pride in the construction industry, educating the public about the value of construction and recruiting the next generation of construction professionals. This movement was started by HCSS. I Build America needed a whole website redesign that was more user friendly, responsive, and easier to manage. 
-				p.lead The solution was to create a brand new website by developing a custom Wordpress theme with the I Build America branding. ACF was implemented to organize information such as construction projects and companies.
-				= link_to "View Website »", 'https://www.ibuildamerica.com/', target: "_blank"
-			.col-lg-6.py-3.px-lg-5
-				.row
-					.col-sm-6
-						h6 Client
-						p I Build America
-					.col-sm-6
-						h6 Year
-						p 2016 - Present
-				.row
-					.col-sm-6
-						h6 Services
-						p Website Design & Development
-					.col-sm-6
-						h6 Technologies
-						p HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead I Build America is a national movement focused on building pride in the construction industry, educating the public about the value of construction and recruiting the next generation of construction professionals. This movement was started by HCSS. I Build America needed a whole website redesign that was more user friendly, responsive, and easier to manage. 
+					p.lead The solution was to create a brand new website by developing a custom Wordpress theme with the I Build America branding. ACF was implemented to organize information such as construction projects and companies.
+					hr.my-5
+					.row
+						.col-sm-6
+							h6 Client
+							p I Build America
+						.col-sm-6
+							h6 Year
+							p 2016 - 2019
+					.row
+						.col-sm-12
+							h6 Services
+							p Website Design & Development
+							p Blog
+							h6 Technologies
+							p HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
+					.row
+							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.ibuildamerica.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/iba/iba-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"I Build America Website" do
+						= image_tag "portfolio/iba/iba-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"I Build America Website"
+					= link_to image_path("portfolio/iba/iba-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
+						= image_tag "portfolio/iba/iba-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Website"
+					= link_to image_path("portfolio/iba/iba-caw-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
+						= image_tag "portfolio/iba/iba-caw-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
+					= link_to image_path("portfolio/iba/iba-caw-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Construction Appreciation Week Website" do
+						= image_tag "portfolio/iba/iba-caw-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
 
-section.colors
-	.container
-		.row
-			.col-lg-12
-				h6 COLORS
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #C32A27;"
-					p.color-palette-name $red
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #02334e;"
-					p.color-palette-name $navy
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #e7a824;"
-					p.color-palette-name $gold
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #222222;"
-					p.color-palette-name $dark-gray
-section.fonts
-	.container
-		.row
-			.col-lg-12
-				h6 TYPOGRAPHY
-		.row
-			.col-md-6
-				= image_tag "typography/industry-type.svg", :class=>"img-responsive center-block", :alt=>"Industry"
-			.col-md-6
-				= image_tag "typography/roboto-type.svg", :class=>"img-responsive center-block"
-
-section.showcase.iba
-	.container
-		.row
-			.col-lg-12
-				= image_tag "portfolio-showcases/showcase-iba.jpg", :class=>"img-fluid center-img", :alt=>"I Build America Showcase"
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

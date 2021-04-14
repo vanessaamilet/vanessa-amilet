@@ -1,142 +1,93 @@
-= metamagic meta title: "Vanessa Amilet - Web & Graphic Design Services | Designer & Developer", description: "Portfolio of Vanessa Amilet, a freelance web designer & developer based in Houston, providing custom web and graphic design services to businesses nationwide.", keywords: ["web design services", "responsive web design", "houston web design", "wordpress web design", "wordpress themes", "vanessa amilet", "#vanessaamilet", "amilet", "freelance web designer", "freelance developer"]
 = content_for :body_class, 'homepage-template'
 /!  Section Main Content 
-section.home-hero.center
+section.home-hero.pt-6.pt-md-10
 	.texture-overlay
-	.container
-		.row
-			.col-lg-12.col-md-12
-				.intro-wrapper.mx-auto
-					= render :partial => "shared/svg"
-					h1.lead DESIGNER & DEVELOPER
-		.row
-			.scroll-downs
-				.mouse
-			    	.scroller
-</header>
+	.container-lg
+		.row.align-items-center.justify-content-between.mt-3
+			.col-md-7.pe-lg-5
+				h1 Helping Brands Flourish
+				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven individuals & businesses seeking to establish an authentic online presence.
+				div
+					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3"
+					= link_to "View My Work", portfolio_path, :class=>"link text-white ps-5"
+			.col-md-5
+				.start-0.end-0.right-0
+					= image_tag  "homepage/img-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"	
+		/!
+			.row
+				.scroll-downs
+					.mouse
+						.scroller
 
 /!  Begin Page Content
-section
+section.services
 	.container
 		.row
-			.col-md-12.text-center
-				p.lead I am an award winning designer & developer based in Houston, Texas. I pride myself on my eagerness and ability to learn. Over the last few years, I have allowed myself to delve into a design and art centric lifestyle. Due to my attention to detail, I am constantly absorbing ideas from everyday life. I am very passionate about my work and driven to satisfy my clients.
+			.col-lg-12
+				h2.text-center My Services
+		.row
+			.col-md-4.my-5
+				.services-content
+					i.fad.fa-magic
+					h4 Get Your Business Out of the Comfort Zone
+					h5 Web Design
+					p A well designed website is intuitive, and converts visitors to new customers. Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
+			.col-md-4.my-5
+				.services-content
+					i.fad.fa-star-shooting
+					h4 Express your Authenticity
+					h5 Brand Design
+					p A unique and memorable brand is aligned with the heart of your business. I help business owners bring their authentic vision to life by developing a holistic brand identity that reasonates with their ideal audience.
+					/ p I help clients build unique and memorable brands by intimately understanding their vision and applying traditional design principles translated for the digital space — from product logos and app icons, to style guides and the overall user experience.
+			.col-md-4.my-5
+				i.fad.fa-bullseye-pointer
+				h4 Generate New Leads Creatively
+				h5 Interactive Media
+				p Customer clarity leads to sales. Clarify your vision with innovative motion graphics that resonates with your ideal clients and communicates your brand story. 
 
-/!
-	section.services
-		.container
-			.row
-				.col-lg-12
-					h2.text-center Services
-			.row
-				.col-md-4
-					.services-icon
-						= image_tag "icons/icon-services-design.svg", :class=>"img-responsive center-block service-icon"
-					.services-content
-						h4 Graphic Design
-						p I design and create graphics and branding collateral using Adobe Illustrator, Photoshop, and InDesign.
-		
-				.col-md-4
-					.services-icon
-						= image_tag "icons/icon-services-web.svg", :class=>"img-responsive center-block service-icon"
-					.services-content
-						h4 Web Development
-						p I build clean elegant websites with modern technologies such as Bootstrap, Wordpress, and much more.
-				
-				.col-md-4
-					.services-icon
-						= image_tag "icons/icon-services-media.svg", :class=>"img-responsive center-block service-icon"
-					.services-content
-						h4 Media & Interactivity
-						p I also create videos and animations using tools such as Adobe Animate, Premiere, and After Effects.
-			br
-			.row
-				.col-lg-12
-					.text-center
-						= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
-						= link_to "Request a Quote", contact_path, :class=>"btn btn-purple-outline"
-.services.development-services
-		.container-fluid
-			.row.justify-content-center
-				.col-md-6.col-img
-				.col-md-6.p-5
-					h3 Web Development Services
-					p A well designed website should be intuitive, inspire trust, promote your brand, and drive conversions and sales. I specialize in creating simple and elegant designs that will get your visitors engaged. I use modern technologies such as Bootstrap, Wordpress, Shopify, and much more.
-					ul
-						li Responsive, Mobile-Optimized Websites
-						li Customized Wordpress Websites
-						li E-Commerce
-						li Website Redesigns
-						li Email Designs
-						li UX/UI Design
-					.text-center
-					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
-					= link_to "View Work", portfolio_path, :class=>"btn btn-purple-outline"
-.services.design-services
-		.container-fluid
-			.row.d-flex.justify-content-center
-				.col-md-6.p-5
-					h3 Design & Media Services
-					p Media is a great way to generate interest in your products and services and drive qualified visitors to your website. I design graphics and branding collateral using programs such as Adobe Illustrator, Photoshop, and InDesign. I also create motion graphic videos and animations using tools such as Adobe Animate, Premiere, and After Effects.
-					ul 
-						li Visual Brand Identity
-						li Print Design
-						li Packaging Design
-						li Vector Graphics
-						li Short Animation Videos
-						li And More
-					.text-center
-					= link_to "Learn More", about_path, :class=>"btn btn-blue-outline mr-3"
-					= link_to "Get In Touch", contact_path, :class=>"btn btn-purple-outline"
-				.col-md-6.col-img
-
+		br
+		.row
+			.col-lg-12
+				.text-center
+					= link_to "Learn More About My Services", services_path, :class=>"btn btn-secondary mr-3"
 section.reviews
 	.container
 		.row
-			h3.center.mx-auto What Clients Are Saying
-		.row.d-flex
-			.col-md-6.row-eq-height
-				.card
-					.card-body
-						p "I am extremely happy to provide a recommendation for the web development services that Vanessa Amilet Santos provided. My current website was created in 2014 and I felt it was time for an update. My cry for help was answered by Vanessa Amilet Santos. From the initial meeting where she explained her services and capabilities to the final design and launch, Vanessa Amilet Santos was exceptional. The best part about the experience was the collaboration and recommendations she provided.
-						a data-toggle="collapse" data-target="#more"
-							| Show More
-						#more.collapse
-							| She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors. Vanessa Amilet Santos is the reason I am getting such positive feedback after launching the new Leeward Team company website."
-						footer.blockquote-footer 
-							| Julyan Lee - Founder, 
-							cite
-								= link_to "The Leeward Team", "http://leewardteam.com/"
-
-			.col-md-6.row-eq-height
-				.card
-					.card-body.align-middle
-						p "Vanessa is AMAZING to work with! Her work is professional and creative and the final results of my completed website is outstanding. I have received numerous compliments about the layout and design. I highly recommend Vanessa for Website design! My recommendation is not only for her creativity and professionalism but also because of her patience and willingness to work with my budget! :)"
-						footer.blockquote-footer 
-							| Kristie C. - Founder, 
-							cite 
-								= link_to "Kristie Inc.", "http://kristieinc.com/"
-		hr
-		.row.client-logos
+			h2.center.mx-auto What Clients Are Saying
+		.row.client-logos.mb-5
 			.col-md-3.col-sm-6
-				/ = link_to 'http://www.captivecolour.com/' do
-				/ 	= image_tag 'client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'
-				= link_to image_tag('client-logos/captivecolour-logo-tagline.svg', alt: 'CaptiveColour Cosmetics'), 'http://www.captivecolour.com/'
+				= link_to image_tag('client-logos/client-apg.svg', alt: 'Allied Power Group'), 'https://alliedpg.com/'
+			.col-md-3
+				= link_to image_tag('client-logos/client-picnics-inthecity.svg', alt: 'Picnics in the City'), 'https://picnicsinthecity.com/'
 			.col-md-3.col-sm-6
-				= link_to 'http://www.jumpix.com/' do
-					= image_tag 'client-logos/client-jumpix.svg', alt: 'Jumpix'
+				= link_to image_tag('client-logos/client-jumpix.svg', alt: 'Jumpix'), 'http://www.jumpix.com/'
 			.col-md-3.col-sm-6
 				= link_to 'http://www.leewardteam.com/' do
 					= image_tag 'client-logos/leewardteam-logo.svg', alt: 'The Leeward Team'
-			.col-md-3.col-sm-6
-				= link_to 'http://www.kristieinc.com/' do
-					= image_tag 'client-logos/client-kristieinc.svg', alt: 'Kristie Inc'
-			/ .col
-			/ 	= link_to 'http://www.kristieinc.com/' do
-			/ 		= image_tag 'client-logos/client-kristieinc.svg', height: 70, alt: 'Kristie Inc'
-			
-
-
+		.row.justify-content-center.pt-5
+			.col-lg-10
+				.quote
+					= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+					p.lead
+						| "She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors."
+					h6 
+						| - Julyan Lee, Founder of 
+						= link_to "The Leeward Team", "http://leewardteam.com/"
+		/
+			.row.d-flex.pt-5
+				.col-md-7.row-eq-height
+					= link_to 'https://vimeo.com/191947042', :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Customer Testimonial - Julyan Lee" do
+						/!-- Button trigger modal
+						button.btn-play.position-absolute.top-50.start-50.translate-middle
+						= image_tag 'https://via.placeholder.com/800x500', alt: 'placeholder'
+				.col-md-5.py-md-5
+					.card.h-100
+						.card-body.d-flex.flex-column.py-10.align-middle
+							p She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors."
+							footer.blockquote-footer 
+								| Julyan Lee - Founder, 
+								cite
+									= link_to "The Leeward Team", "http://leewardteam.com/"
 
 /!  Preloader Content 
 / = render :partial => "shared/preloader"

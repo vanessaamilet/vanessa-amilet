@@ -1,41 +1,64 @@
-/* ## Navigation
----------------------------------------------------------------------------------------------------- */
-
-$('#toggle').click(function() {
-	$(this).toggleClass('active');
-
-	$('#overlay').toggleClass('open');
-});
-
-/* ## Preloader
----------------------------------------------------------------------------------------------------- */
-
-/*$(window).load(function() {
-	$("#status").delay(2e3).fadeOut("slow"),
-	$("#preloader").delay(1400).fadeOut("slow")
-}),
-$(window).scroll(function() {
-	$(this).scrollTop() > 50 ? $(".before-color").addClass("after-color") : $(".before-color").removeClass("after-color")
-});*/
-
 /* ## Scripts - Turbolinks (Loaded through All Pages)
 ---------------------------------------------------------------------------------------------------- */
 
 $(document).on('turbolinks:load', function() {
-    /* ## Smooth Scrolling
+    /* ## Cookie Consent
     ---------------------------------------------------------------------------------------------------- */
-    $('a[href*="#info"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-                return false;
-            }
+    // window.cookieconsent.initialise({
+    //     "palette": {
+    //       "popup": {
+    //         "background": "#f2f2f2",
+    //         "text": "#444444"
+    //       },
+    //       "button": {
+    //         "background": "#255958",
+    //         "text": "#ffffff"
+    //       }
+    //     },
+    //     "showLink": false,
+    //     "theme": "classic"
+    // });
+
+    
+
+    /* ## Navigation - Nav Shrink
+    ---------------------------------------------------------------------------------------------------- */
+    //* ### Mobile Nav */
+    $('#navbarNav').on('show.bs.collapse', function() {
+        // do something…
+        $('.navbar').addClass('mobile');
+    });
+
+    $('#navbarNav').on('hidden.bs.collapse', function() {
+        // do something…
+        $('.navbar').removeClass('mobile');
+    });
+
+    //* ### Nav Shrink */
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 70) { 
+            $('nav.navbar').addClass('nav-shrink');
+            //$('.dark-nav nav.navbar').addClass('nav-shrink');
+        }
+        else{
+            $('nav.navbar').removeClass('nav-shrink');
+            //$('.dark-nav nav.navbar').removeClass('nav-shrink');
         }
     });
+    /* ## Smooth Scrolling
+    ---------------------------------------------------------------------------------------------------- */
+    // $('a[href*="#info"]:not([href="#"])').click(function() {
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    //         if (target.length) {
+    //             $('html, body').animate({
+    //                 scrollTop: target.offset().top
+    //             }, 1000);
+    //             return false;
+    //         }
+    //     }
+    // });
 
     /* ## Scroll to Top
     ---------------------------------------------------------------------------------------------------- */
@@ -44,7 +67,7 @@ $(document).on('turbolinks:load', function() {
     //Scroll (in pixels) after which the "back to top" link opacity is reduced
     offset_opacity = 1200,
     //Duration of the top scrolling animation (in ms)
-    scroll_top_duration = 700,
+    scroll_top_duration = 100,
     //Get the "To Top" link
     $back_to_top = $('.to-top');
 
@@ -64,20 +87,7 @@ $(document).on('turbolinks:load', function() {
             }, scroll_top_duration
         );
     });
-
-    /* ## Bootstrap Modal
-    ---------------------------------------------------------------------------------------------------- */
-    $('.modal').each(function(){
-        var src = $(this).find('iframe').attr('src');
-
-        $(this).on('click', function(){
-
-            $(this).find('iframe').attr('src', '');
-            $(this).find('iframe').attr('src', src);
-
-        });
-    });
-
+    
     /* ## Load More Btn (For Portfolio)
     ---------------------------------------------------------------------------------------------------- */
     //$(function(){
@@ -91,11 +101,41 @@ $(document).on('turbolinks:load', function() {
             }
         });
     //});
-});
+
+    /* ## Fancybox
+    ---------------------------------------------------------------------------------------------------- */
+    // $('.fancybox').fancybox({});
+    $.fancybox.defaults.hash = false;
+    $('[data-fancybox="gallery"]').fancybox({
+        // Options will go here
+        buttons : [ 
+            'slideShow',
+            // 'zoom',
+            'fullScreen',
+            'close'
+        ],
+        animationEffect: "fade",
+    });
+
+    // $(".browse-more .col-md-4").each(function () {
+    //     $(this).toggleClass('invisible d-none', Math.random() < 0.75);
+    // });
+
+    /* ## More Projects Section
+    ---------------------------------------------------------------------------------------------------- */
+    var elems = $(".browse-more .row.projects");
+    if (elems.length) {
+        var keep = Math.floor(Math.random() * elems.length);
+            for (var i = 0; i < elems.length; ++i) {
+                if (i !== keep) {
+                    $(elems[i]).hide();
+                }
+            }
+        }
+    });
 
 /* ## Detect Snooping Web Developers
 ---------------------------------------------------------------------------------------------------- */
-
 var counter = 0,
     back = !1;
 
@@ -110,6 +150,7 @@ $(window).resize(function () {
         counter++
     }
 });
+
 
 /* ## Random
 ---------------------------------------------------------------------------------------------------- */

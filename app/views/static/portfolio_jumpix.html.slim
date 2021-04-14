@@ -1,88 +1,90 @@
-= metamagic meta title: "Jumpix | Vanessa Amilet - Web & Graphic Design Services"
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
-#portfolio-jumpix.portfolio-single
-	.portfolio-hero
-		.portfolio-gradient-top
-		.vertical.portfolio-box
-			.portfolio-img.zoomout
-			.vertical-middle
-				.container
-					.row
-						.col-lg-12.col-md-12
-							= image_tag "client-logos/client-jumpix.svg", :class=>"logo center-img", :alt=>"Jumpix"
-		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
-</header>
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Jumpix
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
 section.portfolio-info#info
-	.container
-		.row
-			.col-lg-6.py-3.px-lg-5
-				p.lead Jumpix was created for users to be able to connect multiple cloud services in one portal. Users are able to sign up with their personal email. Users will have access to features such as copying files, downloading/uploading files, deleting files, and renaming files. I worked on multiple items for Jumpix, such as an animated video, icons for their web based software, and building out the front-end of their software. 
-				p.offline Temporarily Offline
-			.col-lg-6.py-3.px-lg-5
-				.row
-					.col-md-6
-						h6 Client
-						p Jumpix
-					.col-md-6
-						h6 Year
-						p 2013 - 2016
-				.row
-					.col-md-6
-						h6 Services
-						p Website Design & Development, Graphic Design, Media
-					.col-md-6
-						h6 Technologies
-						p HTML/CSS, Ruby on Rails, Slim Lang, Twitter Bootstrap, Illustrator, After Effects
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Jumpix was created for users to be able to connect multiple cloud services in one portal. Users are able to sign up with their personal email. Users will have access to features such as copying files, downloading/uploading files, deleting files, and renaming files. I worked on multiple items for Jumpix, such as an animated video, icons for their web based software, and building out the front-end of their software.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Jumpix
+						.col-md-6
+							h6 Year
+							p 2013 - 2016
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Development
+							p Graphic Design
+							p Iconography
+							p Media
+						.col-md-6
+							h6 Technologies
+							p HTML/CSS, Ruby on Rails, Slim Lang, Twitter Bootstrap, Illustrator, After Effects
+					.row
+						p.offline Website Temporarily Offline
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
+						= image_tag "portfolio/jumpix/jumpix-dashboard-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App - Dashboard"
+					= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
+						button.btn-play.position-absolute.top-50.start-50.translate-middle
+						= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Video"
+					= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
+						= image_tag "portfolio/jumpix/showcase-jumpix.png", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Website Showcase"
+					
+					= link_to image_path("portfolio/jumpix/jumpix-login-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Login Page" do
+						= image_tag "portfolio/jumpix/jumpix-login-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Login Page"
 
-section.colors
-	.container
-		.row
-			.col-lg-12
-				h6 COLORS
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #585094;"
-					p.color-palette-name #585094
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #6CC049;"
-					p.color-palette-name #6CC049
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #CEDE00;"
-					p.color-palette-name #CEDE00
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #000000;"
-					p.color-palette-name #000000
-section.fonts
-	.container
-		.row
-			.col-lg-12
-				h6 TYPOGRAPHY
-		.row
-			.col-md-6
-				= image_tag "typography/open-sans-type.svg", :class=>"img-responsive center-block"
+					= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
+						= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Dashboard - Add Cloud Service"
 
-			.col-md-6
-				= image_tag "typography/quicksand-type.svg", :class=>"img-responsive center-block"
+					= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
+						= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Icons"
+					= link_to image_path("portfolio/jumpix/jumpix-careers-flyer.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Careers Flyer" do
+						= image_tag "portfolio/jumpix/jumpix-careers-flyer.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Careers Flyer"
+					
+				.colors
+					.container
+						.row
+							.col-lg-12
+								h6 COLORS
+								.col-sm-3.color-palette-container
+									.color-palette style="--color-palette-var: #585094;"
+									p.color-palette-name #585094
+								.col-sm-3.color-palette-container
+									.color-palette style="--color-palette-var: #6CC049;"
+									p.color-palette-name #6CC049
+								.col-sm-3.color-palette-container
+									.color-palette style="--color-palette-var: #CEDE00;"
+									p.color-palette-name #CEDE00
+								.col-sm-3.color-palette-container
+									.color-palette style="--color-palette-var: #000000;"
+									p.color-palette-name #000000
+				.fonts
+					.container
+						.row
+							.col-lg-12
+								h6 TYPOGRAPHY
+						.row
+							.col-md-6
+								= image_tag "typography/open-sans-type.svg", :class=>"img-responsive center-block"
 
-section.showcase.jumpix
-	.container
-		.row
-			.col-lg-12
-				= image_tag "portfolio-showcases/showcase-jumpix.png", :class=>"img-fluid center-img", :alt=>"Jumpix Showcase"
-				<!-- Button trigger modal -->
-				button.btn-play.mx-auto type="button" data-toggle="modal" data-target="#videoModal"
-
-/! Modal
-.modal.fade#videoModal tabindex="-1" role="dialog" aria-labelledby="videoModalTitle" aria-hidden="true"
-  .modal-dialog.modal-dialog-centered role="document"
-	.modal-content
-	  .modal-header
-		h5.modal-title id="videoModalTitle"
-			| Jumpix Animation Video
-		button type="button" class="close" data-dismiss="modal" aria-label="Close"
-		  <span aria-hidden="true">&times;</span>
-	  .modal-body
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/OXDCorXseHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	  .modal-footer
-		<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							.col-md-6
+								= image_tag "typography/quicksand-type.svg", :class=>"img-responsive center-block"
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

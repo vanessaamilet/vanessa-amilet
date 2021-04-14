@@ -1,73 +1,49 @@
-= metamagic meta title: "Picnics in the City | Vanessa Amilet - Web & Graphic Design Services"
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
-#portfolio-captivecolour.portfolio-single
-	.portfolio-hero
-		.portfolio-gradient-top
-		.vertical.portfolio-box
-			.portfolio-img.zoomout
-			.vertical-middle
-				.container
-					.row
-						.col-lg-12.col-md-12
-							= image_tag "client-logos/client-captivecolour.svg", :class=>"logo center-img", :alt=>"CaptiveColour Cosmetics"
-		<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
-</header>
+#portfolio-captivecolour.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Picnics in the City
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
 section.portfolio-info#info
-	.container
-		.row
-			.col-lg-6.py-3.px-lg-5
-				p.lead Picnics in the City is a start up cosmetic company in Houston, Texas that specializes in providing individuals with a experience of a luxury picnic. I had the pleasure to work on their branding (coming up with the brand name, colors, aesthetic), creating the design for the lipstick packaging, and creating social media posts. I also built out landing pages using Rails, Gibbon, and Heroku. The e-commerce website was designed & developed using Shopify.
-				= link_to "View Website »", 'https://picnicsinthecity.com/', target: "_blank"
-			.col-lg-6.py-3.px-lg-5
-				.row
-					.col-md-6
-						h6 Client
-						p Picnics in the City
-					.col-md-6
-						h6 Year
-						p 2020 - Present
-				.row
-					.col-md-6
-						h6 Services
-						p Website Design & Development, Graphic Design, Branding, Social Media, Photography
-					.col-md-6
-						h6 Technologies
-						p Shopify, HTML/SCSS, Rails, Heroku, Mailchimp, Adobe Illustrator
-					
-section.colors
-	.container
-		.row
-			.col-lg-12
-				h6 COLORS
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #4f2b84;"
-					p.color-palette-name Pantone Medium Purple
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #72256b;"
-					p.color-palette-name Pantone 255 C
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #000;"
-					p.color-palette-name Black
-				.col-sm-3.color-palette-container
-					.color-palette style="--color-palette-var: #fff;"
-					p.color-palette-name White
-				
-section.fonts
-	.container
-		.row
-			.col-lg-12
-				h6 TYPOGRAPHY
-		.row
-			.col-md-6
-				= image_tag "typography/gotham-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham"
-			.col-md-6
-				= image_tag "typography/gothambold-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham Bold"
-				
-/!-- Showcase --/
-section.showcase.captivecolour
-	.container
-		.row
-			.col-lg-12
-				= image_tag "portfolio-showcases/showcase-captivecolour.jpg", :class=>"img-fluid center-img", :alt=>"CaptiveColour Showcase"
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Picnics in the City is a local Houston business that specializes in outdoor and indoor picnics. The owner needed a website redesign with their new branding. The owner also wanted to add a functionality that allows customers to book their picnics online, instead of them contacting her directly with the picnics details and choices. I created a customized theme on Shopify with the branding and added a booking system that allows the customer pick any location, picnic add-ons, time and date, and color scheme.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Picnics in the City
+						.col-md-6
+							h6 Year
+							p 2017 - Present
+					.row.mb-3
+						.col-md-12
+							h6 Services
+							p Website Design & Development
+							p Graphic Design
+						/ .col-md-6
+						/ 	h6 Technologies
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://picnicsinthecity.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/picnics/picnicsinthecity-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+						= image_tag "portfolio/picnics/picnicsinthecity-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+
+					= link_to image_path("portfolio/picnics/picnicsinthecity-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+						= image_tag "portfolio/picnics/picnicsinthecity-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+
+					= link_to image_path("portfolio/picnics/picnicsinthecity-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+						= image_tag "portfolio/picnics/picnicsinthecity-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
