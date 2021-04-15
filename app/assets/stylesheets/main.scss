@@ -1344,7 +1344,9 @@ section{
 		align-items: center;
 		// padding: 40px 0;
 		align-items: flex-end;
-		padding-bottom: 6em;
+		@media (min-width:991px){
+			padding-bottom: 6em;
+		}
 		a{
 			color: $white !important;
 		}
@@ -2330,6 +2332,7 @@ i.contact {
 		//padding: 60px 0;
 		text-align: center;
 		min-height: 50vh;
+		height: auto;
 		display: flex;
 		//align-items: center;
 		align-items: flex-end;
@@ -2472,7 +2475,24 @@ i.contact {
 /* ## Portfolio Grid
 --------------------------------------------- */
 .portfolio-grid{
+	// padding: 40px 0;
 	padding: 40px 70px;
+	@media screen and (max-width:460px) {
+		padding: 40px 20px;
+	}
+	background-color: #F9F4F1;
+	background-repeat: repeat;
+	background-position: center center;
+	h2{
+		text-align: center;
+		margin-bottom: 35px !important;
+	}
+	.row{
+		padding: 15px 0;
+		@media (max-width: 767px){
+			padding: 0;
+		}
+	}
 	.col-md-4{
 		&.load-card{
 			display: none;
@@ -2905,7 +2925,7 @@ section.showcase{
 		transform: none;
 	}
 	.cc-window{
-		display: none;
+		display: none !important;
 	}
 }
 
