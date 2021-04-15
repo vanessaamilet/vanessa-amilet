@@ -368,6 +368,7 @@ body {
 	font-weight: $medium-weight;
 	color: $text-color;
 	background: $bg-color;
+	overflow-x: hidden;
 	@include antialias;
 }
 
