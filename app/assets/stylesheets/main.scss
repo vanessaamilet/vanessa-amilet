@@ -2598,9 +2598,11 @@ i.contact {
 		background-color: $dark-green;
 		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		align-items: flex-end;
-		height: 40vh;
 		//padding-bottom: 6em;
 		padding-bottom: 4em;
+		@media screen and (min-width:768px){
+			height: 40vh;
+		}
 	}
 	.portfolio-info{
 		padding: 0;
