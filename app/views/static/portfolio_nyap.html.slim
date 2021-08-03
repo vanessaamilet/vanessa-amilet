@@ -1,0 +1,49 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+#portfolio-captivecolour.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Not Your Average Picnic
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Not Your Average Picnic is a Dallas, Texas business that specializes in outdoor and indoor picnic event parties. The owner was in need of a website that displayed all of her different picnic packages and services. She was also looking for a way to have everything automated and easier for customers to book her services. The solution was to create a customized theme on Shopify with their branding and add a booking system that allows the customer pick their desired location for their picnic, add-ons, time and date, and color schemes.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Not Your Average Picnic
+						.col-md-6
+							h6 Year
+							p 2021 - Present
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Development
+						.col-md-6
+							h6 Technologies
+							p Shopify
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://noturaveragepicnic.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/nyap/nyap-showcase-1.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Not Your Average Picnic Website" do
+						= image_tag "portfolio/nyap/nyap-showcase-1.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Not Your Average Picnic Website Showcase"
+
+					= link_to image_path("portfolio/nyap/nyap-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Not Your Average Picnic Website" do
+						= image_tag "portfolio/nyap/nyap-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Not Your Average Picnic Website Showcase"
+
+					/ = link_to image_path("portfolio/picnics/picnicsinthecity-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+					/ 	= image_tag "portfolio/picnics/picnicsinthecity-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
