@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   # Portfolio Pages
   get '/portfolio/apg' => 'static#portfolio_apg'
+  get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
   get '/portfolio/not-your-average-picnic' => 'static#portfolio_nyap', as: 'portfolio_nyap'
   get '/portfolio/picnics-in-the-city' => 'static#portfolio_picnics', as: 'portfolio_picnics'
   get '/portfolio/hcss' => 'static#portfolio_hcss'

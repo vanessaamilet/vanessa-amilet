@@ -29,10 +29,10 @@ $(document).on('turbolinks:load', function() {
         $('.navbar').addClass('mobile');
     });
 
-    $('#navbarNav').on('hidden.bs.collapse', function() {
-        // do something…
-        $('.navbar').removeClass('mobile');
-    });
+    // $('#navbarNav').on('hidden.bs.collapse', function() {
+    //     // do something…
+    //     $('.navbar').removeClass('mobile');
+    // });
 
     //* ### Nav Shrink */
     $(window).scroll(function () {

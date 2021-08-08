@@ -1,0 +1,48 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Universal Control Systems
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Universal Control Systems is a business in Phoenix, Arizona that specializes in commercial and industrial energy management systems, as well as ABB VFD installations. 
+					p.lead Their previous website design was outdate and didn't reflect the services they offer. The goal was to do redesign their whole website and implement their new branding. This redesign included creating new web pages and updating current ones that provide information on their overall services, new imagery, and a user friendly layout.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Universal Controls Systems
+						.col-md-6
+							h6 Year
+							p 2021
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Development
+                            p Graphic Design
+						.col-md-6
+							h6 Technologies
+							p Wordpress, Studiopress Genesis Framework
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://universalcontrol.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/ucs/ucs-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Universal Control Systems Showcase" do
+						= image_tag "portfolio/ucs/ucs-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Universal Control Systems Showcase"
+					= link_to image_path("portfolio/ucs/ucs-showcase-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Universal Control Systems Website" do
+						= image_tag "portfolio/ucs/ucs-showcase-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Universal Control Systems Website"
+                    = link_to image_path("portfolio/ucs/ucs-invoice-template.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Universal Control Systems Invoice Template" do
+						= image_tag "portfolio/ucs/ucs-invoice-template.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Universal Control Systems Invoice Template"
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
