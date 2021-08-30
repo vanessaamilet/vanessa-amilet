@@ -59,13 +59,6 @@ section.portfolio-grid
 					
 		.row
 			.col-md-4
-				= link_to portfolio_csl_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-csl.jpg", :class=>"card-img", :alt=>"Cameron S. Lee"
-				  .card-body
-					h5.card-title Cameron S. Lee
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
-			.col-md-4
 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
 				  .card-body
@@ -79,6 +72,13 @@ section.portfolio-grid
 					h5.card-title Reliant Home Security
 					p.card-text Graphic Design - Motion Graphics - Multimedia
 					p View Project » 
+			.col-md-4
+				= link_to portfolio_csl_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-csl.jpg", :class=>"card-img", :alt=>"Cameron S. Lee"
+				  .card-body
+					h5.card-title Cameron S. Lee
+					p.card-text Web Design & Development - Wordpress
+					p View Project »
 		.row
 			.col-md-4.load-card
 				= link_to portfolio_cia_path, class: 'portfolio-card card' do
