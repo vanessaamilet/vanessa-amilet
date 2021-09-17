@@ -29,7 +29,7 @@ section.portfolio-info#info
 							p Social Media
 							p Motion Graphics Videos
 					.row
-							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.hcss.com/', target: "_blank"
+							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.reliant.com/en/residential/security/current-customers/reliant-connect-app.jsp', target: "_blank"
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to "#video1", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Story Video Ad" do
@@ -40,6 +40,9 @@ section.portfolio-info#info
 					= link_to "#video2", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Video Ad" do
 						button.btn-play.position-absolute.top-50.start-50.translate-middle
 						= image_tag "portfolio/reliant-security/reliant-security-instagram-post.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Security by Reliant - Instagram Video Ad"
+					
+					= link_to image_path("portfolio/reliant-security/reliant-security-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2020 Home Security Redesign" do
+						= image_tag "portfolio/reliant-security/reliant-security-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2020 Home Security Redesign"
 /! Videos
 // Instagram Story Video Ad
 video width="1080" height="1920" id="video1" controls="" style="display:none;" 
