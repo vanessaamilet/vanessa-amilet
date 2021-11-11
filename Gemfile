@@ -7,7 +7,7 @@ ruby "2.7.1"
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 
 # Use Puma as the app server
-gem 'puma', '>= 4.3.5'
+gem 'puma', '>= 5.5.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Libsass Library
@@ -23,13 +23,12 @@ gem 'libv8', '~> 7.3', '>= 7.3.492.27.1'
 gem 'sprockets', '~> 3.0' # add this pessimistic operator with twiddle-wakka
 
 gem 'slim-rails'
-gem 'bootstrap', '~> 5.0.0.alpha3'
+#gem 'bootstrap', '~> 5.0.0.alpha3'
 # gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'sitemap_generator', '~> 6.1', '>= 6.1.2'
 gem 'meta-tags', '~> 2.14'
 
 # Gems for Contact Form & Mail
-#gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'mail_form', '~> 1.8'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 
@@ -44,13 +43,14 @@ gem "figaro"
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.1.0'
-gem 'coffee-rails'
+# gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+# gem 'jquery-rails'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

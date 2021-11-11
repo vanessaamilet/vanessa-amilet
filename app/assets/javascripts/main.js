@@ -21,19 +21,8 @@ $(document).on('turbolinks:load', function() {
 
     
 
-    /* ## Navigation - Nav Shrink
+    /* ## Navigation
     ---------------------------------------------------------------------------------------------------- */
-    //* ### Mobile Nav */
-    $('#navbarNav').on('show.bs.collapse', function() {
-        // do something…
-        $('.navbar').addClass('mobile');
-    });
-
-    // $('#navbarNav').on('hidden.bs.collapse', function() {
-    //     // do something…
-    //     $('.navbar').removeClass('mobile');
-    // });
-
     //* ### Nav Shrink */
     $(window).scroll(function () {
         if ($(window).scrollTop() > 70) { 
@@ -45,6 +34,19 @@ $(document).on('turbolinks:load', function() {
             //$('.dark-nav nav.navbar').removeClass('nav-shrink');
         }
     });
+
+    //* ### Mobile Nav */s
+    $('#navbarNav').on('show.bs.collapse', function() {
+        // do something…
+        $('nav.navbar').addClass('mobile');
+    });
+
+    // $('#navbarNav').on('hidden.bs.collapse', function() {
+    //     // do something…
+    //     $('.navbar').removeClass('mobile');
+    // });
+
+    
     /* ## Smooth Scrolling
     ---------------------------------------------------------------------------------------------------- */
     // $('a[href*="#info"]:not([href="#"])').click(function() {
@@ -131,8 +133,8 @@ $(document).on('turbolinks:load', function() {
                     $(elems[i]).hide();
                 }
             }
-        }
-    });
+    }
+});
 
 /* ## Detect Snooping Web Developers
 ---------------------------------------------------------------------------------------------------- */

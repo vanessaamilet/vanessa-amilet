@@ -1,7 +1,7 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
-#portfolio-captivecolour.hero.d-flex
+.hero.d-flex
 	.container
 		.row.justify-content-center.text-center
 			.col-md-10.col-lg-10.pt-5
@@ -41,8 +41,6 @@ section.portfolio-info#info
 					= link_to image_path("portfolio/nyap/nyap-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Not Your Average Picnic Website" do
 						= image_tag "portfolio/nyap/nyap-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Not Your Average Picnic Website Showcase"
 
-					/ = link_to image_path("portfolio/picnics/picnicsinthecity-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
-					/ 	= image_tag "portfolio/picnics/picnicsinthecity-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

@@ -16,6 +16,8 @@ module VanessaAmilet
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    # Add JS Files
+    config.generators.javascript_engine = :js
     # Add Web Fonts
     config.assets.enabled = true  
     config.assets.paths << "#{Rails.root}/app/assets/fonts"

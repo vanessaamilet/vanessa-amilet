@@ -6,7 +6,7 @@ section.home-hero.pt-6.pt-md-10
 		.row.align-items-center.justify-content-between.mt-3
 			.col-md-7.pe-lg-5
 				h1 Helping Brands Flourish
-				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven individuals & businesses seeking to establish an authentic online presence.
+				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.
 				div
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3"
 					= link_to "View My Work", portfolio_path, :class=>"link text-white ps-5"
@@ -88,7 +88,12 @@ section.reviews
 								| Julyan Lee - Founder, 
 								cite
 									= link_to "The Leeward Team", "http://leewardteam.com/"
-
+section.get-started.pt-3
+	.container
+		.row
+			.col.text-center
+				h2.center.mx-auto Ready to transform your brand?
+				= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary"
 /!  Preloader Content 
 / = render :partial => "shared/preloader"
 

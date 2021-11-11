@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.example.com"
+SitemapGenerator::Sitemap.default_host = "http://www.vanessaamilet.com"
 
 SitemapGenerator::Sitemap.create do
   # Put links creation logic here.
@@ -24,4 +24,32 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
+  add '/about'
+  add '/portfolio'
+  add '/services'
+  add '/privacy-policy'
+  add '/terms'
+  add '/faqs'
+  add '/links'
+  add '/portfolio/apg'
+  add '/portfolio/igco'
+  add '/portfolio/universal-control-systems'
+  add '/portfolio/neydi-photography'
+  add '/portfolio/the-picnic-hour'
+  add '/portfolio/not-your-average-picnic'
+  add '/portfolio/picnics-in-the-city'
+  add '/portfolio/hcss'
+  add '/portfolio/cameron-lee'
+  add '/portfolio/reliant-home-security'
+  add '/portfolio/reliant-mass-campaign'
+  add '/portfolio/joshespin'
+  add '/portfolio/jumpix'
+  add '/portfolio/ibuildamerica'
+  add '/portfolio/cia'
+  add '/portfolio/turner-mining-group'
+  add '/portfolio/captivecolour'
+  add '/portfolio/artofgreenwood'
+  add '/portfolio/snapple-video'
+  add '/contact'
+
 end
