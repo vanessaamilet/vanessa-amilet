@@ -24,8 +24,8 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
-  add '/about'
-  add '/portfolio'
+  add '/about', :changefreq => 'monthly'
+  add '/portfolio', :changefreq => 'weekly'
   add '/services'
   add '/privacy-policy'
   add '/terms'
@@ -50,6 +50,6 @@ SitemapGenerator::Sitemap.create do
   add '/portfolio/captivecolour'
   add '/portfolio/artofgreenwood'
   add '/portfolio/snapple-video'
-  add '/contact'
+  add '/contact', :changefreq => 'weekly'
 
 end
