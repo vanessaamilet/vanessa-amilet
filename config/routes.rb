@@ -29,7 +29,6 @@ Rails.application.routes.draw do
   get '/portfolio/cameron-lee' => 'static#portfolio_csl', as: 'portfolio_csl'
   get '/portfolio/reliant-home-security' => 'static#portfolio_reliantsecurity', as: 'portfolio_reliantsecurity'
   get '/portfolio/reliant-mass-campaign' => 'static#portfolio_reliantmass', as: 'portfolio_reliantmass'
-  get '/portfolio/leeward-team' => 'static#portfolio_leewardteam'
   get '/portfolio/joshespin' => 'static#portfolio_joshespin'
   get '/portfolio/jumpix' => 'static#portfolio_jumpix'
   get '/portfolio/ibuildamerica' => 'static#portfolio_iba', as: 'portfolio_iba'
@@ -38,6 +37,7 @@ Rails.application.routes.draw do
   get '/portfolio/captivecolour' => 'static#portfolio_captivecolour'
   get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'
   get '/portfolio/snapple-video' => 'static#portfolio_snapple', as: 'portfolio_snapple'
+  # get '/portfolio/leeward-team' => 'static#portfolio_leewardteam'
   # get '/portfolio/crossroads-decision' => 'static#portfolio_crossroads_decision'
   # get '/portfolio/jarrod-lee' => 'static#portfolio_jarrodlee', as: 'portfolio_jarrodlee'
 
