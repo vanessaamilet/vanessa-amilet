@@ -47,7 +47,7 @@
 	<meta name="twitter:creator" content="@vanessaamilet">
 	<meta name="twitter:title" content="Vanessa Amilet - Website & Graphic Design Services">
 	<meta name="twitter:description" content="Captivating online journeys for mission-driven individuals & businesses seeking to establish an authentic online presence.">
-	<meta name="twitter:image:src" content="https://www.vanessaamilet.com/images/vanessaamilet-social.jpg">
+	<meta name="twitter:image:src" content="https://www.vanessaamilet.com/images/vanessaamilet-social.jpg	">
 	<%= csrf_meta_tags %>
 	<!-- JQuery Libraries -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -105,9 +105,9 @@
 					<!-- Collapse -->
 					<div id="navbarNav" class="navbar-collapse collapse justify-content-end">
 						<!-- Navigation - Left -->
-						<ul class="navbar-nav justify-content-end w-100">
-							<li class="<%= 'active' if current_page?(about_path) %> nav-item"><%= link_to "About", about_path, :class=>"nav-link" %></li>
-							<li class="<%= 'active' if current_page?(portfolio_path) %> nav-item"><%= link_to "Portfolio", portfolio_path, :class=>"nav-link" %></li>
+						<ul class="navbar-nav justify-content-end w-100" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+							<li class="<%= 'active' if current_page?(about_path) %> nav-item" itemprop="name"><%= link_to "About", about_path, :class=>"nav-link", :itemprop=>"url" %></li>
+							<li class="<%= 'active' if current_page?(portfolio_path) %> nav-item" itemprop="name"><%= link_to "Portfolio", portfolio_path, :class=>"nav-link", :itemprop=>"url" %></li>
 							
 						</ul>
 						<!-- Desktop Logo -->
@@ -120,8 +120,8 @@
 						</div>
 						<!-- Navigation - Left -->
 						<ul class="navbar-nav justify-content-start w-100">
-							<li class="<%= 'active' if current_page?(about_path) %> nav-item"><%= link_to "Services", services_path, :class=>"nav-link" %></li>
-							<li class="<%= 'active' if current_page?(contact_path) %> nav-item"><%= link_to "Get In Touch", contact_path, :class=>"nav-link" %></li>
+							<li class="<%= 'active' if current_page?(about_path) %> nav-item" itemprop="name"><%= link_to "Services", services_path, :class=>"nav-link", :itemprop=>"url" %></li>
+							<li class="<%= 'active' if current_page?(contact_path) %> nav-item" itemprop="name"><%= link_to "Get In Touch", contact_path, :class=>"nav-link", :itemprop=>"url" %></li>
 						</ul>
 					</div><!--/.nav-collapse -->
 				</div><!--/.container -->
