@@ -37,7 +37,7 @@ section
 			.offset-md-1.col-md-10
 				- flash.each do |key, value| %
 					- if value.is_a?(String)
-					    	div.alert.alert-primary.fade.show
+					    	= content_tag :div, :class=>"alert alert-#{key} fade show"
 					    		<a class="close" href="#" data-dismiss="alert">×</a>
 					        	= content_tag :div, value, :id => "flash_#{key}"
 				
