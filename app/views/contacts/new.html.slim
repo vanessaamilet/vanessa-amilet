@@ -6,8 +6,7 @@ section.hero.d-flex
 			.col-md-10.col-lg-8.pt-5
 				h6.mb-5 Get In Touch
 				h1 Let's Work Together
-				p.lead I would love to hear about your project and how I could help bring it to life. Fill out the contact form below to get the conversation started. Please allow up to 2-3 business days to respond to your message.
-				/ p.lead For a project quotation, or to learn more about me, fill out the form below. Please allow up to 48 hours to respond to your message.
+				p.lead I would love to hear about your project and how I could help bring it to life. From an established business refocussing the brand, to a fresh start-up, or anywhere in between, I can't wait to get the conversation started. 
 /!  Begin Page Content 
 section
 	.container
@@ -34,41 +33,44 @@ section
 						= link_to "FAQs", faqs_path 
 						|  page to see if your question has been answered.
 		.row
-			.offset-md-1.col-md-10
-				- flash.each do |key, value| %
-					- if value.is_a?(String)
-					    	= content_tag :div, :class=>"alert alert-#{key} fade show"
-					    		<a class="close" href="#" data-dismiss="alert">×</a>
-					        	= content_tag :div, value, :id => "flash_#{key}"
-				
-				= simple_form_for @contact, url: contacts_path, :html => {:class => 'form-horizontal needs-validation', :id => 'contact-form' }, wrapper: :horizontal_form do |f|
-					= f.error_notification
+			.offset-md-2.col-md-8
+				#contact-form
+					- flash.each do |key, value| %
+						- if value.is_a?(String)
+								= content_tag :div, :class=>"alert alert-#{key} fade show"
+									<a class="close" href="#" data-dismiss="alert">×</a>
+									= content_tag :div, value, :id => "flash_#{key}"
 
-					= f.input :name do
-						= f.input :name, :label => false ,:hint => true, :wrapper => false, :error => false, :class=>"validate", :required => true
+					p Fill out the contact form below to get the conversation started. Please allow up to 2-3 business days to respond to your message.
 					
-					= f.input :business, :label => 'Business Name' do
-						= f.input :business, :label => false ,:hint => true, :wrapper => false, :error => false, :class=>"validate", :required => false
+					= simple_form_for @contact, url: contacts_path, :html => {:class => 'form-horizontal needs-validation', :id => '' }, wrapper: :horizontal_form do |f|
+						= f.error_notification
 
-					= f.input :email, :label => 'Email Address' do
-						= f.input :email, :label => false, :hint => false, :wrapper => false, :error => true, :required => true, input_html: { autocomplete: 'email' }
+						= f.input :name do
+							= f.input :name, :label => false ,:hint => true, :wrapper => false, :error => false, :class=>"validate", :required => true
+						
+						= f.input :business, :label => 'Business Name' do
+							= f.input :business, :label => false ,:hint => true, :wrapper => false, :error => false, :class=>"validate", :required => false
 
-					/= f.input :email, :wrapper => false, :error => true, :required => true, input_html: { autocomplete: 'email' }
+						= f.input :email, :label => 'Email Address' do
+							= f.input :email, :label => false, :hint => false, :wrapper => false, :error => true, :required => true, input_html: { autocomplete: 'email' }
 
-					= f.input :phone_number, as: :tel, :label => 'Phone Number', :hint => false, :error => true, :type => "tel", :required => true
-						/ span.bar
+						/= f.input :email, :wrapper => false, :error => true, :required => true, input_html: { autocomplete: 'email' }
 
-					= f.input :website, :label => 'Website (If Applicable)' do
-						= f.input :website, :label => false, :hint => false, :wrapper => false, :error => true, :required => false
+						= f.input :phone_number, as: :tel, :label => 'Phone Number', :hint => false, :error => true, :type => "tel", :required => true
+							/ span.bar
 
-					= f.input :services, :label => 'What services are you interested in?', as: :select, input_html: {class: 'form-select'}, collection: ["Website Design","Branding", "Graphic Design", "Website Maintenance", "Other"], :required => true,  priority: [ "Website Design" ]
+						= f.input :website, :label => 'Website (If Applicable)' do
+							= f.input :website, :label => false, :hint => false, :wrapper => false, :error => true, :required => false
 
-					= f.input :budget, :label => 'What budget range do you have in mind for your project scope?', as: :select, input_html: {class: 'form-select'}, collection: ["$3k-$5k","$5k-$10k", "$15k-$20k"], :required => true
+						= f.input :services, :label => 'What services are you interested in?', as: :select, input_html: {class: 'form-select'}, collection: ["Website Design","Branding", "Graphic Design", "Website Maintenance", "Other"], :required => true,  priority: [ "Website Design" ]
 
-					= f.input :message, :label => 'Tell me about your project! What business problems are you hoping to solve?' do
-						= f.input :message, :label => false , :as => :text, :input_html => {:rows => 10, :placeholder =>"" }, :wrapper => false,  :required => true
+						= f.input :budget, :label => 'What budget range do you have in mind for your project scope?', as: :select, input_html: {class: 'form-select'}, collection: ["$3k-$5k","$5k-$10k", "$15k-$20k"], :required => true
 
-					.hidden
-					  = f.input :nickname, :hint => 'Leave this field blank!'
-					.form-actions
-					  = f.button :submit, 'Send Message', :class=> "btn btn-contact contact-submit"
+						= f.input :message, :label => 'Tell me about your project! What business problems are you hoping to solve?' do
+							= f.input :message, :label => false , :as => :text, :input_html => {:rows => 6, :placeholder =>"" }, :wrapper => false,  :required => true
+
+						.hidden
+							= f.input :nickname, :hint => 'Leave this field blank!'
+						.form-actions
+							= f.button :submit, 'Send Message', :class=> "btn btn-contact contact-submit"
