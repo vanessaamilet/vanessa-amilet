@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 	def new
-		@page_title = 'Contact Vanessa Amilet'
+		@page_title = 'Contact'
+		@page_description = 'Get in touch with Vanessa Amilet Santos to learn more about custom branding and website design services using the form on this page.'
     	@contact = Contact.new
     end
 
