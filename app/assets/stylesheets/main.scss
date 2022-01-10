@@ -1060,6 +1060,10 @@ ul.contact-info {
 	label {
 		color: $gray;
 		font-weight: $semibold-weight;
+		abbr[data-bs-original-title], abbr[title]{
+			color: $cinnamon;
+			text-decoration: none;
+		}
 		// position: absolute;
 		// pointer-events: none;
 		// left: 10px;
