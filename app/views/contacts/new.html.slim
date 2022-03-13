@@ -10,30 +10,52 @@ section.hero.d-flex
 /!  Begin Page Content 
 section
 	.container
-		.offset-md-1.col-md-10.mb-5
-			.row.contact-info
-				.col-md.py-md-4.mb-5.mb-md-0.center
+		/ .offset-md-1.col-md-10.mb-5
+		/ 	.row.contact-info
+		/ 		.col-md.py-md-4.mb-5.mb-md-0.center
+		/ 			i.fad.fa-envelope-open-text
+		/ 			h6 Hate filling out forms?
+		/ 			p
+		/ 				| Email me:  
+		/ 				= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet@gmail.com"
+		/ 				| .
+		/ 		.col-md.py-md-4.mb-5.mb-md-0.border-start.center
+		/ 			i.fad.fa-phone
+		/ 			h6 Want to setup a time to talk? 
+		/ 			p
+		/ 				= link_to "Click here", "https://calendly.com/vanessa-amilet", target: "_blank"
+		/ 				|  to schedule a consultation.
+		/ 		.col-md.py-md-4.border-start.center
+		/ 			i.fad.fa-question-circle
+		/ 			h6 Need help?
+		/ 			p 
+		/ 				| Check out the 
+		/ 				= link_to "FAQs", faqs_path 
+		/ 				|  page to see if your question has been answered.
+		.row.contact-info
+			.col-md-4
+				.col-md.py-md-4.mb-5.mb-md-0
 					i.fad.fa-envelope-open-text
 					h6 Hate filling out forms?
 					p
 						| Email me:  
 						= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet@gmail.com"
 						| .
-				.col-md.py-md-4.mb-5.mb-md-0.border-start.center
+				.col-md.py-md-4.mb-5.mb-md-0
 					i.fad.fa-phone
 					h6 Want to setup a time to talk? 
 					p
 						= link_to "Click here", "https://calendly.com/vanessa-amilet", target: "_blank"
 						|  to schedule a consultation.
-				.col-md.py-md-4.border-start.center
+				.col-md.py-md-4
 					i.fad.fa-question-circle
 					h6 Need help?
 					p 
 						| Check out the 
 						= link_to "FAQs", faqs_path 
 						|  page to see if your question has been answered.
-		.row
-			.offset-md-2.col-md-8
+			/ .offset-md-2.col-md-8
+			.offset-md-1.col-md-7
 				#contact-form
 					- flash.each do |key, value| %
 						- if value.is_a?(String)
