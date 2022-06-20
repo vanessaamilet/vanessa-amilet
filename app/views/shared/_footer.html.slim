@@ -11,11 +11,14 @@
 			.row
 				.col-md-4.col-sm-12
 					h4 About
-
 					p Vanessa Amilet Santos is a Houston-native web designer & developer that enjoys creating beautiful things with the latest technologies.
 					p
 						= link_to "Learn More »", about_path
-				.col-md-4.col-sm-6
+				.col-md-2.col-sm-2
+					.center
+						= link_to "https://www.freelancersunion.org?utm_source=badge&utm_campaign=member&utm_content=member-stamp-200" do
+							= image_tag "https://assets.freelancersunion.org/static/images/member-badge.ec82f86413ea.svg", alt: 'Proud member of Freelancers Union', :height=>"100", :width=>"100"
+				.col-md-3.col-sm-6
 					h4 Menu
 					nav.footer-nav
 						ul
@@ -28,7 +31,7 @@
 							li
 								= link_to "FAQs", faqs_path
 
-				.col-md-4.col-sm-6
+				.col-md-3.col-sm-6
 					h4 Connect
 					ul.social
 						/ li.twitter
@@ -46,6 +49,7 @@
 						li.dribbble
 							= link_to "https://dribbble.com/vanessaamilet", target:"_blank" do
 								i.fa.fa-dribbble
+								
 
 	.sub-footer.d-flex.align-items-center
 		.container
