@@ -6,7 +6,7 @@ section.hero.d-flex
 			.col-md-10.col-lg-8.pt-5
 				h6.mb-5 Get In Touch
 				h1 Let's Work Together
-				p.lead I would love to hear about your project and how I could help bring it to life. From an established business refocussing the brand, to a fresh start-up, or anywhere in between, I can't wait to get the conversation started. 
+				p.lead I would love to hear about your project and how I could help bring it to life. From an established business refocussing their brand, to a fresh start-up, or anywhere in between, I can't wait to get the conversation started. 
 /!  Begin Page Content 
 section
 	.container
@@ -87,7 +87,8 @@ section
 
 						= f.input :services, :label => 'What services are you interested in?', as: :select, input_html: {class: 'form-select'}, collection: ["Website Design","Branding", "Graphic Design", "Website Maintenance", "Other"], :required => true,  priority: [ "Website Design" ]
 
-						= f.input :budget, :label => 'What budget range do you have in mind for your project scope?', as: :select, input_html: {class: 'form-select'}, collection: ["$3k-$5k","$5k-$10k", "$15k-$20k"], :required => true
+						= f.input :budget, :label => 'What budget range do you have in mind for your project scope?', as: :select, input_html: {class: 'form-select'}, collection: ["$4k-$6k","$6k-$12k", "$15k-$20k"], :required => true
+						
 
 						= f.input :message, :label => 'Tell me about your project! What business problems are you hoping to solve?' do
 							= f.input :message, :label => false , :as => :text, :input_html => {:rows => 6, :placeholder =>"" }, :wrapper => false,  :required => true
