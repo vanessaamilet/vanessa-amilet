@@ -15,6 +15,28 @@ section.portfolio-grid
 	.container-fluid
 		.row
 			.col-md-4
+				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+					.card-body
+						h5.card-title Betty Boujee
+						p.card-text Shopify Web Design
+						p View Project »
+			.col-md-4
+				= link_to portfolio_mms_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-mms.jpg", :class=>"card-img", :alt=>"Manifesting Money Studio"
+					.card-body
+						h5.card-title Manifesting Money Studio
+						p.card-text Wordpress Website Design - Landing Page
+						p View Project »
+			.col-md-4
+				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
+					.card-body
+						h5.card-title Jarrod Lee
+						p.card-text Wordpress Website Design
+						p View Project »
+		.row
+			.col-md-4
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
 					.card-body
@@ -22,142 +44,92 @@ section.portfolio-grid
 						p.card-text Web Design & Development - Wordpress
 						p View Project »
 			.col-md-4
-				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
+				= link_to portfolio_nyap_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-nyap.jpg", :class=>"card-img", :alt=>"Not Your Average Picnic"
 					.card-body
-						h5.card-title The Picnic Hour
-						p.card-text Website Design - Shopify
+						h5.card-title Not Your Average Picnic
+						p.card-text Shopify Website Design
 						p View Project »
 			.col-md-4
+				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
+					.card-body
+						h5.card-title CaptiveColour
+						p.card-text Branding & Shopify Website Design
+						p View Project »
+		.row
+			.col-md-4.load-card
 				= link_to portfolio_neydi_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-neydiphotography.jpg", :class=>"card-img", :alt=>"Neydi Photography"
 					.card-body
 						h5.card-title Neydi Photography
 						p.card-text Website Design
 						p View Project »
-		.row
-			.col-md-4
+			.col-md-4.load-card
+				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
+					.card-body
+						h5.card-title The Picnic Hour
+						p.card-text Shopify Website Design
+						p View Project »
+			.col-md-4.load-card
 				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
 					.card-body
 						h5.card-title Universal Control Systems
-						p.card-text Web Design & Development - Wordpress
+						p.card-text Wordpress Web Design & Development
 						p View Project »
-			.col-md-4
-				= link_to portfolio_nyap_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-nyap.jpg", :class=>"card-img", :alt=>"Not Your Average Picnic"
-					.card-body
-						h5.card-title Not Your Average Picnic
-						p.card-text Web Design - Shopify
-						p View Project »
-			.col-md-4
-				= link_to portfolio_apg_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-apg.jpg", :class=>"card-img", :alt=>"Allied Power Group"
-				  .card-body
-					h5.card-title APG
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
+			
 		.row
-			.col-md-4
-				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
-					.card-body
-						h5.card-title CaptiveColour
-						p.card-text Branding - Web Design - Packaging Design
-						p View Project »
-			.col-md-4
+			.col-md-4.load-card
 				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
 					.card-body
 						h5.card-title Picnics in the City
-						p.card-text Web Design - Shopify
+						p.card-text Shopify Website Design
 						p View Project »
-			.col-md-4
+			.col-md-4.load-card
 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
 				  .card-body
 					h5.card-title Jumpix
 					p.card-text Web Design & Development - Media - UX Design
 					p View Project »
-					
-		.row
-			.col-md-4
-				= link_to portfolio_reliantsecurity_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-reliant-security.jpg", :class=>"card-img", :alt=>"Reliant Home Security"
-				  .card-body
-					h5.card-title Reliant Home Security
-					p.card-text Web Design - Graphic Design - Multimedia
-					p View Project »
-			.col-md-4
-				= link_to portfolio_hcss_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-hcss.jpg", :class=>"card-img", :alt=>"HCSS"
-				  .card-body
-					h5.card-title HCSS
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
-			.col-md-4
-				= link_to portfolio_reliantmass_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-reliantmass.jpg", :class=>"card-img", :alt=>"Reliant Mass 2021"
-				  .card-body
-						h5.card-title Reliant 2021 Mass Campaign
-						p.card-text Website Design
-						p View Project »
-		.row
 			.col-md-4.load-card
 				= link_to portfolio_cia_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
 				  .card-body
 						h5.card-title Construction Intern Awards
-						p.card-text Web Design & Development - Wordpress
+						p.card-text Wordpress Web Design & Development
 						p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_csl_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-csl.jpg", :class=>"card-img", :alt=>"Cameron S. Lee"
-				  .card-body
-					h5.card-title Cameron S. Lee
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_iba_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
-				  .card-body
-					h5.card-title I Build America
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
 					
-		.row
-			.col-md-4.load-card
-				= link_to portfolio_joshespin_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-joshespin.jpg", :class=>"card-img", :alt=>"Josh Espinoza Photography"
-				  .card-body
-					h5.card-title Josh Espinoza Photography
-					p.card-text Web Design & Development - Wordpress
-					p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_snapple_path, class: 'portfolio-card card' do
-					= image_tag "portfolio/portfolio-snapple.jpg", :class=>"card-img", :alt=>"Snapple Commercial"
-					.card-body
-						h5.card-title Snapple Commercial
-						p.card-text Graphic Design - Motion Graphics - Multimedia
-						p View Project »
-			/ .col-md-4.load-card
-			/ 	= link_to portfolio_tmg_path, class: 'portfolio-card card' do
-			/ 	  = image_tag "portfolio/portfolio-tmg.jpg", :class=>"card-img", :alt=>"Turner Mining Group"
-			/ 	  .card-body
-			/ 		h5.card-title Turner Mining Group
-			/ 		p.card-text Web Design & Development - Wordpress
-			/ 		p View Project »
-			
-			/ .col-md-4.load-card
-			/ 	= link_to portfolio_artofgreenwood_path, class: 'portfolio-card card' do
-			/ 		= image_tag "portfolio/portfolio-artofgreenwood.jpg", :class=>"card-img", :alt=>"Art of Greenwood"
+		/ .row
+		/ 	.col-md-4.load-card
+		/ 		= link_to portfolio_apg_path, class: 'portfolio-card card' do
+		/ 		  = image_tag "portfolio/portfolio-apg.jpg", :class=>"card-img", :alt=>"Allied Power Group"
+		/ 		  .card-body
+		/ 			h5.card-title APG
+		/ 			p.card-text Wordpress Web Design & Development
+		/ 			p View Project »
+		/ 	.col-md-4.load-card
+		/ 		= link_to portfolio_iba_path, class: 'portfolio-card card' do
+		/ 		  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
+		/ 		  .card-body
+		/ 			h5.card-title I Build America
+		/ 			p.card-text Web Design & Development - Wordpress
+		/ 			p View Project »
+					
+		/ .row
+			/ .col-md-4
+			/ 	= link_to portfolio_snapple_path, class: 'portfolio-card card' do
+			/ 		= image_tag "portfolio/portfolio-snapple.jpg", :class=>"card-img", :alt=>"Snapple Commercial"
 			/ 		.card-body
-			/ 			h5.card-title Art of Greenwood
-			/ 			p.card-text Website Design & Development - Wordpress - E-Commerce
+			/ 			h5.card-title Snapple Commercial
+			/ 			p.card-text Graphic Design - Motion Graphics - Multimedia
 			/ 			p View Project »
 
 		.row
 			#loadMore.mx-auto.center
-      			<a href="#" class="btn btn-loadmore">Load More Projects</a>
+      			<a href="#" class="btn btn-loadmore" id="load-more">Load More Projects</a>
 
 

@@ -1,0 +1,46 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Manifesting Money Studio
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Manifesting Money Podcast is a a company based in San Diego, California that aims to help the 2% of the world rise up to their highest potentail an set an example for others by showing that anything and everything is truly possible when you reprogram your subconcious mind. The Manifesting Money Podcast is starting a studio space in which they provide services such as podcasting, photography, videography, and other tools that entreprenurs can benefit to manifest their goals and take their business to the next level. The solution was to create a landing page to bring awarness to their new service offerings and to let potential customers opt-in to get notified when the Manifesting Money Studio opens.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Manifesting Money Podcast
+						.col-md-6
+							h6 Year
+							p 2021 - Present
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design
+						.col-md-6
+							h6 Technologies
+							p Wordpress
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.manifestingmoneystudio.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/mms/manifestingmoneystudio-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Manifesting Money Studio Website" do
+						= image_tag "portfolio/mms/manifestingmoneystudio-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Manifesting Money Studio Website"
+
+					= link_to image_path("portfolio/mms/manifestingmoneystudio-landingpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Manifesting Money Studio Landing Page" do
+						= image_tag "portfolio/mms/manifestingmoneystudio-landingpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Manifesting Money Studio Landing Page"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

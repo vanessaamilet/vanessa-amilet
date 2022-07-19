@@ -18,9 +18,11 @@ Rails.application.routes.draw do
   # get '/schedule-consultation' => 'static#consultation'
 
   # Portfolio Pages
+  get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
   get '/portfolio/apg' => 'static#portfolio_apg'
   get '/portfolio/igco' => 'static#portfolio_igco'
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
+  get '/portfolio/manifesting-money-studio' => 'static#portfolio_mms', as: 'portfolio_mms'
   get '/portfolio/neydi-photography' => 'static#portfolio_neydiphotography', as: 'portfolio_neydi'
   get '/portfolio/the-picnic-hour' => 'static#portfolio_picnichour', as: 'portfolio_picnichour'
   get '/portfolio/not-your-average-picnic' => 'static#portfolio_nyap', as: 'portfolio_nyap'
@@ -39,7 +41,7 @@ Rails.application.routes.draw do
   get '/portfolio/snapple-video' => 'static#portfolio_snapple', as: 'portfolio_snapple'
   # get '/portfolio/leeward-team' => 'static#portfolio_leewardteam'
   # get '/portfolio/crossroads-decision' => 'static#portfolio_crossroads_decision'
-  # get '/portfolio/jarrod-lee' => 'static#portfolio_jarrodlee', as: 'portfolio_jarrodlee'
+  get '/portfolio/jarrod-lee' => 'static#portfolio_jarrodlee', as: 'portfolio_jarrodlee'
 
   # Contact Pages
   resources :contacts, only: :create

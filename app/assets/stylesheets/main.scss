@@ -2386,6 +2386,8 @@ i.contact {
 		}
 	}
 	.col-md-4{
+		-webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+					animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 		&.load-card{
 			display: none;
 		}
@@ -2478,6 +2480,10 @@ i.contact {
 		color: $white !important;
 		&:hover, &:focus{
 			background-color: $green;
+		}
+		&.hidden{
+			display: none;
+			visibility: hidden;
 		}
 	}
 }
@@ -3036,7 +3042,7 @@ section.showcase{
 ---------------------------------------------------------------------------------------------------- */
 
 .to-top {
-	display:inline-block;
+	display:none;
 	height:40px;
 	width:40px;
 	position:fixed;
@@ -3046,27 +3052,27 @@ section.showcase{
 	text-indent:100%;
 	white-space:nowrap;
 	background: url(asset_path('to-top.svg')) no-repeat center 50%;
-	visibility:hidden;
-	opacity:0;
+	//visibility:hidden;
+	// opacity:0;
 	-webkit-transition:all .3s;
 	-moz-transition:all .3s;
 	transition:all .3s;
 	z-index: 9000;
 }
 
-.to-top.top-is-visible {
-	visibility:visible;
-	opacity:1;
-}
+// .to-top.top-is-visible {
+// 	visibility:visible;
+// 	opacity:1;
+// }
 
-.to-top.top-fade-out {
-	opacity:.8;
-}
+// .to-top.top-fade-out {
+// 	opacity:.8;
+// }
 
-.no-touch .to-top:hover {
-	background-color:#e86256;
-	opacity:1;
-}
+// .no-touch .to-top:hover {
+// 	background-color:#e86256;
+// 	opacity:1;
+// }
 
 @media only screen and (min-width: 768px) {
 	.to-top {
