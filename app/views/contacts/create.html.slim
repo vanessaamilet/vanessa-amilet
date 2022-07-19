@@ -12,12 +12,9 @@ section
 		.row.contact-info
 			.col-md-4
 				.col-md.py-md-4.mb-5.mb-md-0
-					i.fad.fa-envelope-open-text
-					h6 Hate filling out forms?
-					p
-						| Email me:  
-						= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet@gmail.com"
-						| .
+					i.fad.fa-clock
+					h6 Business Hours
+					p  Monday - Friday, 9:00am - 4:30pm PST 
 				.col-md.py-md-4.mb-5.mb-md-0
 					i.fad.fa-phone
 					h6 Want to setup a time to talk? 
@@ -31,6 +28,13 @@ section
 						| Check out the 
 						= link_to "FAQs", faqs_path 
 						|  page to see if your question has been answered.
+				.col-md.py-md-4.mb-5.mb-md-0
+					i.fad.fa-envelope-open-text
+					h6 Hate filling out forms?
+					p
+						| Email me:  
+						= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet@gmail.com"
+						| .
 			.offset-md-1.col-md-7
 				- flash.each do |key, value| %
 					- if value.is_a?(String)
