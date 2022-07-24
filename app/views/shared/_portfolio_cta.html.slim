@@ -1,6 +1,26 @@
 section.cta
 	.container
-		.col-md-10.col-lg-8.mx-auto
-			h2 Ready to establish your authentic online presence?
-			= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 mb-5"
-			p = link_to "Have any questions?", faqs_path, :class=>"cta"
+		.row.justify-content-center
+			.col-lg-10
+				h2.mx-auto Ready to establish your authentic online presence? Getting started is simple.
+		.row.mb-5
+			.col-md-4
+				i.fad.fa-phone
+				h5 
+					span 01.
+				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
+			.col-md-4
+				i.fad.fa-comments
+				h5
+					span 02. 
+				p Once you book, we’ll discuss the direction for your brand & website with plenty of opportunity for input & collaboration along the way.
+			.col-md-4
+				i.fad.fa-pencil-paintbrush
+				h5 
+					span 03. 
+				p After a few weeks, you’ll receive your elevated brand materials or website!
+		.row
+			.col-lg-12
+				.text-center
+					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
+					p = link_to "Have any questions?", faqs_path, :class=>"cta"

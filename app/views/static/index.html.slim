@@ -1,11 +1,11 @@
 = content_for :body_class, 'homepage-template'
 /!  Section Main Content 
 section.home-hero.pt-6.pt-md-10
-	.texture-overlay
+	//.texture-overlay
 	.container-lg
 		.row.align-items-center.justify-content-between.mt-3
 			.col-md-7.pe-lg-5
-				h1 Helping Brands Flourish
+				h1 Captivating Designs for Mission-Driven Entrepreneurs
 				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.
 				div
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3"
@@ -24,26 +24,29 @@ section.services
 	.container
 		.row
 			.col-lg-12
-				h2.text-center My Services
+				h2.text-center Get Your Business Out of the Comfort Zone
+				p.lead.text-center A unique and memorable brand is aligned with the heart of your business. Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
 		.row
 			.col-md-4.my-5
-				.services-content
-					i.fad.fa-magic
-					h4 Get Your Business Out of the Comfort Zone
-					h5 Website Design
-					p A well designed website is intuitive, and converts visitors to new customers. Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
+				.card.services-content
+					= image_tag "homepage/services-website-design.jpg", :class=>"card-img", :alt=>"Website Design"
+					.card-body
+						h4 Website Design
+						p A well-designed website is intuitive, and converts visitors to new customers. Let's bring your authentic vision to life by developing a holistic online presence that reasonates with your audience.
+						
 			.col-md-4.my-5
-				.services-content
-					i.fad.fa-star-shooting
-					h4 Express Your Authenticity
-					h5 Brand Design
-					p A unique and memorable brand is aligned with the heart of your business. I help business owners bring their authentic vision to life by developing a holistic brand identity that resonates with their ideal audience.
-					/ p I help clients build unique and memorable brands by intimately understanding their vision and applying traditional design principles translated for the digital space — from product logos and app icons, to style guides and the overall user experience.
+				.card.services-content
+					= image_tag "homepage/services-landing-pages.jpg", :class=>"card-img", :alt=>"Landing Page Design"
+					.card-body
+						h4 Landing Page Design
+						p I help you handcraft a strategic landing page that converts leads and focuses on the customer journey by understanding the vision for your business.
+						/p A unique and memorable brand is aligned with the heart of your business. I help business owners bring their authentic vision to life by developing a holistic brand identity that resonates with their ideal audience.
 			.col-md-4.my-5
-				i.fad.fa-bullseye-pointer
-				h4 Generate New Leads Creatively
-				h5 Interactive Media
-				p Customer clarity leads to sales. Clarify your vision with innovative media that resonate with your ideal clients and communicates your brand story. 
+				.card.services-content
+					= image_tag "homepage/services-other-offerings.jpg", :class=>"card-img", :alt=>"Other Offerings"
+					.card-body
+						h4 Other Offerings
+						p Customer clarity leads to sales. Clarify your vision with innovative materials that resonate with your ideal clients and communicates your brand story. 
 
 		br
 		.row
@@ -90,12 +93,33 @@ section.reviews
 								| Julyan Lee - Founder, 
 								cite
 									= link_to "The Leeward Team", "http://leewardteam.com/"
-section.get-started.pt-3
+section.get-started
 	.container
-		.row.justify-content-center
-			.col-md-10.col-lg-8.pt-5.text-center
-				h2.center.mx-auto Ready to establish your authentic online presence?
-				= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary"
+		.row.mb-5.justify-content-center
+			.col-md-10.col-lg-10
+				h2.mx-auto Ready to establish your authentic online presence?
+					Getting started is simple.
+		.row.mb-5
+			.col-md-4
+				i.fad.fa-phone
+				h5 
+					span 01.
+				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
+			.col-md-4
+				i.fad.fa-comments
+				h5
+					span 02. 
+				p Once you book, we’ll discuss the direction for your brand & website with plenty of opportunity for input & collaboration along the way.
+			.col-md-4
+				i.fad.fa-pencil-paintbrush
+				h5 
+					span 03. 
+				p After a few weeks, you’ll receive your elevated brand materials or website!
+		.row
+			.col-lg-12
+				.text-center
+					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
+					p = link_to "Have any questions?", faqs_path, :class=>"cta"
 /!  Preloader Content 
 / = render :partial => "shared/preloader"
 

@@ -61,8 +61,8 @@ $gray: #444;
 // New Colors
 $creme: #F9F4F1;
 
+$mint: #E8F3F1;
 $lighter-green: #add4ca;
-$mint: $lighter-green;
 $light-green: #1F927D;
 $green: #255958;
 $dark-green: #014542;
@@ -1035,7 +1035,7 @@ ul.contact-info {
 	// padding: 25px;
 	// margin: 25px 0px;
     white-space: pre-wrap;
-    border: 2px solid #f4ebde;
+    border: 2px solid $green;
     padding: 40px;
 	.form-control {
 		height: 50px;
@@ -1212,6 +1212,37 @@ section{
 	background-position: center center;
 	background-size: cover;
 	color: $black !important;
+}
+
+/* ### Get Started CTA */
+.get-started{
+	background: $creme;
+	@media screen and (max-width: 768px){
+		.col-md-4{
+			margin-bottom: 30px;
+		}
+	}
+	h2{
+		text-align: center;
+		margin-bottom: 35px !important;
+	}
+	.step{
+		margin-bottom: 15px;
+	}
+	i.fad{
+		color: $dark-orange;
+		font-size: 45px;
+		margin-bottom: 10px;
+	}
+	h5{
+		span{
+			font-size: 24px;
+			color: $green;
+			-webkit-text-stroke-color: $green;
+			-webkit-text-stroke-width: 1px;
+			//color: transparent;
+		}
+	}
 }
 
 /* ### Portfolio */
@@ -1534,6 +1565,14 @@ section{
 			//border-image: $nav-border-top;
 		}
 	}
+	.fu-logo{
+		display: block;
+		text-align: center;
+		@media screen and (max-width:768px) {
+			text-align: left;
+			margin: 20px 0;
+		}
+	}
 	.footer-nav {
 		width: 100%;
 		display: block;
@@ -1808,10 +1847,19 @@ i.contact {
 		background-color: $creme;
 		background-repeat: repeat;
 		background-position: center center;
+		//border-bottom: 2px solid #f4ebde;
 		display: flex;
 		align-items: center;
 		@media screen and (min-width:991px){
 			padding-top: 80px;
+		}
+		.services-content{
+			border: 2px solid $cinnamon;
+			width: 100%;
+    		height: 100%;
+			.card-body{
+				padding: 2.5rem;
+			}
 		}
 		.fad{
 			color: $dark-orange;
@@ -1869,6 +1917,30 @@ i.contact {
 			}
 		}
 	}
+	.get-started{
+		background: $creme;
+		h2{
+			text-align: center;
+			margin-bottom: 35px !important;
+		}
+		.step{
+			margin-bottom: 15px;
+		}
+		i.fad{
+			color: $dark-orange;
+			font-size: 45px;
+			margin-bottom: 10px;
+		}
+		h5{
+			span{
+				font-size: 24px;
+				color: $green;
+				-webkit-text-stroke-color: $green;
+				-webkit-text-stroke-width: 1px;
+				//color: transparent;
+			}
+		}
+	}
 }
 
 /* ## Reviews */
@@ -1922,7 +1994,7 @@ i.contact {
 	.quote{
 		text-align: center !important;
 		white-space: pre-wrap;
-		border:2px solid #f4ebde;
+		border:2px solid $green;
 		padding: 40px;
 		img {
 			width: 50px;
@@ -2018,6 +2090,7 @@ i.contact {
 			background-color: #add4ca;
 			background-color: rgba(173, 212, 202, 0.8);
 			border-radius: .25rem;
+			border: 2px solid $green;
 			padding: 40px;
 		}
 		.col-sm-6{
@@ -2184,7 +2257,7 @@ i.contact {
 			}
 		}
 	}
-	// How It Works
+	// Ready to Get Started
 	.steps{
 		background-color: $creme;
 		h2{
@@ -2308,9 +2381,6 @@ i.contact {
 			border: 1px solid #eaf2fe;
 		}
 	}
-	section.get-started{
-		background: #f4ebde;
-	}
 }
 
 /* ## Terms & Privacy Policy
@@ -2402,10 +2472,10 @@ i.contact {
 		float: left;
 		position: relative;
 		text-align: left;
-		box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+		//box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
 		transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 		transition-delay: .1s;
-		//border-radius: 4px;
+		border: 2px solid #f4ebde;
 		border-radius: 0.75rem;
 		transform: translateZ(0);
 		background-color: $white;
@@ -2413,8 +2483,11 @@ i.contact {
 		cursor: pointer;
 		&:hover{
 			opacity: 1 !important;
-			box-shadow: rgba(45,45,45,0.05) 0px 2px 2px, rgba(49,49,49,0.05) 0px 4px 4px, rgba(42,42,42,0.05) 0px 8px 8px, rgba(32,32,32,0.05) 0px 16px 16px, rgba(49,49,49,0.05) 0px 32px 32px, rgba(35,35,35,0.05) 0px 64px 64px;
-			transform: translate(0, -4px);
+			@media screen and (min-width: 767px) {
+				box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
+				// box-shadow: rgba(45,45,45,0.05) 0px 2px 2px, rgba(49,49,49,0.05) 0px 4px 4px, rgba(42,42,42,0.05) 0px 8px 8px, rgba(32,32,32,0.05) 0px 16px 16px, rgba(49,49,49,0.05) 0px 32px 32px, rgba(35,35,35,0.05) 0px 64px 64px;
+				transform: translate(0, -4px);
+			}
 			z-index: 99;
 			text-decoration: none !important;
 			cursor: pointer;
@@ -2439,6 +2512,7 @@ i.contact {
 			padding: 2rem;
 		}
 		img {
+			border-radius: 0;
 			display: block;
 			position: relative;
 			-webkit-transition: all 0.35s;
@@ -2545,24 +2619,31 @@ i.contact {
 	}
 	.cta{
 		.container{
-			padding: 60px 40px;
-			background-color: $cinnamon;
-			background-color: $lighter-green;
-			background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
-			background-repeat: repeat;
-			background-position: center center;
-			box-shadow: 0 0 24px rgba(27, 22, 66, 0.04), 0 44px 74px rgba(27, 22, 66, 0.06);
-			align-items: center;
-			text-align: center;
-			// color: $white;
 			@media screen and (max-width: 768px){
-				padding: 60px 25px;
+				.col-md-4{
+					margin-bottom: 30px;
+				}
 			}
-			h3{
-				font-family: $dm-serif !important;
-				font-weight: $regular-weight !important;
-				font-size: 2.5em;
-				margin-bottom: 30px !important;
+			h2{
+				text-align: center;
+				margin-bottom: 35px !important;
+			}
+			.step{
+				margin-bottom: 15px;
+			}
+			i.fad{
+				color: $dark-orange;
+				font-size: 45px;
+				margin-bottom: 10px;
+			}
+			h5{
+				span{
+					font-size: 24px;
+					color: $green;
+					-webkit-text-stroke-color: $green;
+					-webkit-text-stroke-width: 1px;
+					//color: transparent;
+				}
 			}
 			a.cta{
 				color: $black !important;
