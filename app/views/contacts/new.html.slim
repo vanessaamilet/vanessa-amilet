@@ -89,7 +89,7 @@ section
 						= f.input :website, :label => 'Website (If Applicable)' do
 							= f.input :website, :label => false, :hint => false, :wrapper => false, :error => true, :required => false
 
-						= f.input :services, :label => 'What services are you interested in?', as: :select, input_html: {class: 'form-select'}, collection: ["Website Design","Branding", "Graphic Design", "Website Maintenance", "Other"], :required => true,  priority: [ "Website Design" ]
+						= f.input :services, :label => 'What services are you interested in?', as: :select, input_html: {class: 'form-select'}, collection: ["Custom Website Design","Landing Page Design", "Graphic Design", "Website Maintenance", "Other"], :required => true,  priority: [ "Website Design" ]
 
 						= f.input :budget, :label => 'What budget range do you have in mind for your project scope?', as: :select, input_html: {class: 'form-select'}, collection: ["$4k-$6k","$6k-$12k", "$15k-$20k"], :required => true
 						
