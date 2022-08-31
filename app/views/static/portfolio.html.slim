@@ -15,11 +15,11 @@ section.portfolio-grid
 	.container-fluid
 		.row
 			.col-md-4
-				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
 					.card-body
-						h5.card-title Betty Boujee
-						p.card-text Shopify Web Design
+						h5.card-title Picnics in the City
+						p.card-text Shopify Website Design
 						p View Project »
 			.col-md-4
 				= link_to portfolio_mms_path, class: 'portfolio-card card' do
@@ -37,18 +37,18 @@ section.portfolio-grid
 						p View Project »
 		.row
 			.col-md-4
+				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+					.card-body
+						h5.card-title Betty Boujee
+						p.card-text Shopify Web Design
+						p View Project »
+			.col-md-4
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
 					.card-body
 						h5.card-title IGCO
 						p.card-text Web Design & Development - Wordpress
-						p View Project »
-			.col-md-4
-				= link_to portfolio_nyap_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-nyap.jpg", :class=>"card-img", :alt=>"Not Your Average Picnic"
-					.card-body
-						h5.card-title Not Your Average Picnic
-						p.card-text Shopify Website Design
 						p View Project »
 			.col-md-4
 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
@@ -58,13 +58,6 @@ section.portfolio-grid
 						p.card-text Branding & Shopify Website Design
 						p View Project »
 		.row
-			.col-md-4.load-card
-				= link_to portfolio_neydi_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-neydiphotography.jpg", :class=>"card-img", :alt=>"Neydi Photography"
-					.card-body
-						h5.card-title Neydi Photography
-						p.card-text Website Design
-						p View Project »
 			.col-md-4.load-card
 				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
@@ -79,13 +72,20 @@ section.portfolio-grid
 						h5.card-title Universal Control Systems
 						p.card-text Wordpress Web Design & Development
 						p View Project »
+			.col-md-4.load-card
+				= link_to portfolio_neydi_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-neydiphotography.jpg", :class=>"card-img", :alt=>"Neydi Photography"
+					.card-body
+						h5.card-title Neydi Photography
+						p.card-text Website Design
+						p View Project »
 			
 		.row
 			.col-md-4.load-card
-				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+				= link_to portfolio_nyap_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-nyap.jpg", :class=>"card-img", :alt=>"Not Your Average Picnic"
 					.card-body
-						h5.card-title Picnics in the City
+						h5.card-title Not Your Average Picnic
 						p.card-text Shopify Website Design
 						p View Project »
 			.col-md-4.load-card

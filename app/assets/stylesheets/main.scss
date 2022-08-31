@@ -2425,7 +2425,7 @@ i.contact {
 		//box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
 		transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 		transition-delay: .1s;
-		border: 2px solid #f4ebde;
+		border: 1px solid $black;
 		border-radius: 0.75rem;
 		transform: translateZ(0);
 		background-color: $white;
