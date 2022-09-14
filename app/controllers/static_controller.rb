@@ -8,22 +8,22 @@ class StaticController < ApplicationController
 		# very simple code to grab all posts so they can be
 		# displayed in the Index view (index.html.slim)
 		# @page_title = 'Website & Graphic Design Services in Houston, TX'
-		@page_description = 'Vanessa Amilet Santos is a freelance web designer & developer based in Houston, Texas providing captivating online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.'
+		@page_description = 'Captivating designs and online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.'
 	end
 	
 	def about
 		@page_title = 'About'
-		@page_description = 'Vanessa Amilet Santos is a freelance web designer & developer based in Houston, Texas providing custom website and graphic design services to businesses, creatives, and ecommerce brands nationwide.'
+		@page_description = 'Vanessa Amilet Santos is a web designer & developer based in Orange County, California providing custom website design services to businesses, creatives, and ecommerce brands nationwide.'
 	end
 
 	def services
 		@page_title = 'Services'
-		@page_description = 'Vanessa Amilet Santos is a freelance designer and developer in Houston, TX who specializes in custom web design, WordPress development, and graphic design for businesses, creatives, and ecommerce brands nationwide.'
+		@page_description = 'Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.'
 	end
 
 	def contact
 		@page_title = 'Contact'
-		@page_description = 'Get in touch with Vanessa Amilet Santos to learn more about custom branding and website design services using the form on this page.'
+		@page_description = 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.'
 	end
 	
 	def portfolio
