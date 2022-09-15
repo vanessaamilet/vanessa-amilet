@@ -64,15 +64,50 @@ section.reviews
 			/ .col-md-3.col-sm-6
 			/ 	= link_to 'https://universalcontrol.com/' do
 			/ 		= image_tag 'client-logos/client-ucs.svg', alt: 'Universal Control Systems'
-		.row.justify-content-center.pt-5
-			.col-lg-10
-				.quote
-					= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
-					p.lead
-						| "She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors."
-					h6 
-						| - Julyan Lee, Founder of 
-						= link_to "The Leeward Team", "http://leewardteam.com/"
+		#testimonials.carousel.carousel-dark.slide data-bs-ride="carousel"
+			.carousel-indicators.d-lg-none.d-xl-none
+				button.active aria-current="true" aria-label=("Slide 1") data-bs-slide-to="0" data-bs-target="#testimonials" type="button" 
+    			button aria-label=("Slide 2") data-bs-slide-to="1" data-bs-target="#testimonials" type="button" 
+    			button aria-label=("Slide 3") data-bs-slide-to="2" data-bs-target="#testimonials" type="button" 
+			.carousel-inner
+				.carousel-item.active data-bs-interval="10000" 
+					.row.justify-content-center.pt-5.pb-5
+						.col-lg-10
+							.quote
+								= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+								p.lead
+									| "She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors."
+								h6 
+									| - Julyan Lee, Founder of 
+									= link_to "The Leeward Team", "http://leewardteam.com/"
+				.carousel-item data-bs-interval="10000" 
+					.row.justify-content-center.pt-5.pb-5
+						.col-lg-10
+							.quote
+								= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+								p.lead
+									| "I highly recommend Vanessa and her expertise in the field of web and graphic design. She worked tirelessly with innate creative and real world experience insightfulness. Her ability to craft a project from beginning to end seamlessly and quickly brings a whole definition to what it is to be efficient. I couldn't be happier with her work ethic and product result. I'm only going to use her company for future projects."
+								h6 
+									| - 
+									= link_to "Zack Pride", "http://zackpride.com/"
+									|, Bassist & Professor of Jazz Bass at George Mason University
+				.carousel-item
+					.row.justify-content-center.pt-5.pb-5
+						.col-lg-10
+							.quote
+								= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+								p.lead
+									| "Vanessa was truly great to work with! Anyone who is contemplating hiring someone to build a website will not be disappointed with her work ethic and attentiveness to client needs. She helped every step of the way and never let me feel like I was on my own in a process I knew nothing about. Her willingness to provide not only great work, but education is a top reason to hire her for your website needs!!"
+								h6 
+									| - Zach Parker, Founder of 
+									= link_to "Barz and Bingo", "https://barzandbingo.com/"
+				button.carousel-control-prev data-bs-slide="prev" data-bs-target="#testimonials" type="button" 
+					span.carousel-control-prev-icon aria-hidden="true" 
+					span.visually-hidden Previous
+				button.carousel-control-next data-bs-slide="next" data-bs-target="#testimonials" type="button" 
+					span.carousel-control-next-icon aria-hidden="true" 
+					span.visually-hidden Next
+
 		/
 			.row.d-flex.pt-5
 				.col-md-7.row-eq-height
