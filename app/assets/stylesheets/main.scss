@@ -615,10 +615,13 @@ h6{
 	font-weight: $bold-weight;
 	font-size: 16px;
 	padding: 12px 20px;
+	border: 2px solid $black !important;
+	border-bottom: 5px solid $black !important;
+	//transition: all 0.2s linear;
 	&:hover, &:focus{
 		color: $white;
 		transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
-		box-shadow: 0 1rem 2.5rem rgba(27,22,66,.1),0 .5rem 1rem -.75rem rgba(27,22,66,.1)!important;
+		box-shadow: 0 1rem 2.5rem rgba(27,22,66,.05),0 .5rem 1rem -.75rem rgba(27,22,66,.05)!important;
 		transform: translate3d(0,-1.5px,0);
 		text-decoration: none !important;
 	}
@@ -1036,6 +1039,7 @@ ul.contact-info {
 	// margin: 25px 0px;
     white-space: pre-wrap;
     border: 2px solid $green;
+	border-radius: 8px;
     padding: 40px;
 	.form-control {
 		height: 50px;
@@ -1959,6 +1963,7 @@ i.contact {
 		text-align: center !important;
 		white-space: pre-wrap;
 		border:2px solid $green;
+		border-radius: 10px;
 		padding: 40px;
 		img {
 			width: 50px;
@@ -2055,6 +2060,7 @@ i.contact {
 			background-color: rgba(173, 212, 202, 0.8);
 			border-radius: .25rem;
 			border: 2px solid $green;
+			border-radius: 8px;
 			padding: 40px;
 		}
 		.col-sm-6{
@@ -2436,7 +2442,7 @@ i.contact {
 		//box-shadow: 0 2px 20px 0 rgba(0,0,0,0.05);
 		transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 		transition-delay: .1s;
-		border: 1px solid $black;
+		border: 2px solid $black;
 		border-radius: 0.75rem;
 		transform: translateZ(0);
 		background-color: $white;
