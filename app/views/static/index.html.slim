@@ -1,19 +1,17 @@
 = content_for :body_class, 'homepage-template'
 /!  Section Main Content 
 section.home-hero.pt-6.pt-md-10
-	//.texture-overlay
-	.container-lg
-		.row.align-items-center.justify-content-between.mt-3
-			.col-md-7.pe-lg-5
+	.container-fluid.px-0
+		.row.align-items-center.justify-content-between
+			.col-md-6
+				= image_tag  "homepage/hero-vanessaamilet-2.jpg", alt: 'Vanessa Amilet Creative', :class=>"img-fluid end-0"
+			.col-md-6.px-5.py-5
 				h1 Captivating Designs for Mission-Driven Entrepreneurs
-				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.
+				p.lead.mb-4 My name is Vanessa Amilet Santos and I create captivating online journeys for mission-driven entrepreneurs and creatives seeking to establish an authentic online presence.
 				div
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3"
 					= link_to "View My Work", portfolio_path, :class=>"link text-white ps-5"
-			.col-md-5
-				.start-0.end-0.right-0
-					= image_tag  "homepage/img-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-4 border-white shadow-lg"	
-
+			
 /!  Begin Page Content
 section.services
 	.container
@@ -24,7 +22,7 @@ section.services
 		.row
 			.col-md-4.my-5
 				.card.services-content
-					= image_tag "homepage/services-website-design.jpg", :class=>"card-img", :alt=>"Website Design"
+					= image_tag "homepage/services-website-design-2.jpg", :class=>"card-img", :alt=>"Website Design"
 					.card-body
 						h4 Website Design
 						p A well-designed website is intuitive, and converts visitors to new customers. Let's bring your authentic vision to life by developing a holistic online presence that reasonates with your audience.
@@ -40,7 +38,7 @@ section.services
 				.card.services-content
 					= image_tag "homepage/services-other-offerings.jpg", :class=>"card-img", :alt=>"Other Offerings"
 					.card-body
-						h4 Other Offerings
+						h4 Additional Offerings
 						p Customer clarity leads to sales. Clarify your vision with innovative materials that resonate with your ideal clients and communicates your brand story. 
 
 		br
@@ -48,19 +46,32 @@ section.services
 			.col-lg-12
 				.text-center
 					= link_to "Learn More About My Services", services_path, :class=>"btn btn-secondary mr-3"
+/
+	section.about
+		.container
+			.row.align-items-center.justify-content-between.mt-3
+				.col-md-5.pe-lg-5
+					.start-0.end-0.right-0
+						= image_tag  "homepage/img-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-4 border-dark shadow-sm"	
+				.col-md-7
+					h2 Helping Brands Flourish
+					p.lead.mb-4 My name is Vanessa Amilet Santos, a web designer and developer, based in Orange County, California. My mission is to help entrepreneurs and creatives establish their authentic online presence by providing visual solutions that will launch and grow their brand. I work alongside with you as a partner to understand your needs and help you turn your virtual visitors into engaged customers. I want you to establish a successful online presence that is authentic to your uniqueness.
+					div
+						= link_to "Learn More", about_path, :class=>"btn btn-primary mr-3"
+			
 section.reviews
 	.container
 		.row
 			h2.center.mx-auto What Clients Are Saying
 		.row.client-logos.mb-5
 			.col-md-3.col-sm-6
-				= link_to image_tag('client-logos/client-apg.svg', alt: 'Allied Power Group'), 'https://alliedpg.com/'
+				= link_to image_tag('client-logos/client-apg.svg', alt: 'Allied Power Group'), 'https://alliedpg.com/', target: "_blank"
 			.col-md-3
-				= link_to image_tag('client-logos/client-picnics-inthecity.svg', alt: 'Picnics in the City'), 'https://picnicsinthecity.com/'
+				= link_to image_tag('client-logos/client-picnics-inthecity.svg', alt: 'Picnics in the City'), 'https://picnicsinthecity.com/', target: "_blank"
 			.col-md-3.col-sm-6
-				= link_to image_tag('client-logos/client-mmp.png', alt: 'Manifesting Money Podcast'), 'https://www.manifestingmoneypodcast.com/'
+				= link_to image_tag('client-logos/client-mmp.png', alt: 'Manifesting Money Podcast'), 'https://www.manifestingmoneypodcast.com/', target: "_blank"
 			.col-md-3.col-sm-6
-				= link_to image_tag('client-logos/client-bettyboujee.svg', alt: 'Betty Boujee'), 'https://www.bettyboujee.com/'
+				= link_to image_tag('client-logos/client-bettyboujee.svg', alt: 'Betty Boujee'), 'https://www.bettyboujee.com/', target: "_blank"
 			/ .col-md-3.col-sm-6
 			/ 	= link_to 'https://universalcontrol.com/' do
 			/ 		= image_tag 'client-logos/client-ucs.svg', alt: 'Universal Control Systems'
@@ -79,7 +90,7 @@ section.reviews
 									| "She is very knowledgeable of trends, content management, flow of information and general look and feel for websites in today’s digital world. After we decided on the scope of work, she initiated a communications process that was above and beyond the call. During the entire redesign process the extraordinary collaboration, communication and engagement continued. In the end, I have a new and improved website with a clean concise flow of information that is engaging to my visitors."
 								h6 
 									| - Julyan Lee, Founder of 
-									= link_to "The Leeward Team", "http://leewardteam.com/"
+									= link_to "The Leeward Team", "http://leewardteam.com/", target: "_blank"
 				.carousel-item data-bs-interval="10000" 
 					.row.justify-content-center.pt-5.pb-5
 						.col-lg-10
@@ -89,7 +100,7 @@ section.reviews
 									| "I highly recommend Vanessa and her expertise in the field of web and graphic design. She worked tirelessly with innate creative and real world experience insightfulness. Her ability to craft a project from beginning to end seamlessly and quickly brings a whole definition to what it is to be efficient. I couldn't be happier with her work ethic and product result. I'm only going to use her company for future projects."
 								h6 
 									| - 
-									= link_to "Zack Pride", "http://zackpride.com/"
+									= link_to "Zack Pride", "http://zackpride.com/", target: "_blank"
 									|, Bassist & Professor of Jazz Bass at George Mason University
 				.carousel-item
 					.row.justify-content-center.pt-5.pb-5
@@ -100,7 +111,7 @@ section.reviews
 									| "Vanessa was truly great to work with! Anyone who is contemplating hiring someone to build a website will not be disappointed with her work ethic and attentiveness to client needs. She helped every step of the way and never let me feel like I was on my own in a process I knew nothing about. Her willingness to provide not only great work, but education is a top reason to hire her for your website needs!!"
 								h6 
 									| - Zach Parker, Founder of 
-									= link_to "Barz and Bingo", "https://barzandbingo.com/"
+									= link_to "Barz and Bingo", "https://barzandbingo.com/", target: "_blank"
 				button.carousel-control-prev data-bs-slide="prev" data-bs-target="#testimonials" type="button" 
 					span.carousel-control-prev-icon aria-hidden="true" 
 					span.visually-hidden Previous
@@ -150,6 +161,4 @@ section.get-started
 				.text-center
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
 					p = link_to "Have any questions?", faqs_path, :class=>"cta"
-/!  Preloader Content 
-/ = render :partial => "shared/preloader"
 
