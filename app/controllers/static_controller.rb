@@ -17,13 +17,18 @@ class StaticController < ApplicationController
 	end
 
 	def services
-		@page_title = 'Services'
+		@page_title = 'Web Design Services'
 		@page_description = 'Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.'
 	end
 
 	def contact
+		# {
+		# 	title: 'Contact',
+		# 	description: 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.',
+		# }
 		@page_title = 'Contact'
 		@page_description = 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.'
+		@page_keywords = 'Contact Vanessa Amilet Creative'
 	end
 	
 	def portfolio
