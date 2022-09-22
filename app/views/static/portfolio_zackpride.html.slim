@@ -1,0 +1,52 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-10.pt-5
+				h1 Zack Pride
+				<a class="btn-viewport-discover" href="#info"><i class="fa fa-chevron-down"></i></a>
+
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h6 Details
+					p.lead Zack Pride is a bassist and professor of Jazz Bass at George Mason University. Zack Pride has served with the The U.S. Army Band “Pershing’s Own” since 2008. He’s performed for four Presidents, nine Medal of Honor recipients, three USO tours in theaters of combat, and several notable heads of states in governments abroad. 
+					p.lead Zack was due for a website redesign that reflected his growth, all of his work and collaborations, accomplishments, and upcoming events. The solution was to redesign the website using Wordpress to implement an events calendar for his future events.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Zack Pride
+						.col-md-6
+							h6 Year
+							p 2022
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Development
+                            p Graphic Design
+						.col-md-6
+							h6 Technologies
+							p Wordpress, Studiopress Genesis Framework
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://zackpride.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/zack-pride/zack-pride-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Showcase" do
+						= image_tag "portfolio/zack-pride/zack-pride-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Showcase"
+					= link_to image_path("portfolio/zack-pride/zack-pride-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Homepage" do
+						= image_tag "portfolio/zack-pride/zack-pride-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Homepage"
+                    = link_to image_path("portfolio/zack-pride/zack-pride-about-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride About Page" do
+						= image_tag "portfolio/zack-pride/zack-pride-about-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride About Page"
+                    = link_to image_path("portfolio/zack-pride/zack-pride-contact-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Contact Page" do
+						= image_tag "portfolio/zack-pride/zack-pride-contact-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Contact Page"
+                    = link_to image_path("portfolio/zack-pride/zack-pride-album.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Album Design" do
+						= image_tag "portfolio/zack-pride/zack-pride-album.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Album Design"
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

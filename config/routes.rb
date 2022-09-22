@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get '/portfolio/igco' => 'static#portfolio_igco'
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
   get '/portfolio/manifesting-money-studio' => 'static#portfolio_mms', as: 'portfolio_mms'
+  get '/portfolio/zack-pride' => 'static#portfolio_zackpride', as: 'portfolio_zackpride'
   get '/portfolio/neydi-photography' => 'static#portfolio_neydiphotography', as: 'portfolio_neydi'
   get '/portfolio/the-picnic-hour' => 'static#portfolio_picnichour', as: 'portfolio_picnichour'
   get '/portfolio/not-your-average-picnic' => 'static#portfolio_nyap', as: 'portfolio_nyap'

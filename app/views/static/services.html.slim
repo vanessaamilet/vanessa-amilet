@@ -19,7 +19,7 @@ section.quote
 	.container
 		.row.justify-content-center
 			.col-lg-9
-				= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+				= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'Customer testimonial'
 				p.lead
 					| "Vanessa is AMAZING to work with! Her work is professional and creative and the final results of my completed website is outstanding. I have received numerous compliments about the layout and design. I highly recommend Vanessa for Website design!"
 				h6 
@@ -58,15 +58,15 @@ section.webdesign
 				= link_to "Let's Work Together", contact_path, :class=>"btn btn-secondary d-lg-none"
 			.col-lg-6
 				.top-0
-					= link_to image_tag('portfolio/picnics/picnicsinthecity-showcase.jpg', alt: 'Vanessa Amilet - Web Design Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3 shadow-sm"), portfolio_bettyboujee_path
+					= link_to image_tag('portfolio/picnics/picnicsinthecity-showcase.jpg', alt: 'Vanessa Amilet - Web Design Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"), portfolio_bettyboujee_path
 			
 
-section.branddesign
+section.landingpg-design
 	.container
 		.row.justify-content-center
 			.col-lg-6.position-relative
 				.top-0
-					= link_to image_tag('portfolio/reliant-mass/reliant-mass-landingpage.jpg', alt: 'Vanessa Amilet - Brand Design Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3 shadow-sm"), portfolio_reliantmass_path
+					= link_to image_tag('portfolio/reliant-mass/reliant-mass-landingpage.jpg', alt: 'Vanessa Amilet - Landing Page Design Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"), portfolio_reliantmass_path
 			.col-lg-6.
 				h3 Landing Page Design
 				p Launching a campaign soon? Generate new leads creatively.
@@ -86,12 +86,12 @@ section.branddesign
 				p 
 					i Packages are custom built & quoted based on your unique business needs and goals. 
 					b Investment: 
-					| Projects start at $2k. 
+					| Projects start at $1,500. 
 					b Timeline: 
 					| 3-4 weeks.
 				= link_to "Let's Work Together", contact_path, :class=>"btn btn-secondary d-lg-none"
 			
-section.media
+section.media.additional-services
 	.container
 		.row.justify-content-center
 			.col-lg-6
@@ -111,7 +111,7 @@ section.media
 				= link_to "View My Work", portfolio_path, :class=>"btn btn-secondary d-lg-none"
 			.col-lg-6.position-relative
 				.top-0
-					= link_to image_tag('portfolio/captivecolour/captivecolour-infocard.jpg', alt: 'Vanessa Amilet - Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3 shadow-sm"), portfolio_captivecolour_path
+					= link_to image_tag('portfolio/captivecolour/captivecolour-infocard.jpg', alt: 'Vanessa Amilet - Additional Offerings', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"), portfolio_captivecolour_path
 
 section.steps
 	.container
@@ -124,7 +124,10 @@ section.steps
 				i.fad.fa-phone
 				h5 
 					span 01.
-				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
+				p 
+					| Book a free 
+					= link_to "15-minute consultation call ", "https://calendly.com/vanessa-amilet/15min?back=1"
+					| & we’ll discuss your goals and create a custom proposal.
 			.col-md-4
 				i.fad.fa-comments
 				h5

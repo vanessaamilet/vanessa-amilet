@@ -99,6 +99,16 @@ section.reviews
 									| - 
 									= link_to "Zack Pride", "http://zackpride.com/", target: "_blank"
 									|, Bassist & Professor of Jazz Bass at George Mason University
+				.carousel-item data-bs-interval="10000"
+					.row.justify-content-center.pt-5.pb-5
+						.col-lg-10
+							.quote
+								= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+								p.lead
+									| "Working with Vanessa was an absolute joy! She was very attentive, knowledgeable, patient, and very timely! I was so nervous to just have anyone create my website but I am beyond pleased with Vanessa's work. She really listened to all my likes and dislikes to create exactly what I wanted and what my business needed! If you're a business owner in need of design, branding, or website creation Vanessa is your ideal person! I can't recommend her enough."
+								h6 
+									| - Wynter Morgan, Founder of 
+									= link_to "The Picnic Hour", "https://www.thepicnichours.com/", target: "_blank"
 				.carousel-item
 					.row.justify-content-center.pt-5.pb-5
 						.col-lg-10
@@ -109,6 +119,7 @@ section.reviews
 								h6 
 									| - Zach Parker, Founder of 
 									= link_to "Barz and Bingo", "https://barzandbingo.com/", target: "_blank"
+				
 				button.carousel-control-prev data-bs-slide="prev" data-bs-target="#testimonials" type="button" 
 					span.carousel-control-prev-icon aria-hidden="true" 
 					span.visually-hidden Previous
@@ -142,7 +153,10 @@ section.get-started
 				i.fad.fa-phone
 				h5 
 					span 01.
-				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
+				p 
+					| Book a free 
+					= link_to "15-minute consultation call ", "https://calendly.com/vanessa-amilet/15min?back=1"
+					| & we’ll discuss your goals and create a custom proposal.
 			.col-md-4
 				i.fad.fa-comments
 				h5
