@@ -1877,7 +1877,8 @@ i.contact {
 	}
 	/* ### About */
 	.about{
-		background-color: $light-gray;
+		background-color: $white;
+		border-bottom: 1px solid $black;
 		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		background-repeat: repeat;
 		background-position: center center;
