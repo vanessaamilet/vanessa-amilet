@@ -3,9 +3,8 @@
 section.hero.d-flex
 	.container
 		.row.justify-content-center.text-center
-			.col-md-10.col-lg-10.pt-5
-				h6.mb-5 Graphics • Web • Media
-				h1 Design Portfolio
+			.col-md-10.col-lg-9
+				h1 Design & Web Projects
 				p.lead.mb-4 I help mission-driven business owners establish an authentic online presence. Explore my selection of the businesses and entrepreneurs I have helped. Your brand could be next!
 				= link_to "Let's Work Together", contact_path, :class=>"btn btn-white"
 				br
@@ -22,11 +21,11 @@ section.portfolio-grid
 						p.card-text Shopify Website Design
 						p View Project »
 			.col-md-4
-				= link_to portfolio_mms_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-mms.jpg", :class=>"card-img", :alt=>"Manifesting Money Studio"
+				= link_to portfolio_igco_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
 					.card-body
-						h5.card-title Manifesting Money Studio
-						p.card-text Wordpress Website Design - Landing Page
+						h5.card-title IGCO
+						p.card-text Web Design & Development - Wordpress
 						p View Project »
 			.col-md-4
 				= link_to portfolio_zackpride_path, class: 'portfolio-card card' do
@@ -51,12 +50,13 @@ section.portfolio-grid
 						p.card-text Shopify Web Design
 						p View Project »
 			.col-md-4
-				= link_to portfolio_igco_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
+				= link_to portfolio_mms_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-mms.jpg", :class=>"card-img", :alt=>"Manifesting Money Studio"
 					.card-body
-						h5.card-title IGCO
-						p.card-text Web Design & Development - Wordpress
+						h5.card-title Manifesting Money Studio
+						p.card-text Wordpress Website Design - Landing Page
 						p View Project »
+			
 		.row
 			.col-md-4.load-card
 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
@@ -82,19 +82,19 @@ section.portfolio-grid
 			
 		.row
 			.col-md-4.load-card
-				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
-					.card-body
-						h5.card-title The Picnic Hour
-						p.card-text Shopify Website Design
-						p View Project »
-			.col-md-4.load-card
 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
 				  .card-body
 					h5.card-title Jumpix
 					p.card-text Web Design & Development - Media - UX Design
 					p View Project »
+			.col-md-4.load-card
+				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
+					.card-body
+						h5.card-title The Picnic Hour
+						p.card-text Shopify Website Design
+						p View Project »
 			.col-md-4.load-card
 				= link_to portfolio_cia_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
@@ -104,13 +104,6 @@ section.portfolio-grid
 						p View Project »
 					
 		/ .row
-		/ 	.col-md-4.load-card
-				/ = link_to portfolio_neydi_path, class: 'portfolio-card card' do
-				/  	= image_tag "portfolio/portfolio-neydiphotography.jpg", :class=>"card-img", :alt=>"Neydi Photography"
-				/ 	.card-body
-				/ 		h5.card-title Neydi Photography
-				/ 		p.card-text Website Design
-				/ 		p View Project »
 		/ 	.col-md-4.load-card
 		/ 		= link_to portfolio_iba_path, class: 'portfolio-card card' do
 		/ 		  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"

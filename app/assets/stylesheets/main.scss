@@ -1182,12 +1182,10 @@ ul.contact-info {
 
 /* ### Hero Sections */
 .hero{
-	//padding: 40px 15px;
-	//background-attachment: fixed;
 	background-position: center center;
 	margin-top: 0px;
 	color: $white;
-	height: 45vh;
+	// height: 45vh;
 	h6 {
 		font-size: 14px;
 		text-transform: uppercase;
@@ -1257,18 +1255,11 @@ section{
 .portfolio{
 	.hero{
 		background-color: $dark-green;
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
+		// background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		background-repeat: repeat;
 		background-position: center center;
 		align-items: center;
 		align-items: flex-end;
-		min-height: 50vh;
-		@media (max-width:991px){
-			margin-top: 20px;
-		}
-		// a{
-		// 	color: $white !important;
-		// }
 		h6{
 			color: $white;
 		}
@@ -1302,13 +1293,14 @@ section{
 
 .navbar{
 	margin-bottom: 0 !important;
-	background-color: transparent !important;
+	background-color: $white !important;
 	border-color: transparent;
+	border-bottom: 1px solid $black;
 	z-index: 999;
-	padding: 1rem;
+	// padding: 1rem;
 	.navbar-brand {
 		height: auto !important;
-		color: $white !important;
+		color: $black !important;
 		text-transform: uppercase;
 		padding: 1rem!important;
 		margin-right: 0;
@@ -1320,8 +1312,8 @@ section{
 			height: auto;
 			padding: 15px;
 			height: auto;
-			fill: $white;
-			stroke: $white;
+			fill: $black;
+			stroke: $black;
 			stroke-width: 0.25px;
 			stroke-dasharray: 853;
 			// -webkit-animation: 6s draw forwards;
@@ -1333,7 +1325,7 @@ section{
 	}
 	.navbar-nav{
 		.nav-link {
-			color: $white !important;
+			color: $black !important;
 			font-size: 16px;
 			font-weight: $bold-weight;
 			padding-right: .5rem;
@@ -1388,7 +1380,7 @@ section{
 		.navbar-nav{
 			a,
 			.nav-link {
-				color: $gray !important;
+				color: $black !important;
 				text-shadow: none;
 				&:hover, &:focus{
 					color: $cinnamon !important;
@@ -1407,19 +1399,7 @@ section{
 	}
 	// Mobile
 	@media screen and (max-width:991px){
-		//box-shadow: 0 -6px 33px 0 rgba(0, 0, 0, 0.1);
-		//padding-bottom: 0;
 		background-color: $white !important;
-		&:before{
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				border-width: 0;
-				border-top: 4px solid;
-				border-color: $dark-orange;
-		}
 		.navbar-brand{
 			#logo{
 				fill: $black;
@@ -1430,7 +1410,7 @@ section{
 		.navbar-nav{
 			a,
 			.nav-link {
-				color: $gray !important;
+				color: $black !important;
 				text-shadow: none;
 				&:hover, &:focus{
 					color: $cinnamon !important;
@@ -1449,17 +1429,8 @@ section{
 -------------------------------------------------- */
 .nav-shrink, .mobile{
 	background-color: $white !important;
-	box-shadow: 0 -6px 33px 0 rgba(0,0,0,0.1);
+	//box-shadow: 0 -6px 33px 0 rgba(0,0,0,0.1);
 	transition: .5s;
-	&:before{
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		border-width: 0;
-		border-top: 4px solid $dark-orange;
-	}
 	.navbar-brand{
 		#logo{
 			fill: $black;
@@ -1475,7 +1446,7 @@ section{
 	.navbar-nav{
 		a,
 		.nav-link {
-			color: $gray !important;
+			color: $black !important;
 			text-shadow: none;
 			&:hover, &:focus{
 				color: $cinnamon !important;
@@ -1563,15 +1534,7 @@ section{
 	@media (max-width: 768px) {
 		height: auto;
 	}	
-	a {
-		color: $blue;
-		text-decoration: none;
-		&:hover {
-		color: $dark-blue;
-		}
-	}
 	h4 {
-		color: $dark-gray;
 		font-size: 18px;
 		margin-bottom: 15px;
 	}
@@ -1593,8 +1556,7 @@ section{
 			left: 0;
 			width: 100%;
 			border-width: 0;
-			border-top: 4px solid $dark-orange;
-			//border-image: $nav-border-top;
+			border-top: 1px solid $black;
 		}
 	}
 	.fu-logo{
@@ -1621,7 +1583,7 @@ section{
 			margin-bottom: 5px;
 			padding: 0;
 				a {
-					color: #687077 !important;
+					color: $dark-gray !important;
 					text-decoration: none;
 					&:hover {
 						color: $cinnamon !important;
@@ -1731,24 +1693,29 @@ i.contact {
 	}
 	/* ### Hero */
 	.home-hero{
-		background-color: $cinnamon;
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
-		background-repeat: repeat;
+		//background-color: $cinnamon;
+		background-image: url(asset_path('homepage/hero-vanessaamiletcreative.jpg'));
+		background-repeat: no-repeat;
 		align-items: center;
 		justify-content: center;
 		display: flex;
 		//align-items: flex-end;
 		margin: 0;
 		padding: 0;
-		//background-size: cover;
-		background-position: center center;
+		background-size: cover;
+		background-position: bottom center;
 		position: relative;
 		top: 0;
 		left: 0;
 		z-index: 1;
-		color: $white;
+		//color: $white;
+		min-height: 85vh;
 		@media screen and (max-width:768px){
 			padding: 60px 0;
+			min-height: 60vh;
+			.col-md-6:first-child{
+				background-color: rgba(255, 255, 255, 0.7);
+			}
 		}
 		// Overlay
 		.texture-overlay {
@@ -1759,7 +1726,6 @@ i.contact {
 			height: 100%;
 			background: $creme;
 			background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, transparent 100%);
-			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$purple', endColorstr='#53c2ca',GradientType=0 );
 		}
 		.container-lg{
 			z-index: 100;
@@ -1784,43 +1750,17 @@ i.contact {
 		}
 		p.lead{
 			font-size: 22px !important;
+			-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+					animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 			@media (max-width: 991px){
 				font-size: 18px !important;
 			}
 		}
-		a.text-white{
+		a.link{
 			font-weight: $bold-weight !important;
 			display: inline-block;
 			&:hover, &:focus{
-				color: $white !important;
 				transform: translate3d(0, -1.5px, 0);
-			}
-		}
-		
-		// Intro Wrapper
-		.intro-wrapper{
-			.logo{
-				margin-bottom: 45px;
-				@media (max-width: 768px){
-					margin-bottom: 15px;
-				}
-			}
-			.cls-1{
-				fill: $white;
-				stroke: $white;
-				stroke-width: 0.25px;
-				stroke-dasharray: 853;
-				animation: 6s draw forwards;
-			}
-			h1.lead{
-				font-family: $gotham;
-				font-size: 21px !important;
-				font-weight: $semibold-weight;
-				-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-					animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-					@media (max-width: 768px){
-						font-size: 16px !important;
-					}
 			}
 		}
 	}
@@ -1829,14 +1769,13 @@ i.contact {
 		background-color: $creme;
 		background-repeat: repeat;
 		background-position: center center;
-		//border-bottom: 2px solid #f4ebde;
 		display: flex;
 		align-items: center;
 		@media screen and (min-width:991px){
 			padding-top: 80px;
 		}
 		.services-content{
-			border: 2px solid $cinnamon;
+			border: 2px solid $dark-gray;
 			width: 100%;
     		height: 100%;
 			.card-body{
@@ -1878,11 +1817,14 @@ i.contact {
 	/* ### About */
 	.about{
 		background-color: $white;
-		border-bottom: 1px solid $black;
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		background-repeat: repeat;
 		background-position: center center;
-		//color: $white !important;
+		img{
+			box-shadow: -12px 12px 0 0 $lighter-green;
+			@media only screen and (max-width: 768px){
+				margin-bottom: 30px;
+			}
+		}
 	}
 	/* ### Get Started */
 	.get-started{
@@ -1995,22 +1937,6 @@ i.contact {
 
 .about{
 	overflow-x: hidden;
-	// @media screen and (max-width:991px){
-	// 	.navbar{
-	// 		background-color: $white !important;
-	// 		&:before{
-	// 			content: "";
-	// 			position: absolute;
-	// 			top: 0;
-	// 			left: 0;
-	// 			width: 100%;
-	// 			border-width: 0;
-	// 			border-top: 4px solid;
-	// 			border-color: $dark-orange;
-	// 			//border-image: $nav-border-top;
-	// 		}
-	// 	}
-	// }
 	.hero{
 		background-color: #F9F4F1;
 		background-attachment: fixed;
@@ -2021,14 +1947,10 @@ i.contact {
 		display: flex;
 		align-items: center;
 		color: $black !important;
-		
 		@media screen and (min-width:991px){
-			height: 62vh;
+			height: 65vh;
 			margin-bottom: 50px;
 			margin-bottom: 3rem;
-		}
-		@media (max-width:991px){
-			margin-top: 20px;
 		}
 		.btn{
 			@media screen and (max-width:768px){
@@ -2041,6 +1963,9 @@ i.contact {
 				transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 				transform: translate3d(0, -1.5px, 0);
 			}
+		}
+		img{
+			box-shadow: 12px 12px 0 0 $lighter-green;
 		}
 	}
 	.values{
@@ -2149,7 +2074,6 @@ i.contact {
 .services{
 	.hero{
 		background-color: $dark-orange;
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		background-position: center center;
 		background-repeat: repeat;
 		color: $white !important;
@@ -2161,11 +2085,10 @@ i.contact {
 			color: $white;
 		}
 		@media screen and (min-width:991px){
-			height: 62vh;
+			height: 60vh;
 		}
 		@media screen and (max-width: 991px){
 			text-align: center;
-			margin-top: 20px;
 			.row{
 				display: -webkit-box;
 				display: -ms-flexbox;
@@ -2281,15 +2204,12 @@ i.contact {
 --------------------------------------------- */
 .contact{
 	.hero{
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		background-color: $cinnamon;
 		text-align: center;
-		min-height: 50vh;
 		height: auto;
 		display: flex;
 		//align-items: center;
 		align-items: flex-end;
-		//padding-bottom: 6em;
 		color: $white;
 		h6{
 			font-size: 14px;
@@ -2319,28 +2239,11 @@ i.contact {
 /* ## FAQs
 --------------------------------------------- */
 .faqs{
-	// Navbar
-	// @media screen and (max-width:991px){
-	// 	.navbar{
-	// 		background-color: $white !important;
-	// 		&:before{
-	// 			content: "";
-	// 			position: absolute;
-	// 			top: 0;
-	// 			left: 0;
-	// 			width: 100%;
-	// 			border-width: 0;
-	// 			border-top: 4px solid;
-	// 			border-color: $dark-orange;
-	// 		}
-	// 	}
-	// }
 	// Hero
 	.hero{
 		background: $creme;
 		padding: 60px 0;
 		text-align: center;
-		min-height: 50vh;
 		display: flex;
 		align-items: flex-end;
 		color: $black;
@@ -2383,23 +2286,6 @@ i.contact {
 /* ## Terms & Privacy Policy
 --------------------------------------------- */
 .terms{
-	padding-top: 60px;
-	.navbar{
-		background-color: $white !important;
-		box-shadow: 0 -6px 33px 0 rgba(0, 0, 0, 0.1);
-		transition: .5s;
-		&:before{
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			border-width: 0;
-			border-top: 4px solid;
-			border-color: $dark-orange;
-			//border-image: $nav-border-top;
-		}
-	}
 	.navbar-brand{
 		#logo{
 			fill: $black;
@@ -2565,7 +2451,6 @@ i.contact {
 .portfolio-template{
 	.hero{
 		background-color: $dark-green;
-		background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 		align-items: flex-end;
 		//padding-bottom: 6em;
 		padding-bottom: 4em;
@@ -2664,7 +2549,7 @@ i.contact {
 	width: 100%;
 	padding: 60px 0;
 	background-color: $dark-green;
-	background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
+	// background-image: url(asset_path('backgrounds/bg-pattern-topography.svg'));
 	// @media (max-width:981px){
 	// 	padding: 220px 0 100px 0;
 	// }
