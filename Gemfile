@@ -1,38 +1,38 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.1"
+ruby "3.1.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
+gem 'rails', '~> 7.0', '>= 7.0.4'
 
 # Use Puma as the app server
-gem 'puma', '>= 5.5.1'
+gem 'puma', '~> 6.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Libsass Library
 gem 'sassc', '~> 2.1.0'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 #gem 'therubyracer', platforms: :ruby
 gem 'mini_racer'
 #gem 'execjs'
-#gem 'libv8', '~> 3.16', '>= 3.16.14.7'
-gem 'libv8', '~> 7.3', '>= 7.3.492.27.1'
-gem 'sprockets', '~> 3.0' # add this pessimistic operator with twiddle-wakka
+#gem 'libv8', '~> 8.4', '>= 8.4.255.0'
+gem 'sprockets', '~> 3.6', '>= 3.6.3' # add this pessimistic operator with twiddle-wakka
+
+gem 'json', '~> 2.6', '>= 2.6.3'
 
 gem 'slim-rails'
 #gem 'bootstrap', '~> 5.2.3'
-# gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'sitemap_generator', '~> 6.1', '>= 6.1.2'
-gem 'meta-tags', '~> 2.14'
+gem 'meta-tags', '~> 2.18'
 
 # Gems for Contact Form & Mail
-gem 'mail_form', '~> 1.8'
-gem 'simple_form', '~> 5.0', '>= 5.1.0'
+gem 'mail_form', '~> 1.9'
+gem 'simple_form', '~> 5.1'
 
-gem 'mailgun-ruby', '~> 1.2'
+gem 'mailgun-ruby', '~> 1.2', '>= 1.2.6'
 gem "figaro"
 
 # Use sqlite3 as the database for Active Record
@@ -56,7 +56,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 2.4', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -87,8 +87,7 @@ group :development, :test do
 end
 
 group :production do
-    #gem 'pg', '~> 0.18'
-    gem 'pg', '~> 1.2', '>= 1.2.3'
+    gem 'pg', '~> 1.4', '>= 1.4.5'
     
     # gem 'rails_12factor'
 end
