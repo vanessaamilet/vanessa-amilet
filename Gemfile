@@ -24,7 +24,6 @@ gem 'sprockets', '~> 3.6', '>= 3.6.3' # add this pessimistic operator with twidd
 gem 'json', '~> 2.6', '>= 2.6.3'
 
 gem 'slim-rails'
-#gem 'bootstrap', '~> 5.2.3'
 gem 'sitemap_generator', '~> 6.1', '>= 6.1.2'
 gem 'meta-tags', '~> 2.18'
 

@@ -5,7 +5,6 @@ section.hero.justify-content-center
 	.container
 		.row.justify-content-center
 			.col-md-10.col-lg-8
-				h6.mb-5 FAQS
 				h1 Frequently Asked Questions
 				p.lead 
 					| Need help? Here you can find answers and general information about my work and services.
@@ -111,29 +110,5 @@ section.faqs
 								p Yes! I provide hourly sessions in which I can work on the issue you have, provide any strategic advice, tips, and follow up with an email of resources. The rate for these sessions are $175/hr. Please email me for any questions.
 
 		br
-section.get-started
-	.container
-		.row.mb-5.justify-content-center
-			.col-md-10.col-lg-10
-				h2.mx-auto Ready to establish your authentic online presence?
-					Getting started is simple.
-		.row.mb-5
-			.col-md-4
-				i.fad.fa-phone
-				h5 
-					span 01.
-				p Book a free 15-minute consultation call & we’ll discuss your goals and create a custom proposal.
-			.col-md-4
-				i.fad.fa-comments
-				h5
-					span 02. 
-				p Once you book, we’ll discuss the direction for your brand & website with plenty of opportunity for input & collaboration along the way.
-			.col-md-4
-				i.fad.fa-pencil-paintbrush
-				h5 
-					span 03. 
-				p After a few weeks, you’ll receive your elevated brand materials or website!
-		.row
-			.col-lg-12
-				.text-center
-					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center"
+/!  CTA
+= render :partial => "shared/portfolio_cta"
