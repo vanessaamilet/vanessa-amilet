@@ -17,15 +17,11 @@ class StaticController < ApplicationController
 	end
 
 	def services
-		@page_title = 'Web Design Services'
+		@page_title = 'Website Design Services'
 		@page_description = 'Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.'
 	end
 
 	def contact
-		# {
-		# 	title: 'Contact',
-		# 	description: 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.',
-		# }
 		@page_title = 'Contact'
 		@page_description = 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.'
 		@page_keywords = 'Contact Vanessa Amilet Creative'
@@ -50,6 +46,7 @@ class StaticController < ApplicationController
 	end
 
 	def portfolio_neydiphotography
+		redirect_to :root
 		@page_title = 'Neydi Photography'
 		@page_description = 'Designed a user-friendly website for, Neydi Photography, a photography studio based in Houston, Texas that specializes in natural lighting and outdoor photography.'
 	end
@@ -95,6 +92,7 @@ class StaticController < ApplicationController
 	end
 
 	def portfolio_greenwood
+		redirect_to :root
 		@page_title = 'Art of Greenwood'
 		@page_description = 'Denise Greenwood is a local Houston Artist that creates 3-D Mixed Media with emphasis on ceramics. Checkout this e-commerce Wordpress website I created for her art shop.'
 	end

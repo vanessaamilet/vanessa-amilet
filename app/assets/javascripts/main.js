@@ -57,20 +57,22 @@ document.addEventListener("turbolinks:load", function(){
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+
+    /* ## Bonsai Contact Form
+    ---------------------------------------------------------------------------------------------------- */
+    function iframeLoaded() {
+        var iFrameID = document.getElementById('bonsai-form');
+        if(iFrameID) {
+              // here you can make the height, I delete it first, then I make it again
+              iFrameID.height = "";
+              iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+        }   
+    }
     
     
     /* ## Load More Btn (For Portfolio)
     ---------------------------------------------------------------------------------------------------- */
-    // $(".col-md-4").slice(0, 9).show(); // select the first twelve
-    // $("#loadMore").click(function(e){ // click event for load more
-    //         e.preventDefault();
-    //         $(".col-md-4.load-card:hidden").slice(0, 9).fadeIn(950).show(); // select next 10 hidden divs and show them
-    //         if($(".col-md-4.load-card:hidden").length == 0){ // check if any hidden divs still exist
-    //             $("#loadMore").fadeOut('slow');
-    //             //alert("No more divs"); // alert if there are none left
-    //         }
-    // });
-
 	if (document.body.classList.contains('portfolio')) {
 		let columnFour = document.querySelector('.col-md-4');
 		const loadMoreBtn = document.getElementById('load-more');

@@ -37,6 +37,9 @@ section
 						| .
 			/ .offset-md-2.col-md-8
 			.offset-md-1.col-md-7
+				/ #contact-form
+				/ 	p Fill out the contact form below to get the conversation started. Please allow up to 2-3 business days to respond to your message.
+				/ 	<iframe id="bonsai-form" onload="iframeLoaded()" src="https://app.hellobonsai.com/f/b372ec6c64fb9b8?embed=true&hide_header=true" frameborder="0" scrolling="no" width="100%" height="100%" style=""></iframe>
 				#contact-form
 					- flash.each do |key, value| %
 						- if value.is_a?(String)
@@ -66,9 +69,9 @@ section
 						= f.input :website, :label => 'Website (If Applicable)' do
 							= f.input :website, :label => false, :hint => false, :wrapper => false, :error => true, :required => false
 
-						= f.input :services, :label => 'What type of project are you inquiring about today?', as: :select, input_html: {class: 'form-select'}, collection: ["Custom Website Design", "Redesign of a Current Website","Landing Page Design", "Graphic Design", "Website Maintenance", "1:1 Sessions ($175/hr)", "Other"], :required => true,  priority: [ "Website Design" ]
+						= f.input :services, :label => 'What type of project are you inquiring about today?', as: :select, input_html: {class: 'form-select'}, collection: ["Basic Website Design","Custom Website Design", "Redesign of a Current Website","Sales Landing Page Design", "Graphic Design", "Website Maintenance", "1:1 Sessions ($175/hr)", "Other"], :required => true,  priority: [ "Website Design" ]
 
-						= f.input :budget, :label => 'What budget range do you have in mind for your project?', as: :select, input_html: {class: 'form-select'}, collection: ["$1,800-$3k USD (Landing Page Design)","$4-$6k USD (Custom Website Design)","$6-$8k USD (Custom Website Design)", "$10k-$18k USD (Large-Scale Website Design)","Other"], :required => true
+						= f.input :budget, :label => 'What budget range do you have in mind for your project?', as: :select, input_html: {class: 'form-select'}, collection: ["$1,799+ USD (Landing Page Design)","$2,499+ USD (Basic Website Design)","$3,999+ USD (Custom Website Design)","$6k+ USD (Custom Website Design)", "$10k+ USD (Large-Scale Website Design)","Other"], :required => true
 						
 
 						= f.input :message, :label => 'Tell me about your project! What business problems are you hoping to solve?' do

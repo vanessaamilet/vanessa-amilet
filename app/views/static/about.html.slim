@@ -16,6 +16,19 @@ section.hero
 					= image_tag  "about/about-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"	
 
 /!  Begin Page Content
+section.facts
+	.container
+		.row
+			.col-md-6
+				h3 Fun Facts
+				p First-Gen Latina 🇸🇻
+				p Born and raised in HTX &#129312;
+				p I have a fur baby &#128054;
+			.col-md-6
+				h3 Professional Stats
+				p 9+ years of professional experience
+				p Have helped 40+ businesses throughout the nation &#128640;
+				p 2016 WebAward for Outstanding Achievement in Web Development
 section.values
 	.container
 		.row
@@ -67,6 +80,18 @@ section.capabilities
 				= link_to "Explore Services", services_path, :class=>"btn btn-white"
 /!  Who I Serve
 
+section.featured
+	.container
+		.row
+			.col-lg-4
+				h2 Featured In
+			.col-lg-7
+				.row 
+					.col
+						= link_to image_tag('about/press-voyageatl.png', alt: 'VoyageATL'), 'http://voyageatl.com/interview/meet-vanessa-santos-of-vanessa-amilet-creative-llc/', target: "_blank"
+					.col
+						= link_to image_tag('about/press-voyagehouston.png', alt: 'VoyageHouston'), 'http://voyagehouston.com/interview/meet-trailblazer-vanessa-santos/', target: "_blank"
+
 section.process
 	.container
 		.row
@@ -74,50 +99,50 @@ section.process
 				h6 A Holistic Approach
 				h2 My Creative Process
 		.row
-			.col-md-6.mb-5
+			.col-md-4.mb-5
 				i.fad.fa-seedling
 				h5 
 					span 01. 
 					| DISCOVERY
 				p We explore innovative design concepts that define your mission and research competitors in the marketplace to create an authentic digital presence. 
-			.col-md-6.mb-5
+			.col-md-4.mb-5
 				i.fad.fa-water
 				h5
 					span 02. 
 					| FLOW
 				p I create intuitive online customer journeys that turn your visitors into engaged customers.
-		.row
-			.col-md-6.mb-5
+			.col-md-4.mb-5
 				i.fad.fa-pencil-paintbrush
 				h5 
 					span 03. 
 					| DESIGN
 				p I help you illustrate your brand identity with user-focused designs.
-			.col-md-6.mb-5
-				i.fad.fa-hand-holding-seedling
+		/!
+		.row
+			.col-md-4.mb-5
+				i.fad.fa-flower-daffodil
 				h5 
 					span 04. 
+					| DEVELOPMENT
+				p Responsive design that adheres to today’s technical standards, ensuring desktop and mobile users.
+			.col-md-4.mb-5
+				i.fad.fa-browser
+				h5 
+					span 05. 
+					| TESTING
+				p To guarantee success, the final process involves thorough testing on all major browsers, operating systems, and devices.
+			.col-md-4.mb-5
+				i.fad.fa-hand-holding-seedling
+				h5 
+					span 06. 
 					| DEPLOYMENT + HANDOFF
 				p Experience a beautiful and strategic website that uniquely represents you, your business and your customers.
+			
 		.row
 			.col-lg-12
 				.text-center
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
 					p = link_to "Have any questions?", faqs_path, :class=>"cta"
-	/!
-		.row
-			.col-md-4
-				i.fad.fa-browser
-				h5 
-					span 04. 
-					| TESTING
-				p To guarantee success, the final process involves thorough testing on all major browsers, operating systems, and devices.
-			.col-md-4
-				i.fad.fa-flower-daffodil
-				h5 
-					span 06. 
-					| DEVELOPMENT
-				p Responsive design that adheres to today’s technical standards, ensuring desktop and mobile users.
 //
 	.resume
 		.container

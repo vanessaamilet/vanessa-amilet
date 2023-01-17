@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/terms'     => 'static#terms'
   get '/faqs' => 'static#faqs'
+  get '/resources' => 'static#resources'
   get '/links' => 'static#links'
   # get '/schedule-consultation' => 'static#consultation'
 
@@ -24,7 +25,6 @@ Rails.application.routes.draw do
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
   get '/portfolio/manifesting-money-studio' => 'static#portfolio_mms', as: 'portfolio_mms'
   get '/portfolio/zack-pride' => 'static#portfolio_zackpride', as: 'portfolio_zackpride'
-  get '/portfolio/neydi-photography' => 'static#portfolio_neydiphotography', as: 'portfolio_neydi'
   get '/portfolio/the-picnic-hour' => 'static#portfolio_picnichour', as: 'portfolio_picnichour'
   get '/portfolio/not-your-average-picnic' => 'static#portfolio_nyap', as: 'portfolio_nyap'
   get '/portfolio/picnics-in-the-city' => 'static#portfolio_picnics', as: 'portfolio_picnics'
@@ -43,6 +43,7 @@ Rails.application.routes.draw do
   # get '/portfolio/leeward-team' => 'static#portfolio_leewardteam'
   # get '/portfolio/crossroads-decision' => 'static#portfolio_crossroads_decision'
   get '/portfolio/jarrod-lee' => 'static#portfolio_jarrodlee', as: 'portfolio_jarrodlee'
+  get '/portfolio/neydi-photography' => 'static#portfolio_neydiphotography', as: 'portfolio_neydi'
 
   # Contact Pages
   resources :contacts, only: :create

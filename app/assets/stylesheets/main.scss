@@ -2052,6 +2052,14 @@ i.contact {
 			}
 		}
 	}
+	.featured{
+		border-top: 1px solid $black;
+		img{
+			text-align: center;
+			width: 100%;
+			max-width: 250px;
+		}
+	}
 	.process{
 		background-color: $creme;
 		h6 {
