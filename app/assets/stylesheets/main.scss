@@ -1703,8 +1703,8 @@ i.contact {
 .homepage-template{
 	.navbar{
 		#logo{
-			-webkit-animation: 6s draw forwards;
-			animation: 6s draw forwards;
+			-webkit-animation: 4.5s draw forwards;
+			animation: 4.5s draw forwards;
 			@media screen and (max-width: 991px){
 				width: 200px;
 			}
@@ -1718,7 +1718,6 @@ i.contact {
 		align-items: center;
 		justify-content: center;
 		display: flex;
-		//align-items: flex-end;
 		margin: 0;
 		padding: 0;
 		background-size: cover;
@@ -1736,36 +1735,12 @@ i.contact {
 				background-color: rgba(255, 255, 255, 0.7);
 			}
 		}
-		// Overlay
-		// .texture-overlay {
-		// 	position: absolute;
-		// 	top: 0px;
-		// 	left: 0px;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background: $creme;
-		// 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, transparent 100%);
-		// }
-		// .container-lg{
-		// 	z-index: 100;
-		// 	-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-		// 			animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-		// 	.row{
-		// 		margin-top: 60px;
-		// 		padding-top: 60px;
-		// 		img{
-		// 			margin-top: 25px;
-		// 		}
-		// 	}
-		// }
 		.container-fluid{
-			-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-					animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			-webkit-animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+					animation: fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 		}
 		h1{
 			font-size: 4em;
-			// -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-			// 		animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 			@media (max-width: 1220px){
 				font-size:3em;
 			}
@@ -1775,8 +1750,6 @@ i.contact {
 		}
 		p.lead{
 			font-size: 22px !important;
-			// -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-			// 		animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 			@media (max-width: 991px){
 				font-size: 18px !important;
 			}
@@ -2005,6 +1978,7 @@ i.contact {
 		border-bottom: 1px solid $black;
 	}
 	.values{
+		border-bottom: 1px solid $black;
 		h2{
 			text-align: center;
 			margin-bottom: 30px !important;
@@ -2032,8 +2006,8 @@ i.contact {
 			background-color: #add4ca;
 			background-color: rgba(173, 212, 202, 0.8);
 			border-radius: .25rem;
-			border: 2px solid $green;
-			box-shadow: 0.25rem 0.25rem $green;
+			border: 2px solid $black;
+			box-shadow: 0.25rem 0.25rem $black;
 			border-radius: 8px;
 			padding: 40px;
 		}
@@ -2054,6 +2028,7 @@ i.contact {
 	}
 	.featured{
 		border-top: 1px solid $black;
+		border-bottom: 1px solid $black;
 		img{
 			text-align: center;
 			width: 100%;
@@ -2118,37 +2093,31 @@ i.contact {
 --------------------------------------------- */
 .services{
 	.hero{
-		background-color: $dark-orange;
+		//background-color: $dark-orange;
+		background-color: $creme;
+		background-image: url(asset_path('services/vanessaamilet-services.jpg'));
 		background-position: center center;
-		background-repeat: repeat;
-		color: $white !important;
+		background-repeat: no-repeat;
+		color: $black;
 		display: flex;
-		//align-items: flex-end;
 		margin-bottom: 0;
-		height: auto;
-		h6{
-			color: $white;
-		}
-		@media screen and (min-width:991px){
-			height: 60vh;
-		}
-		@media screen and (max-width: 991px){
-			text-align: center;
-			.row{
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
-				flex-direction: column-reverse;
-				-webkit-box-direction: reverse;
-				-ms-flex-direction: column-reverse;
-			}
+		min-height: 70vh;
+		align-items: center;
+		.col-md-10{
+			background: rgba(255, 255, 255, 0.9);
+			padding: 40px;
+			border-radius: 10px;
+			text-align: center !important;
+			/* white-space: pre-wrap; */
+			border: 2px solid $black;
+			box-shadow: 0.25rem 0.25rem $black;
 		}
 	}
 	// Quote
 	.quote{
 		text-align: center !important;
 		white-space: pre-wrap;
-		background: #f4ebde;
+		background: $creme;
 		img{
 			width: 50px;
 			height: 50px;

@@ -1,14 +1,10 @@
 = content_for :body_class, 'services'
 /!  Section Main Content 
 section.hero
-	.container-lg
-		.row.justify-content-between
-			.col-lg-6.position-relative.pe-3
-				.top-0.start-0.end-0.left-0
-					= image_tag  "services/services-vanessaamilet.jpg", alt: 'Vanessa Amilet - Design & Media Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"
-			.col-lg-6
-				.px-4.mb-4
-					h6.mb-5 Design Services
+	.container
+		.row.justify-content-center
+			.col-md-10.col-lg-8
+					h6.mb-5 Website Design Services
 					h1 Get Your Business Out of the Comfort Zone
 					p.lead.mb-4 Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience. 
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary"
