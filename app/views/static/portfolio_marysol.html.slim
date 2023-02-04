@@ -1,0 +1,43 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Mar y Sol Therapy & Wellness
+					p.lead Mar y Sol Wellness is an inclusive space, centering & honoring the experience of those who identify as BIPOC, Latine/x, LGBTQIA+, 2S, as well as those embodying other historically marginalized identities.
+					p.lead Mar y Sol Wellness needed an online presence that reflected all of the different service offerings, which also included the therapy practice. I had a pleasure working with founder Andrea Marisol to develop a design that aligned with the company's vision. The goal with this website was to establish an online presence that served as a hub to all of Mar y Sol Welllness's offerings, with a design that is user-friendly and welcoming.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Mar y Sol Therapy & Wellness
+						.col-md-6
+							h6 Year
+							p 2023
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design
+						.col-md-6
+							h6 Technologies
+							p Wordpress
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://marysolwellness.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/marysol/marysol-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Mar y Sol Website Design" do
+						= image_tag "portfolio/marysol/marysol-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Mar y Sol Website Design"
+					= link_to image_path("portfolio/marysol/marysol-wellness-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Mar y Sol Wellness Homepage" do
+						= image_tag "portfolio/marysol/marysol-wellness-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Mar y Sol Wellness Homepage"
+					= link_to image_path("portfolio/marysol/marysol-wellness-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Mar y Sol Wellness About" do
+						= image_tag "portfolio/marysol/marysol-wellness-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Mar y Sol Wellness About"
+                    = link_to image_path("portfolio/marysol/marysol-wellness-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Mar y Sol Wellness Services Page" do
+						= image_tag "portfolio/marysol/marysol-wellness-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Mar y Sol Wellness Services Page"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
