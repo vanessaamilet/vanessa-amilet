@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
   get '/portfolio/apg' => 'static#portfolio_apg'
   get '/portfolio/igco' => 'static#portfolio_igco'
+  get '/portfolio/expertly-sanitized' => 'static#portfolio_expertlysanitized', as: 'portfolio_expertly'
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
   get '/portfolio/manifesting-money-studio' => 'static#portfolio_mms', as: 'portfolio_mms'
   get '/portfolio/marysol-wellness' => 'static#portfolio_marysol', as: 'portfolio_marysol'

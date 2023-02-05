@@ -52,17 +52,17 @@ section.portfolio-grid
 						p View Project »
 		.row
 			.col-md-4
+				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
+					.card-body
+						h5.card-title Expertly Sanitized
+						p.card-text Custom Wordpress Website
+						p View Project »
+			.col-md-4
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
 					.card-body
 						h5.card-title IGCO
-						p.card-text Custom Wordpress Website
-						p View Project »
-			.col-md-4
-				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
-					.card-body
-						h5.card-title Jarrod Lee
 						p.card-text Custom Wordpress Website
 						p View Project »
 			.col-md-4
@@ -74,6 +74,13 @@ section.portfolio-grid
 						p View Project »
 			
 		.row
+			.col-md-4.load-card
+				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
+					.card-body
+						h5.card-title Jarrod Lee
+						p.card-text Custom Wordpress Website
+						p View Project »
 			.col-md-4.load-card
 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
@@ -88,6 +95,8 @@ section.portfolio-grid
 						h5.card-title Universal Control Systems
 						p.card-text Custom Wordpress Website
 						p View Project »
+			
+		.row
 			.col-md-4.load-card
 				= link_to portfolio_iba_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
@@ -95,8 +104,6 @@ section.portfolio-grid
 					h5.card-title I Build America
 					p.card-text Custom Wordpress Website
 					p View Project »
-			
-		.row
 			.col-md-4.load-card
 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
@@ -110,13 +117,6 @@ section.portfolio-grid
 					.card-body
 						h5.card-title The Picnic Hour
 						p.card-text Shopify Website Design
-						p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_mms_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-mms.jpg", :class=>"card-img", :alt=>"Manifesting Money Studio"
-					.card-body
-						h5.card-title Manifesting Money Studio
-						p.card-text Custom Wordpress Landing Page
 						p View Project »
 					
 					

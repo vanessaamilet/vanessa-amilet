@@ -1,0 +1,47 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Expertly Sanitized
+					p.lead Expertly Sanitized™, an operating unit of The Odor Doctors, has been at the forefront of the discussion on vehicle sanitization for over 10 years. The Odor Doctors was in need of a website redesigned for their Expertly Sanitized brand that was more modern, user-friendly and showcased the full scope of their service offerings. Their old website did not reflect the quality of the work they provide and it was difficult for customers to navigate. I worked alongside with the founder of The Odor Doctors to implement a brand new design and created an engaging experience for site visitors.
+					hr.my-5	
+					.row
+						.col-md-6
+							h6 Client
+							p The Odor Doctors
+						.col-md-6
+							h6 Year
+							p 2022
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Custom Website Design & Development
+						.col-md-6
+							h6 Technologies
+							p Wordpress, HTML, PHP, CSS, JS
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://expertlysanitized.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/expertly-sanitized/expertlysanitized-showcase-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Expertly Sanitized Website" do
+						= image_tag "portfolio/expertly-sanitized/expertlysanitized-showcase-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Expertly Sanitized Website Showcase"
+
+					= link_to image_path("portfolio/expertly-sanitized/expertlysanitized-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Expertly Sanitized Homepage" do
+						= image_tag "portfolio/expertly-sanitized/expertlysanitized-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Expertly Sanitized Homepage"
+					
+					= link_to image_path("portfolio/expertly-sanitized/expertlysanitized-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Expertly Sanitized About Page" do
+						= image_tag "portfolio/expertly-sanitized/expertlysanitized-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Expertly Sanitized About Page"
+					= link_to image_path("portfolio/expertly-sanitized/expertlysanitized-howitworks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Expertly Sanitized - How It Works Page" do
+						= image_tag "portfolio/expertly-sanitized/expertlysanitized-howitworks.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Expertly Sanitized - How It Works Page"
+					= link_to image_path("portfolio/expertly-sanitized/expertlysanitized-serviceoffering.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Expertly Sanitized - Service Page" do
+						= image_tag "portfolio/expertly-sanitized/expertlysanitized-serviceoffering.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Expertly Sanitized - Service Page"
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
