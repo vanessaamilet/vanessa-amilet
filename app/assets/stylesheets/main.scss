@@ -2029,7 +2029,6 @@ i.contact {
 		}
 		h2{
 			text-align: center;
-			margin-bottom: 35px !important;
 		}
 		.step{
 			margin-bottom: 15px;
@@ -2403,7 +2402,7 @@ i.contact {
 				box-shadow: 0.25rem 0.25rem #000;
 				transform: translate(0, -4px);
 			}
-			z-index: 99;
+			//z-index: 99;
 			text-decoration: none !important;
 			cursor: pointer;
 		}
