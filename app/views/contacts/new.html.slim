@@ -71,7 +71,7 @@ section
 
 						= f.input :services, :label => 'What type of project are you inquiring about today?', as: :select, input_html: {class: 'form-select'}, collection: ["Basic Website Design","Custom Website Design", "Redesign of a Current Website","Sales Landing Page Design", "Graphic Design", "Website Maintenance", "1:1 Sessions ($175/hr)", "Other"], :required => true,  priority: [ "Website Design" ]
 
-						= f.input :budget, :label => 'What budget range do you have in mind for your project?', as: :select, input_html: {class: 'form-select'}, collection: ["$1,799+ USD (Landing Page Design)","$2,499+ USD (Basic Website Design)","$3,999+ USD (Custom Website Design)","$6k+ USD (Custom Website Design)", "$10k+ USD (Large-Scale Website Design)","Other"], :required => true
+						/= f.input :budget, :label => 'What budget range do you have in mind for your project?', as: :select, input_html: {class: 'form-select'}, collection: ["$1,799+ USD (Landing Page Design)","$2,499+ USD (Basic Website Design)","$3,999+ USD (Custom Website Design)","$6k+ USD (Custom Website Design)", "$10k+ USD (Large-Scale Website Design)","Other"], :required => true
 						
 
 						= f.input :message, :label => 'Tell me about your project! What business problems are you hoping to solve?' do
@@ -80,4 +80,4 @@ section
 						.hidden
 							= f.input :nickname, :hint => 'Leave this field blank!'
 						.form-actions
-							= f.button :submit, 'Send Message', :class=> "btn btn-contact contact-submit"
+							= f.button :submit, 'Send Message', :class=> "btn btn-primary contact-submit"
