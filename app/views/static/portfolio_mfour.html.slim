@@ -1,0 +1,44 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 MFour Website Redesign
+					p.lead I played a pivotal role in MFour's rebranding initiative, collaborating closely with the Marketing department to devise a comprehensive strategy for a website overhaul. The solution was to develop a custom Wordpress theme, utilizing Gutenberg, Advanced Custom Fields, and the Bootstrap framework to align seamlessly with MFour's new design system. This involved developing custom Gutenberg blocks and templates based on provided designs. Additionally, I worked in tandem with the Development team to integrate Sigma workbooks into the website, facilitating user interaction with survey templates. Beyond the redesign, I took charge of various website maintenance tasks, including code debugging, content creation, and SEO optimization.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p MFour
+						.col-md-6
+							h6 Year
+							p 2023 - Present
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Wordpress, HTML, PHP, CSS, JS, ACF
+					.row
+                        p 
+						    = link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://mfour.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/mfour/mfour-website-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website" do
+							= image_tag "portfolio/mfour/mfour-website-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Website"
+					= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Homepage" do
+							= image_tag "portfolio/mfour/mfour-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Homepage"
+					= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio Overview" do
+							= image_tag "portfolio/mfour/mfour-studio-overview.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Studio Overview"
+					= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Resources Library" do
+						= image_tag "portfolio/mfour/mfour-website-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Resources Library"
+					
+                   
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

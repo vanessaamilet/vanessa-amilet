@@ -1,0 +1,43 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Capitalize
+					p Capitalize, a financial software company, sought support in revitalizing their website to harmonize with their updated branding. I actively contributed to their rebranding initiative by collaborating closely with the Lead Software Engineer. Together, we crafted a custom WordPress theme, leveraging Advanced Custom Fields and the Tailwind CSS framework. This included the development of modules and templates based on the provided designs.
+					p In addition to the initial revamp, I took on various ongoing website maintenance tasks, including debugging code, generating new pages/posts, and optimizing for SEO. My role extended beyond the creation of a new theme, ensuring the website's continued functionality, performance, and alignment with the evolving needs of Capitalize's digital presence.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Capitalize
+						.col-md-6
+							h6 Year
+							p 2021-2022
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Wordpress, HTML, PHP, CSS, JS, ACF
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://hicapitalize.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/capitalize/capitalize-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize Homepage" do
+						= image_tag "portfolio/capitalize/capitalize-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Homepage"
+					= link_to image_path("portfolio/capitalize/capitalize-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize About Page" do
+						= image_tag "portfolio/capitalize/capitalize-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Homepage"
+					= link_to image_path("portfolio/capitalize/capitalize-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize About Page" do
+						= image_tag "portfolio/capitalize/capitalize-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Resources"
+					= link_to image_path("portfolio/capitalize/capitalize-reviews.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize Reviews" do
+						= image_tag "portfolio/capitalize/capitalize-reviews.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Reviews"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

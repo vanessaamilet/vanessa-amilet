@@ -14,11 +14,13 @@ Rails.application.routes.draw do
   get '/privacy-policy'     => 'static#privacy-policy'
   get '/terms'     => 'static#terms'
   get '/faqs' => 'static#faqs'
-  get '/resources' => 'static#resources'
+  # get '/resources' => 'static#resources'
   get '/links' => 'static#links'
   # get '/schedule-consultation' => 'static#consultation'
 
   # Portfolio Pages
+  get '/portfolio/capitalize' => 'static#portfolio_capitalize'
+  get '/portfolio/mfour' => 'static#portfolio_mfour'
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
   get '/portfolio/apg' => 'static#portfolio_apg'
   get '/portfolio/igco' => 'static#portfolio_igco'

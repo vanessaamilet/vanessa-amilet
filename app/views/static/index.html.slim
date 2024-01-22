@@ -2,37 +2,57 @@
 /!  Section Main Content 
 section.home-hero.pt-6.pt-md-10
 	.container-fluid
-		.row.align-items-center.justify-content-between
-			.col-md-6.px-5.py-5
-				h1 Captivating Designs for Mission-Driven Entrepreneurs
-				p.lead.mb-4 Vanessa Amilet offers strategic bold website designs for mission-driven entrepreneurs, creatives, and leaders seeking to establish an authentic online presence.
+		.row.align-items-center.justify-content-center
+			.col-md-10.col-lg-8
+				.squiggle
+				h1.mb-5
+					span Empowering Your Online Presence.
+					span  
+						| Innovative 
+						span Design
+						| , Seamless 
+						span Development
+						|.
+				/p.lead.mb-4 Hey there! I'm Vanessa Amilet Santos, and I'm thrilled to be your partner on this exciting journey of crafting exceptional online experiences. With over a decade of hands-on experience, I specialize in bringing your unique vision to life through captivating website design and development.
 				div
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3"
-					= link_to "View My Work", portfolio_path, :class=>"link text-black ps-5"
-			.col-md-6
+					= link_to "View My Work", portfolio_path, :class=>"link ms-5"
 			
 /!  Begin Page Content
+/ section.bg-divider
+section.about
+		.container
+			.row.align-items-center.justify-content-between.mt-3
+				.col-md-5.pe-lg-5
+					.start-0.end-0.right-0
+						= image_tag  "homepage/img-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"	
+				.col-md-7
+					h2 Crafting Exceptional Web Experiences
+					p.lead.mb-4 Hey there! I'm Vanessa Amilet Santos, your web designer and developer based in Atlanta, Georgia &#x1f351;. I'm thrilled to be your partner in crafting an authentic online presence. With over a decade of experience, I specialize in bringing your unique vision to life through captivating website design and development. Let's work closely to elevate your online identity together!
+					div
+						= link_to "Learn More About Vanessa", about_path, :class=>"btn btn-secondary mr-3"	
 section.services
 	.container
 		.row
 			.col-lg-12
-				h2.text-center Get Your Business Out of the Comfort Zone
-				p.lead.text-center A unique and memorable brand is aligned with the heart of your business. Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
+				.squiggle
+				h2.text-center Your online presence, uniquely tailored.
+				p.lead.text-center Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.
 		.row
-			.col-md-4.my-5
+			.col-md-4.my-3
 				.card.services-content
 					= image_tag "homepage/services-website-design-2.jpg", :class=>"card-img", :alt=>"Website Design"
 					.card-body
 						h4 Website Design
-						p A well-designed website is intuitive, and converts visitors to new customers. Let's bring your authentic vision to life by developing a holistic online presence that reasonates with your audience.
+						p Transform your vision into a captivating online reality. I specialize in creating visually stunning and intuitive websites that resonate with your audience. From sitemaps and wireframes to high-fidelity mockups, I ensure every detail aligns with your brand identity.
 						
-			.col-md-4.my-5
+			.col-md-4.my-3
 				.card.services-content
 					= image_tag "homepage/services-landing-pages.jpg", :class=>"card-img", :alt=>"Landing Page Design"
 					.card-body
-						h4 Sales Landing Page Design
-						p Looking to launch a campaign soon? Let me handcraft a strategic landing page for you that not only attracts leads but also focuses on the customer journey.
-			.col-md-4.my-5
+						h4 Landing Page Design
+						p Launching a campaign? Let me handcraft a strategic landing page that not only attracts leads but also guides visitors through a seamless customer journey. I focus on creating landing pages that drive engagement and conversions.
+			.col-md-4.my-3
 				.card.services-content
 					= image_tag "homepage/services-other-offerings.jpg", :class=>"card-img", :alt=>"Other Offerings"
 					.card-body
@@ -43,18 +63,8 @@ section.services
 		.row
 			.col-lg-12
 				.text-center
-					= link_to "Explore My Services", services_path, :class=>"btn btn-secondary mr-3"
-section.about
-		.container
-			.row.align-items-center.justify-content-between.mt-3
-				.col-md-5.pe-lg-5
-					.start-0.end-0.right-0
-						= image_tag  "homepage/img-vanessaamilet.jpg", alt: 'Vanessa Amilet Santos', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"	
-				.col-md-7
-					h2 Helping Brands Flourish &#127793;
-					p.lead.mb-4 Howdy! I'm Vanessa Amilet Santos, a web designer and developer based in Atlanta, Georgia &#x1f351;. My mission is to help entrepreneurs, creatives, and leaders establish their authentic online presence by providing visual solutions that will launch and grow their brand. As your partner, I work closely with you to comprehend your unique requirements and collaborate on bringing your vision to life.
-					div
-						= link_to "Learn More About Vanessa", about_path, :class=>"btn btn-primary mr-3"	
+					= link_to "Explore My Services", services_path, :class=>"btn btn-primary mr-3"
+
 section.reviews
 	.container
 		.row
@@ -127,7 +137,8 @@ section.reviews
 section.get-started
 	.container
 		.row.mb-5.justify-content-center
-			.col-md-10.col-lg-10
+			.col-md-10.col-lg-12
+				.squiggle
 				h2.mx-auto Ready to establish your authentic online presence?
 					Getting started is simple.
 		.row.mb-5

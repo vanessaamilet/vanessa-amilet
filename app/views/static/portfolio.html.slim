@@ -4,9 +4,10 @@ section.hero.d-flex
 	.container
 		.row.justify-content-center.text-center
 			.col-md-10.col-lg-8
+				.squiggle
 				h1 Design & Web Projects
-				p.lead.mb-4 Helping mission-driven business owners establish an authentic online presence. Explore my selection of the businesses and entrepreneurs I have helped. Your brand could be next!
-				= link_to "Let's Work Together", contact_path, :class=>"btn btn-white"
+				p.lead.mb-4 Helping mission-driven entreprenurs establish an authentic online presence. Explore my selection of the businesses and entrepreneurs I have helped. Your brand could be next!
+				= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary"
 				br
 
 /!  Begin Page Content
@@ -15,20 +16,27 @@ section.industries
 		.row.text-center
 			h2.mb-5 Honored to Work With Businesses In
 			.col-lg-4
-				h5 Technology
-				h5 Construction & General Contracting
-				h5 Coaching & Consulting
+				h6 Technology
+				h6 Construction & General Contracting
+				h6 Coaching & Consulting
 			.col-lg-4
-				h5 Health & Wellness
-				h5 Beauty & Skincare
-				h5 Event Planning
+				h6 Health & Wellness
+				h6 Beauty & Skincare
+				h6 Event Planning
 			.col-lg-4
-				h5 Performing Arts
-				h5 Design & Media
-				h5 Social Justice
+				h6 Performing Arts
+				h6 Design & Media
+				h6 Social Justice
 section.portfolio-grid
-	.container-fluid
+	.container
 		.row
+			.col-md-4
+				= link_to portfolio_mfour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-mfour.jpg", :class=>"card-img", :alt=>"MFour"
+					.card-body
+						h5.card-title MFour
+						p.card-text Custom Wordpress Development
+						p View Project »
 			.col-md-4
 				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
@@ -36,6 +44,15 @@ section.portfolio-grid
 						h5.card-title Picnics in the City
 						p.card-text Custom Shopify Website
 						p View Project »
+			.col-md-4
+				= link_to portfolio_capitalize_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-capitalize.jpg", :class=>"card-img", :alt=>"Capitalize"
+					.card-body
+						h5.card-title Capitalize
+						p.card-text Custom Wordpress Development
+						p View Project »
+			
+		.row
 			.col-md-4
 				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
@@ -50,27 +67,35 @@ section.portfolio-grid
 						h5.card-title Zack Pride
 						p.card-text Custom Wordpress Website
 						p View Project »
-		.row
-			.col-md-4
-				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
-				  .card-body
-					h5.card-title Jumpix
-					p.card-text Custom Web Design & Development, Media, UX Design
-					p View Project »
-			.col-md-4
-				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
-					.card-body
-						h5.card-title Expertly Sanitized
-						p.card-text Custom Wordpress Website
-						p View Project »
 			.col-md-4
 				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
 					.card-body
 						h5.card-title Betty Boujee
 						p.card-text Custom Shopify Website
+						p View Project »
+			
+		.row
+			.col-md-4.load-card
+				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
+				  .card-body
+					h5.card-title Jumpix
+					p.card-text Custom Web Design & Development, Media, UX Design
+					p View Project »
+			.col-md-4.load-card
+				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
+					.card-body
+						h5.card-title Expertly Sanitized
+						p.card-text Custom Wordpress Website
+						p View Project »
+			.col-md-4.load-card
+				= link_to portfolio_igco_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+					.card-body
+						h5.card-title IGCO
+						p.card-text Custom Wordpress Website
 						p View Project »
 			
 		.row
@@ -82,13 +107,6 @@ section.portfolio-grid
 						p.card-text Custom Wordpress Website
 						p View Project »
 			.col-md-4.load-card
-				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
-					.card-body
-						h5.card-title CaptiveColour
-						p.card-text Branding, Custom Shopify Website
-						p View Project »
-			.col-md-4.load-card
 				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
 					.card-body
@@ -96,31 +114,22 @@ section.portfolio-grid
 						p.card-text Custom Wordpress Website
 						p View Project »
 			
-		.row
 			.col-md-4.load-card
-				= link_to portfolio_iba_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
-				  .card-body
-					h5.card-title I Build America
-					p.card-text Custom Wordpress Website
-					p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_igco_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
+				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
 					.card-body
-						h5.card-title IGCO
-						p.card-text Custom Wordpress Website
+						h5.card-title CaptiveColour
+						p.card-text Branding, Custom Shopify Website
 						p View Project »
-			.col-md-4.load-card
-				= link_to portfolio_picnichour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnichour.jpg", :class=>"card-img", :alt=>"The Picnic Hour"
-					.card-body
-						h5.card-title The Picnic Hour
-						p.card-text Shopify Website Design
-						p View Project »
-					
-					
 		/ .row
+		/ 	.col-md-4.load-card
+		/ 		= link_to portfolio_iba_path, class: 'portfolio-card card' do
+		/ 		  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
+		/ 		  .card-body
+		/ 			h5.card-title I Build America
+		/ 			p.card-text Custom Wordpress Website
+		/ 			p View Project »
+
 			/ .col-md-4
 			/ 	= link_to portfolio_snapple_path, class: 'portfolio-card card' do
 			/ 		= image_tag "portfolio/portfolio-snapple.jpg", :class=>"card-img", :alt=>"Snapple Commercial"
@@ -131,6 +140,6 @@ section.portfolio-grid
 
 		.row
 			#loadMore.mx-auto.center
-      			<a href="#" class="btn btn-loadmore" id="load-more">Load More Projects</a>
+      			<a href="#" class="btn btn-loadmore btn-secondary" id="load-more">Load More Projects</a>
 
 

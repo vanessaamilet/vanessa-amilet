@@ -1,0 +1,36 @@
+= content_for :body_class, 'resources'	
+
+section.hero.d-flex
+	.container
+		.row.justify-content-center.text-center
+			.col-md-10.col-lg-9
+				h1 Resources
+				p.lead.mb-4 A collection of resources that have helped me throughout my self-development & business journey.
+/!  Begin Page Content
+section.portfolio-grid
+	.container-fluid
+		.row
+            .col-md-4
+				/ = link_to portfolio_picnics_path, class: 'portfolio-card card' do
+                = link_to "https://www.freelancersunion.org?utm_source=badge&utm_campaign=member&utm_content=member-stamp-200", class: 'portfolio-card card', target:"_blank"  do
+				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+					.card-body
+						h5.card-title Freelancers Union
+						p.card-text Freelancers Union is the largest and fast-growing organization representing the 56.7 million independent workers across the country.
+						p View Website »
+			.col-md-4
+                = link_to "https://app.hellobonsai.com/invite/b5dfef27", class: 'portfolio-card card', target:"_blank"  do
+				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
+					.card-body
+						h5.card-title Manifesting Money Podcast
+						p.card-text Lorem Ipsum
+						p Listen to the Podcast »
+			.col-md-4
+                = link_to "https://app.hellobonsai.com/invite/b5dfef27", class: 'portfolio-card card', target:"_blank"  do
+				 	= image_tag "portfolio/portfolio-zackpride.jpg", :class=>"card-img", :alt=>"Zack Pride"
+					.card-body
+						h5.card-title Bonsai
+						p.card-text Wordpress Website Design
+						p View Project »
+/!  CTA
+= render :partial => "shared/portfolio_cta"
