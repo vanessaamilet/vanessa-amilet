@@ -221,9 +221,6 @@ GEM
     thor (1.2.1)
     tilt (2.0.11)
     timeout (0.3.1)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
@@ -268,7 +265,6 @@ DEPENDENCIES
   spring
   sprockets (~> 3.6, >= 3.6.3)
   sqlite3
-  turbolinks (~> 5)
   uglifier (~> 4.2)
   web-console (>= 3.3.0)
 

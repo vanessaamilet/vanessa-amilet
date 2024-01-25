@@ -1,27 +1,5 @@
-/* ## Scripts - Turbolinks (Loaded through All Pages)
----------------------------------------------------------------------------------------------------- */
-
 // $(document).on('turbolinks:load', function() {
-document.addEventListener("turbolinks:load", function(){
-    /* ## Cookie Consent
-    ---------------------------------------------------------------------------------------------------- */
-    // window.cookieconsent.initialise({
-    //     "palette": {
-    //       "popup": {
-    //         "background": "#f2f2f2",
-    //         "text": "#444444"
-    //       },
-    //       "button": {
-    //         "background": "#255958",
-    //         "text": "#ffffff"
-    //       }
-    //     },
-    //     "showLink": false,
-    //     "theme": "classic"
-    // });
-
-    
-
+document.addEventListener('DOMContentLoaded', function() {
     /* ## Navigation
     ---------------------------------------------------------------------------------------------------- */
     //* ### Nav Shrink */
@@ -107,20 +85,6 @@ document.addEventListener("turbolinks:load", function(){
                 }
             }
     }
-
-     /* ## Fancybox
-    ---------------------------------------------------------------------------------------------------- */
-    // $.fancybox.defaults.hash = false;
-    // $('[data-fancybox="gallery"]').fancybox({
-    //     // Options will go here
-    //     buttons : [ 
-    //         'slideShow',
-    //         // 'zoom',
-    //         'fullScreen',
-    //         'close'
-    //     ],
-    //     animationEffect: "fade",
-    // });
 });
 
 
