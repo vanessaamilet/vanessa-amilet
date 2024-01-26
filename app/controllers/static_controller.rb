@@ -13,11 +13,11 @@ class StaticController < ApplicationController
 	
 	def about
 		@page_title = 'About'
-		@page_description = 'Vanessa Amilet Santos is a web designer & developer based in Orange County, California providing custom website design services to businesses, creatives, and ecommerce brands nationwide.'
+		@page_description = 'Vanessa Amilet Santos is a web designer & developer based in Atlanta, Georgia providing custom website design services to businesses, creatives, and ecommerce brands nationwide.'
 	end
 
 	def services
-		@page_title = 'Website Design Services'
+		@page_title = 'Website Design & Development Services'
 		@page_description = 'Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.'
 	end
 
@@ -45,12 +45,6 @@ class StaticController < ApplicationController
 		@page_description = 'Check out this custom Shopify website design I created for a picnic event planning business based in Philadelphia, Pennsylvania.'
 	end
 
-	def portfolio_neydiphotography
-		redirect_to :root
-		@page_title = 'Neydi Photography'
-		@page_description = 'Designed a user-friendly website for, Neydi Photography, a photography studio based in Houston, Texas that specializes in natural lighting and outdoor photography.'
-	end
-
 	def portfolio_ucs
 		@page_title = 'Universal Control Systems'
 		@page_description = 'Check out this custom Wordpress website I developed for a energy management system business based in Phoenix, Arizona.'
@@ -59,11 +53,6 @@ class StaticController < ApplicationController
 	def portfolio_nyap
 		@page_title = 'Not Your Average Picnic'
 		@page_description = 'Check out this custom Shopify website design I created for a picnic event planning business based in Dallas, Texas.'
-	end
-
-	def portfolio_apg
-		@page_title = 'Allied Power Group'
-		@page_description = 'A custom Wordpress website designed & developed for a power generation services business based in Houston, Texas.'
 	end
 
 	def portfolio_captivecolour
@@ -79,22 +68,6 @@ class StaticController < ApplicationController
 	def portfolio_jumpix
 		@page_title = 'Jumpix'
 		@page_description = 'Checkout the different items I developed for Jumpix, a cloud-based software. These different items included UX design, website design, motion graphic videos, front-end development for their software, and much more.'
-	end
-
-	def portfolio_hcss
-		@page_title = 'HCSS'
-		@page_description = 'A complete Wordpress website restructure & redesign for a construction software company based in Sugar Land, Texas.'
-	end
-
-	def portfolio_csl
-		@page_title = 'Cameron S. Lee'
-		@page_description = 'Cameron S. Lee is an aspiring model and actor based in Houston, Texas. I opted to design and develop the website on WordPress for its ease of administration, allowing the client to make minor updates.'
-	end
-
-	def portfolio_greenwood
-		redirect_to :root
-		@page_title = 'Art of Greenwood'
-		@page_description = 'Denise Greenwood is a local Houston Artist that creates 3-D Mixed Media with emphasis on ceramics. Checkout this e-commerce Wordpress website I created for her art shop.'
 	end
 
 	def portfolio_cia
@@ -142,5 +115,33 @@ class StaticController < ApplicationController
 		@page_description = 'Website Terms & Conditions for Vanessa Amilet.'
 	end
 	
+
+	def portfolio_mms
+		redirect_to :root
+	end
+
+	def portfolio_greenwood
+		redirect_to :root
+	end
+
+	def portfolio_neydiphotography
+		redirect_to :root
+	end
+
+	def portfolio_hcss
+		redirect_to :root
+	end
+
+	def portfolio_apg
+		redirect_to :root
+		@page_title = 'Allied Power Group'
+		@page_description = 'A custom Wordpress website designed & developed for a power generation services business based in Houston, Texas.'
+	end
+
+	def portfolio_csl
+		redirect_to :root
+		@page_title = 'Cameron S. Lee'
+		@page_description = 'Cameron S. Lee is an aspiring model and actor based in Houston, Texas. I opted to design and develop the website on WordPress for its ease of administration, allowing the client to make minor updates.'
+	end
 
 end

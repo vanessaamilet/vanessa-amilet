@@ -48,7 +48,7 @@
 - Alerts
 */
 
-/* # Variables & Mixins
+/* # Variables
 ---------------------------------------------------------------------------------------------------- */
 
 /* ## Colors
@@ -222,10 +222,15 @@ $z-indexes: (
 
 /* ## Misc
 --------------------------------------------- */
-
-/* ## Mixins
+/* ## Bootstrap Variables
 --------------------------------------------- */
 
+$enable-negative-margins: true;
+
+/* Mixins
+---------------------------------------------------------------------------------------------------- */
+/* ## Fonts
+--------------------------------------------- */
 @mixin antialias {
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -256,6 +261,8 @@ $z-indexes: (
 	user-select: none;
 }
 
+/* ## Backgrounds
+--------------------------------------------- */
 @mixin colors($bg-purple: true) {
 	@if $bg-purple {
 		h2{
@@ -266,10 +273,67 @@ $z-indexes: (
 	}
 }
 
-/* ## Bootstrap Variables
+/* ## Sizing
 --------------------------------------------- */
+// Padding - @include padding(INT, INT, INT, INT)
+@mixin padding($top, $right, $bottom, $left) {
+	padding-top: $top;
+	padding-right: $right;
+	padding-bottom: $bottom;
+	padding-left: $left;
+}
+// Margin - @include margin(INT, INT, INT, INT)
+@mixin margin($top, $right, $bottom, $left) {
+	margin-top: $top;
+	margin-right: $right;
+	margin-bottom: $bottom;
+	margin-left: $left;
+}
 
-$enable-negative-margins: true;
+/* ## Box Styles
+--------------------------------------------- */
+// Rounded - @include rounded(INT)
+// @mixin rounded($radius: $br-16) {
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     border-radius: $radius;
+// }
+
+// Border Radius - @include border-radius(INT, INT, INT, INT)
+@mixin border-radius($topleft: 0, $topright: 0, $bottomright: 0, $bottomleft: 0) {
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+// Drop Shadows
+@mixin card-drop-shadow{
+	background: $white;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+// @include box-shadow(shadow declaration)
+@mixin box-shadow($shadow: 0 4px 20px rgba(0, 0, 0, .25)) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+// Border
+@mixin border{
+	border: 2px solid $black;
+}
 
 /* # HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
@@ -514,7 +578,7 @@ h6 {
 h1 {
 	font-size: 3.5em;
 	font-size: $h1;
-    font-weight: $regular-weight;
+	font-weight: $regular-weight;
 	line-height: 1.08;
 }
 
@@ -795,19 +859,19 @@ a:has(img){
 .squiggle::before{
 	content: '';
 	background-image: $squiggle-red;
-    background-size: auto 5px;
-    display: block;
-    height: 5px;
-    width: 80px;
-    margin: 20px auto;
+	background-size: auto 5px;
+	display: block;
+	height: 5px;
+	width: 80px;
+	margin: 20px auto;
 }
 
 .squiggle-vertical{
 	background-image: $squiggle-red-vertical;
 	background-size: 100% auto;
 	display: block;
-    margin: 0 auto;
-    width: 5px;
+	margin: 0 auto;
+	width: 5px;
 	height: 100px;
 }
 
@@ -928,11 +992,11 @@ a:has(img){
 -------------------------------------------------- */
 
 #contact-form {
-    white-space: pre-wrap;
-    border: 2px solid $black;
+	white-space: pre-wrap;
+	border: 2px solid $black;
 	box-shadow: 0.25rem 0.25rem $black;
 	border-radius: 8px;
-    padding: 40px;
+	padding: 40px;
 	.form-control,
 	.customform-form-item .form-field {
 		height: 50px;
@@ -1105,8 +1169,8 @@ a:has(img){
 
 /* ### Columns */
 .col-img {
-    background-position: top center;
-    background-repeat: no-repeat;
+	background-position: top center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 	@media screen and (max-width: 768px){
@@ -1386,7 +1450,7 @@ section{
 		position: relative;
 		min-height: 100%;
 		padding: 40px 0;
-    	border-bottom: 1px solid #eee;
+		border-bottom: 1px solid #eee;
 		&:before {
 			content: "";
 			position: absolute;
@@ -1594,7 +1658,7 @@ i.contact {
 			border: 2px solid $black;
 			border-radius: 0.75rem;
 			width: 100%;
-    		height: 100%;
+			height: 100%;
 			transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 			transition-delay: .1s;
 			transform: translateZ(0);
@@ -1726,7 +1790,7 @@ i.contact {
 			margin-bottom: 25px;
 		}
 		a{
-			text-transform: capitalize;
+			text-transform: capitalize !important;
 		}
 	}
 }
@@ -2065,7 +2129,7 @@ i.contact {
 		.accordion-button:not(.collapsed){
 			background: $lighter-purple;
 			border: none !important;
-    		box-shadow: none !important;
+			box-shadow: none !important;
 		}
 		.accordion-body{
 			padding: 2.25rem;
@@ -2268,7 +2332,7 @@ i.contact {
 				text-align: left;
 			}
 			a{
-				background-image: none;
+				background-image: none !important;
 			}
 			p.offline{
 				color: $maroon;
