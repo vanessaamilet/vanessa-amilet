@@ -1851,13 +1851,13 @@ i.contact {
 		}
 	}
 	.capabilities{
-		background-image: url(asset_path('about/bg-capabilities.jpg'));
+		//background-image: url(asset_path('about/bg-capabilities.jpg'));
+		background-color: $lighter-purple;
 		background-size: cover;
 		background-repeat: repeat;
 		background-position: center center;
 		padding: 60px 0;
 		h2{
-			//color: $crimson-cherry;
 			margin-bottom: 35px !important;
 		}
 		.bg{
@@ -1867,6 +1867,23 @@ i.contact {
 			box-shadow: 0.25rem 0.25rem $black;
 			border-radius: 8px;
 			padding: 40px;
+		}
+		.card{
+			border: 2px solid $black;
+			box-shadow: 0.25rem 0.25rem $black;
+			border-radius: 8px;
+			padding: 2rem;
+			height: 100%;
+			.card-body{
+				i{
+					color: $mint;
+					font-size: 45px;
+					margin-bottom: 15px;
+					margin-right: 15px;
+					text-shadow: none;
+					//color: $blue;
+				}
+			}
 		}
 		.col-sm-6{
 			i{
