@@ -51,34 +51,48 @@ section.values
 section.capabilities
 	.container
 		.row
-			.col-lg-5.col-md-6.bg
-				h2 My Capabilities
-				.row.mb-4
-					.col-sm-6
+			h2.text-center My Capabilities
+			.col-lg-4.mb-5
+				.card
+					.card-body
 						i.fad.fa-pen-nib
-						p Design
-					.col-sm-6
+						h4 Design
+						ul
+							li Information Architecture
+							li Wireframes
+							li High-fidelity Mockups
+							li Prototypes
+							li Style Guidelines
+							li Vector Graphics
+							li Iconography
+			.col-lg-4.mb-5
+				.card
+					.card-body
 						i.fad.fa-code
-						p Development
-					.col-sm-6
-						i.fab.fa-wordpress-simple
-						p Wordpress
-					.col-sm-6
-						i.fab.fa-shopify
-						p E-Commerce
-					.col-sm-6
-						i.fa-duotone.fa-envelope
-						p Email Marketing
-					.col-sm-6
-						i.fad.fa-pen-paintbrush
-						p Illustration
-					.col-sm-6
-						i.fad.fa-photo-video
-						p Multimedia
-					.col-sm-6
-						i.fad.fa-icons
-						p Iconography
-				= link_to "Explore Services", services_path, :class=>"btn btn-primary"
+						h4 Front-End Development
+						ul
+							li Custom Wordpress Development
+							li Shopify Theme Development
+							li Proficient in HTML, SCSS, JavaScript, PHP
+							li Mobile Optimization
+							li Website Maintenance
+
+			.col-lg-4.mb-5
+				.card
+					.card-body
+						i.fad.fa-megaphone
+						h4 Marketing & SEO
+						ul
+							li Email Marketing
+							li Landing Pages
+							li SEO Audits
+							li Project Management
+							li Hubspot
+							li Google Tag Manager
+		.row.text-center
+			.col-lg-12
+				= link_to "Explore Services", services_path, :class=>"btn btn-primary mx-auto"
+
 /!  Who I Serve
 
 section.featured
