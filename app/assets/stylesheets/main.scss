@@ -485,11 +485,7 @@ img::selection {
 }
 
 .lead{
-	font-size: 20px !important;
-	font-weight: $normal-weight;
-	@media screen and (max-width: 768px) {
-		font-size: 18px !important;
-	}
+	font-size: calc(clamp(18px, 0.915rem + ((1vw - 3.2px) * 0.736), 20px)) !important;
 }
 
 .center {
@@ -1857,9 +1853,6 @@ i.contact {
 		background-repeat: repeat;
 		background-position: center center;
 		padding: 60px 0;
-		h2{
-			margin-bottom: 35px !important;
-		}
 		.bg{
 			background-color: $lighter-purple;
 			border-radius: .25rem;
