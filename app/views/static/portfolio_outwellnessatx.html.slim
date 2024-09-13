@@ -1,0 +1,47 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 OutWellness ATX
+					p 
+					| OutWellness ATX, an inclusive wellness center and gym for the LGBTQ+ community, needed a website revamp to increase lead generation and better represent their updated brand. I partnered with 
+					= link_to "Chien Industries", "https://www.chienindustries.com/"
+					| , who focused on refining the messaging and copy, while I led the site's redesign to align with their new brand standards and service offerings. The goal was to create a user-friendly experience that highlighted their commitment to inclusivity and wellness. I designed mockups in Figma and developed the website in WordPress, ensuring it was responsive and SEO-optimized to drive traffic and engagement.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p OutWellness ATX
+						.col-md-6
+							h6 Year
+							p 2024
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design, Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, HTML, PHP, CSS, JS
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://outwellnessatx.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website" do
+						= image_tag "portfolio/outwellness-atx/outwellness-atx-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX"
+					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Homepage" do
+						= image_tag "portfolio/outwellness-atx/outwellness-atx-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Homepage"
+					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX About Page" do
+						= image_tag "portfolio/outwellness-atx/outwellness-atx-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX About Page"
+					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Services Page" do
+						= image_tag "portfolio/outwellness-atx/outwellness-atx-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Services Page"
+					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Contact Page" do
+						= image_tag "portfolio/outwellness-atx/outwellness-atx-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Contact Page"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

@@ -36,11 +36,11 @@ section
 						| Email me:  
 						= mail_to "vanessa.amilet@gmail.com", "vanessa.amilet@gmail.com"
 						| .
-			/ .offset-md-2.col-md-8
 			.offset-md-1.col-md-7
 				/ #contact-form
 				/ 	p Fill out the contact form below to get the conversation started. Please allow up to 2-3 business days to respond to your message.
-				/ 	<iframe id="bonsai-form" onload="iframeLoaded()" src="https://app.hellobonsai.com/f/b372ec6c64fb9b8?embed=true&hide_header=true" frameborder="0" scrolling="no" width="100%" height="100%" style=""></iframe>
+					/ .form
+					/ 	<iframe id="bonsai-form" onload="iframeLoaded()" src="https://app.hellobonsai.com/f/b372ec6c64fb9b8?embed=true&hide_header=true" frameborder="0" scrolling="no" width="100%" height="100%" style=""></iframe>
 				#contact-form
 					- flash.each do |key, value| %
 						- if value.is_a?(String)

@@ -31,18 +31,18 @@ section.portfolio-grid
 	.container
 		.row
 			.col-md-4
+				= link_to portfolio_outwellness_atx_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-outwellness-atx.jpg", :class=>"card-img", :alt=>"OutWellness ATX"
+					.card-body
+						h5.card-title OutWellness ATX
+						p.card-text Custom Wordpress Development
+						p View Project »
+			.col-md-4
 				= link_to portfolio_mfour_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-mfour.jpg", :class=>"card-img", :alt=>"MFour"
 					.card-body
 						h5.card-title MFour
 						p.card-text Custom Wordpress Development
-						p View Project »
-			.col-md-4
-				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
-					.card-body
-						h5.card-title Picnics in the City
-						p.card-text Custom Shopify Website
 						p View Project »
 			.col-md-4
 				= link_to portfolio_capitalize_path, class: 'portfolio-card card' do
@@ -52,13 +52,14 @@ section.portfolio-grid
 						p.card-text Custom Wordpress Development
 						p View Project »
 			
+			
 		.row
 			.col-md-4
-				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
+				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
 					.card-body
-						h5.card-title Mar y Sol Therapy & Wellness
-						p.card-text Wordpress Website
+						h5.card-title Picnics in the City
+						p.card-text Custom Shopify Website
 						p View Project »
 			.col-md-4
 				= link_to portfolio_zackpride_path, class: 'portfolio-card card' do
@@ -68,26 +69,47 @@ section.portfolio-grid
 						p.card-text Custom Wordpress Website
 						p View Project »
 			.col-md-4
+				= link_to portfolio_genie_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-genie.jpg", :class=>"card-img", :alt=>"Genie Creates"
+				  .card-body
+					h5.card-title Genie Creates
+					p.card-text Custom Web Design & Development
+					p View Project »
+		.row
+			.col-md-4
 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
 				  .card-body
 					h5.card-title Jumpix
 					p.card-text Custom Web Design & Development, Media, UX Design
 					p View Project »
-			
-		.row
-			.col-md-4.load-card
-				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
-					.card-body
-						h5.card-title Betty Boujee
-						p.card-text Custom Shopify Website
-						p View Project »
-			.col-md-4.load-card
+			.col-md-4
 				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
 					.card-body
 						h5.card-title Expertly Sanitized
+						p.card-text Custom Wordpress Website
+						p View Project »
+			/ .col-md-4
+			/ 	= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
+			/ 	  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
+			/ 	  .card-body
+			/ 		h5.card-title North Bloom
+			/ 		p.card-text Custom Wordpress Website
+			/ 		p View Project »
+			.col-md-4
+				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
+					.card-body
+						h5.card-title Mar y Sol Therapy & Wellness
+						p.card-text Wordpress Website
+						p View Project »
+		.row
+			.col-md-4.load-card
+				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
+					.card-body
+						h5.card-title Universal Control Systems
 						p.card-text Custom Wordpress Website
 						p View Project »
 			.col-md-4.load-card
@@ -97,8 +119,15 @@ section.portfolio-grid
 						h5.card-title The Leeward Team
 						p.card-text Custom Wordpress Landing Page
 						p View Project »
-			
+			.col-md-4.load-card
+				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+					.card-body
+						h5.card-title Betty Boujee
+						p.card-text Custom Shopify Website
+						p View Project »
 		.row
+			
 			.col-md-4.load-card
 				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
@@ -107,21 +136,12 @@ section.portfolio-grid
 						p.card-text Custom Wordpress Website
 						p View Project »
 			.col-md-4.load-card
-				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
-					.card-body
-						h5.card-title Universal Control Systems
-						p.card-text Custom Wordpress Website
-						p View Project »
-			
-			.col-md-4.load-card
 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
 					.card-body
 						h5.card-title CaptiveColour
 						p.card-text Branding, Custom Shopify Website
 						p View Project »
-		.row
 			.col-md-4.load-card
 				= link_to portfolio_iba_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
@@ -129,7 +149,7 @@ section.portfolio-grid
 					h5.card-title I Build America
 					p.card-text Custom Wordpress Website
 					p View Project »
-
+		.row
 			.col-md-4.load-card
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"Picnics in the City"

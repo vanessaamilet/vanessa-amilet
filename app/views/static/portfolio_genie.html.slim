@@ -1,0 +1,43 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Genie Creates
+					p 
+					| Genie Creates, a marketing agency specializing in the construction industry, needed a stronger online presence beyond social media to showcase their services. They reached out to me to design and develop their website. I opted for a simple, clean design that still reflected their vision and branding. The solution involved creating a custom WordPress theme that effectively highlighted their expertise while offering a professional and approachable platform for their clients.
+					hr.my-5
+					.row
+						.col-md-6
+							h6 Client
+							p Genie Creates
+						.col-md-6
+							h6 Year
+							p 2022 - 2024
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design, Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, HTML, PHP, CSS, JS
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://geniecreates.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+					= link_to image_path("portfolio/genie/genie-creates-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Website" do
+						= image_tag "portfolio/genie/genie-creates-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Genie"
+					= link_to image_path("portfolio/genie/genie-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Homepage" do
+						= image_tag "portfolio/genie/genie-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Genie Homepage"
+					= link_to image_path("portfolio/genie/genie-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie About Page" do
+						= image_tag "portfolio/genie/genie-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Genie About Page"
+					= link_to image_path("portfolio/genie/genie-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Contact Page" do
+						= image_tag "portfolio/genie/genie-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Genie Contact Page"
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
