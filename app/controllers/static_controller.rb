@@ -35,6 +35,26 @@ class StaticController < ApplicationController
 	# def portfolio_ecmg
 	# end
 
+	def portfolio_mfour
+		@page_title = 'MFour'
+		@page_description = 'Check out the custom WordPress website I developed for MFour, featuring Gutenberg blocks, Bootstrap, and Sigma integration, enhancing their rebranding efforts.'
+	end
+
+	def portfolio_outwellnessatx
+		@page_title = 'OutWellness ATX'
+		@page_description = 'Revamped OutWellness ATX’s website to boost leads and reflect their LGBTQ+ inclusive brand, with responsive design, SEO optimization, and improved user experience.'
+	end
+
+	def portfolio_genie
+		@page_title = 'Genie Creates'
+		@page_description = 'Developed a custom, clean WordPress site for Genie Creates to enhance their online presence, showcasing their construction marketing services and expertise.'
+	end
+
+	def portfolio_northbloom
+		@page_title = 'North Bloom Construction'
+		@page_description = 'Custom WordPress site developed for North Bloom Construction Group, showcasing services and project portfolio to establish a strong online presence.'
+	end
+
 	def portfolio_igco
 		@page_title = 'IGCO'
 		@page_description = 'Check out this custom Wordpress website I developed for IGCO, a small team of creatives based in Houston, Texas.'

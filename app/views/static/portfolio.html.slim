@@ -84,19 +84,12 @@ section.portfolio-grid
 					p.card-text Custom Web Design & Development, Media, UX Design
 					p View Project »
 			.col-md-4
-				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
-					.card-body
-						h5.card-title Expertly Sanitized
-						p.card-text Custom Wordpress Website
-						p View Project »
-			/ .col-md-4
-			/ 	= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
-			/ 	  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
-			/ 	  .card-body
-			/ 		h5.card-title North Bloom
-			/ 		p.card-text Custom Wordpress Website
-			/ 		p View Project »
+				= link_to portfolio_northbloom_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-northbloom.jpg", :class=>"card-img", :alt=>"North Bloom Website"
+				  .card-body
+					h5.card-title North Bloom
+					p.card-text Custom Wordpress Website
+					p View Project »
 			.col-md-4
 				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
@@ -127,7 +120,13 @@ section.portfolio-grid
 						p.card-text Custom Shopify Website
 						p View Project »
 		.row
-			
+			.col-md-4.load-card
+				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
+					.card-body
+						h5.card-title Expertly Sanitized
+						p.card-text Custom Wordpress Website
+						p View Project »
 			.col-md-4.load-card
 				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
@@ -142,6 +141,7 @@ section.portfolio-grid
 						h5.card-title CaptiveColour
 						p.card-text Branding, Custom Shopify Website
 						p View Project »
+		.row
 			.col-md-4.load-card
 				= link_to portfolio_iba_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
@@ -149,7 +149,6 @@ section.portfolio-grid
 					h5.card-title I Build America
 					p.card-text Custom Wordpress Website
 					p View Project »
-		.row
 			.col-md-4.load-card
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"Picnics in the City"

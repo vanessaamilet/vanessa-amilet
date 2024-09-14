@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get '/portfolio/capitalize' => 'static#portfolio_capitalize'
   get '/portfolio/mfour' => 'static#portfolio_mfour'
   get '/portfolio/genie-creates' => 'static#portfolio_genie', as: 'portfolio_genie'
+  get '/portfolio/north-bloom' => 'static#portfolio_northbloom', as: 'portfolio_northbloom'
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
   get '/portfolio/igco' => 'static#portfolio_igco'
   get '/portfolio/expertly-sanitized' => 'static#portfolio_expertlysanitized', as: 'portfolio_expertly'
