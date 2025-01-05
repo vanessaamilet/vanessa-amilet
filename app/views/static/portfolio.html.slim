@@ -55,6 +55,13 @@ section.portfolio-grid
 			
 		.row
 			.col-md-4
+				= link_to portfolio_agency_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
+				  .card-body
+					h5.card-title Agency Website
+					p.card-text Custom Wordpress Development
+					p View Project »
+			.col-md-4
 				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
 					.card-body
@@ -68,6 +75,8 @@ section.portfolio-grid
 						h5.card-title Zack Pride
 						p.card-text Custom Wordpress Website
 						p View Project »
+			
+		.row
 			.col-md-4
 				= link_to portfolio_genie_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-genie.jpg", :class=>"card-img", :alt=>"Genie Creates"
@@ -75,21 +84,14 @@ section.portfolio-grid
 					h5.card-title Genie Creates
 					p.card-text Custom Web Design & Development
 					p View Project »
-		.row
 			.col-md-4
-				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
-				  .card-body
-					h5.card-title Jumpix
-					p.card-text Custom Web Design & Development, Media, UX Design
-					p View Project »
-			.col-md-4
-				= link_to portfolio_northbloom_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-northbloom.jpg", :class=>"card-img", :alt=>"North Bloom Website"
-				  .card-body
-					h5.card-title North Bloom
-					p.card-text Custom Wordpress Website
-					p View Project »
+				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
+					.card-body
+						h5.card-title Universal Control Systems
+						p.card-text Custom Wordpress Website
+						p View Project »
+			
 			.col-md-4
 				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
@@ -99,12 +101,12 @@ section.portfolio-grid
 						p View Project »
 		.row
 			.col-md-4.load-card
-				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
-					.card-body
-						h5.card-title Universal Control Systems
-						p.card-text Custom Wordpress Website
-						p View Project »
+				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
+				  .card-body
+					h5.card-title Jumpix
+					p.card-text Custom Web Design & Development, Media, UX Design
+					p View Project »
 			.col-md-4.load-card
 				= link_to portfolio_leewardteam_path, class: 'portfolio-card card' do
 					= image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
@@ -134,6 +136,7 @@ section.portfolio-grid
 						h5.card-title Jarrod Lee
 						p.card-text Custom Wordpress Website
 						p View Project »
+			
 			.col-md-4.load-card
 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
@@ -156,6 +159,13 @@ section.portfolio-grid
 						h5.card-title IGCO
 						p.card-text Custom Wordpress Website
 						p View Project »
+			.col-md-4.load-card
+				= link_to portfolio_northbloom_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-northbloom.jpg", :class=>"card-img", :alt=>"North Bloom Website"
+				  .card-body
+					h5.card-title North Bloom
+					p.card-text Custom Wordpress Website
+					p View Project »
 
 		.row
 			#loadMore.mx-auto.center

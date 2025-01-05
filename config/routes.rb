@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/portfolio/genie-creates' => 'static#portfolio_genie', as: 'portfolio_genie'
   get '/portfolio/north-bloom' => 'static#portfolio_northbloom', as: 'portfolio_northbloom'
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
+  get '/portfolio/agency-website' => 'static#portfolio_agency', as: 'portfolio_agency'
   get '/portfolio/igco' => 'static#portfolio_igco'
   get '/portfolio/expertly-sanitized' => 'static#portfolio_expertlysanitized', as: 'portfolio_expertly'
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
