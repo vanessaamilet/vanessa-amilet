@@ -1,0 +1,53 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Firmatek
+					p.lead I partnered directly with Firmatek to lead a complete website redesign, focusing on improving navigation, brand consistency, and user engagement. I handled the project end-to-end, including sitemap planning, wireframes, high-fidelity mockups, and custom WordPress development. The final site delivers a modern, responsive experience that highlights Firmatek’s expertise in providing industry-leading analytics and insights.
+					hr.my-5	
+					.row
+						.col-md-6
+							h6 Client
+							p Firmatek
+						.col-md-6
+							h6 Year
+							p 2025
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS, ACF
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://firmatek.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+                    = link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
+						= image_tag "portfolio/firmatek/firmatek.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website"
+
+					= link_to image_path("portfolio/firmatek/firmatek-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Homepage" do
+						= image_tag "portfolio/firmatek/firmatek-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Homepage"
+					
+					= link_to image_path("portfolio/firmatek/firmatek-about-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek About Webpage" do
+						= image_tag "portfolio/firmatek/firmatek-about-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek About Webpage"
+
+					= link_to image_path("portfolio/firmatek/firmatek-contact-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+						= image_tag "portfolio/firmatek/firmatek-contact-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+					= link_to image_path("portfolio/firmatek/firmatek-careers-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Careers Webpage" do
+						= image_tag "portfolio/firmatek/firmatek-careers-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Careers Webpage"
+					= link_to image_path("portfolio/firmatek/firmatek-industries-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Industries Webpage" do
+						= image_tag "portfolio/firmatek/firmatek-industries-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Industries Webpage"
+					= link_to image_path("portfolio/firmatek/firmatek-resources-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources Webpage" do
+						= image_tag "portfolio/firmatek/firmatek-resources-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Resources Webpage"
+					
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

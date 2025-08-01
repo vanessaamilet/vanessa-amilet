@@ -2196,6 +2196,11 @@ i.contact {
 	}
 	.row{
 		padding: 15px 0;
+		-webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		&.load-card{
+			display: none;
+		}
 		@media (max-width: 767px){
 			padding: 0;
 		}

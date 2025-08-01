@@ -1,0 +1,52 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Youth Career Resource Website
+					p.lead This youth-focused initiative required a microsite to guide young people in exploring career pathways and accessing educational resources. I designed high-fidelity mockups and developed a responsive WordPress site that prioritizes simplicity and accessibility. The result is a clean, engaging platform that supports students, educators, and community organizations in their workforce development efforts.
+					hr.my-5	
+					.row
+						.col-md-6
+							h6 Client
+							p Drio
+						.col-md-6
+							h6 Year
+							p 2025
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://careerbound.baltimorespromise.org/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+                    = link_to image_path("portfolio/youth-career-website/youth-career-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Website" do
+						= image_tag "portfolio/youth-career-website/youth-career-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Website"
+
+					= link_to image_path("portfolio/youth-career-website/youth-career-resources-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Homepage" do
+						= image_tag "portfolio/youth-career-website/youth-career-resources-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Homepage"
+					
+					= link_to image_path("portfolio/youth-career-website/youth-career-website-program-elements.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Elements Webpage" do
+						= image_tag "portfolio/youth-career-website/youth-career-website-program-elements.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
+
+					= link_to image_path("portfolio/youth-career-website/youth-career-website-program-element-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Element Webpage" do
+						= image_tag "portfolio/youth-career-website/youth-career-website-program-element-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
+					= link_to image_path("portfolio/youth-career-website/youth-career-resources-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Mega Menu" do
+						= image_tag "portfolio/youth-career-website/youth-career-resources-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Mega Menu"
+
+					= link_to image_path("portfolio/youth-career-website/youth-career-resources-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+						= image_tag "portfolio/youth-career-website/youth-career-resources-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+					
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

@@ -19,9 +19,15 @@ Rails.application.routes.draw do
   # get '/schedule-consultation' => 'static#consultation'
 
   # Portfolio Pages
+  get '/portfolio/firmatek' => 'static#portfolio_firmatek'
   get '/portfolio/outwellness-atx' => 'static#portfolio_outwellnessatx'
+  get '/portfolio/nonprofit-website' => 'static#portfolio_nonprofit_website', as: 'portfolio_foundation_website'
+  get '/portfolio/community-impact-website' => 'static#portfolio_community_impact_website'
+  get '/portfolio/youth-career-resource-website' => 'static#portfolio_youthcareer', as: 'portfolio_youthcareer'
   get '/portfolio/capitalize' => 'static#portfolio_capitalize'
   get '/portfolio/mfour' => 'static#portfolio_mfour'
+  get '/portfolio/compost-products-website' => 'static#portfolio_greenerworld', as: 'portfolio_greenerworld'
+  get '/portfolio/electrical-industry-website' => 'static#portfolio_electricalalliance', as: 'portfolio_electricalalliance'
   get '/portfolio/genie-creates' => 'static#portfolio_genie', as: 'portfolio_genie'
   get '/portfolio/north-bloom' => 'static#portfolio_northbloom', as: 'portfolio_northbloom'
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'

@@ -1,0 +1,53 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Nonprofit Website
+					p.lead Drio Duo partnered with me to design and develop a new website for a philanthropic foundation focused on expanding economic opportunity through entrepreneurship and skilled trades training. Utilizing Figma, I created high-fidelity mockups and developed a custom WordPress site that emphasizes storytelling and program visibility. The new website provides an inviting, easy-to-navigate experience that highlights programs and encourages community engagement.
+					hr.my-5	
+					.row
+						.col-md-6
+							h6 Client
+							p Drio
+						.col-md-6
+							h6 Year
+							p 2025
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Wordpress Design & Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, Gutenberg, HTML, PHP, CSS, JS
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://ratcliffefoundation.com/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+                    = link_to image_path("portfolio/foundation-website/foundation-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website" do
+						= image_tag "portfolio/foundation-website/foundation-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Showcase"
+
+					= link_to image_path("portfolio/foundation-website/nonprofit-website-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Homepage" do
+						= image_tag "portfolio/foundation-website/nonprofit-website-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Homepage"
+					
+					= link_to image_path("portfolio/foundation-website/nonprofit-website-ourstory.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Our Story Webpage" do
+						= image_tag "portfolio/foundation-website/nonprofit-website-ourstory.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Our Story Webpage"
+
+					= link_to image_path("portfolio/foundation-website/nonprofit-website-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit News Page" do
+						= image_tag "portfolio/foundation-website/nonprofit-website-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Page"
+
+					= link_to image_path("portfolio/foundation-website/nonprofit-website-grants.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Grants Webpage" do
+						= image_tag "portfolio/foundation-website/nonprofit-website-grants.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Webpage"
+					
+					= link_to image_path("portfolio/foundation-website/nonprofit-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Contact Us Webpage" do
+						= image_tag "portfolio/foundation-website/nonprofit-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Contact Us Webpage"
+					
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

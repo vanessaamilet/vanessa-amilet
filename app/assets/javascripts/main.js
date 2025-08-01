@@ -51,25 +51,42 @@ document.addEventListener('DOMContentLoaded', function() {
     
     /* ## Load More Btn (For Portfolio)
     ---------------------------------------------------------------------------------------------------- */
-	if (document.body.classList.contains('portfolio')) {
-		let columnFour = document.querySelector('.col-md-4');
-		const loadMoreBtn = document.getElementById('load-more');
-		const cardHidden = [...document.querySelectorAll('.portfolio-grid .col-md-4.load-card')];
-		// cardHidden.splice(0, 9).forEach(
-		// 	elem => elem.classList.remove('load-card')
-		// );
-		loadMoreBtn.addEventListener('click', function(e){ // click event for load more
-				e.preventDefault();
+	// if (document.body.classList.contains('portfolio')) {
+	// 	let columnFour = document.querySelector('.col-md-4');
+	// 	const loadMoreBtn = document.getElementById('load-more');
+	// 	const cardHidden = [...document.querySelectorAll('.portfolio-grid .col-md-4.load-card')];
+	// 	// cardHidden.splice(0, 9).forEach(
+	// 	// 	elem => elem.classList.remove('load-card')
+	// 	// );
+	// 	loadMoreBtn.addEventListener('click', function(e){ // click event for load more
+	// 			e.preventDefault();
 
-				// check if any hidden divs still exist
-				cardHidden.splice(0, 9).forEach( 
-					elem => elem.classList.remove('load-card')
-				);
-				if (cardHidden.length == 0) {
-					loadMoreBtn.classList.add('hidden');
-				}
-		});
-	}
+	// 			// check if any hidden divs still exist
+	// 			cardHidden.splice(0, 9).forEach( 
+	// 				elem => elem.classList.remove('load-card')
+	// 			);
+	// 			if (cardHidden.length == 0) {
+	// 				loadMoreBtn.classList.add('hidden');
+	// 			}
+	// 	});
+	// }
+    // Rows
+    if (document.body.classList.contains('portfolio')) {
+        const loadMoreBtn = document.getElementById('load-more');
+        const hiddenRows = [...document.querySelectorAll('.portfolio-grid .row.load-card')];
+      
+        loadMoreBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+      
+          hiddenRows.splice(0, 2).forEach(row => row.classList.remove('load-card'));
+      
+          if (hiddenRows.length === 0) {
+            loadMoreBtn.classList.add('hidden');
+          }
+        });
+      }
+      
+    
 	
 
     /* ## More Projects Section

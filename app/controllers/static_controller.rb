@@ -40,6 +40,9 @@ class StaticController < ApplicationController
 		@page_description = 'Check out the custom WordPress website I developed for MFour, featuring Gutenberg blocks, Bootstrap, and Sigma integration, enhancing their rebranding efforts.'
 	end
 
+	def portfolio_youthcareer
+	end
+
 	def portfolio_outwellnessatx
 		@page_title = 'OutWellness ATX'
 		@page_description = 'Revamped OutWellness ATX’s website to boost leads and reflect their LGBTQ+ inclusive brand, with responsive design, SEO optimization, and improved user experience.'

@@ -1,0 +1,54 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content 
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1.py-8.py-md-10
+					h1 Electrical Industry Partnership Website
+					p.lead Drio Duo partnered with me to design and develop a new website for a long-standing electrical industry partnership between the International Brotherhood of Electrical Workers (IBEW) Local 26 and the National Electrical Contractors Association (NECA) Washington, D.C. chapter. Utilizing Figma, I created high-fidelity mockups and developed a responsive WordPress site focused on usability and accessibility. The redesigned platform highlights training programs, union expertise, and contractor resources, delivering an improved user experience for industry professionals.
+
+					hr.my-5	
+					.row
+						.col-md-6
+							h6 Client
+							p Drio
+						.col-md-6
+							h6 Year
+							p 2023
+					.row.mb-3
+						.col-md-6
+							h6 Services
+							p Website Design & Wordpress Development
+						.col-md-6
+							h6 Technologies
+							p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
+					.row
+						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://electricalalliance.org/', target: "_blank"
+			.col-12.col-md-7
+				div.pt-md-10
+                    = link_to image_path("portfolio/electrical-industry-website/electrical-industry-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website"
+
+					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website - Mega Menu" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website - Mega Menu"
+
+					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership About Page" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership About Page"
+					
+					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-program-template.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Program Template Webpage" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-program-template.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Program Template Webpage"
+
+					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-contractors.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contractors Webpage" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-contractors.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contractors Webpage"
+
+					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+					
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"
