@@ -46,8 +46,8 @@ section.portfolio-info#info
 					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
 						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
 					
-						
-
+/!  Portfolio Nav					
+/ = render partial: "shared/portfolio_navigation"
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA

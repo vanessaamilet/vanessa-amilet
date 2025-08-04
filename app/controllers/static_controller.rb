@@ -40,7 +40,34 @@ class StaticController < ApplicationController
 		@page_description = 'Check out the custom WordPress website I developed for MFour, featuring Gutenberg blocks, Bootstrap, and Sigma integration, enhancing their rebranding efforts.'
 	end
 
+	def portfolio_capitalize
+		@page_title = 'Capitalize'
+		@page_description = 'Developed a custom WordPress theme for Capitalize, supporting their rebrand with Tailwind CSS, SEO optimization, and ongoing site maintenance.'
+	end
+
+	def portfolio_firmatek
+		@project_title = "Firmatek"
+		@page_description = 'Led a complete redesign of Firmatek’s website, including sitemap planning, high-fidelity mockups, and custom WordPress development, delivering an improved user experience and modern design.'
+	end
+
+	def portfolio_nonprofit_website
+		@project_title = "Nonprofit Website"
+		@page_description = 'Designed high-fidelity mockups and developed a custom WordPress site for a philanthropic foundation focused on expanding economic opportunity through entrepreneurship and skilled trades training.'
+	end
+
+	def portfolio_community_impact_website
+		@project_title = "Community Impact Website"
+		@page_description = 'Contributed to the development of a redesigned WordPress site for a nonprofit organization focused on advancing education, financial security, and health equity, improving usability and navigation.'
+	end
+	
 	def portfolio_youthcareer
+		@project_title = "Youth Career Resource Website"
+		@page_description = 'Designed and developed a responsive WordPress microsite for a youth initiative, providing students and educators with accessible career exploration tools and resources.'
+	end
+
+	def portfolio_electricalalliance
+		@project_title = "Electrical Industry Partnership Website"
+		@page_description ="Designed and developed a modern WordPress website for a leading electrical industry partnership between IBEW Local 26 and NECA Washington, D.C., highlighting training programs and contractor resources."
 	end
 
 	def portfolio_outwellnessatx
@@ -61,6 +88,14 @@ class StaticController < ApplicationController
 	def portfolio_igco
 		@page_title = 'IGCO'
 		@page_description = 'Check out this custom Wordpress website I developed for IGCO, a small team of creatives based in Houston, Texas.'
+	end
+
+	def portfolio_expertly
+		@page_title = 'Expertly Sanitized'
+	end
+
+	def portfolio_bettyboujee
+		@page_title = 'Betty Boujee'
 	end
 
 	def portfolio_picnichour
@@ -120,7 +155,7 @@ class StaticController < ApplicationController
 
 	def portfolio_snapple
 		@page_title = 'Snapple Commercial'
-		@page_description = 'Check out this fun motion graphics video I created based on the Snapple beverages..'
+		@page_description = 'Check out this fun motion graphics video I created based on the Snapple beverages.'
 	end
 	
 	def faqs

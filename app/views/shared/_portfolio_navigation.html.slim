@@ -1,0 +1,13 @@
+- nav = project_navigation(@project_title)
+
+section.portfolio-navigation
+  .container
+    .row.justify-content-between
+      .col-6.text-start
+        = link_to nav[:prev][:path], class: 'btn btn-secondary prev-project' do
+          i.fad.fa-arrow-alt-circle-left
+          = " #{nav[:prev][:title]}"
+      .col-6.text-end
+        = link_to nav[:next][:path], class: 'btn btn-secondary next-project' do
+          = "#{nav[:next][:title]} "
+          i.fad.fa-arrow-alt-circle-right
