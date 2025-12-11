@@ -65,6 +65,24 @@ section.services
 				.text-center
 					= link_to "Explore My Services", services_path, :class=>"btn btn-primary mr-3"
 
+section.portfolio-grid.browse-more
+    .container
+        .row.justify-content-between.align-items-center.mb-4
+            .col-lg-5
+                h2 Browse Projects
+            .col-lg-7.text-lg-end
+                = link_to 'View All Projects <i class="fad fa-arrow-alt-circle-right"></i>'.html_safe, portfolio_path, class:'view-projects'
+		.row.projects
+			- random_projects(@project_title).each do |project|
+				.col-md-4
+					= link_to project[:path], class: 'portfolio-card card' do
+						= image_tag project[:img], class: 'card-img', alt: project[:title]
+						.card-body
+							h5.card-title = project[:title]
+							p.card-text = project[:label]
+							p View Project »
+	
+
 section.reviews
 	.container
 		.row
@@ -139,8 +157,8 @@ section.get-started
 		.row.mb-5.justify-content-center
 			.col-md-10.col-lg-12
 				.squiggle
-				h2.mx-auto Ready to establish your authentic online presence?
-					Getting started is simple.
+				h2.mx-auto Let’s create something great together.
+				p.lead.text-center If you’re ready to transform your idea into an intuitive digital experience, I’m here to help. 
 		.row.mb-5
 			.col-md-4
 				i.fad.fa-phone
