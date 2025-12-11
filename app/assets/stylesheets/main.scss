@@ -67,6 +67,7 @@ $red: #b30728;
 $dark-maroon: #280c11;
 $light-purple: #dde1ed;
 $lighter-purple: #eeedff;
+$soft-gray-lavender: #F7F6FF;
 
 $mint: #4db9ac;
 $lighter-green: $mint;
@@ -1701,6 +1702,20 @@ i.contact {
 		img{
 			box-shadow: -12px 12px 0 0 $lighter-green;
 			@media only screen and (max-width: 768px){
+				margin-bottom: 30px;
+			}
+		}
+	}
+	/* ### Portfolio */
+	.portfolio-grid{
+		background-color: $soft-gray-lavender;
+		h2{
+			text-align: left;
+			margin-bottom: 0;
+		}
+		@media (max-width: 768px) {
+			.view-projects {
+				//display: block;
 				margin-bottom: 30px;
 			}
 		}
