@@ -1,31 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Electrical Industry Partnership Website
+        p.lead
+        	| A long-standing partnership between IBEW Local 26 and the NECA Washington, D.C. chapter that supports electrical workers through training, education, and industry resources.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://electricalalliance.org/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Drio
+			.col-md-6
+				h6 Year
+				p 2023
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Electrical Industry Partnership Website
-					p.lead Drio Duo partnered with me to design and develop a new website for a long-standing electrical industry partnership between the International Brotherhood of Electrical Workers (IBEW) Local 26 and the National Electrical Contractors Association (NECA) Washington, D.C. chapter. Utilizing Figma, I created high-fidelity mockups and developed a responsive WordPress site focused on usability and accessibility. The redesigned platform highlights training programs, union expertise, and contractor resources, delivering an improved user experience for industry professionals.
-
-					hr.my-5	
-					.row
-						.col-md-6
-							h6 Client
-							p Drio
-						.col-md-6
-							h6 Year
-							p 2023
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Website Design & Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://electricalalliance.org/', target: "_blank"
+					h2 Project Details 
+					h6
+						span.badge.text-bg-secondary Problem
+					p A long-standing electrical industry partnership needed a modern website that better highlighted its training programs, expertise, and contractor resources. The previous platform lacked usability, accessibility, and a clear structure for guiding users to key information.
+					h6
+						span.badge.text-bg-secondary Process
+					p Drio Duo partnered with me to design and develop the new website. I created high-fidelity mockups in Figma and built a responsive WordPress site with a focus on usability, accessibility, and clear content organization. The redesign centered on presenting training opportunities, union expertise, and contractor support in a way that industry professionals could easily navigate.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The new site offers a modern design that aligns with the partnership’s brand and improves accessibility, navigation, and visibility of programs and resources.
+						
 			.col-12.col-md-7
 				div.pt-md-10
                     = link_to image_path("portfolio/electrical-industry-website/electrical-industry-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website" do
