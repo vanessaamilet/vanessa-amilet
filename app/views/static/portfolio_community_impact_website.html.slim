@@ -1,30 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Community Impact Website
+        p.lead
+        	| A nonprofit organization dedicated to advancing education, financial security, and health equity.
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://uwcm.org/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Drio
+			.col-md-6
+				h6 Year
+				p 2024
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Community Impact Website
-					p.lead Drio Duo partnered with me to contribute to the development of a redesigned website for a nonprofit organization dedicated to advancing education, financial security, and health equity. My work focused on restructuring the site within WordPress to improve navigation, performance, and overall usability. The updated website provides a more intuitive, user-friendly experience that makes it easier for visitors to access resources and engage with the organization’s mission.
-					hr.my-5	
-					.row
-						.col-md-6
-							h6 Client
-							p Drio
-						.col-md-6
-							h6 Year
-							p 2024
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://uwcm.org/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p A nonprofit needed a redesigned website that made it easier for visitors to find resources, understand programs, and engage with its mission around education, financial security, and health equity.
+					h6
+						span.badge.text-bg-secondary Process
+					p.lead Drio Duo partnered with me to support the WordPress development for the redesign. I restructured the site to improve navigation, performance, and overall usability, ensuring the content was easier to explore and the structure aligned with the organization’s goals.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The updated website offers a clearer, more intuitive user experience that helps visitors access key resources and engage more fully with the organization’s mission.
+
 			.col-12.col-md-7
 				div.pt-md-10
                     = link_to image_path("portfolio/community-impact-website/community-impact-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website" do
