@@ -2333,6 +2333,16 @@ i.contact {
 --------------------------------------------- */
 
 .portfolio-template{
+	.hero{
+		a{
+			display: block;
+			background-image: none !important;
+		}
+		p.offline{
+			color: $maroon;
+			font-weight: $semibold-weight;
+		}
+	}
 	.portfolio-info{
 		padding: 0;
 		background: $soft-gray-lavender;

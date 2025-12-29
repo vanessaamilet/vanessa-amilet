@@ -1,12 +1,37 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Capitalize Website Redesign
+        p.lead
+        	| OutWellness ATX is an inclusive wellness center and gym in Austin that offers fitness programs and services designed to support the LGBTQ+ community.
+        .d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://hicapitalize.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Capitalize
+			.col-md-6
+				h6 Year
+				p 2021-2022
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development
+			.col-md-6
+				h6 Technologies
+				p Wordpress, HTML, PHP, Tailwind CSS/SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 Capitalize
+					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
 					p Capitalize, a financial software company, needed to update their website to align with their refreshed brand and improve the flexibility of their content management system. Their existing setup didn’t fully support the new visual direction or evolving product needs.
@@ -18,23 +43,6 @@ section.portfolio-info#info
 					h6
 						span.badge.text-bg-secondary Outcome
 					p The updated site reflects Capitalize’s new brand direction and offers a more scalable, maintainable foundation for future growth.
-					hr.my-4
-					.row
-						.col-md-6
-							h6 Client
-							p Capitalize
-						.col-md-6
-							h6 Year
-							p 2021-2022
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Wordpress, HTML, PHP, CSS, JS, ACF
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://hicapitalize.com/', target: "_blank"
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/capitalize/capitalize-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize Homepage" do
