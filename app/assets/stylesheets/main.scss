@@ -2335,10 +2335,9 @@ i.contact {
 .portfolio-template{
 	.portfolio-info{
 		padding: 0;
-		//background: $light-gray;
 		background: $soft-gray-lavender;
 		.col-md-6, .col-sm-6{
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 		}
 		.summary{
 			position: sticky;
@@ -2414,7 +2413,7 @@ i.contact {
 				}
 			}
 			a.cta{
-				color: $black !important;
+				//color: $black !important;
 				font-weight: $semibold-weight !important;
 			}
 		}
