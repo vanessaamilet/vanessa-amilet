@@ -1,31 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 MFour Website Redesign
+        p.lead
+        	| MFour Data Research, Inc. is a consumer insights company that provides real-time behavioral and survey data to help brands understand and engage their audiences.
+        .d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://mfour.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p MFour Data Research, Inc.
+			.col-md-6
+				h6 Year
+				p 2023-Present
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 MFour Website Redesign
-					p.lead I played a pivotal role in MFour's rebranding initiative, collaborating closely with the Marketing department to devise a comprehensive strategy for a website overhaul. The solution was to develop a custom Wordpress theme, utilizing Gutenberg, Advanced Custom Fields, and the Bootstrap framework to align seamlessly with MFour's new design system. This involved developing custom Gutenberg blocks and templates based on provided designs. Additionally, I worked in tandem with the Development team to integrate Sigma workbooks into the website, facilitating user interaction with survey templates. Beyond the redesign, I took charge of various website maintenance tasks, including code debugging, content creation, and SEO optimization.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p MFour
-						.col-md-6
-							h6 Year
-							p 2023 - Present
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Wordpress, HTML, PHP, CSS, JS, ACF
-					.row
-                        p 
-						    = link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://mfour.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p MFour’s existing website no longer aligned with their updated brand or supported their expanded product offerings. The site needed a modern design system, improved flexibility for content creation, and stronger technical support for new data tools and interactive features.
+					h6
+						span.badge.text-bg-secondary Process
+					p.lead I collaborated closely with the Marketing team to define the redesign strategy and led the development of a custom WordPress theme using Gutenberg, Advanced Custom Fields, and the Bootstrap framework. I built modular custom blocks and templates based on the new design system and partnered with the Development team to integrate Sigma workbooks, enabling users to interact with survey templates directly on the site. In addition to the rebuild, I handled ongoing maintenance, including debugging, new content creation, and SEO optimization.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The redesigned site delivers a modern, cohesive brand experience with flexible, scalable content tools. Interactive Sigma integrations enhance product visibility, while improved performance, structure, and SEO support MFour’s continued growth and marketing efforts.
+
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/mfour/mfour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website" do
