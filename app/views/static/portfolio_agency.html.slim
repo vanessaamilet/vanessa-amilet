@@ -1,30 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Marketing Agency Website
+        p.lead
+        	| A content marketing agency that supports financial, healthcare, and professional service firms with strategic storytelling and client engagement.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://agency102.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Drio
+			.col-md-6
+				h6 Year
+				p 2024
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Agency Website
-					p.lead Assisted in the WordPress development of a 4-week website redesign project for a creative agency seeking a refreshed online presence. Utilized the Genesis Framework and built custom Gutenberg blocks using ACF to enhance functionality and flexibility. Ensured the website was fully responsive and optimized for performance, delivering a modern and user-friendly experience.
-					hr.my-5	
-					.row
-						.col-md-6
-							h6 Client
-							p Drio
-						.col-md-6
-							h6 Year
-							p 2024
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Wordpress, HTML, PHP, CSS, JS, ACF
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://agency102.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p A creative agency needed a refreshed online presence that better reflected its brand, capabilities, and positioning within the financial, healthcare, and professional services industries.
+					h6
+						span.badge.text-bg-secondary Process
+					p Drio Duo partnered with me to support the WordPress development for this 4-week redesign project. I worked within the Genesis Framework and built custom Gutenberg blocks using ACF to enhance flexibility and content control. The development focused on responsiveness, performance, and delivering a modern interface aligned with the new design direction.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The updated website features a clean, modern design with improved functionality and flexibility, offering a user-friendly experience that better represents the agency’s brand and services.
+
 			.col-12.col-md-7
 				div.pt-md-10
                     = link_to image_path("portfolio/agency/agency-website-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Website" do
