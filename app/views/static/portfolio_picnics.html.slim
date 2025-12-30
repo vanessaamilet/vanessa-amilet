@@ -1,31 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Picnics in the City Website
+        p.lead
+        	| A content marketing agency that supports financial, healthcare, and professional service firms with strategic storytelling and client engagement.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://picnicsinthecity.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Events by Picnics in the City
+			.col-md-6
+				h6 Year
+				p 2017 - Current
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Custom Shopify Website Design
+			.col-md-6
+				h6 Technologies
+				p Shopfy, HTML, Liquid, CSS, JS
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Picnics in the City
-					p.lead Events by Picnics in the City, a Houston-based business specializing in luxury picnics and events, underwent a website refresh to align with their expanded services in event planning and rentals. The redesign aimed to update content for better customer appeal and create a modern, user-friendly design. My role in the project was to enhance the customer journey, revise the copy to emphasize Picnics in the City's event planning expertise, and ensure the new design aligns with their branding, vision, and unique offerings, setting them apart from competitors.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p Events by Picnics in the City
-						.col-md-6
-							h6 Year
-							p 2017 - Current
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Custom Shopify Website Design
-						.col-md-6
-							h6 Technologies
-							p Shopify
-							p HTML, Liquid, CSS, JS
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://picnicsinthecity.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Picnics in the City needed a refreshed website to reflect their expanded services in event planning and rentals. Their existing site didn’t fully communicate their expertise, unique offerings, or the elevated experience they provide to clients.
+					h6
+						span.badge.text-bg-secondary Process
+					p I redesigned key pages to modernize the visual presentation, strengthen the customer journey, and highlight their event planning capabilities. This included updating and refining copy to emphasize their expertise and aligning the overall design with their brand’s aesthetic and vision.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The refreshed website offers a more polished, user-friendly experience that showcases their expanded services, differentiates them from competitors, and better resonates with their target audience.
+
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/picnics/picnicsinthecity-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
