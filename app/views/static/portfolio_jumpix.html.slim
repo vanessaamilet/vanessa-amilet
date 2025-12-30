@@ -1,33 +1,46 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Jumpix
+        p.lead
+        	| Jumpix is a web-based application that allows users to connect multiple cloud storage accounts through a single, unified portal, enabling easy file management across providers.
+		.d-inline.mb-5.mb-md-0
+			p.offline Website Temporarily Offline
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Jumpix
+			.col-md-6
+				h6 Year
+				p 2013 - 2016
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Strategy, Website Design & Development, UX/UI Design, Graphic Design, Iconography, Media, Email Campaigns
+			.col-md-6
+				h6 Technologies
+				p FHTML/CSS, Ruby on Rails, Slim Lang, Twitter Bootstrap, Github, Illustrator, After Effects
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Jumpix
-					p.lead Jumpix, a web-based application, facilitates seamless connections between customers and various major cloud service providers via a unified portal. Users can easily sign up with their email, gaining access to a range of features like copying, downloading, uploading, deleting, and renaming files.  In my role as the UX & Web Designer, I contributed to several aspects of the project, including creating animated videos, designing iconography for the web-based software, developing the front-end user interface, and enhancing the user experience.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p Jumpix
-						.col-md-6
-							h6 Year
-							p 2013 - 2016
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Website Design & Development
-							p Graphic Design
-							p Iconography
-							p Media
-						.col-md-6
-							h6 Technologies
-							p HTML/CSS, Ruby on Rails, Slim Lang, Twitter Bootstrap, Illustrator, After Effects
-					.row
-						p.offline Website Temporarily Offline
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p As a brand-new product, Jumpix needed a clear user experience, intuitive interface, and a strong digital presence to introduce the platform to customers. The team required UX, UI, and front-end development support, along with user documentation and marketing materials, to help users understand how the product worked and why it mattered.
+					h6
+						span.badge.text-bg-secondary Process
+					p I collaborated closely with the CTO to help bring Jumpix from concept to launch. Using Ruby on Rails, SCSS, JavaScript, and Slim, I designed and developed the customer-facing interface and shaped the overall user experience. I created mockups for the main website, designed custom iconography, and ensured the product was accessible and intuitive. To support onboarding and engagement, I produced detailed user guides and created animated marketing videos to communicate key features and value.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p Jumpix launched with a cohesive, user-friendly interface and a polished digital presence. The refined UX, clear documentation, and supporting marketing materials helped users quickly understand the platform, boosting engagement and supporting a smooth rollout for the new product.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
