@@ -10,7 +10,7 @@ module PortfolioHelper
 		{ title: "Youth Career Resource Website", path: portfolio_youthcareer_path, img: "portfolio/portfolio-youthcareer-website.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Compost & Soil Products Website", path: portfolio_greenerworld_path, img: "portfolio/portfolio-compost-soil-website.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Electrical Industry Partnership Website", path: portfolio_electricalalliance_path, img: "portfolio/portfolio-electrical-industry-website.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Marketing Website", path: portfolio_agency_path, img: "portfolio/portfolio-agency-website.jpg", label: "Website Development (WordPress)" },
+		{ title: "Marketing Agency Website", path: portfolio_agency_path, img: "portfolio/portfolio-agency-website.jpg", label: "Website Development (WordPress)" },
 		{ title: "Events by Picnics in the City", path: portfolio_picnics_path, img: "portfolio/portfolio-picnicsinthecity.jpg", label: "Web Design + Development (Shopify)" },
 		{ title: "Zack Pride", path: portfolio_zackpride_path, img: "portfolio/portfolio-zackpride.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Community Retail Showcase Website", path: portfolio_community_path, img: "portfolio/portfolio-community-market-website.jpg", label: "Web Design + Development (WordPress)" },
