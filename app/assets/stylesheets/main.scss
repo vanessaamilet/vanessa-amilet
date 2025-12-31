@@ -2395,6 +2395,7 @@ i.contact {
 	}
 	.cta{
 		background-color: $white;
+		border-top: 1px solid $black;
 		.container{
 			@media screen and (max-width: 768px){
 				.col-md-4{
@@ -2403,7 +2404,7 @@ i.contact {
 			}
 			h2{
 				text-align: center;
-				margin-bottom: 35px !important;
+				margin-bottom: 15px !important;
 			}
 			.step{
 				margin-bottom: 15px;
@@ -2425,6 +2426,7 @@ i.contact {
 			a.cta{
 				//color: $black !important;
 				font-weight: $semibold-weight !important;
+				border-top: 0;
 			}
 		}
 	}
