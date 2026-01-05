@@ -13,7 +13,7 @@ module PortfolioHelper
 		{ title: "Marketing Agency Website", path: portfolio_agency_path, img: "portfolio/portfolio-agency-website.jpg", label: "Website Development (WordPress)" },
 		{ title: "Events by Picnics in the City", path: portfolio_picnics_path, img: "portfolio/portfolio-picnicsinthecity.jpg", label: "Web Design + Development (Shopify)" },
 		{ title: "Zack Pride", path: portfolio_zackpride_path, img: "portfolio/portfolio-zackpride.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Community Retail Showcase Website", path: portfolio_community_path, img: "portfolio/portfolio-community-market-website.jpg", label: "Web Design + Development (WordPress)" },
+		{ title: "Maryland Local Business Collective Website", path: portfolio_community_path, img: "portfolio/portfolio-community-market-website.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Genie Creates", path: portfolio_genie_path, img: "portfolio/portfolio-genie.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Universal Control Systems", path: portfolio_ucs_path, img: "portfolio/portfolio-ucs.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Mar y Sol Therapy & Wellness", path: portfolio_marysol_path, img: "portfolio/portfolio-marysol.jpg", label: "Web Design + Development (WordPress)" },
@@ -26,7 +26,7 @@ module PortfolioHelper
 		{ title: "I Build America", path: portfolio_iba_path, img: "portfolio/portfolio-iba.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "IGCO", path: portfolio_igco_path, img: "portfolio/portfolio-igco.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "North Bloom", path: portfolio_northbloom_path, img: "portfolio/portfolio-northbloom.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Construction Intern Awards", path: portfolio_cia_path, img: "portfolio/portfolio-cia.jpg", label: "Web Design + Development (WordPress)" }
+		{ title: "Construction Intern Awards", path: portfolio_cia_path, img: "portfolio/portfolio-cia.jpg", label: "Web Design + Development (WordPress)" },
 	  ]
 	end
   

@@ -98,6 +98,13 @@ section.portfolio-grid
 			
 		.row
 			.col-md-4
+				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
+				  .card-body
+					h5.card-title Jumpix
+					p.card-text Web Design + Development (Ruby on Rails), UX Design, Media
+					p View Project »
+			.col-md-4
 				= link_to portfolio_agency_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
 				  .card-body
@@ -111,20 +118,13 @@ section.portfolio-grid
 						h5.card-title Events by Picnics in the City
 						p.card-text Web Design + Development (Shopify)
 						p View Project »
-			.col-md-4
-				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
-				  .card-body
-					h5.card-title Jumpix
-					p.card-text Web Design + Development (Ruby on Rails), UX Design, Media
-					p View Project »
 			
 		.row.load-card
 			.col-md-4
 				= link_to portfolio_community_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-community-market-website.jpg", :class=>"card-img", :alt=>"Community Retail Showcase"
 				  .card-body
-					h5.card-title Community Retail Showcase Website
+					h5.card-title Maryland Local Business Collective Website
 					p.card-text Web Design + Development (WordPress)
 					p View Project »
 			.col-md-4
@@ -141,7 +141,28 @@ section.portfolio-grid
 						h5.card-title Universal Control Systems
 						p.card-text Web Design + Development (WordPress)
 						p View Project »
-			
+		.row.load-card
+			.col-md-4
+				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
+					.card-body
+						h5.card-title CaptiveColour
+						p.card-text Branding, Custom Shopify Website
+						p View Project »
+			.col-md-4
+				= link_to portfolio_iba_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
+				  .card-body
+					h5.card-title I Build America
+					p.card-text Web Design + Development (WordPress)
+					p View Project »
+			.col-md-4
+				= link_to portfolio_cia_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
+				  .card-body
+						h5.card-title Construction Intern Awards
+						p.card-text Web Design + Development (WordPress)
+						p View Project »
 		.row.load-card
 			.col-md-4
 				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
@@ -164,7 +185,6 @@ section.portfolio-grid
 						h5.card-title The Leeward Team
 						p.card-text Landing Page Design + Development (WordPress)
 						p View Project »
-			
 		.row.load-card
 			.col-md-4
 				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
@@ -189,27 +209,6 @@ section.portfolio-grid
 						p View Project »
 			
 		.row.load-card
-			.col-md-4
-				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
-					.card-body
-						h5.card-title CaptiveColour
-						p.card-text Branding, Custom Shopify Website
-						p View Project »
-			.col-md-4
-				= link_to portfolio_iba_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
-				  .card-body
-					h5.card-title I Build America
-					p.card-text Web Design + Development (WordPress)
-					p View Project »
-			.col-md-4
-				= link_to portfolio_cia_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
-				  .card-body
-						h5.card-title Construction Intern Awards
-						p.card-text Web Design + Development (WordPress)
-						p View Project »
 			.col-md-4
 				= link_to portfolio_northbloom_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-northbloom.jpg", :class=>"card-img", :alt=>"North Bloom Website"

@@ -23,7 +23,7 @@ class StaticController < ApplicationController
 
 	def contact
 		@page_title = 'Contact'
-		@page_description = 'Get in touch with Vanessa Amilet Creative to learn more about custom branding and website design services using the form on this page.'
+		@page_description = 'Get in touch with Vanessa Amilet Santos to learn more about custom branding and website design services using the form on this page.'
 		@page_keywords = 'Contact Vanessa Amilet Creative'
 	end
 	
