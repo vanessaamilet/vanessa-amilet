@@ -1,32 +1,46 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 I Build America Website
+        p.lead
+        	| I Build America is a national movement dedicated to building pride in the construction industry, educating the public about its impact, and recruiting the next generation of construction professionals.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.ibuildamerica.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p I Build America
+			.col-md-6
+				h6 Year
+				p 2016-2020
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development, Blog
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 I Build America
-					p.lead I Build America is a national movement focused on building pride in the construction industry, educating the public about the value of construction and recruiting the next generation of construction professionals. I Build America needed a website redesign that was more user friendly, responsive, and easier to manage.
-					p.lead The solution was to create a brand new website by developing a custom Wordpress theme with the I Build America branding. ACF was implemented to organize information such as construction projects and companies.
-					hr.my-5
-					.row
-						.col-sm-6
-							h6 Client
-							p I Build America
-						.col-sm-6
-							h6 Year
-							p 2016 - 2019
-					.row
-						.col-sm-6
-							h6 Services
-							p Website Design & Development
-							p Blog
-						.col-sm-6
-							h6 Technologies
-							p HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
-					.row
-							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.ibuildamerica.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p I Build America needed a redesigned website that was more user-friendly, responsive, and easier to manage. Their existing platform couldn’t efficiently support dynamic content, including member organizations and construction projects across different industries.
+					h6
+						span.badge.text-bg-secondary Process
+					p I redesigned the site by developing a custom WordPress theme aligned with the I Build America brand. Using ACF, I planned and built a scalable member directory and a structured projects directory organized by industry, making it easy for visitors to explore construction companies and view project details. The redesign focused on improving usability, simplifying content management, and creating a clean, responsive layout.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The new website provides a modern, easy-to-navigate experience that highlights members, showcases construction projects, and better supports the organization’s mission. The custom directories strengthened discoverability and made ongoing content updates far more efficient for the team.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/iba/iba-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"I Build America Website" do

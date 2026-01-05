@@ -25,6 +25,7 @@ module PortfolioHelper
 		{ title: "CaptiveColour Cosmetics", path: portfolio_captivecolour_path, img: "portfolio/portfolio-captivecolour.jpg", label: "Branding, Web Design + Development (Shopify)" },
 		{ title: "I Build America", path: portfolio_iba_path, img: "portfolio/portfolio-iba.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "IGCO", path: portfolio_igco_path, img: "portfolio/portfolio-igco.jpg", label: "Web Design + Development (WordPress)" },
+		{ title: "Reliant Security Campaign", path: portfolio_reliantsecurity_path, img: "portfolio/portfolio-relaint-security.jpg", label: "Web Design + Development, Motion Graphics" },
 		{ title: "North Bloom", path: portfolio_northbloom_path, img: "portfolio/portfolio-northbloom.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Construction Intern Awards", path: portfolio_cia_path, img: "portfolio/portfolio-cia.jpg", label: "Web Design + Development (WordPress)" },
 	  ]
