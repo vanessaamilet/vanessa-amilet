@@ -1,32 +1,46 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Universal Control Systems
+        p.lead
+        	| Universal Control Systems is a Phoenix-based provider of commercial and industrial energy management systems, including ABB VFD installations and related services.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://universalcontrol.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Universal Control Systems
+			.col-md-6
+				h6 Year
+				p 2021
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development, Graphic Design
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, Adobe InDesign, Wordpress, Studiopress Genesis Framework, HTML, PHP, SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 Universal Control Systems
-					p.lead Universal Control Systems, based in Phoenix, Arizona, specializes in commercial and industrial energy management systems, along with ABB VFD installations.
-					p Recognizing that their previous website design was outdated and did not adequately showcase their array of services, the goal was a complete overhaul. The objective was to redesign the website entirely, integrating their new branding. This involved the creation of new web pages, updating existing ones with comprehensive service information, incorporating new imagery, and ensuring a user-friendly layout.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p Universal Controls Systems
-						.col-md-6
-							h6 Year
-							p 2021
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Website Design & Development
-                            p Graphic Design
-						.col-md-6
-							h6 Technologies
-							p Wordpress, Studiopress Genesis Framework, HTML, CSS, PHP
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://universalcontrol.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Universal Control Systems’ previous website was outdated and no longer reflected the company’s capabilities or breadth of services. They needed a complete redesign that incorporated new branding, clarified their offerings, and presented a more polished, user-friendly experience for prospective clients.
+					h6
+						span.badge.text-bg-secondary Process
+					p I redesigned the website from the ground up, creating new pages, updating existing ones with detailed service information, and integrating fresh imagery aligned with their new brand direction. The layout was restructured to improve clarity and navigation across service categories. In addition to the website, I also created marketing collateral to support their updated visual identity and enhance their overall digital presence.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The redesigned site provides a modern, professional presentation of Universal Control Systems’ services and expertise. With improved navigation, updated branding, and supporting marketing materials, the company now has a cohesive digital presence that better communicates their value to commercial and industrial clients.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/ucs/ucs-showcase-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Universal Control Systems Website" do
