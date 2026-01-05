@@ -1,33 +1,48 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 CaptiveColour Cosmetics
+        p.lead
+        	| CaptiveColour Cosmetics is a Houston-based startup offering affordable, high-quality makeup products designed to inspire creativity and confidence.
+		/ .d-inline.mb-5.mb-md-0
+		/ 	= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://thecollectiveccbc.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p CaptiveColour Cosmetics
+			.col-md-6
+				h6 Year
+				p 2017 - 2021
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Brand Design, Shopify Website Design & Development, Graphic Design, Social Media, Photography
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, HTML, PHP, SCSS, JS, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 CaptiveColour Cosmetics
-					p.lead CaptiveColour Cosmetics is a start up cosmetic company in Houston, Texas that specializes in offering individuals affordable and high-quality makeup products. I had the privilege of crafting their brand identity, designing the brand elements, and establishing their e-commerce shop. The comprehensive branding collateral included makeup packaging, postcards, event assets, and more. Additionally, I played a role in creating new social media content, growing followers, and collaborating with brand ambassadors to promote their products.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p CaptiveColour Cosmetics
-						.col-md-6
-							h6 Year
-							p 2017 - 2021
-					.row.mb-3
-						.col-md-12
-							h6 Services
-							p Brand Design
-							p Shopify Website Design & Development
-							p Graphic Design
-							p Social Media
-							p Photography
-						/ .col-md-6
-						/ 	h6 Technologies
-					.row
-						p.offline Website Temporarily Offline
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p As a new cosmetics brand, CaptiveColour needed a strong visual identity, cohesive packaging, and an e-commerce presence to introduce their products to the market. They also required marketing support to grow their audience and build brand recognition.
+					h6
+						span.badge.text-bg-secondary Process
+					p I developed the brand identity from the ground up, designing core brand elements, packaging, postcards, and event collateral. I established their e-commerce shop and created ongoing social media content to promote new products. My role also included working with brand ambassadors and supporting early community growth across their digital platforms.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The result was a cohesive brand and online presence that helped CaptiveColour launch with clarity and confidence. Their polished packaging, marketing assets, and e-commerce site strengthened credibility, supported audience growth, and positioned the brand competitively in the beauty market.
+					
+					
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/captivecolour/captivecolour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Website" do
