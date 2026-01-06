@@ -1,32 +1,46 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Construction Intern Awards
+        p.lead
+        	| Construction Intern Awards is an initiative by HCSS that recognizes outstanding construction interns across the U.S. and Canada while awarding scholarships to support their education.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://constructioninternawards.com', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p HCSS
+			.col-md-6
+				h6 Year
+				p 2019
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Wordpress Development, Blog
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, Adobe Photoshop, Adobe Illustrator,HTML/CSS/JS, PHP, Wordpress, Studiopress Genesis Framework, ACF
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 Construction Intern Awards
-					p.lead HCSS, a construction software company, created the Construction Intern Awards in 2015 to recognize the great work that students are doing in their internships, and to provide significant scholarships to deserving students to further their education. 
-					p.lead The goal was to create a fun and popular competition to highlight the very best student interns and the contractors with the best internship programs in the U.S. and Canada. The website needed a complete redesigned that would be more attractive to the Millenials and Gen Z audience.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p HCSS
-						.col-md-6
-							h6 Year
-							p 2019
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Website Design & Development
-							p Blog
-						.col-md-6
-							h6 Technologies
-							p HTML/CSS/JS, PHP, Wordpress, Studiopress Genesis Framework
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://constructioninternawards.com', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p The Construction Intern Awards website needed a complete redesign to better engage a younger audience and reflect the energy of the competition. The existing site didn’t resonate strongly with Millennials and Gen Z or fully showcase the excitement and impact of the program.
+					h6
+						span.badge.text-bg-secondary Process
+					p I collaborated closely with the Marketing team to redesign the website with a more modern, engaging look and feel. The work focused on creating a visually compelling experience that appealed to younger audiences while clearly communicating the competition, highlighting interns and contractors, and supporting submissions and voting.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The redesigned website delivered a more vibrant, youth-focused experience that increased engagement and better represented the spirit of the awards. The updated design helped elevate the program’s visibility and reinforced its role in celebrating the next generation of construction professionals.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/cia/cia-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Construction Intern Awards Homepage" do

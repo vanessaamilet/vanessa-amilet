@@ -105,19 +105,20 @@ section.portfolio-grid
 						p.card-text Website Development (Wordpress)
 						p View Project »
 			.col-md-4
+				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
+					.card-body
+						h5.card-title CaptiveColour
+						p.card-text Branding, Custom Shopify Website
+						p View Project »
+			.col-md-4
 				= link_to portfolio_agency_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
 				  .card-body
 					h5.card-title Marketing Agency Website
 					p.card-text Website Development (WordPress) 
 					p View Project »
-			.col-md-4
-				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
-					.card-body
-						h5.card-title Events by Picnics in the City
-						p.card-text Web Design + Development (Shopify)
-						p View Project »
+			
 			
 		.row.load-card
 			.col-md-4
@@ -143,11 +144,11 @@ section.portfolio-grid
 						p View Project »
 		.row.load-card
 			.col-md-4
-				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
+				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
 					.card-body
-						h5.card-title CaptiveColour
-						p.card-text Branding, Custom Shopify Website
+						h5.card-title Events by Picnics in the City
+						p.card-text Web Design + Development (Shopify)
 						p View Project »
 			.col-md-4
 				= link_to portfolio_iba_path, class: 'portfolio-card card' do
@@ -218,7 +219,7 @@ section.portfolio-grid
 					p View Project »
 			.col-md-4
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
 					.card-body
 						h5.card-title IGCO
 						p.card-text Web Design + Development (WordPress)
