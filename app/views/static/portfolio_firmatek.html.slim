@@ -63,6 +63,9 @@ section.portfolio-info#info
 					/ 	= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://firmatek.com/', target: "_blank"
 			.col-12.col-md-7
 				div.pt-md-10
+				 	= link_to image_path("portfolio/firmatek/firmatek-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website Sitemap" do
+						= image_tag "portfolio/firmatek/firmatek-sitemap.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website Sitemap"
+
                     = link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
 						= image_tag "portfolio/firmatek/firmatek.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website"
 
