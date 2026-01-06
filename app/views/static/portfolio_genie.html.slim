@@ -1,31 +1,47 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Construction Marketing Agency Website
+        p.lead
+        	| Genie Creates is a marketing agency specializing in the construction industry, helping companies strengthen their brand and digital presence.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://geniecreates.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Genie Creates
+			.col-md-6
+				h6 Year
+				p 2022 - 2024
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design, Wordpress Development, Graphic Design
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, HTML, PHP, SCSS, JS
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Genie Creates
-					p 
-					| Genie Creates, a marketing agency specializing in the construction industry, needed a stronger online presence beyond social media to showcase their services. They reached out to me to design and develop their website. I opted for a simple, clean design that still reflected their vision and branding. The solution involved creating a custom WordPress theme that effectively highlighted their expertise while offering a professional and approachable platform for their clients.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p Genie Creates
-						.col-md-6
-							h6 Year
-							p 2022 - 2024
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Website Design, Wordpress Development
-						.col-md-6
-							h6 Technologies
-							p Figma, Wordpress, HTML, PHP, CSS, JS
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://geniecreates.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Genie Creates relied heavily on social media and needed a professional website to better showcase their services, expertise, and positioning within the construction industry.
+					h6
+						span.badge.text-bg-secondary Process
+					p I designed high-fidelity mockups in Figma and led the design and development of a custom WordPress theme. The site was intentionally kept clean and approachable while staying aligned with the agency’s vision and branding. The structure focused on clearly presenting services and building credibility with prospective clients.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The new website provides Genie Creates with a polished online presence that highlights their expertise and supports client growth beyond social platforms. The result is a professional, easy-to-navigate site that strengthens brand credibility and client trust.
+
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/genie/genie-creates-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Website" do

@@ -17,7 +17,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)" 
 		},
 		{ 
-			title: "Capitalize", 
+			title: "Capitalize Website Redesign", 
 			path: portfolio_capitalize_path, 
 			img: "portfolio/portfolio-capitalize.jpg", 
 			label: "Website Development (WordPress)" 
@@ -72,7 +72,7 @@ module PortfolioHelper
 		},
 		{ title: "Zack Pride", path: portfolio_zackpride_path, img: "portfolio/portfolio-zackpride.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Maryland Local Business Collective Website", path: portfolio_community_path, img: "portfolio/portfolio-community-market-website.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Genie Creates", path: portfolio_genie_path, img: "portfolio/portfolio-genie.jpg", label: "Web Design + Development (WordPress)" },
+		{ title: "Construction Marketing Agency Website", path: portfolio_genie_path, img: "portfolio/portfolio-genie.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Universal Control Systems", path: portfolio_ucs_path, img: "portfolio/portfolio-ucs.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Mar y Sol Therapy & Wellness", path: portfolio_marysol_path, img: "portfolio/portfolio-marysol.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Jumpix", path: portfolio_jumpix_path, img: "portfolio/portfolio-jumpix.jpg", label: "Web Design + Development (Ruby on Rails), UX Design, Media" },
