@@ -112,15 +112,21 @@ section.portfolio-grid
 						p.card-text Branding, Custom Shopify Website
 						p View Project »
 			.col-md-4
+				= link_to portfolio_reliantsecurity_path, class: 'portfolio-card card' do
+				  = image_tag "portfolio/portfolio-reliant-security.jpg", :class=>"card-img", :alt=>"Reliant Security Campaign"
+				  .card-body
+					h5.card-title Reliant Security Campaign
+					p.card-text Web Design + Development, Motion Graphics
+					p View Project »
+			
+		.row.load-card
+			.col-md-4
 				= link_to portfolio_agency_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
 				  .card-body
 					h5.card-title Marketing Agency Website
 					p.card-text Website Development (WordPress) 
 					p View Project »
-			
-			
-		.row.load-card
 			.col-md-4
 				= link_to portfolio_community_path, class: 'portfolio-card card' do
 				  = image_tag "portfolio/portfolio-community-market-website.jpg", :class=>"card-img", :alt=>"Community Retail Showcase"
@@ -133,13 +139,6 @@ section.portfolio-grid
 				 	= image_tag "portfolio/portfolio-zackpride.jpg", :class=>"card-img", :alt=>"Zack Pride"
 					.card-body
 						h5.card-title Zack Pride
-						p.card-text Web Design + Development (WordPress)
-						p View Project »
-			.col-md-4
-				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
-					.card-body
-						h5.card-title Universal Control Systems
 						p.card-text Web Design + Development (WordPress)
 						p View Project »
 		.row.load-card
@@ -166,10 +165,17 @@ section.portfolio-grid
 						p View Project »
 		.row.load-card
 			.col-md-4
-				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
+				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
 					.card-body
-						h5.card-title Mar y Sol Therapy & Wellness
+						h5.card-title Betty Boujee
+						p.card-text Web Design + Development (Shopify)
+						p View Project »
+			.col-md-4
+				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
+					.card-body
+						h5.card-title Universal Control Systems
 						p.card-text Web Design + Development (WordPress)
 						p View Project »
 			.col-md-4
@@ -179,20 +185,13 @@ section.portfolio-grid
 					h5.card-title Genie Creates
 					p.card-text Web Design + Development (WordPress)
 					p View Project »
-			.col-md-4
-				= link_to portfolio_leewardteam_path, class: 'portfolio-card card' do
-					= image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
-					.card-body
-						h5.card-title The Leeward Team
-						p.card-text Landing Page Design + Development (WordPress)
-						p View Project »
 		.row.load-card
 			.col-md-4
-				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
+				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
 					.card-body
-						h5.card-title Betty Boujee
-						p.card-text Web Design + Development (Shopify)
+						h5.card-title Mar y Sol Therapy & Wellness
+						p.card-text Web Design + Development (WordPress)
 						p View Project »
 			.col-md-4
 				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
@@ -211,12 +210,12 @@ section.portfolio-grid
 			
 		.row.load-card
 			.col-md-4
-				= link_to portfolio_reliantsecurity_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-reliant-security.jpg", :class=>"card-img", :alt=>"Reliant Security Campaign"
-				  .card-body
-					h5.card-title Reliant Security Campaign
-					p.card-text Web Design + Development, Motion Graphics
-					p View Project »
+				= link_to portfolio_leewardteam_path, class: 'portfolio-card card' do
+					= image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
+					.card-body
+						h5.card-title The Leeward Team
+						p.card-text Landing Page Design + Development (WordPress)
+						p View Project »
 			.col-md-4
 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
