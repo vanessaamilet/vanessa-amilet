@@ -1,28 +1,46 @@
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content 
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Expertly Sanitized Website
+        p.lead
+        	| Expertly Sanitized™ is an operating unit of The Odor Doctors, specializing in professional vehicle sanitization services.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://expertlysanitized.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p The Odor Doctors
+			.col-md-6
+				h6 Year
+				p 2022
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Custom Website Design & Development
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, Wordpress, HTML, PHP, CSS, JS
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
 			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
-					h1 Expertly Sanitized
-					p.lead Expertly Sanitized™, an operating unit of The Odor Doctors, has been at the forefront of the discussion on vehicle sanitization for over 10 years. Their website was due for a redesign to showcase their full range of services with a modern and user-friendly design. The previous website did not accurately represent their high-quality work and was challenging to navigate. I collaborated with the founder of The Odor Doctors to create a new design and enhance the user experience for their site visitors.
-					hr.my-5	
-					.row
-						.col-md-6
-							h6 Client
-							p The Odor Doctors
-						.col-md-6
-							h6 Year
-							p 2022
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Custom Website Design & Development
-						.col-md-6
-							h6 Technologies
-							p Wordpress, HTML, PHP, CSS, JS
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Expertly Sanitized’s existing website no longer reflected the quality or breadth of their services. The design was dated and difficult to navigate, making it challenging for visitors to understand offerings and take next steps.
+					h6
+						span.badge.text-bg-secondary Process
+					p I collaborated directly with the founder of The Odor Doctors to redesign the website from the ground up. I created design mockups in Adobe XD and restructured the site to improve clarity, usability, and visual appeal. The new design focused on clearly presenting services while delivering a more intuitive, modern experience for users.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The redesigned website offers a cleaner, more professional look that better represents the brand’s expertise. Improved navigation and content organization make it easier for visitors to explore services and engage with the business.
 					.row
 						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://expertlysanitized.com/', target: "_blank"
 			.col-12.col-md-7
