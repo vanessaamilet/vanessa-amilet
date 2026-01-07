@@ -2,7 +2,7 @@ module PortfolioHelper
 	def all_projects
 	  [
 		{ 
-			title: "Firmatek", 
+			title: "Geospatial Data & Insights Platform Website", 
 			path: portfolio_firmatek_path, 
 			img: "portfolio/portfolio-firmatek-website.jpg", 
 			label: "Web Design + Development (WordPress)",
