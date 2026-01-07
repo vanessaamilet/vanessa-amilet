@@ -1,31 +1,45 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Consulting Firm Landing Page
+        p.lead
+        	| The Leeward Team is an Organizational Change Management (OCM) and Behavioral Change Management (BCM) consulting firm serving private and public sector clients globally.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://leewardteam.com', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p The Leeward Team
+			.col-md-6
+				h6 Year
+				p 2016 - 2024
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Custom Wordpress Website Design, Graphic Design
+			.col-md-6
+				h6 Technologies
+				p Figma, Wordpress, Studiopress Genesis Framework, HTML, PHP, CSS, JS
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 The Leeward Team
-					p.lead The Leeward Team is an Organizational Change Management (OCM) / Behavioral Change Management (BCM) consulting firm comprised of highly qualified consultants, focusing on private and public sector clients around the globe. The Leeward Team needed a improved website with a clean concise flow of information that is engaging to their visitors. The solution was to redesign their website by creating a new custom Wordpress theme with their current branding colors & brand new fonts.
-					hr.my-5
-					.row
-						.col-md-6
-							h6 Client
-							p The Leeward Team
-						.col-md-6
-							h6 Year
-							p 2016 - Present
-					.row.mb-3
-						.col-md-6
-							h6 Services
-							p Custom Wordpress Website
-                            p Graphic Design
-						.col-md-6
-							h6 Technologies
-							p Wordpress, Studiopress Genesis Framework, HTML, PHP, CSS, JS
-					.row
-						= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://leewardteam.com/', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p After losing their original website, The Leeward Team needed to quickly reestablish an online presence. The immediate need was a clear, professional landing page that communicated their expertise and services while laying the foundation for future site expansion.
+					h6
+						span.badge.text-bg-secondary Process
+					p I designed and developed a custom WordPress website using their existing brand colors and newly selected typography. The layout focused on concise messaging, strong visual hierarchy, and a clear flow of information to engage visitors and clearly communicate the firm’s value.
+						span.badge.text-bg-secondary Outcome
+					p The landing page reestablished The Leeward Team’s digital presence with a clean, professional design. It provides a focused, engaging introduction to the firm while serving as a scalable starting point for future website growth.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/leeward-team/leeward-team-landing-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"The Leeward Team Landing Page" do

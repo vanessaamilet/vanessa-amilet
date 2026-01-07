@@ -1,27 +1,45 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Hispanic Market Energy Campaign Landing Pages
+        p.lead
+        	| Reliant is a major energy provider offering residential electricity plans, including renewable and solar options, across Texas.
+		.d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.reliant.com/es/private/landingpages/reliant-pick-your-free.jsp', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p NRG Reliant
+			.col-md-6
+				h6 Year
+				p 2020 - 2021
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Sales Landing Pages, Social Media, Motion Graphics
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, Adobe Illustrator, Adobe After Effects, SDL Tridion, HTML, CSS, Tachyons Framework
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 Reliant 2021 Campaign
-					p.lead Reliant needed a new campaign that promoted all plans including their Make It Solar plan for 2021. The whole marketing team worked together to brainstorm new ideas for this 2021 mass campaign. We did extensive research and collaborated on ideas we had for the different markets. Our focus was to come up with different customer journeys for Lower Funnel, Upper Funnel, and the Hispanic Markets. After brainstorming ideas, I was tasked to work on the design for the Hispanic Market landing pages.
-					hr.my-5
-					.row
-						.col-sm-6
-							h6 Client
-							p NRG Reliant
-						.col-sm-6
-							h6 Year
-							p 2020 - 2021
-					.row
-						.col-sm-12
-							h6 Services
-							p Sales Landing Pages, Social Media, Motion Graphics
-					.row
-							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.reliant.com/es/private/landingpages/reliant-pick-your-free.jsp', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Reliant needed a new mass marketing campaign to promote all energy plans for 2021, including the Make It Solar plan. The campaign needed to support multiple customer journeys across upper funnel, lower funnel, and Hispanic markets, while remaining cohesive across channels.
+					h6
+						span.badge.text-bg-secondary Process
+					p I collaborated with the broader marketing team to research audiences, brainstorm campaign concepts, and define customer journeys for each market segment. Following concept development, I led the design of the Hispanic Market landing pages, ensuring the visuals, layout, and messaging aligned with campaign goals and resonated culturally with the target audience. My work also supported related sales and marketing assets across digital channels.
+						span.badge.text-bg-secondary Outcome
+					p The campaign delivered targeted, market-specific landing pages that supported Reliant’s broader 2021 marketing strategy. The Hispanic Market pages provided a clear, engaging entry point for customers, helping promote key plans while aligning with the overall campaign vision.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass - Pick Your Free Landing Page (Spanish)" do

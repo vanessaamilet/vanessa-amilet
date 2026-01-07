@@ -11,7 +11,7 @@ module PortfolioHelper
 			industry: %w[technology construction] 
 		},
 		{ 
-			title: "OutWellness ATX", 
+			title: "Inclusive Wellness & Fitness Website", 
 			path: portfolio_outwellness_atx_path, 
 			img: "portfolio/portfolio-outwellness-atx.jpg", 
 			label: "Web Design + Development (WordPress)" 
@@ -70,20 +70,43 @@ module PortfolioHelper
 			img: "portfolio/portfolio-picnicsinthecity.jpg", 
 			label: "Web Design + Development (Shopify)" 
 		},
+		{
+			title: "Hispanic Market Energy Campaign Landing Pages",
+			path: portfolio_reliantmass_path,
+			img: "portfolio/portfolio-reliantmass.jpg",
+			label: "Custom Sales Landing Pages",
+			services: %w[web-design development],
+			project_type: %w[campaign landing-page],
+			industry: %w[security sales]
+		},
 		{ title: "Zack Pride", path: portfolio_zackpride_path, img: "portfolio/portfolio-zackpride.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Maryland Local Business Collective Website", path: portfolio_community_path, img: "portfolio/portfolio-community-market-website.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Construction Marketing Agency Website", path: portfolio_genie_path, img: "portfolio/portfolio-genie.jpg", label: "Web Design + Development (WordPress)" },
+		{ 
+			title: "Construction Marketing Agency Website", path: portfolio_genie_path,
+			img: "portfolio/portfolio-genie.jpg",
+			label: "Web Design + Development (WordPress)"
+		 },
 		{ title: "Universal Control Systems", path: portfolio_ucs_path, img: "portfolio/portfolio-ucs.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Mar y Sol Therapy & Wellness", path: portfolio_marysol_path, img: "portfolio/portfolio-marysol.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Jumpix", path: portfolio_jumpix_path, img: "portfolio/portfolio-jumpix.jpg", label: "Web Design + Development (Ruby on Rails), UX Design, Media" },
-		{ title: "The Leeward Team", path: portfolio_leewardteam_path, img: "portfolio/portfolio-leewardteam.jpg", label: "Landing Page Design + Development (WordPress)" },
+		{ title: "Consulting Firm Landing Page", path: portfolio_leewardteam_path, img: "portfolio/portfolio-leewardteam.jpg", label: "Landing Page Design + Development (WordPress)" },
 		{ title: "Betty Boujee", path: portfolio_bettyboujee_path, img: "portfolio/portfolio-bettyboujee.jpg", label: "Web Design + Development (Shopify)" },
 		{ title: "Expertly Sanitized", path: portfolio_expertly_path, img: "portfolio/portfolio-expertlysanitized.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Jarrod Lee", path: portfolio_jarrodlee_path, img: "portfolio/portfolio-jarrodlee.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "CaptiveColour Cosmetics", path: portfolio_captivecolour_path, img: "portfolio/portfolio-captivecolour.jpg", label: "Branding, Web Design + Development (Shopify)" },
+		{ title: "Opera Artist Website Design", path: portfolio_jarrodlee_path, img: "portfolio/portfolio-jarrodlee.jpg", label: "Web Design + Development (WordPress)" },
+		{ 
+			title: "Cosmetics Brand & Ecommerce Launch",
+			path: portfolio_captivecolour_path,
+			img: "portfolio/portfolio-captivecolour.jpg",
+			label: "Branding, Web Design + Development (Shopify)"
+		},
 		{ title: "I Build America", path: portfolio_iba_path, img: "portfolio/portfolio-iba.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "IGCO", path: portfolio_igco_path, img: "portfolio/portfolio-igco.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Reliant Security Campaign", path: portfolio_reliantsecurity_path, img: "portfolio/portfolio-relaint-security.jpg", label: "Web Design + Development, Motion Graphics" },
+		{ title: "Creative Studio Website Design", path: portfolio_igco_path, img: "portfolio/portfolio-igco.jpg", label: "Web Design + Development (WordPress)" },
+		{ 
+			title: "Energy Home Security Marketing Campaign",
+			path: portfolio_reliantsecurity_path,
+			img: "portfolio/portfolio-relaint-security.jpg",
+			label: "Web Design + Development, Motion Graphics"
+		},
 		{ title: "North Bloom", path: portfolio_northbloom_path, img: "portfolio/portfolio-northbloom.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Construction Intern Awards", path: portfolio_cia_path, img: "portfolio/portfolio-cia.jpg", label: "Web Design + Development (WordPress)" },
 	  ]
