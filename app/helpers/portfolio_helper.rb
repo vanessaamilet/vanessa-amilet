@@ -23,13 +23,13 @@ module PortfolioHelper
 			label: "Website Development (WordPress)" 
 		},
 		{ 
-			title: "Nonprofit Website", 
+			title: "Nonprofit Foundation Website", 
 			path: portfolio_foundation_website_path, 
 			img: "portfolio/portfolio-nonprofit-website.jpg", 
 			label: "Web Design + Development (WordPress)" 
 		},
 		{ 
-			title: "MFour Mobile Research", 
+			title: "Connected Consumer Insights Platform Website", 
 			path: portfolio_mfour_path, 
 			img: "portfolio/portfolio-mfour-1.jpg", 
 			label: "Website Development (WordPress)" 
@@ -86,10 +86,23 @@ module PortfolioHelper
 			img: "portfolio/portfolio-genie.jpg",
 			label: "Web Design + Development (WordPress)"
 		 },
-		{ title: "Universal Control Systems", path: portfolio_ucs_path, img: "portfolio/portfolio-ucs.jpg", label: "Web Design + Development (WordPress)" },
+		{ 
+			title: "Industrial Energy Services Website", 
+			path: portfolio_ucs_path, 
+			img: "portfolio/portfolio-ucs.jpg", 
+			label: "Web Design + Development (WordPress)" 
+		},
 		{ title: "Mar y Sol Therapy & Wellness", path: portfolio_marysol_path, img: "portfolio/portfolio-marysol.jpg", label: "Web Design + Development (WordPress)" },
-		{ title: "Jumpix", path: portfolio_jumpix_path, img: "portfolio/portfolio-jumpix.jpg", label: "Web Design + Development (Ruby on Rails), UX Design, Media" },
-		{ title: "Consulting Firm Landing Page", path: portfolio_leewardteam_path, img: "portfolio/portfolio-leewardteam.jpg", label: "Landing Page Design + Development (WordPress)" },
+		{ 
+			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
+			img: "portfolio/portfolio-jumpix.jpg", 
+			label: "Web Design + Development (Ruby on Rails), UX Design, Media" 
+		},
+		{ 
+			title: "Consulting Firm Landing Page", path: portfolio_leewardteam_path, 
+			img: "portfolio/portfolio-leewardteam.jpg", 
+			label: "Landing Page Design + Development (WordPress)" 
+		},
 		{ title: "Betty Boujee", path: portfolio_bettyboujee_path, img: "portfolio/portfolio-bettyboujee.jpg", label: "Web Design + Development (Shopify)" },
 		{ title: "Expertly Sanitized", path: portfolio_expertly_path, img: "portfolio/portfolio-expertlysanitized.jpg", label: "Web Design + Development (WordPress)" },
 		{ title: "Opera Artist Website Design", path: portfolio_jarrodlee_path, img: "portfolio/portfolio-jarrodlee.jpg", label: "Web Design + Development (WordPress)" },
