@@ -42,13 +42,7 @@ section.portfolio-grid
               = image_tag project[:img], class: "card-img", alt: project[:title]
               .card-body
                 h5.card-title = project[:title]
-
-                / Use desc if present, otherwise fallback to your label
-                - if project[:desc].present?
-                  p.card-text = project[:desc]
-                - else
-                  p.card-text = project[:label]
-
+                p.card-text = (project[:desc].presence || project[:label])
                 p.text-lowercase View Project »
 
     - if rows.length > visible_rows
