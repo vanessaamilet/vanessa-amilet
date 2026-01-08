@@ -1,35 +1,52 @@
 = content_for :body_class, 'portfolio-template'
 
-/!  Begin Page Content 
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Energy Home Security Marketing Campaign
+        p.lead.text-mb-5
+          | Reliant is a major energy provider offering electricity, solar, and home services to residential customers across Texas.
+          = link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.reliant.com/en/residential/security/current-customers/reliant-connect-app.jsp', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p NRG Reliant
+			.col-md-6
+				h6 Year
+				p 2020
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Website Design & Development, Social Media, Motion Graphics Videos
+			.col-md-6
+				h6 Technologies
+				p Adobe XD, SDL Tridion, HTML, CSS, Adobe Illustrator, After Effects
+
+/! Portfolio Details
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
-					h1 Energy Home Security Marketing Campaign
-					p.lead Reliant needed a revamp to their Security brand for their 2020 Mass campaign. I worked alongside with members of the marketing team to create assets such as webpages, emails, graphics and videos for social posts, and much more.
-					hr.my-5
-					.row
-						.col-sm-6
-							h6 Client
-							p NRG Reliant
-						.col-sm-6
-							h6 Year
-							p 2020
-					.row
-						.col-sm-12
-							h6 Services
-							p Social Media
-							p Motion Graphics Videos
-							p Web Design
-					.row
-							= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.reliant.com/en/residential/security/current-customers/reliant-connect-app.jsp', target: "_blank"
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Reliant needed to refresh its home security brand for the 2020 mass marketing campaign. The existing security messaging and visuals required an update to better engage customers and align with broader campaign goals across digital channels.
+					h6
+						span.badge.text-bg-secondary Process
+					p I collaborated closely with members of the marketing team to support the security brand refresh. My role focused on designing and producing campaign assets across multiple touchpoints, including webpages, email templates, social graphics, and video content for social media. The work emphasized consistency, clarity, and adaptability across channels to support both awareness and conversion goals.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p The refreshed campaign delivered a cohesive, modern security brand presence across digital platforms. The updated assets supported Reliant’s 2020 mass campaign by improving visual consistency, strengthening messaging, and increasing engagement across web, email, and social channels.
 			.col-12.col-md-7
 				div.pt-md-10
 					= link_to "/videos/reliant-security-instagram-ad.mp4", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Story Video Ad", "data-width"=>"1080", "data-height"=>"1920" do
 						button.btn-play.position-absolute.top-50.start-50.translate-middle
 						= image_tag "portfolio/reliant-security/reliant-security-instagram-story-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Security by Reliant - Instagram Story Video Ad"
-					
 
 					= link_to "/videos/reliant-security-DYK-social.mp4", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Security by Reliant - Instagram Video Ad", "data-width"=>"1080", "data-height"=>"1080" do
 						button.btn-play.position-absolute.top-50.start-50.translate-middle
