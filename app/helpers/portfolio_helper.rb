@@ -20,7 +20,7 @@ module PortfolioHelper
 			desc: "Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability." 
 		},
 		{ 
-			title: "Capitalize Website Redesign", 
+			title: "Capitalize - Fintech Website Redesign", 
 			path: portfolio_capitalize_path, 
 			img: "portfolio/portfolio-capitalize.jpg", 
 			label: "Website Development (WordPress)",
@@ -87,7 +87,7 @@ module PortfolioHelper
 		{ 
 			title: "Energy Home Security Marketing Campaign",
 			path: portfolio_reliantsecurity_path,
-			img: "portfolio/portfolio-relaint-security.jpg",
+			img: "portfolio/portfolio-reliant-security.jpg",
 			label: "Web Design + Development, Motion Graphics",
 			desc: "Designed campaign assets to promote home security offerings across digital channels."
 		},

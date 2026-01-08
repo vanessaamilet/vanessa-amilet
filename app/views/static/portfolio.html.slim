@@ -11,7 +11,7 @@ section.hero.d-flex
 				br
 
 /!  Begin Page Content
-section.industries
+section.industries.d-none
 	.container
 		.row.text-center
 			h2.mb-5 Honored to Partner with Businesses In
@@ -27,205 +27,228 @@ section.industries
 				h6 Performing Arts
 				h6 Design & Media
 				h6 Social Justice
-section.portfolio-grid
-	.container
-		.row
-			.col-md-4
-				= link_to portfolio_firmatek_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-firmatek-website.jpg", :class=>"card-img", :alt=>"Firmatek"
-					.card-body.d-flex.flex-column
-						h5.card-title Geospatial Data & Insights Platform Website
-						p.card-text.flex-grow-1 Simplified complex geospatial offerings into a clear, intuitive marketing website.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_capitalize_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-capitalize.jpg", :class=>"card-img", :alt=>"Capitalize"
-					.card-body.d-flex.flex-column
-						h5.card-title Capitalize - Fintech Website Redesign
-						p.card-text.flex-grow-1 Redesigned to support evolving branding and improve content flexibility.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_outwellness_atx_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-outwellness-atx.jpg", :class=>"card-img", :alt=>"OutWellness ATX"
-					.card-body.d-flex.flex-column
-						h5.card-title Inclusive Wellness & Fitness Website
-						p.card-text.flex-grow-1 Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability.
-						p.text-lowercase View Project »
-		.row
-			.col-md-4
-				= link_to portfolio_foundation_website_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-nonprofit-website.jpg", :class=>"card-img", :alt=>"Nonprofit Website"
-					.card-body.d-flex.flex-column
-						h5.card-title Nonprofit Website
-						p.card-text.flex-grow-1 Designed to highlight mission, programs, and community impact.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_mfour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-mfour-1.jpg", :class=>"card-img", :alt=>"MFour"
-					.card-body.d-flex.flex-column
-						h5.card-title Connected Consumer Insights Platform Website
-						p.card-text.flex-grow-1 Rebuilt to support scalable content, modern branding, and product storytelling.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
-				  .card-body.d-flex.flex-column
-					h5.card-title Cloud Storage Management Web App
-					p.card-text.flex-grow-1 Designed a welcoming site aligned with values of inclusivity and care.
-					p View Project »
-		.row
-			.col-md-4
-				= link_to portfolio_youthcareer_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-youthcareer-website.jpg", :class=>"card-img", :alt=>"Youth Career Resource Website"
-					.card-body.d-flex.flex-column
-						h5.card-title Youth Career Resource Website
-						p.card-text.flex-grow-1 Built a dedicated microsite to guide students toward career opportunities.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_greenerworld_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-compost-soil-website.jpg", :class=>"card-img", :alt=>"Compost & Soil Products Website"
-					.card-body.d-flex.flex-column
-						h5.card-title Compost & Soil Products Website
-						p.card-text.flex-grow-1 Built to clearly present products and guide users to sales inquiries.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_electricalalliance_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-electrical-industry-website.jpg", :class=>"card-img", :alt=>"Electrical Industry Partnership Website"
-					.card-body.d-flex.flex-column
-						h5.card-title Electrical Industry Partnership Website
-						p.card-text.flex-grow-1 Redesigned to reflect brand credibility and improve access to training resources.
-						p.text-lowercase View Project »
-			
-		.row
-			.col-md-4
-				= link_to portfolio_community_impact_website_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-community-impact-website.jpg", :class=>"card-img", :alt=>"Community Impact Website"
-					.card-body.d-flex.flex-column
-						h5.card-title Community Impact Website
-						p.card-text.flex-grow-1 Restructured to improve navigation and access to essential resources.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
-					.card-body.d-flex.flex-column
-						h5.card-title Cosmetics Brand & Ecommerce Launch
-						p.card-text.flex-grow-1 Developed brand identity and e-commerce presence for product launch.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_reliantsecurity_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-reliant-security.jpg", :class=>"card-img", :alt=>"Reliant Security Campaign"
-				  .card-body.d-flex.flex-column
-					h5.card-title Energy Home Security Marketing Campaign
-					p.card-text.flex-grow-1 Designed campaign assets to promote home security offerings across digital channels.
-					p.text-lowercase View Project »
-			
-		.row.load-card
-			.col-md-4
-				= link_to portfolio_agency_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
-				  .card-body.d-flex.flex-column
-					h5.card-title Marketing Agency Website
-					p.card-text.flex-grow-1 Refreshed to showcase services and strengthen brand positioning.
-					p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_community_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-community-market-website.jpg", :class=>"card-img", :alt=>"Community Retail Showcase"
-				  .card-body.d-flex.flex-column
-					h5.card-title Maryland Local Business Collective Website
-					p.card-text.flex-grow-1 Created an online presence to showcase local businesses ahead of retail launch.
-					p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_zackpride_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-zackpride.jpg", :class=>"card-img", :alt=>"Zack Pride"
-					.card-body.d-flex.flex-column
-						h5.card-title Zack Pride - Musician Portfolio Website
-						p.card-text.flex-grow-1 WDesigned a central hub for performances, press, and events.
-						p.text-lowercase View Project »
-		.row.load-card
-			.col-md-4
-				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
-					.card-body.d-flex.flex-column
-						h5.card-title Events by Picnics in the City
-						p.card-text.flex-grow-1 Updated to highlight expanded services and elevate the customer journey.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_iba_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
-				  .card-body.d-flex.flex-column
-					h5.card-title I Build America
-					p.card-text.flex-grow-1 Redesigned to improve the customer journey and highlight members and projects
-					p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_cia_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
-				  .card-body.d-flex.flex-column
-						h5.card-title Construction Intern Awards
-						p.card-text.flex-grow-1 Redesigned and developed a high-traffic campaign site to engage students and sponsors
-						p.text-lowercase View Project »
-		.row.load-card
-			.col-md-4
-				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
-					.card-body.d-flex.flex-column
-						h5.card-title Betty Boujee
-						p.card-text.flex-grow-1 Designed and developed a brand-forward e-commerce website to guide users from discovery to inquiry.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
-					.card-body.d-flex.flex-column
-						h5.card-title Industrial Energy Services Website
-						p.card-text.flex-grow-1 Redesigned to reflect new branding and clearly present services.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_genie_path, class: 'portfolio-card card' do
-				  = image_tag "portfolio/portfolio-genie.jpg", :class=>"card-img", :alt=>"Genie Creates"
-				  .card-body.d-flex.flex-column
-					h5.card-title Construction Marketing Agency Website
-					p.card-text.flex-grow-1 Designed a clean, professional site to showcase services and industry expertise.
-					p.text-lowercase View Project »
-		.row.load-card
-			.col-md-4
-				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
-					.card-body.d-flex.flex-column
-						h5.card-title Mar y Sol Therapy & Wellness
-						p.card-text.flex-grow-1 Designed a welcoming site aligned with values of inclusivity and care.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
-					.card-body.d-flex.flex-column
-						h5.card-title Expertly Sanitized
-						p.card-text.flex-grow-1 Modernized the site to better represent services and improve usability.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
-					.card-body.d-flex.flex-column
-						h5.card-title Jarrod Lee - Opera Artist Website Design
-						p.card-text.flex-grow-1 Created an easy-to-manage site for events, press, and media.
-						p.text-lowercase View Project »
-			
-		.row.load-card
-			.col-md-4
-				= link_to portfolio_leewardteam_path, class: 'portfolio-card card' do
-					= image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
-					.card-body.d-flex.flex-column
-						h5.card-title Consulting Firm Landing Page
-						p.card-text.flex-grow-1 Built a clean landing page to reestablish digital presence.
-						p.text-lowercase View Project »
-			.col-md-4
-				= link_to portfolio_igco_path, class: 'portfolio-card card' do
-				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
-					.card-body.d-flex.flex-column
-						h5.card-title Creative Studio Website Design
-						p.card-text.flex-grow-1 Designed and developed a website to showcase work, services, and creative expertise.
-						p.text-lowercase View Project »
+- visible_rows = 4  # 4 rows x 3 cards = 12 visible
+- rows = all_projects.each_slice(3).to_a
 
-		.row
-			#loadMore.mx-auto.center
-      			<a href="#" class="btn btn-loadmore btn-secondary" id="load-more">Load More Projects</a>
+section.portfolio-grid
+  .container
+    - rows.each_with_index do |row_projects, row_index|
+      - is_hidden = row_index >= visible_rows
+
+      .row class=(is_hidden ? 'load-card ' : nil)
+        - row_projects.each do |project|
+          .col-md-4
+            = link_to project[:path], class: 'portfolio-card card' do
+              = image_tag project[:img], class: "card-img", alt: project[:title]
+              .card-body
+                h5.card-title = project[:title]
+                p.card-text = (project[:desc].presence || project[:label])
+                p.text-lowercase View Project »
+
+    - if rows.length > visible_rows
+      .row
+        #loadMore.mx-auto.center
+          a.btn.btn-loadmore.btn-secondary href="#" id="load-more" Load More Projects
+
+/ section.portfolio-grid.border-top.border-black
+/ 	.container
+/ 		.row
+/ 			.col-md-4
+/ 				= link_to portfolio_firmatek_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-firmatek-website.jpg", :class=>"card-img", :alt=>"Firmatek"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Geospatial Data & Insights Platform Website
+/ 						p.card-text.flex-grow-1 Simplified complex geospatial offerings into a clear, intuitive marketing website.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_capitalize_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-capitalize.jpg", :class=>"card-img", :alt=>"Capitalize"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Capitalize - Fintech Website Redesign
+/ 						p.card-text.flex-grow-1 Redesigned to support evolving branding and improve content flexibility.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_outwellness_atx_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-outwellness-atx.jpg", :class=>"card-img", :alt=>"OutWellness ATX"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Inclusive Wellness & Fitness Website
+/ 						p.card-text.flex-grow-1 Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability.
+/ 						p.text-lowercase View Project »
+/ 		.row
+/ 			.col-md-4
+/ 				= link_to portfolio_foundation_website_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-nonprofit-website.jpg", :class=>"card-img", :alt=>"Nonprofit Website"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Nonprofit Website
+/ 						p.card-text.flex-grow-1 Designed to highlight mission, programs, and community impact.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_mfour_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-mfour-1.jpg", :class=>"card-img", :alt=>"MFour"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Connected Consumer Insights Platform Website
+/ 						p.card-text.flex-grow-1 Rebuilt to support scalable content, modern branding, and product storytelling.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_jumpix_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-jumpix.jpg", :class=>"card-img", :alt=>"Jumpix"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title Cloud Storage Management Web App
+/ 					p.card-text.flex-grow-1 Designed a welcoming site aligned with values of inclusivity and care.
+/ 					p View Project »
+/ 		.row
+/ 			.col-md-4
+/ 				= link_to portfolio_youthcareer_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-youthcareer-website.jpg", :class=>"card-img", :alt=>"Youth Career Resource Website"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Youth Career Resource Website
+/ 						p.card-text.flex-grow-1 Built a dedicated microsite to guide students toward career opportunities.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_greenerworld_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-compost-soil-website.jpg", :class=>"card-img", :alt=>"Compost & Soil Products Website"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Compost & Soil Products Website
+/ 						p.card-text.flex-grow-1 Built to clearly present products and guide users to sales inquiries.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_electricalalliance_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-electrical-industry-website.jpg", :class=>"card-img", :alt=>"Electrical Industry Partnership Website"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Electrical Industry Partnership Website
+/ 						p.card-text.flex-grow-1 Redesigned to reflect brand credibility and improve access to training resources.
+/ 						p.text-lowercase View Project »
+			
+/ 		.row
+/ 			.col-md-4
+/ 				= link_to portfolio_community_impact_website_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-community-impact-website.jpg", :class=>"card-img", :alt=>"Community Impact Website"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Community Impact Website
+/ 						p.card-text.flex-grow-1 Restructured to improve navigation and access to essential resources.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_captivecolour_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-captivecolour.jpg", :class=>"card-img", :alt=>"CaptiveColour Cosmetics"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Cosmetics Brand & Ecommerce Launch
+/ 						p.card-text.flex-grow-1 Developed brand identity and e-commerce presence for product launch.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_reliantsecurity_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-reliant-security.jpg", :class=>"card-img", :alt=>"Reliant Security Campaign"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title Energy Home Security Marketing Campaign
+/ 					p.card-text.flex-grow-1 Designed campaign assets to promote home security offerings across digital channels.
+/ 					p.text-lowercase View Project »
+			
+/ 		.row.load-card
+/ 			.col-md-4
+/ 				= link_to portfolio_agency_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-agency-website.jpg", :class=>"card-img", :alt=>"Agency Website"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title Marketing Agency Website
+/ 					p.card-text.flex-grow-1 Refreshed to showcase services and strengthen brand positioning.
+/ 					p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_community_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-community-market-website.jpg", :class=>"card-img", :alt=>"Community Retail Showcase"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title Maryland Local Business Collective Website
+/ 					p.card-text.flex-grow-1 Created an online presence to showcase local businesses ahead of retail launch.
+/ 					p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_zackpride_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-zackpride.jpg", :class=>"card-img", :alt=>"Zack Pride"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Zack Pride - Musician Portfolio Website
+/ 						p.card-text.flex-grow-1 WDesigned a central hub for performances, press, and events.
+/ 						p.text-lowercase View Project »
+/ 		.row.load-card
+/ 			.col-md-4
+/ 				= link_to portfolio_picnics_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-picnicsinthecity.jpg", :class=>"card-img", :alt=>"Picnics in the City"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Events by Picnics in the City
+/ 						p.card-text.flex-grow-1 Updated to highlight expanded services and elevate the customer journey.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_iba_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-iba.jpg", :class=>"card-img", :alt=>"I Build America"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title I Build America
+/ 					p.card-text.flex-grow-1 Redesigned to improve the customer journey and highlight members and projects
+/ 					p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_cia_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-cia.jpg", :class=>"card-img", :alt=>"Construction Intern Awards"
+/ 				  .card-body.d-flex.flex-column
+/ 						h5.card-title Construction Intern Awards
+/ 						p.card-text.flex-grow-1 Redesigned and developed a high-traffic campaign site to engage students and sponsors
+/ 						p.text-lowercase View Project »
+/ 		.row.load-card
+/ 			.col-md-4
+/ 				= link_to portfolio_bettyboujee_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-bettyboujee.jpg", :class=>"card-img", :alt=>"Betty Boujee"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Betty Boujee
+/ 						p.card-text.flex-grow-1 Designed and developed a brand-forward e-commerce website to guide users from discovery to inquiry.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_ucs_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-ucs.jpg", :class=>"card-img", :alt=>"Universal Control Systems"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Industrial Energy Services Website
+/ 						p.card-text.flex-grow-1 Redesigned to reflect new branding and clearly present services.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_genie_path, class: 'portfolio-card card' do
+/ 				  = image_tag "portfolio/portfolio-genie.jpg", :class=>"card-img", :alt=>"Genie Creates"
+/ 				  .card-body.d-flex.flex-column
+/ 					h5.card-title Construction Marketing Agency Website
+/ 					p.card-text.flex-grow-1 Designed a clean, professional site to showcase services and industry expertise.
+/ 					p.text-lowercase View Project »
+/ 		.row.load-card
+/ 			.col-md-4
+/ 				= link_to portfolio_marysol_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-marysol.jpg", :class=>"card-img", :alt=>"Mar y Sol Therapy & Wellness"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Mar y Sol Therapy & Wellness
+/ 						p.card-text.flex-grow-1 Designed a welcoming site aligned with values of inclusivity and care.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_expertly_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-expertlysanitized.jpg", :class=>"card-img", :alt=>"Expertly Sanitized"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Expertly Sanitized
+/ 						p.card-text.flex-grow-1 Modernized the site to better represent services and improve usability.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_jarrodlee_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-jarrodlee.jpg", :class=>"card-img", :alt=>"Jarrod Lee"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Jarrod Lee - Opera Artist Website Design
+/ 						p.card-text.flex-grow-1 Created an easy-to-manage site for events, press, and media.
+/ 						p.text-lowercase View Project »
+			
+/ 		.row.load-card
+/ 			.col-md-4
+/ 				= link_to portfolio_leewardteam_path, class: 'portfolio-card card' do
+/ 					= image_tag "portfolio/portfolio-leewardteam.jpg", :class=>"card-img", :alt=>"The Leeward Team"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Consulting Firm Landing Page
+/ 						p.card-text.flex-grow-1 Built a clean landing page to reestablish digital presence.
+/ 						p.text-lowercase View Project »
+/ 			.col-md-4
+/ 				= link_to portfolio_igco_path, class: 'portfolio-card card' do
+/ 				 	= image_tag "portfolio/portfolio-igco.jpg", :class=>"card-img", :alt=>"IGCO"
+/ 					.card-body.d-flex.flex-column
+/ 						h5.card-title Creative Studio Website Design
+/ 						p.card-text.flex-grow-1 Designed and developed a website to showcase work, services, and creative expertise.
+/ 						p.text-lowercase View Project »
+
+/ 		.row
+/ 			#loadMore.mx-auto.center
+/       			<a href="#" class="btn btn-loadmore btn-secondary" id="load-more">Load More Projects</a>
 
 
