@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-
+	helper PortfolioHelper
 	# def show
 	# 	render "/portfolio/#{params[:first]}/#{params[:second]}"
 	# end
