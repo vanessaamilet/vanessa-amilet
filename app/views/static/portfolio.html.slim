@@ -27,16 +27,15 @@ section.industries
 				h6 Performing Arts
 				h6 Design & Media
 				h6 Social Justice
-- visible_rows = 4  # 4 rows x 3 cards = 12 visible projects
-- projects = all_projects
-- rows = projects.each_slice(3).to_a
+- visible_rows = 4  # 4 rows x 3 cards = 12 visible
+- rows = all_projects.each_slice(3).to_a
 
 section.portfolio-grid
   .container
     - rows.each_with_index do |row_projects, row_index|
-      - row_class = row_index >= visible_rows ? 'row load-card d-none' : 'row'
+      - is_hidden = row_index >= visible_rows
 
-      .#{row_class}
+      .row class=(is_hidden ? 'load-card d-none' : nil)
         - row_projects.each do |project|
           .col-md-4
             = link_to project[:path], class: 'portfolio-card card' do
@@ -44,7 +43,7 @@ section.portfolio-grid
               .card-body
                 h5.card-title = project[:title]
 
-                / If you want to show desc, use this:
+                / Use desc if present, otherwise fallback to your label
                 - if project[:desc].present?
                   p.card-text = project[:desc]
                 - else
