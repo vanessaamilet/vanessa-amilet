@@ -13,26 +13,25 @@ module PortfolioHelper
 			industry: %w[technology construction] 
 		},
 		{ 
-			title: "Inclusive Wellness & Fitness Website", 
-			path: portfolio_outwellness_atx_path, 
-			img: "portfolio/portfolio-outwellness-atx.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability." 
-		},
-		{ 
 			title: "Capitalize - Fintech Website Redesign", 
 			path: portfolio_capitalize_path, 
 			img: "portfolio/portfolio-capitalize.jpg", 
 			label: "Website Development (WordPress)",
 			desc: "Redesigned to support evolving branding and improve content flexibility." 
 		},
+		{ 
+			title: "Inclusive Wellness & Fitness Website", 
+			path: portfolio_outwellness_atx_path, 
+			img: "portfolio/portfolio-outwellness-atx.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability." 
+		},
 		# Row 2
 		{ 
-			title: "Nonprofit Foundation Website", 
-			path: portfolio_foundation_website_path, 
-			img: "portfolio/portfolio-nonprofit-website.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Designed to highlight mission, programs, and community impact."
+			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
+			img: "portfolio/portfolio-jumpix.jpg", 
+			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
+			desc: "Designed a welcoming site aligned with values of inclusivity and care."  
 		},
 		{ 
 			title: "Connected Consumer Insights Platform Website", 
@@ -42,10 +41,11 @@ module PortfolioHelper
 			desc: "Rebuilt to support scalable content, modern branding, and product storytelling." 
 		},
 		{ 
-			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
-			img: "portfolio/portfolio-jumpix.jpg", 
-			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
-			desc: "Designed a welcoming site aligned with values of inclusivity and care."  
+			title: "Nonprofit Foundation Website", 
+			path: portfolio_foundation_website_path, 
+			img: "portfolio/portfolio-nonprofit-website.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Designed to highlight mission, programs, and community impact."
 		},
 		# Row 2
 		{ 

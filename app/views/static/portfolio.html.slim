@@ -30,7 +30,7 @@ section.industries.d-none
 - visible_rows = 4  # 4 rows x 3 cards = 12 visible
 - rows = all_projects.each_slice(3).to_a
 
-section.portfolio-grid
+section.portfolio-grid.border-top.border-black
   .container
     - rows.each_with_index do |row_projects, row_index|
       - is_hidden = row_index >= visible_rows
@@ -40,9 +40,9 @@ section.portfolio-grid
           .col-md-4
             = link_to project[:path], class: 'portfolio-card card' do
               = image_tag project[:img], class: "card-img", alt: project[:title]
-              .card-body
+              .card-body.d-flex.flex-column
                 h5.card-title = project[:title]
-                p.card-text = (project[:desc].presence || project[:label])
+                p.card-text.flex-grow-1 = (project[:desc].presence || project[:label])
                 p.text-lowercase View Project »
 
     - if rows.length > visible_rows
