@@ -2238,6 +2238,7 @@ i.contact {
 		float: left;
 		position: relative;
 		text-align: left;
+		text-transform: none !important;
 		transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
 		transition-delay: .1s;
 		border: 2px solid $black !important;
@@ -2265,7 +2266,7 @@ i.contact {
 			h5.card-title, p.card-text{
 				color: $dark-gray !important;
 				text-align: left;
-				text-transform: capitalize;
+				//text-transform: capitalize;
 				&:hover, &:focus{
 					text-decoration: none !important;
 				}
