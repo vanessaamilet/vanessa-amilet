@@ -63,6 +63,8 @@ section.portfolio-info#info
 					/ 	= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://outwellnessatx.com/', target: "_blank"
 			.col-12.col-md-7
 				div.pt-md-10
+					= link_to image_path("portfolio/outwellness-atx/outwellnessatx-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website Before & After" do
+						= image_tag "portfolio/outwellness-atx/outwellnessatx-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Before & After"
 					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website" do
 						= image_tag "portfolio/outwellness-atx/outwellness-atx-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX"
 					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Homepage" do
