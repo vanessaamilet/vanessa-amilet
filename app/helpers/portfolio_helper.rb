@@ -31,7 +31,7 @@ module PortfolioHelper
 			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
 			img: "portfolio/portfolio-jumpix.jpg", 
 			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
-			desc: "Designed a welcoming site aligned with values of inclusivity and care."  
+			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption."  
 		},
 		{ 
 			title: "Connected Consumer Insights Platform Website", 
@@ -56,11 +56,11 @@ module PortfolioHelper
 			desc: "Built a dedicated microsite to guide students toward career opportunities."  
 		},
 		{ 
-			title: "Compost & Soil Products Website", 
-			path: portfolio_greenerworld_path, 
-			img: "portfolio/portfolio-compost-soil-website.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Built to clearly present products and guide users to sales inquiries."
+			title: "Cosmetics Brand & Ecommerce Launch",
+			path: portfolio_captivecolour_path,
+			img: "portfolio/portfolio-captivecolour.jpg",
+			label: "Branding, Web Design + Development (Shopify)",
+			desc: "Developed brand identity and e-commerce presence for product launch."  
 		},
 		{ 
 			title: "Electrical Industry Partnership Website", 
@@ -78,11 +78,11 @@ module PortfolioHelper
 			desc: "Restructured to improve navigation and access to essential resources."  
 		},
 		{ 
-			title: "Cosmetics Brand & Ecommerce Launch",
-			path: portfolio_captivecolour_path,
-			img: "portfolio/portfolio-captivecolour.jpg",
-			label: "Branding, Web Design + Development (Shopify)",
-			desc: "Developed brand identity and e-commerce presence for product launch."  
+			title: "Compost & Soil Products Website", 
+			path: portfolio_greenerworld_path, 
+			img: "portfolio/portfolio-compost-soil-website.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Built to clearly present products and guide users to sales inquiries."
 		},
 		{ 
 			title: "Energy Home Security Marketing Campaign",
@@ -99,13 +99,6 @@ module PortfolioHelper
 			label: "Website Development (WordPress)",
 			desc: "Refreshed to showcase services and strengthen brand positioning."
 		},
-		{ 
-			title: "Maryland Local Business Collective Website", 
-			path: portfolio_community_path, 
-			img: "portfolio/portfolio-community-market-website.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Created an online presence to showcase local businesses ahead of retail launch."
-		},
 		{
 			title: "Hispanic Market Energy Campaign Landing Pages",
 			path: portfolio_reliantmass_path,
@@ -116,7 +109,21 @@ module PortfolioHelper
 			project_type: %w[campaign landing-page],
 			industry: %w[security sales]
 		},
+		{ 
+			title: "Maryland Local Business Collective Website", 
+			path: portfolio_community_path, 
+			img: "portfolio/portfolio-community-market-website.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Created an online presence to showcase local businesses ahead of retail launch."
+		},
 		# Row 6
+		{ 
+			title: "Construction Intern Awards",
+			path: portfolio_cia_path,
+			img: "portfolio/portfolio-cia.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Redesigned and developed a high-traffic campaign site to engage students and sponsors."
+		},
 		{ 
 			title: "Events by Picnics in the City", 
 			path: portfolio_picnics_path, 
@@ -130,13 +137,6 @@ module PortfolioHelper
 			img: "portfolio/portfolio-iba.jpg",
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned to improve the customer journey and highlight members and projects."  
-		},
-		{ 
-			title: "Construction Intern Awards",
-			path: portfolio_cia_path,
-			img: "portfolio/portfolio-cia.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Redesigned and developed a high-traffic campaign site to engage students and sponsors."
 		},
 		# Row 7
 		{ 
