@@ -1,0 +1,24 @@
+/ app/views/shared/_tools_strip.html.slim
+.row.text-center
+    p.tools-label.text-uppercase.small.mb-4
+      | Tools that power my every day
+.row
+    .tools-list.d-flex.flex-wrap.justify-content-center.align-items-center.gap-3
+      - tools = [
+        "Figma",
+        "Adobe Creative Cloud",
+        "WordPress",
+        "GitHub",
+        "Google Tag Manager",
+        "Slack",
+        "Asana",
+        "ChatGPT",
+        "FigJam",
+        "Spotify"
+      ]
+
+      - tools.each_with_index do |tool, i|
+        span.tool = tool
+        - unless i == tools.length - 1
+          span.separator aria-hidden="true"
+            | *

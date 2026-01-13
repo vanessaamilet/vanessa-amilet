@@ -20,25 +20,25 @@ module PortfolioHelper
 			desc: "Redesigned to support evolving branding and improve content flexibility." 
 		},
 		{ 
+			title: "Connected Consumer Insights Platform Website", 
+			path: portfolio_mfour_path, 
+			img: "portfolio/portfolio-mfour-1.jpg", 
+			label: "Website Development (WordPress)",
+			desc: "Rebuilt to support scalable content, modern branding, and product storytelling." 
+		},
+		# Row 2
+		{ 
 			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
 			img: "portfolio/portfolio-jumpix.jpg", 
 			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
 			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption."  
 		},
-		# Row 2
 		{ 
 			title: "Inclusive Wellness & Fitness Website", 
 			path: portfolio_outwellness_atx_path, 
 			img: "portfolio/portfolio-outwellness-atx.jpg", 
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability." 
-		},
-		{ 
-			title: "Connected Consumer Insights Platform Website", 
-			path: portfolio_mfour_path, 
-			img: "portfolio/portfolio-mfour-1.jpg", 
-			label: "Website Development (WordPress)",
-			desc: "Rebuilt to support scalable content, modern branding, and product storytelling." 
 		},
 		{ 
 			title: "Nonprofit Foundation Website", 

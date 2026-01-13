@@ -1908,6 +1908,27 @@ i.contact {
 			}
 		}
 	}
+	/* Tools Strip */
+	// .tools-strip {
+	// 	background-color: #ecebff; // tweak to match your palette
+	// }
+	.tools-label {
+		letter-spacing: 0.08em;
+		color: rgba(0, 0, 0, 0.55);
+	}
+
+	.tools-list {
+		font-size: 1.25rem;
+		font-weight: 500;
+		.tool {
+			white-space: nowrap;
+		}
+
+		.separator {
+			opacity: 0.4;
+		}
+	}
+
 	.featured{
 		border-top: 1px solid $black;
 		border-bottom: 1px solid $black;
