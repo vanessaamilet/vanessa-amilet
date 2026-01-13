@@ -49,18 +49,18 @@ module PortfolioHelper
 		},
 		# Row 2
 		{ 
-			title: "Youth Career Resource Website", 
-			path: portfolio_youthcareer_path, 
-			img: "portfolio/portfolio-youthcareer-website.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Built a dedicated microsite to guide students toward career opportunities."  
-		},
-		{ 
 			title: "Cosmetics Brand & Ecommerce Launch",
 			path: portfolio_captivecolour_path,
 			img: "portfolio/portfolio-captivecolour.jpg",
 			label: "Branding, Web Design + Development (Shopify)",
 			desc: "Developed brand identity and e-commerce presence for product launch."  
+		},
+		{ 
+			title: "Youth Career Resource Website", 
+			path: portfolio_youthcareer_path, 
+			img: "portfolio/portfolio-youthcareer-website.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Built a dedicated microsite to guide students toward career opportunities."  
 		},
 		{ 
 			title: "Electrical Industry Partnership Website", 
@@ -110,19 +110,19 @@ module PortfolioHelper
 			industry: %w[security sales]
 		},
 		{ 
-			title: "Maryland Local Business Collective Website", 
-			path: portfolio_community_path, 
-			img: "portfolio/portfolio-community-market-website.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Created an online presence to showcase local businesses ahead of retail launch."
-		},
-		# Row 6
-		{ 
 			title: "Construction Intern Awards",
 			path: portfolio_cia_path,
 			img: "portfolio/portfolio-cia.jpg", 
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned and developed a high-traffic campaign site to engage students and sponsors."
+		},
+		# Row 6
+		{ 
+			title: "Maryland Local Business Collective Website", 
+			path: portfolio_community_path, 
+			img: "portfolio/portfolio-community-market-website.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Created an online presence to showcase local businesses ahead of retail launch."
 		},
 		{ 
 			title: "Events by Picnics in the City", 
