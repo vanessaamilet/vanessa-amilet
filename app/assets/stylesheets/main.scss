@@ -1971,12 +1971,6 @@ i.contact {
 		white-space: nowrap;
 	}
 
-	/* Optional: soften edge items like your screenshot */
-	.tools-marquee__wrap .tool-item:first-child,
-	.tools-marquee__wrap .tool-item:last-child {
-		opacity: 0.35;
-	}
-
 	/* Animation keyframes */
 	@keyframes tools-marquee-scroll {
 		from { transform: translateX(0); }
