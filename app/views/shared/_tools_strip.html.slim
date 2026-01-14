@@ -4,22 +4,12 @@
 		| Tools that power my every day
 
 	.tools-list.d-flex.flex-wrap.justify-content-center.align-items-center.gap-3
-		- tools = %w[
-			Figma
-			Adobe\ Creative\ Cloud
-			Visual\ Studio\ Code
-			WordPress
-			GitHub
-			Google\ Tag\ Manager
-			Slack
-			Asana
-			ChatGPT
-			FigJam
-			Spotify
-		]
-
-		- tools.each_with_index do |tool, i|
-			span.tool = tool
-			- unless i == tools.length - 1
-				span.separator aria-hidden="true"
-					| *
+		span.tool Figma
+		span.separator aria-hidden="true" *
+		span.tool Adobe Creative Cloud
+		span.separator aria-hidden="true" *
+		span.tool Visual Studio Code
+		span.separator aria-hidden="true" *
+		span.tool WordPress
+		span.separator aria-hidden="true" *
+		span.tool GitHub
