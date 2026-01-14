@@ -1909,25 +1909,85 @@ i.contact {
 		}
 	}
 	/* Tools Strip */
-	// .tools-strip {
-	// 	background-color: #ecebff; // tweak to match your palette
-	// }
+	.tools-marquee {
+		background: transparent; /* your section already has a bg */
+	}
+
 	.tools-label {
-		letter-spacing: 0.08em;
-		color: rgba(0, 0, 0, 0.55);
+		font-size: 0.95rem;
+		opacity: 0.85;
 	}
 
-	.tools-list {
-		font-size: 1.25rem;
-		font-weight: 500;
-		.tool {
-			white-space: nowrap;
-		}
-
-		.separator {
-			opacity: 0.4;
-		}
+	.tools-marquee__wrap {
+		position: relative;
+		overflow: hidden;
+		padding: 0.25rem 0;
 	}
+
+	/* The left/right “overlay” fades */
+	.tools-marquee__wrap::before,
+	.tools-marquee__wrap::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 90px; /* adjust for stronger/softer fade */
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	.tools-marquee__wrap::before {
+		left: 0;
+		background: linear-gradient(to right, rgba(236, 235, 255, 1), rgba(236, 235, 255, 0));
+	}
+
+	.tools-marquee__wrap::after {
+		right: 0;
+		background: linear-gradient(to left, rgba(236, 235, 255, 1), rgba(236, 235, 255, 0));
+	}
+
+	/* Track animation */
+	.tools-marquee__track {
+		display: flex;
+		width: max-content;
+		animation: tools-marquee-scroll 28s linear infinite;
+	}
+
+	.tools-marquee__group {
+		display: flex;
+		align-items: center;
+		gap: 1.75rem;
+		padding-right: 1.75rem;
+	}
+
+	.tool-item {
+		margin: 0;               /* remove default h6 margin */
+		font-weight: 700;
+		white-space: nowrap;
+	}
+
+	.separator {
+		opacity: 0.35;
+		white-space: nowrap;
+	}
+
+	/* Optional: soften edge items like your screenshot */
+	.tools-marquee__wrap .tool-item:first-child,
+	.tools-marquee__wrap .tool-item:last-child {
+		opacity: 0.35;
+	}
+
+	/* Animation keyframes */
+	@keyframes tools-marquee-scroll {
+		from { transform: translateX(0); }
+		to   { transform: translateX(-50%); }
+	}
+
+	/* Respect reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+		.tools-marquee__track { animation: none; }
+	}
+
 
 	.featured{
 		border-top: 1px solid $black;

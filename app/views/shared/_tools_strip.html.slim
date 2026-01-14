@@ -1,15 +1,46 @@
 / app/views/shared/_tools_strip.html.slim
-.tools-strip.py-4
-	p.tools-label.text-uppercase.small.text-center.mb-4
-		| Tools that power my every day
+.tools-marquee.py-4
+	.container
+		p.tools-label.text-center.mb-3
+			| Tools that power my every day:
 
-	.tools-list.d-flex.flex-wrap.justify-content-center.align-items-center.gap-3
-		span.tool Figma
-		span.separator aria-hidden="true" *
-		span.tool Adobe Creative Cloud
-		span.separator aria-hidden="true" *
-		span.tool Visual Studio Code
-		span.separator aria-hidden="true" *
-		span.tool WordPress
-		span.separator aria-hidden="true" *
-		span.tool GitHub
+		.tools-marquee__wrap
+			.tools-marquee__track aria-hidden="true"
+				/ Duplicate the sequence twice so it loops seamlessly
+				.tools-marquee__group
+					h6.tool-item Zapier
+					span.separator *
+					h6.tool-item Readkit
+					span.separator *
+					h6.tool-item Slack
+					span.separator *
+					h6.tool-item Chat GPT
+					span.separator *
+					h6.tool-item Notion
+					span.separator *
+					h6.tool-item Figma
+					span.separator *
+					h6.tool-item WordPress
+					span.separator *
+					h6.tool-item GitHub
+					span.separator *
+					h6.tool-item Google Tag Manager
+
+				.tools-marquee__group
+					h6.tool-item Zapier
+					span.separator *
+					h6.tool-item Readkit
+					span.separator *
+					h6.tool-item Slack
+					span.separator *
+					h6.tool-item Chat GPT
+					span.separator *
+					h6.tool-item Notion
+					span.separator *
+					h6.tool-item Figma
+					span.separator *
+					h6.tool-item WordPress
+					span.separator *
+					h6.tool-item GitHub
+					span.separator *
+					h6.tool-item Google Tag Manager
