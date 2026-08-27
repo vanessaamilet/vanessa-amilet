@@ -20,6 +20,7 @@ Rails.application.routes.draw do
 
   # Portfolio Pages
   get '/portfolio/firmatek' => 'static#portfolio_firmatek'
+  get '/portfolio/blueprint' => 'static#portfolio_blueprint'
   get '/portfolio/outwellness-atx' => 'static#portfolio_outwellnessatx'
   get '/portfolio/nonprofit-website' => 'static#portfolio_nonprofit_website', as: 'portfolio_foundation_website'
   get '/portfolio/community-impact-website' => 'static#portfolio_community_impact_website'

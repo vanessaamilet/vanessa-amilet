@@ -13,12 +13,23 @@ module PortfolioHelper
 			industry: %w[technology construction] 
 		},
 		{ 
+			title: "Data & AI Consulting Website", 
+			path: portfolio_blueprint_path, 
+			img: "portfolio/portfolio-blueprint.jpg", 
+			label: "Web Design + Development (WordPress)",
+			desc: "Enhanced key website experiences and supported integrated marketing campaigns for evolving data and AI solutions.",
+			services: %w[web-design development],
+			project_type: %w[website],
+			industry: %w[technology data consulting] 
+		},
+		{ 
 			title: "Capitalize - Fintech Website Redesign", 
 			path: portfolio_capitalize_path, 
 			img: "portfolio/portfolio-capitalize.jpg", 
 			label: "Website Development (WordPress)",
 			desc: "Redesigned to support evolving branding and improve content flexibility." 
 		},
+		# Row 2
 		{ 
 			title: "Connected Consumer Insights Platform Website", 
 			path: portfolio_mfour_path, 
@@ -26,7 +37,6 @@ module PortfolioHelper
 			label: "Website Development (WordPress)",
 			desc: "Rebuilt to support scalable content, modern branding, and product storytelling." 
 		},
-		# Row 2
 		{ 
 			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
 			img: "portfolio/portfolio-jumpix.jpg", 
@@ -40,6 +50,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned the site experience with an inclusive, conversion-friendly layout and improved mobile usability." 
 		},
+		# Row 3
 		{ 
 			title: "Nonprofit Foundation Website", 
 			path: portfolio_foundation_website_path, 
@@ -47,7 +58,6 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Designed to highlight mission, programs, and community impact."
 		},
-		# Row 2
 		{ 
 			title: "Cosmetics Brand & Ecommerce Launch",
 			path: portfolio_captivecolour_path,
@@ -62,6 +72,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Built a dedicated microsite to guide students toward career opportunities."  
 		},
+		# Row 4
 		{ 
 			title: "Electrical Industry Partnership Website", 
 			path: portfolio_electricalalliance_path, 
@@ -69,7 +80,6 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned to reflect brand credibility and improve access to training resources."
 		},
-		# Row 4
 		{ 
 			title: "Community Impact Website", 
 			path: portfolio_community_impact_website_path, 
@@ -84,6 +94,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Built to clearly present products and guide users to sales inquiries."
 		},
+		# Row 5
 		{ 
 			title: "Energy Home Security Marketing Campaign",
 			path: portfolio_reliantsecurity_path,
@@ -91,7 +102,6 @@ module PortfolioHelper
 			label: "Web Design + Development, Motion Graphics",
 			desc: "Designed campaign assets to promote home security offerings across digital channels."
 		},
-		# Row 5
 		{ 
 			title: "Content Marketing Agency Website", 
 			path: portfolio_agency_path, 
@@ -109,6 +119,7 @@ module PortfolioHelper
 			project_type: %w[campaign landing-page],
 			industry: %w[security sales]
 		},
+		# Row 6
 		{ 
 			title: "Construction Intern Awards",
 			path: portfolio_cia_path,
@@ -116,7 +127,6 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned and developed a high-traffic campaign site to engage students and sponsors."
 		},
-		# Row 6
 		{ 
 			title: "Maryland Local Business Collective Website", 
 			path: portfolio_community_path, 
@@ -131,6 +141,7 @@ module PortfolioHelper
 			label: "Web Design + Development (Shopify)",
 			desc: "Updated to highlight expanded services and elevate the customer journey."
 		},
+		# Row 7
 		{ 
 			title: "I Build America", 
 			path: portfolio_iba_path, 
@@ -138,7 +149,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned to improve the customer journey and highlight members and projects."  
 		},
-		# Row 7
+		
 		{ 
 			title: "Betty Boujee", 
 			path: portfolio_bettyboujee_path, 
@@ -153,6 +164,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Redesigned to reflect new branding and clearly present services." 
 		},
+		# Row 8
 		{ 
 			title: "Zack Pride - Musician Portfolio Website", 
 			path: portfolio_zackpride_path, 
@@ -160,7 +172,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Designed a central hub for performances, press, and events."
 		},
-		# Row 8
+		
 		{ 
 			title: "Construction Marketing Agency Website", path: portfolio_genie_path,
 			img: "portfolio/portfolio-genie.jpg",
@@ -174,6 +186,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Designed a welcoming site aligned with values of inclusivity and care." 
 		},
+		# Row 9
 		{ 
 			title: "Expertly Sanitized", 
 			path: portfolio_expertly_path, 
@@ -181,7 +194,6 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Modernized the site to better represent services and improve usability."
 		},
-		# Row 8
 		{ 
 			title: "Consulting Firm Landing Page", path: portfolio_leewardteam_path, 
 			img: "portfolio/portfolio-leewardteam.jpg", 
@@ -195,6 +207,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Created an easy-to-manage site for events, press, and media." 
 		},
+		# Row 10
 		{ 
 			title: "Creative Studio Website Design", 
 			path: portfolio_igco_path, 
@@ -202,7 +215,7 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Designed and developed a website to showcase work, services, and creative expertise."
 		},
-		# Row 8
+		
 		{ 
 			title: "North Bloom - Commercial Construction Website", 
 			path: portfolio_northbloom_path, 

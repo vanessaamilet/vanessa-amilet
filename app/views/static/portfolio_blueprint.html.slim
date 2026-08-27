@@ -1,0 +1,71 @@
+= content_for :body_class, 'portfolio-template'
+
+/!  Begin Page Content
+section.hero.d-flex
+  .container-lg
+    .squiggle.mb-5
+    .row.justify-content-start.align-items-center
+      .col-md-6.col-lg-6
+        h1 Data & AI Consulting Website
+        p.lead.text-mb-5
+          | Led the ongoing design, development, and optimization of Blueprint Technologies’ WordPress website while supporting integrated marketing campaigns as brand and go-to-market priorities evolved. Translated new visual elements into responsive web experiences, revamped key pages and templates, and designed and developed solution pages for data, AI, and Databricks initiatives. Contributed to campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine through landing pages, email campaigns, social content, and other digital marketing assets.
+        .d-inline.mb-5.mb-md-0
+			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://bpcs.com/', target: "_blank"
+      .col-md-6.col-lg-6
+        .row.mb-3
+			.col-md-6
+				h6 Client
+				p Blueprint Technologies
+			.col-md-6
+				h6 Year
+				p 2026
+        .row.mb-3
+			.col-md-6
+				h6 Services
+				p Web Design, UX/UI, WordPress Development, Web Strategy, Digital Marketing.
+			.col-md-6
+				h6 Technologies
+				p FigJam, Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS, ACF, Brevo, ChatGPT/Jasper AI
+
+/! Portfolio Details
+section.portfolio-info#info
+	.container-fluid.px-md-0
+		.row.justify-content-between.g-0.mx-md-0
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1.py-8.py-md-10
+					h2 Project Details
+					h6
+						span.badge.text-bg-secondary Problem
+					p Blueprint's website needed to evolve alongside new branding, service offerings, and go-to-market priorities while making complex data and AI solutions easier to understand.
+					h6
+						span.badge.text-bg-secondary Process
+					p Owned ongoing website design and development while collaborating with the CEO, leadership team, Product Manager, and UX Designer on business and go-to-market priorities. Revamped key pages, implemented new brand elements, and supported campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine through web experiences, email marketing, social content, and campaign strategy.
+					h6
+						span.badge.text-bg-secondary Outcome
+					p Created a more cohesive digital experience and supported integrated campaigns that increased visibility for key offerings, strengthened product storytelling, and provided clearer paths for prospective customers to engage with Blueprint.
+
+			.col-12.col-md-7
+				div.pt-md-10
+                    = link_to image_path("portfolio/blueprint/blueprint-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Website Before & After" do
+						= image_tag "portfolio/blueprint/blueprint-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Website Before & After"
+					= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Homepage" do
+						= image_tag "portfolio/blueprint/blueprint-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Homepage"
+					
+					= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint LHO Executive Insights Engine webpage" do
+						= image_tag "portfolio/blueprint/blueprint-executive-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint LHO Executive Insights Engine webpage"
+
+					= link_to image_path("portfolio/blueprint/blueprint-website-blog.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Bluprint Insights" do
+						= image_tag "portfolio/blueprint/blueprint-website-blog.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Insights"
+					= link_to image_path("portfolio/blueprint/blueprint-genie-readiness.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Genie Readiness Landing Page" do
+						= image_tag "portfolio/blueprint/blueprint-genie-readiness.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Genie Readiness Landing Page"
+					= link_to image_path("portfolio/blueprint/blueprint-blog-templates.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
+						= image_tag "portfolio/blueprint/blueprint-blog-templates.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
+					= link_to image_path("portfolio/blueprint/blueprint-blog-templates-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
+						= image_tag "portfolio/blueprint/blueprint-blog-templates-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
+					
+						
+
+/!  Browse More Projects
+= render :partial => "shared/portfolio_browsemore"
+/!  Portfolio CTA
+= render :partial => "shared/portfolio_cta"

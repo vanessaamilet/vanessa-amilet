@@ -35,6 +35,11 @@ class StaticController < ApplicationController
 	# def portfolio_ecmg
 	# end
 
+	def portfolio_blueprint
+		@page_title = 'Blueprint Technologies Website'
+		@page_description = 'Ongoing UX/UI design and WordPress development for Blueprint Technologies, including key page revamps, new solution experiences, SEO, and website optimization.'
+	end
+
 	def portfolio_mfour
 		@page_title = 'MFour'
 		@page_description = 'Check out the custom WordPress website I developed for MFour, featuring Gutenberg blocks, Bootstrap, and Sigma integration, enhancing their rebranding efforts.'
