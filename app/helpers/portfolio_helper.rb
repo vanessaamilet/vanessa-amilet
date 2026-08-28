@@ -6,7 +6,7 @@ module PortfolioHelper
 			title: "Geospatial Data & Insights Platform Website", 
 			path: portfolio_firmatek_path, 
 			img: "portfolio/portfolio-firmatek-website.jpg", 
-			label: "Web Design + Development (WordPress)",
+			label: "Web Design + Development (WordPress), Marketing Campaigns",
 			desc: "Simplified complex geospatial offerings into a clear, intuitive marketing website.",
 			services: %w[web-design development],
 			project_type: %w[website],
