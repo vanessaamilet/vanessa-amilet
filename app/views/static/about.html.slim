@@ -5,11 +5,13 @@ section.hero
 	.container-lg
 		.row.justify-content-between.align-items-center.mt-lg-5
 			.col-lg-7
-				.px-4.mb-4
+				.mb-4
 					h6 Designer + Developer | UI Developer | Visual Designer
 					h1 Meet Vanessa Amilet
 					p.lead.mb-4
-						| Hey there! My name is Vanessa Amilet Santos, a Houston-native living in ATL. With over a decade of experience, I've immersed myself in the dynamic worlds of Tech, Construction, Energy, and Oil & Gas. Whether in-house or as a freelance web designer and developer, I've had the privilege of collaborating with companies nationwide, learning the ropes of various industries. This has helped me gain insight on the importance of creating engaging and user-friendly designs that focus on the customer journey. My goal is to elevate your web presence with unique strategic bold websites.
+						| Hey there! My name is Vanessa Amilet Santos, a Houston native living in ATL. With over a decade of experience, I’ve immersed myself in the dynamic worlds of tech, construction, energy, and oil & gas. From in-house roles to running my own freelance practice, I’ve had the privilege of collaborating with companies and teams nationwide and learning the ins and outs of various industries.
+					p.lead.mb-4
+						| These experiences have shaped how I approach design and reinforced the importance of creating engaging, user-friendly experiences that consider the entire customer journey. My background spans UX and UI design, front-end development, web strategy, and digital marketing, allowing me to approach projects from both a creative and technical perspective.
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary"
 					= link_to 'LinkedIn Profile <i class="fad fa-external-link-alt"></i>'.html_safe, "https://www.linkedin.com/in/vanessaamilet", :class=>"mx-3 cta",  target:"_blank"
 			.col-lg-5.position-relative
@@ -25,10 +27,13 @@ section.facts
 				p First-Gen Latina 🇸🇻
 				p Born and raised in HTX &#129312;
 				p I have a fur baby &#128054;
+				p Photography enthusiast with my Sony Alpha 📸
+				p Creative both on and off the screen 🎨
 			.col-md-6
 				h3 Career Highlights
-				p 13 years of professional experience
+				p 13 years of design & development experience
 				p Have helped 50+ businesses throughout the nation &#128640;
+				p Experience across tech, SaaS, data & AI, energy, construction, and more
 				p Bachelor of Fine Arts in Web Design & Interactive Media
 				p 2016 WebAward for Outstanding Achievement in Web Development
 section.values
@@ -58,35 +63,42 @@ section.capabilities
 				.card
 					.card-body
 						i.fad.fa-pen-nib
-						h4 Design & Strategy
+						h4 UX & UI Design
 						ul
+							li UX Strategy & User Flows
 							li Information Architecture
-							li Wireframes, High-Fidelity Mockups & Prototypes
+							li Wireframes
+							li High-Fidelity Mockups & Prototypes
+							li Responsive Design
+							li Accessibility
 							li Style Guides & Design Systems
-							li Vector Graphics & Iconography
-							li Email Marketing & A/B Testing
+
 			.col-lg-4.mb-5
 				.card
 					.card-body
 						i.fad.fa-code
 						h4 Front-End Development
 						ul
-							li HTML, SCSS, JavaScript, PHP
-							li Custom WordPress (Gutenberg, ACF) & Shopify Theme Development
-							li Mobile Optimization & Performance
-							li Website Maintenance
+							li HTML, SCSS, JavaScript & PHP
+							li Custom WordPress Development, Gutenberg & ACF
+							li Shopify Theme Development
+							li Responsive Development
+							li Accessibility & Web Standards
+							li Website Optimization & Maintenance
 
 			.col-lg-4.mb-5
 				.card
 					.card-body
 						i.fad.fa-megaphone
-						h4 Marketing, SEO & Analytics
+						h4 Web Strategy & Marketing
 						ul
+							li Website & Content Strategy
 							li SEO Audits & Technical SEO
-							li Google Tag Manager, Google Analytics, Search Console
-							li Landing Pages & Campaign Support
+							li Analytics & Performance Insights
+							li Landing Pages & Campaigns
+							li Email Marketing & A/B Testing
 							li CRM & Automation Tools (Pardot, HubSpot)
-							li Project Management
+							li Project & Stakeholder Collaboration
 		.row.mt-2
 			.col-12
 				= render :partial => "shared/tools_strip"
@@ -113,47 +125,59 @@ section.process
 		.row.mb-5
 			.col-lg-12.text-center
 				.squiggle
-				h6 A Holistic Approach
-				h2 My Creative Process
-				p.lead This isn't just about a website; it's a collaborative journey. From our initial free consultation call to the final delivery of your website project, I'm committed to a streamlined and efficient process. Your input is not only welcomed but crucial to ensuring the end result aligns perfectly with your vision.
+				h6 My Approach
+				h2 From problem to purposeful solution.
+				p.lead For me, great design starts with understanding the problem before jumping into a solution. I consider the people using the experience, the goals behind it, and how each decision contributes to the bigger picture. My process is collaborative and flexible, giving ideas room to evolve while keeping the project moving with purpose.
+				/ p.lead This isn't just about a website; it's a collaborative journey. From our initial free consultation call to the final delivery of your website project, I'm committed to a streamlined and efficient process. Your input is not only welcomed but crucial to ensuring the end result aligns perfectly with your vision.
 		.row
 			.col-md-4.mb-5
-				i.fad.fa-seedling
+				i.fad.fa-compass
 				h5 
 					span 01. 
 					| Discovery
-				p I assist you in developing creative design concepts that align with your vision and conduct market research to establish an authentic online presence. During the Discovery phase, we discuss project objectives, target audience, and competitor analysis.
+				p.fw-bold Understand the problem.
+				p Every project starts with asking questions. I take the time to understand the goals, audience, requirements, challenges, and existing experience so I have a clear picture of what we're solving.
 			.col-md-4.mb-5
-				i.fad.fa-water
+				i.fad.fa-sitemap
 				h5
 					span 02. 
 					| Scope & Planning
-				p I specialize in crafting engaging customer journeys that transform your website visitors into loyal customers. My process involves developing website sitemaps, flowcharts, and ideation sessions to ensure a seamless online experience.
+				p.fw-bold Create a clear direction.
+				p I turn what I've learned into a plan, using tools like sitemaps, user flows, information architecture, research, and content strategy to define how the experience should work.
+				//p I specialize in crafting engaging customer journeys that transform your website visitors into loyal customers. My process involves developing website sitemaps, flowcharts, and ideation sessions to ensure a seamless online experience.
 			.col-md-4.mb-5
 				i.fad.fa-pencil-paintbrush
 				h5 
 					span 03. 
-					| Design Production
-				p My expertise lies in creating user-centric design mockups that bring your brand identity to life. Using software tools such as Figma, I tailor each design to your company's specific requirements and integrate your branding to produce visuals that truly embody your unique style.
+					| Design
+				p.fw-bold Bring ideas to life.
+				p From wireframes and early concepts to high-fidelity designs, I create intuitive interfaces that balance user needs, business goals, brand, and visual storytelling.
+				/ p My expertise lies in creating user-centric design mockups that bring your brand identity to life. Using software tools such as Figma, I tailor each design to your company's specific requirements and integrate your branding to produce visuals that truly embody your unique style.
 		.row
 			.col-md-4.mb-5
 				i.fad.fa-code
 				h5 
 					span 04. 
 					| Development
-				p I specialize in developing websites that are responsive, meeting modern technical standards and providing seamless experiences for both desktop and mobile users. I carefully evaluate your company's needs and select the most suitable technologies.
+				p.fw-bold Turn design into an experience. 
+				p When development is part of my role, I bring the designs to life with responsive, accessible front-end solutions while staying true to the original design intent.
+				/ p I specialize in developing websites that are responsive, meeting modern technical standards and providing seamless experiences for both desktop and mobile users. I carefully evaluate your company's needs and select the most suitable technologies.
 			.col-md-4.mb-5
 				i.fad.fa-browser
 				h5 
 					span 05. 
-					| Testing
-				p To ensure your website's success, the final process involves thorough testing on all major browsers, operating systems, and devices.
+					| Testing & Refinement
+				p.fw-bold Make it better.
+				p I review the experience across devices and use feedback, testing, and iteration to identify opportunities for improvement before the final release.
+				/ p To ensure your website's success, the final process involves thorough testing on all major browsers, operating systems, and devices.
 			.col-md-4.mb-5
 				i.fad.fa-hand-holding-seedling
 				h5 
 					span 06. 
-					| Deployment + Handoff
-				p Once your website is ready, I will deploy it and hand it off to you, ensuring a seamless transition. You'll experience a stunning website that not only represents your business, but also aligns with your strategic objectives. 
+					| Launch & Evolve
+				p.fw-bold Keep moving forward.
+				p Whether I'm launching the final experience, handing designs off to a development team, or supporting ongoing improvements, I make sure the work is ready for what comes next.
+				/ p Once your website is ready, I will deploy it and hand it off to you, ensuring a seamless transition. You'll experience a stunning website that not only represents your business, but also aligns with your strategic objectives. 
 			
 		.row
 			.col-lg-12
