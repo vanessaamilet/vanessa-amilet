@@ -36,24 +36,7 @@ section.facts
 				p Experience across tech, SaaS, data & AI, energy, construction, and more
 				p Bachelor of Fine Arts in Web Design & Interactive Media
 				p 2016 WebAward for Outstanding Achievement in Web Development
-section.values
-	.container
-		.row
-			.col-md-12
-				h2 Core Values
-		.row
-			.col-md-3
-				<i class="fad fa-hands-helping"></i>
-				h5 Building Meaningful Connections
-			.col-md-3
-				<i class="fad fa-comments"></i>
-				h5 Communication
-			.col-md-3
-				<i class="fad fa-spa"></i>
-				h5 Mindfulness
-			.col-md-3
-				<i class="fad fa-hands-heart"></i>
-				h5 Dedication
+/!  Skills
 section.capabilities
 	.container
 		.row
@@ -106,20 +89,7 @@ section.capabilities
 			.col-lg-12
 				= link_to "Explore Services", services_path, :class=>"btn btn-primary mx-auto"
 
-/!  Who I Serve
-
-section.featured
-	.container
-		.row
-			.col-lg-4
-				h2 Featured In
-			.col-lg-7
-				.row 
-					.col
-						= link_to image_tag('about/press-voyageatl.png', alt: 'VoyageATL'), 'http://voyageatl.com/interview/meet-vanessa-santos-of-vanessa-amilet-creative-llc/', target: "_blank"
-					.col
-						= link_to image_tag('about/press-voyagehouston.png', alt: 'VoyageHouston'), 'http://voyagehouston.com/interview/meet-trailblazer-vanessa-santos/', target: "_blank"
-
+/!  Process
 section.process
 	.container
 		.row.mb-5
@@ -184,6 +154,37 @@ section.process
 				.text-center
 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
 					p = link_to "Have any questions?", faqs_path, :class=>"cta"
+/!  Core Values
+section.values
+	.container
+		.row
+			.col-md-12
+				h2 Core Values
+		.row
+			.col-md-3
+				<i class="fad fa-hands-helping"></i>
+				h5 Building Meaningful Connections
+			.col-md-3
+				<i class="fad fa-comments"></i>
+				h5 Communication
+			.col-md-3
+				<i class="fad fa-spa"></i>
+				h5 Mindfulness
+			.col-md-3
+				<i class="fad fa-hands-heart"></i>
+				h5 Dedication
+/!  Featured In
+section.featured
+	.container
+		.row
+			.col-lg-4
+				h2 Featured In
+			.col-lg-7
+				.row 
+					.col
+						= link_to image_tag('about/press-voyageatl.png', alt: 'VoyageATL'), 'http://voyageatl.com/interview/meet-vanessa-santos-of-vanessa-amilet-creative-llc/', target: "_blank"
+					.col
+						= link_to image_tag('about/press-voyagehouston.png', alt: 'VoyageHouston'), 'http://voyagehouston.com/interview/meet-trailblazer-vanessa-santos/', target: "_blank"
 //
 	.resume
 		.container

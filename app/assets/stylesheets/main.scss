@@ -87,6 +87,56 @@ $blue: #2b2b6a;
 $dark-blue: #343948;
 $light-blue: #C6E0EB;
 
+// Gradients
+$radial-gradient:
+  radial-gradient(
+	75% 140% at 0% 35%,
+	rgba(217, 212, 247, 0.85) 0%,
+	rgba(217, 212, 247, 0.45) 38%,
+	transparent 72%
+  ),
+  radial-gradient(
+	70% 130% at 100% 25%,
+	rgba(77, 185, 172, 0.28) 0%,
+	rgba(77, 185, 172, 0.12) 40%,
+	transparent 72%
+  ),
+  radial-gradient(
+	60% 100% at 50% 100%,
+	rgba(247, 246, 255, 0.75) 0%,
+	transparent 75%
+  ),
+  #dde1ed;
+
+// CTA / secondary section gradient
+$cta-gradient:
+  // Lavender — upper left
+  radial-gradient(
+    75% 140% at 0% 20%,
+    rgba(217, 212, 247, 1) 0%,
+    rgba(217, 212, 247, 0.7) 35%,
+    transparent 68%
+  ),
+
+	// Blue-gray — upper right
+	radial-gradient(
+	75% 135% at 100% 0%,
+	rgba(200, 207, 223, 0.95) 0%,
+	rgba(200, 207, 223, 0.95) 40%,
+	transparent 72%
+	),
+
+  // Teal — bottom/center
+  radial-gradient(
+    65% 110% at 55% 110%,
+    rgba(77, 185, 172, 0.42) 0%,
+    rgba(77, 185, 172, 0.15) 38%,
+    transparent 68%
+  ),
+
+  // Lavender base
+  #eeedff;
+  
 //** Background color for `<body>`.
 $bg-color: $white;
 $bg-purple: $light-purple;
@@ -326,9 +376,9 @@ $enable-negative-margins: true;
 }
 // @include box-shadow(shadow declaration)
 @mixin box-shadow($shadow: 0 4px 20px rgba(0, 0, 0, .25)) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
 }
 
 // Border
@@ -1151,6 +1201,7 @@ a:has(img){
 /* ### Hero Sections */
 .hero{
 	background-color: $light-purple;
+	background: $radial-gradient;
 	background-position: center center;
 	margin-top: 0px;
 	-webkit-animation: fade-in 1s ease-in both;
@@ -1195,6 +1246,7 @@ section{
 .get-started{
 	// @include colors($bg-purple: true);
 	background: $lighter-purple;
+	background: $cta-gradient;
 	@media screen and (max-width: 768px){
 		.col-md-4{
 			margin-bottom: 30px;
@@ -1593,7 +1645,7 @@ i.contact {
 	/* ### Hero */
 	.home-hero{
 		background-color: $light-purple;
-		//background-image: url(asset_path('homepage/hero-vanessaamilet.jpg'));
+		background: $radial-gradient;
 		background-repeat: no-repeat;
 		align-items: center;
 		justify-content: center;
@@ -1721,9 +1773,9 @@ i.contact {
 		}
 	}
 	/* ### Get Started */
-	.get-started{
-		background: $lighter-purple;
-	}
+	// .get-started{
+	// 	background: $lighter-purple;
+	// }
 }
 
 /* ## Reviews */
@@ -1814,6 +1866,7 @@ i.contact {
 .about{
 	overflow-x: hidden;
 	.hero{
+		background: $radial-gradient !important;
 		background-attachment: fixed;
 		background-repeat: repeat;
 		background-position: center center;
@@ -1847,13 +1900,12 @@ i.contact {
 		border-bottom: 1px solid $black;
 	}
 	.values{
-		border-bottom: 1px solid $black;
+		background-color: $white;
+		border-top: 1px solid $black;
 		h2{
 			text-align: center;
 			margin-bottom: 30px !important;
 		}
-	}
-	.values{
 		text-align: center;
 		i.fad{
 			font-size: 35px;
@@ -1982,18 +2034,8 @@ i.contact {
 		.tools-marquee__track { animation: none; }
 	}
 
-
-	.featured{
-		border-top: 1px solid $black;
-		border-bottom: 1px solid $black;
-		img{
-			text-align: center;
-			width: 100%;
-			max-width: 250px;
-		}
-	}
 	.process{
-		background-color: $lighter-purple;
+		background-color: $soft-gray-lavender;
 		h6 {
 			font-family: $proxima-nova;
 			text-transform: uppercase;
@@ -2019,6 +2061,16 @@ i.contact {
 				// -webkit-text-stroke-width: 1px;
 				//color: transparent;
 			}
+		}
+	}
+	.featured{
+		background-color: $white;
+		border-top: 1px solid $black;
+		//border-bottom: 1px solid $black;
+		img{
+			text-align: center;
+			width: 100%;
+			max-width: 250px;
 		}
 	}
 	.resume{
@@ -2288,7 +2340,7 @@ i.contact {
 	.row{
 		padding: 15px 0;
 		-webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    	animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 		&.load-card{
 			display: none;
 		}
@@ -2470,7 +2522,7 @@ i.contact {
 		}
 	}
 	.cta{
-		background-color: $white;
+		background: $white !important;
 		border-top: 1px solid $black;
 		.container{
 			@media screen and (max-width: 768px){
