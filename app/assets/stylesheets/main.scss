@@ -1840,8 +1840,8 @@ i.contact {
 	.quote{
 		text-align: center !important;
 		white-space: pre-wrap;
-		border:2px solid $green;
-		box-shadow: 0.25rem 0.25rem $green;
+		border:2px solid $blue;
+		box-shadow: 0.25rem 0.25rem $blue;
 		border-radius: 10px;
 		padding: 40px;
 		img {
@@ -2356,6 +2356,18 @@ i.contact {
 		}
 		@media (max-width: 767px){
 			margin-bottom: 30px;
+		}
+	}
+	// Portfolio filtering layout
+	// Portfolio filtering layout
+	.portfolio-projects {
+		&.is-filtering {
+			display: flex;
+			flex-wrap: wrap;
+
+			> .row {
+				display: contents;
+			}
 		}
 	}
 	//Portfolio Cards

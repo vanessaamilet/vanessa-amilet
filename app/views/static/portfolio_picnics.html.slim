@@ -1,3 +1,4 @@
+- project = portfolio_project(portfolio_picnics_path)
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
@@ -6,9 +7,10 @@ section.hero.d-flex
     .squiggle.mb-5
     .row.justify-content-start.align-items-center
       .col-md-6.col-lg-6
-        h1 Picnics in the City Website
+	  	h1 = project[:title]
+        //h1 Picnics in the City Website
         p.lead
-        	| A content marketing agency that supports financial, healthcare, and professional service firms with strategic storytelling and client engagement.
+        	| A Houston-based event company specializing in curated picnic experiences for celebrations, gatherings, and special occasions.
 		.d-inline.mb-5.mb-md-0
 			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://picnicsinthecity.com/', target: "_blank"
       .col-md-6.col-lg-6
@@ -25,7 +27,7 @@ section.hero.d-flex
 				p Custom Shopify Website Design
 			.col-md-6
 				h6 Technologies
-				p Shopfy, HTML, Liquid, CSS, JS
+				p Shopfy, HTML, Liquid, CSS, JS, Adobe XD
 section.portfolio-info#info
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0

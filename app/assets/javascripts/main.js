@@ -71,23 +71,158 @@ document.addEventListener('DOMContentLoaded', function() {
 	// 	});
 	// }
     // Rows
+    // if (document.body.classList.contains('portfolio')) {
+    //     const loadMoreBtn = document.getElementById('load-more');
+    //     const hiddenRows = [...document.querySelectorAll('.portfolio-grid .row.load-card')];
+      
+    //     loadMoreBtn.addEventListener('click', function(e) {
+    //       e.preventDefault();
+      
+    //       hiddenRows.splice(0, 2).forEach(row => row.classList.remove('load-card'));
+      
+    //       if (hiddenRows.length === 0) {
+    //         loadMoreBtn.classList.add('hidden');
+    //       }
+    //     });
+    //   }
+
+    // Portfolio filtering and Load More functionality
     if (document.body.classList.contains('portfolio')) {
         const loadMoreBtn = document.getElementById('load-more');
-        const hiddenRows = [...document.querySelectorAll('.portfolio-grid .row.load-card')];
-      
-        loadMoreBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-      
-          hiddenRows.splice(0, 2).forEach(row => row.classList.remove('load-card'));
-      
-          if (hiddenRows.length === 0) {
-            loadMoreBtn.classList.add('hidden');
-          }
+        const loadMoreContainer = document.getElementById('loadMore');
+
+        const industryFilter = document.getElementById('industry-filter');
+        const typeFilter = document.getElementById('type-filter');
+
+        const portfolioContainer = document.querySelector('.portfolio-grid .container');
+
+        const projectRows = [...document.querySelectorAll('.portfolio-grid .row')].filter(
+            row => row.querySelector('.portfolio-item')
+        );
+
+        const projectItems = [...document.querySelectorAll('.portfolio-item')];
+
+        const initiallyHiddenRows = projectRows.filter(row =>
+            row.classList.contains('load-card')
+        );
+
+        let hiddenRows = [...initiallyHiddenRows];
+        let filteredRows = [];
+
+        // Store each project's original row and position
+        const originalPositions = projectItems.map((item, index) => ({
+            item,
+            parent: item.parentElement,
+            index
+        }));
+
+        // Load More
+        loadMoreBtn?.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            hiddenRows.splice(0, 2).forEach(row => {
+                row.classList.remove('load-card');
+            });
+
+            if (hiddenRows.length === 0) {
+                loadMoreContainer?.classList.add('hidden');
+            }
         });
-      }
-      
-    
-	
+
+        // Remove temporary filtered rows
+        function removeFilteredRows() {
+            filteredRows.forEach(row => row.remove());
+            filteredRows = [];
+        }
+
+        // Restore projects to their original rows
+        function restoreOriginalLayout() {
+            removeFilteredRows();
+
+            originalPositions.forEach(({ item, parent }) => {
+                parent.appendChild(item);
+            });
+
+            projectItems.forEach(item => {
+                item.classList.remove('hidden');
+            });
+
+            projectRows.forEach(row => {
+                row.classList.remove('hidden', 'load-card');
+            });
+
+            initiallyHiddenRows.forEach(row => {
+                row.classList.add('load-card');
+            });
+
+            hiddenRows = [...initiallyHiddenRows];
+
+            if (hiddenRows.length > 0) {
+                loadMoreContainer?.classList.remove('hidden');
+            }
+        }
+
+        // Build temporary rows from matching projects
+        function buildFilteredLayout(matchingProjects) {
+            removeFilteredRows();
+
+            // Hide original project rows while filtering
+            projectRows.forEach(row => {
+                row.classList.add('hidden');
+            });
+
+            for (let i = 0; i < matchingProjects.length; i += 3) {
+                const row = document.createElement('div');
+                row.classList.add('row', 'filtered-project-row');
+
+                matchingProjects.slice(i, i + 3).forEach(project => {
+                    project.classList.remove('hidden');
+                    row.appendChild(project);
+                });
+
+                portfolioContainer.insertBefore(row, loadMoreContainer?.parentElement || null);
+                filteredRows.push(row);
+            }
+        }
+
+        // Portfolio Filters
+        function filterProjects() {
+            const selectedIndustry = industryFilter?.value || 'all';
+            const selectedType = typeFilter?.value || 'all';
+
+            const isFiltering =
+                selectedIndustry !== 'all' ||
+                selectedType !== 'all';
+
+            if (!isFiltering) {
+                restoreOriginalLayout();
+                return;
+            }
+
+            const matchingProjects = projectItems.filter(item => {
+                const industries = item.dataset.industry?.split(' ') || [];
+                const projectTypes = item.dataset.projectType?.split(' ') || [];
+
+                const industryMatch =
+                    selectedIndustry === 'all' ||
+                    industries.includes(selectedIndustry);
+
+                const typeMatch =
+                    selectedType === 'all' ||
+                    projectTypes.includes(selectedType);
+
+                return industryMatch && typeMatch;
+            });
+
+            buildFilteredLayout(matchingProjects);
+
+            // Hide Load More while filtering
+            loadMoreContainer?.classList.add('hidden');
+        }
+
+        industryFilter?.addEventListener('change', filterProjects);
+        typeFilter?.addEventListener('change', filterProjects);
+    }
 
     /* ## More Projects Section
     ---------------------------------------------------------------------------------------------------- */

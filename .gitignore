@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 .DS_Store
+
+# Local mise configuration
+mise.toml
