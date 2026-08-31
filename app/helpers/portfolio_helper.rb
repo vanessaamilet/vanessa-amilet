@@ -116,7 +116,7 @@ module PortfolioHelper
 			img: "portfolio/portfolio-compost-soil-website.jpg", 
 			label: "Web Design + Development (WordPress)",
 			desc: "Built to clearly present products and guide users to sales inquiries.",
-			project_type: %w[website], 
+			project_type: %w[website ecommerce], 
 			industry: %w[consumer-retail] 
 		},
 		# Row 5
@@ -301,7 +301,7 @@ module PortfolioHelper
 	{
 		"UX & Website Design" => "website",
 		"Web App" => "web-app",
-		"Ecommerce" => "ecommerce",
+		"E-commerce" => "ecommerce",
 		"Landing Page" => "landing-page",
 		"Campaign" => "campaign",
 		"Branding" => "branding"
