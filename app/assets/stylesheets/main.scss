@@ -1037,6 +1037,19 @@ a:has(img){
 
 /* ## Forms
 -------------------------------------------------- */
+.form-label{
+	color: $gray;
+	font-weight: $semibold-weight;
+}
+.form-select{
+	height: 50px;
+    background-color: #fafafa;
+    border: none;
+    outline: 0;
+    font-size: 16px !important;
+    box-shadow: none;
+    padding: .75rem 1.25rem;
+}
 
 #contact-form {
 	white-space: pre-wrap;
@@ -2262,8 +2275,8 @@ i.contact {
 	#accordion{
 		.accordion-item{
 			border-radius: 0.75rem;
-			border: 1px solid $green;
-			box-shadow: 0.25rem 0.25rem $green;
+			border: 1px solid $blue;
+			box-shadow: 0.25rem 0.25rem $blue;
 			margin-bottom: 15px;
 		}
 		.accordion-header{

@@ -26,29 +26,29 @@ section.pb-0
 		.row.justify-content-center
 			.col-lg-10
 				.squiggle
-				h2.text-center Establish Your Authentic Online Presence
+				h2.text-center Digital solutions tailored to your goals.
 section.webdesign
 	.container
 		.row.justify-content-center
 			.col-lg-6
-				h3 Custom Website Design
-				p Your website is more than just a digital space—it’s a powerful tool to captivate, engage, and convert. I specialize in creating visually stunning and intuitive websites tailored to your brand and audience, blending creativity with strategy to deliver a seamless user experience. From sitemaps and wireframes to high-fidelity mockups, I ensure every detail aligns with your brand identity.
-				h6 Your website design package may include:
+				h3 Website Strategy, Design & Development
+				p Your website is more than just a digital space. It’s a powerful tool to engage your audience and support your business goals. From strategy and structure to design and development, I create custom websites tailored to your brand and audience. Each project is thoughtfully planned and built with a focus on usability, accessibility, performance, and long-term flexibility.
+				h6 Capabilities include:
 				ul.mb-4
 					li Website Strategy & Discovery
-					li Website Sitemap
+					li Sitemaps & Information Architecture
 					li Color Palette & Typography Pairing
-					li Wireframes
-					li High-fidelity Design Mockups
-					li Website Design & Development (Wordpress or Shopify)
+					li Wireframes & High-fidelity Mockups
+					li Custom WordPress & Shopify Development
 					li Asset Preparation
 					li Mobile Optimization
+					li Analytics & Tracking
 				p 
 					i Every project is unique. Packages are tailored and quoted based on your specific business goals and requirements. 
 					|
 					/ b Investment: 
 					/ | Projects start at $3,999. 
-					b Timeline: 
+					b Typical Timeline: 
 					| 8-12 weeks.
 				= link_to "Let's Work Together", contact_path, :class=>"btn btn-secondary d-lg-none"
 			.col-lg-6
@@ -63,16 +63,16 @@ section.landingpg-design
 				.top-0
 					= link_to image_tag('portfolio/reliant-mass/reliant-mass-landingpage.jpg', alt: 'Vanessa Amilet - Landing Page Design Services', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"), portfolio_reliantmass_path
 			.col-lg-6.
-				h3 Landing Page Design + Development
-				p Launching a campaign or new offer? I design and develop conversion-focused landing pages that guide users through a clear, engaging journey. Each layout is built with intention, usability, and performance in mind—helping you drive meaningful engagement and results.
-				h6 Your landing page design may include:
+				h3 Landing Pages & Digital Campaigns
+				p Launching a campaign, product, or new offer? I design and develop conversion-focused landing pages that guide users through a clear and engaging journey. Each experience is built with purpose, usability, and performance in mind to help drive meaningful engagement and results.
+				h6 Capabilities include:
 				ul
-					li 1-Page Custom Sales Page with Legal Pages (Privacy Policy & Terms)
-					li Sitemap with Landing Page Journey
+					li Landing Page Strategy & Sitemap
+					li Custom Landing Page Design
+					li High-Fidelity Mockups & Revisions
 					li Color Palette & Typography Pairing
-					li Custom Design Mockup with One Round of Revisions
-					li Email Setup
-					li Thank You page
+					li Email Marketing Design & Setup
+					li Thank You Page
 					li Responsive, Mobile-Optimized Landing Page
 				p 
 					i Packages are custom built & quoted based on your unique business needs and goals. 
@@ -86,51 +86,53 @@ section.media.additional-services
 	.container
 		.row.justify-content-center
 			.col-lg-6
-				h3 Additional Creative Support
+				h3 Creative & Ongoing Support
 				p Enhance your digital presence with brand-aligned assets designed to support your marketing, communication, and business needs. These offerings can be added to any website or landing page package or requested as standalone services.
-				h6 Add-Ons:
+				h6 Capabilities include:
 				ul
 					li Monthly Website Maintenance 
 					li Email Template Designs
 					li Custom Brand Iconography + Illustrations
-					li Custom Print Collateral (Business Cards + Flyers)
+					li Print & Marketing Collateral
 					li Product Packaging Design
 					li Social Media Graphics + Templates
 				p 
-					i Packages are custom built & quoted based on your unique business needs and goals. Please get in touch if you are interested in stand alone services.
+					i Packages are custom built & quoted based on your unique business needs and goals. Please get in touch if you are interested in standalone services.
 				= link_to "View My Work", portfolio_path, :class=>"btn btn-secondary d-lg-none"
 			.col-lg-6.position-relative
 				.top-0
 					= link_to image_tag('portfolio/captivecolour/captivecolour-infocard.jpg', alt: 'Vanessa Amilet - Additional Offerings', :class=>"img-fluid end-0 border border-2 border-dark rounded-3"), portfolio_captivecolour_path
 
-section.steps.get-started
-	.container
-		.row.justify-content-center
-			.squiggle
-			.col-lg-12
-				h2.mx-auto Ready to establish your authentic online presence?
-					Getting started is simple.
-		.row.mb-5
-			.col-md-4
-				i.fad.fa-phone
-				h5 
-					span 01.
-				p 
-					| Book a free 
-					= link_to "15-minute consultation call ", "https://calendly.com/vanessa-amilet/15min?back=1"
-					| & we’ll discuss your goals and create a custom proposal.
-			.col-md-4
-				i.fad.fa-comments
-				h5
-					span 02. 
-				p Once you book, we’ll discuss the direction for your brand & website with plenty of opportunity for input & collaboration along the way.
-			.col-md-4
-				i.fad.fa-pencil-paintbrush
-				h5 
-					span 03. 
-				p After a few weeks, you’ll receive your elevated brand materials or website!
-		.row
-			.col-lg-12
-				.text-center
-					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
-					p = link_to "Have any questions?", faqs_path, :class=>"cta"
+/!  CTA
+= render :partial => "shared/get_started"
+/ section.steps.get-started
+/ 	.container
+/ 		.row.justify-content-center
+/ 			.squiggle
+/ 			.col-lg-12
+/ 				h2.mx-auto Ready to establish your authentic online presence?
+/ 					Getting started is simple.
+/ 		.row.mb-5
+/ 			.col-md-4
+/ 				i.fad.fa-phone
+/ 				h5 
+/ 					span 01.
+/ 				p 
+/ 					| Book a free 
+/ 					= link_to "15-minute consultation call ", "https://calendly.com/vanessa-amilet/15min?back=1"
+/ 					| & we’ll discuss your goals and create a custom proposal.
+/ 			.col-md-4
+/ 				i.fad.fa-comments
+/ 				h5
+/ 					span 02. 
+/ 				p Once you book, we’ll discuss the direction for your brand & website with plenty of opportunity for input & collaboration along the way.
+/ 			.col-md-4
+/ 				i.fad.fa-pencil-paintbrush
+/ 				h5 
+/ 					span 03. 
+/ 				p After a few weeks, you’ll receive your elevated brand materials or website!
+/ 		.row
+/ 			.col-lg-12
+/ 				.text-center
+/ 					= link_to "Let's Work Together", contact_path, :class=>"btn btn-primary mr-3 center mb-5"
+/ 					p = link_to "Have any questions?", faqs_path, :class=>"cta"
