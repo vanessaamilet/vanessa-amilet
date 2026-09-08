@@ -221,7 +221,23 @@ section.portfolio-info#outcome
 					/ 	span.badge.text-bg-secondary Outcome
 					/ p Jumpix launched with a cohesive, user-friendly interface and a polished digital presence. The refined UX, clear documentation, and supporting marketing materials helped users quickly understand the platform, boosting engagement and supporting a smooth rollout for the new product.
 			.col-12.col-md-7
-				div.pt-md-10	
+				.pt-md-10	
+					/ .portfolio-masonry
+					/ 	.portfolio-masonry-item
+					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
+					/ 			= image_tag "portfolio/jumpix/showcase-jumpix.png", class: "img-fluid w-100 h-auto", alt: "Jumpix Website Showcase"
+
+					/ 	.portfolio-masonry-item
+					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
+					/ 			= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix App Icons"
+
+					/ 	.portfolio-masonry-item
+					/ 		= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Mobile App Mockups" do
+					/ 			= image_tag "portfolio/jumpix/jumpix-mobile-app-mockups.png", class: "img-fluid w-100 h-auto", alt: "Jumpix Mobile App Mockups"
+
+					/ 	.portfolio-masonry-item
+					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
+					/ 			= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Dashboard - Add Cloud Service"
 					/!
 						= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
 							button.btn-play.position-absolute.top-50.start-50.translate-middle

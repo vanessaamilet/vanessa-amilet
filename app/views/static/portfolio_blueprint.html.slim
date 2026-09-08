@@ -151,10 +151,10 @@ section#approach
 
 
 /! Outcome
-section.portfolio-info#outcome
-	.container-fluid
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					/ h6
@@ -188,21 +188,48 @@ section.portfolio-info#outcome
 					/ 	span
 					/ 		| Explore the gallery for a closer look at the final website experiences, campaigns, and digital assets.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Updated homepage experience incorporating Blueprint’s evolving visual direction and business priorities." do
-						= image_tag "portfolio/blueprint/blueprint-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Homepage"
+				/ div.pt-md-10
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Updated homepage experience incorporating Blueprint’s evolving visual direction and business priorities." do
+				/ 		= image_tag "portfolio/blueprint/blueprint-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Homepage"
 					
-					= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint LHO Executive Insights Engine webpage - New solution experience supporting the launch of Blueprint’s AI-powered offering." do
-						= image_tag "portfolio/blueprint/blueprint-executive-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint LHO Executive Insights Engine webpage"
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint LHO Executive Insights Engine webpage - New solution experience supporting the launch of Blueprint’s AI-powered offering." do
+				/ 		= image_tag "portfolio/blueprint/blueprint-executive-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint LHO Executive Insights Engine webpage"
 
-					= link_to image_path("portfolio/blueprint/blueprint-website-blog.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Bluprint Insights" do
-						= image_tag "portfolio/blueprint/blueprint-website-blog.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Insights"
-					= link_to image_path("portfolio/blueprint/blueprint-genie-readiness.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Genie Readiness Landing Page" do
-						= image_tag "portfolio/blueprint/blueprint-genie-readiness.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Genie Readiness Landing Page"
-					= link_to image_path("portfolio/blueprint/blueprint-blog-templates.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
-						= image_tag "portfolio/blueprint/blueprint-blog-templates.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
-					= link_to image_path("portfolio/blueprint/blueprint-blog-templates-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
-						= image_tag "portfolio/blueprint/blueprint-blog-templates-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-website-blog.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Bluprint Insights" do
+				/ 		= image_tag "portfolio/blueprint/blueprint-website-blog.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Insights"
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-genie-readiness.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Genie Readiness Landing Page" do
+				/ 		= image_tag "portfolio/blueprint/blueprint-genie-readiness.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Genie Readiness Landing Page"
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-blog-templates.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
+				/ 		= image_tag "portfolio/blueprint/blueprint-blog-templates.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
+				/ 	= link_to image_path("portfolio/blueprint/blueprint-blog-templates-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
+				/ 		= image_tag "portfolio/blueprint/blueprint-blog-templates-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
+
+				.pt-md-10
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Updated Blueprint homepage designed to reflect evolving business priorities, solutions, and visual direction." do
+								= image_tag "portfolio/blueprint/blueprint-homepage.jpg", class: "img-fluid w-100 h-auto", alt: "Updated Blueprint Technologies website homepage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Executive Insights Engine solution page created to support the launch and positioning of Blueprint’s AI-powered offering." do
+								= image_tag "portfolio/blueprint/blueprint-executive-insights.jpg", class: "img-fluid w-100 h-auto", alt: "Blueprint Executive Insights Engine solution webpage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-website-blog.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Insights experience designed to organize thought leadership and make articles easier to discover and explore." do
+								= image_tag "portfolio/blueprint/blueprint-website-blog.jpg", class: "img-fluid w-100 h-auto", alt: "Blueprint Insights blog and thought leadership webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-blog-templates.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reusable blog templates developed to create a more consistent experience across Blueprint’s editorial content." do
+								= image_tag "portfolio/blueprint/blueprint-blog-templates.jpg", class: "img-fluid w-100 h-auto", alt: "Blueprint Technologies reusable blog page templates"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-blog-templates-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Additional blog layouts showing the flexible content system created for Blueprint’s growing library of insights." do
+								= image_tag "portfolio/blueprint/blueprint-blog-templates-2.jpg", class: "img-fluid w-100 h-auto", alt: "Additional Blueprint Technologies blog template layouts"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/blueprint/blueprint-genie-readiness.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Readiness campaign landing page designed to communicate the offer and support lead generation." do
+								= image_tag "portfolio/blueprint/blueprint-genie-readiness.jpg", class: "img-fluid w-100 h-auto", alt: "Blueprint Genie Readiness campaign landing page"
+
+						
 /! What I Learned					
 section
 	.container
