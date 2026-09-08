@@ -1,61 +1,200 @@
+- project = portfolio_project(portfolio_mfour_path)
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
 section.hero.d-flex
   .container-lg
-    .squiggle.mb-5
-    .row.justify-content-start.align-items-center
-      .col-md-6.col-lg-6
-        h1 Connected Consumer Insights Platform Website
-        p.lead
-        	| MFour Data Research, Inc. is a consumer insights company that provides real-time behavioral and survey data to help brands understand and engage their audiences.
-        .d-inline.mb-5.mb-md-0
+	.squiggle.mb-5
+	.row.justify-content-start.align-items-center
+	  .col-md-6.col-lg-6
+		h1 = project[:title]
+		p.lead
+			| MFour Data Research, Inc. is a consumer insights company that provides real-time behavioral and survey data to help brands understand and engage their audiences.
+		.d-inline.mb-5.mb-md-0
 			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://mfour.com/', target: "_blank"
-      .col-md-6.col-lg-6
-        .row.mb-3
+	  .col-md-6.col-lg-6
+		.row.mb-3
 			.col-md-6
 				h6 Client
 				p MFour Data Research, Inc.
 			.col-md-6
 				h6 Year
 				p 2023-Present
-        .row.mb-3
+		.row.mb-3
 			.col-md-6
 				h6 Services
 				p Website Design & Wordpress Development
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML/SCSS, JS, PHP, JSON
-section.portfolio-info#info
-	.container-fluid.px-md-0
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center Building for flexibility and growth.
+				p.lead.text-center.mb-5
+		  			| Led the website redesign and development in collaboration with MFour’s Marketing team and leadership, creating a more flexible digital experience that could support evolving products, go-to-market initiatives, and ongoing marketing needs.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-chart-line
+				h5 Evolving product needs
+				p Redesigned the website to better support MFour’s expanding product offerings, data tools, and evolving brand.
+			.col-md-3.mb-5
+				i.fad.fa-people-group
+				h5 Cross-functional collaboration
+				p Partnered closely with the Marketing team and developers throughout strategy, design, development, testing, and launch.
+			.col-md-3.mb-5
+				i.fad.fa-grid-2
+				h5 Flexible content system
+				p Created reusable WordPress blocks and templates that gave the team greater flexibility to build and update content.
+			.col-md-3.mb-5
+				i.fad.fa-gears
+				h5 End-to-end execution
+				p Worked across information architecture, UX/UI, custom WordPress development, SEO, responsive design, integrations, testing, and launch.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
+
+		p.lead.text-mb-5
+		  | MFour’s existing website no longer aligned with its updated brand or supported its expanding product offerings. As new data tools and interactive features were introduced, the website needed a more flexible structure that could evolve alongside the company’s products and marketing needs.
+
+		p.lead
+		  | The challenge was creating an experience that could clearly communicate MFour’s growing capabilities while also giving the internal team greater flexibility to create and manage content. The new site also needed to accommodate interactive product experiences and integrations without compromising usability or consistency.
+
+	  .col-lg-7
+	  	= link_to image_path("portfolio/mfour/mfour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website" do
+			= image_tag "portfolio/mfour/mfour-website.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"MFour Website"
+					= link_to image_path("portfolio/mfour/mfour-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website Sitemap" do
+		/ p.small.text-center.mt-3.mb-0
+		/   | Before and after: The homepage evolved as new visual elements and business priorities were introduced.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I approached the redesign by working closely with the Marketing team to understand MFour’s evolving website and content needs, then translating those needs into a flexible custom WordPress experience. Using Gutenberg, Advanced Custom Fields, and Bootstrap, I built a modular system that could support new products, interactive experiences, and ongoing content as the business evolved.
+			.approach-steps
+				.approach-step
+					.approach-title
+						i.fad.fa-people-group
+						h5 Align & plan
+					p Collaborated with the Marketing team and COO to understand business goals, go-to-market initiatives, evolving product offerings, and requirements for the new website experience.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-magnifying-glass-chart
+						h5 Audit & strategize
+					p Audited the existing website, content, and structure to identify opportunities for improvement, then developed a refined sitemap and SEO strategy to create clearer paths through MFour’s products, resources, and company content.
+				.approach-step
+					.approach-title
+						i.fad.fa-laptop-code
+						h5 Design & build
+					p  Translated MFour’s updated brand into a responsive digital experience and developed a custom WordPress theme with reusable blocks and templates tailored to the Marketing team’s content needs.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-pen-ruler
+						h5 Integrate, launch & optimize
+					p  Partnered with the Development team to integrate Sigma workbooks and other interactive functionality, then continued supporting the site through debugging, new content development, maintenance, and SEO optimization.
+
+
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Sitemap + content strategy
+				h3 Website strategy
+				p.mb-4 Developed a refined sitemap and page-level content strategy to organize MFour’s expanding products, solutions, and resources while creating clearer, more consistent paths through the website.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/mfour/mfour-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website Sitemap" do
+								= image_tag "portfolio/mfour/mfour-sitemap.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"MFour Website Sitemap"
+						h5.mt-3.mb-2 Sitemap
+					.col-md-6
+						= link_to image_path("portfolio/mfour/mfour-content-strategy.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Content hierarchy · Page strategy" do
+								= image_tag "portfolio/mfour/mfour-content-strategy.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Content hierarchy · Page strategy "
+						h5.mt-3.mb-2 Content strategy
+
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Development system
+				h3 Building for flexibility
+				p.mb-4 Built reusable WordPress blocks and templates around MFour’s content needs, giving the Marketing team greater flexibility to create new pages and experiences while maintaining visual consistency.
+
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/mfour/mfour-wordpress.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Custom blocks and components for consistent layouts" do
+							= image_tag "portfolio/mfour/mfour-wordpress.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Custom blocks and components for consistent layouts"
+
+						h5.mt-3.mb-2 Reusable patterns
+						p.small.mb-0
+							| Custom blocks and components for consistent layouts
+
+					.col-md-6
+						= link_to image_path("portfolio/mfour/mfour-wordpress-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Wordpress Site Editor Styles - Color palette and typography system" do
+							= image_tag "portfolio/mfour/mfour-wordpress-2.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Wordpress Site Editor Styles - Color palette and typography system"
+
+						h5.mt-3.mb-2 Global Styles
+						p.small.mb-0 Color palette and typography system
+/! The outcome
+section.portfolio-info#outcome
+	.container-fluid
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p MFour’s existing website no longer aligned with their updated brand or supported their expanded product offerings. The site needed a modern design system, improved flexibility for content creation, and stronger technical support for new data tools and interactive features.
-					h6
-						span.badge.text-bg-secondary Process
-					p.lead I collaborated closely with the Marketing team to define the redesign strategy and led the development of a custom WordPress theme using Gutenberg, Advanced Custom Fields, and the Bootstrap framework. I built modular custom blocks and templates based on the new design system and partnered with the Development team to integrate Sigma workbooks, enabling users to interact with survey templates directly on the site. In addition to the rebuild, I handled ongoing maintenance, including debugging, new content creation, and SEO optimization.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p The redesigned site delivers a modern, cohesive brand experience with flexible, scalable content tools. Interactive Sigma integrations enhance product visibility, while improved performance, structure, and SEO support MFour’s continued growth and marketing efforts.
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1
+					h2 The outcome
+					p.lead.mb-4 The redesigned website created a more modern, scalable digital experience that better supported MFour’s evolving brand, products, and marketing needs. A modular WordPress system gave the team greater flexibility to create and manage content, while interactive integrations helped bring MFour’s data products and capabilities directly into the website experience.
+					div
+						.d-flex.gap-2
+							i.fad.fa-grid-2
+							h5 More flexible content system
+						p Built reusable blocks, patterns, and templates that made it easier to create new content while maintaining consistency across the site.
+					div
+						.d-flex.gap-2
+							i.fad.fa-display-chart-up-circle-dollar
+							h5 Stronger product experiences
+						p Integrated interactive product experiences that gave users more direct ways to explore MFour’s data tools and capabilities.
+					div
+						.d-flex.gap-2
+							i.fad.fa-arrows-up-down-left-right
+							h5 Scalable digital foundation
+						p Improved the site’s structure, SEO, and technical flexibility to better support new products, content, and ongoing marketing initiatives.
+					p.mt-4 Together, these improvements gave MFour a flexible digital foundation that could continue evolving alongside its products, go-to-market priorities, and long-term growth.
 
 			.col-12.col-md-7
 				div.pt-md-10
-					= link_to image_path("portfolio/mfour/mfour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website" do
-							= image_tag "portfolio/mfour/mfour-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Website"
-					= link_to image_path("portfolio/mfour/mfour-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Website Sitemap" do
-						= image_tag "portfolio/mfour/mfour-sitemap.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Website Sitemap"
+
 					= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Homepage" do
 							= image_tag "portfolio/mfour/mfour-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Homepage"
 					= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio Overview" do
 							= image_tag "portfolio/mfour/mfour-studio-overview.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Studio Overview"
 					= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Resources Library" do
 						= image_tag "portfolio/mfour/mfour-website-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Resources Library"
-					
-                   
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3 Working at MFour strengthened my ability to collaborate across both marketing and development. Partnering with the Marketing team and COO gave me a deeper understanding of go-to-market strategy and how evolving product and business priorities translate into website content, messaging, and digital experiences.
+				p.lead.mb-3 On the technical side, collaborating with the Development team challenged me to work across different codebases. For the different MFour Studio views, I translated their existing code into PHP and JavaScript to integrate the functionality into WordPress. The experience strengthened my ability to connect business strategy, user experience, and technical implementation when solving digital problems.
+				.d-inline.mb-5.mb-md-0
+					= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://mfour.com/', target: "_blank"
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical					
+				   
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA

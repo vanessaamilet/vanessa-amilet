@@ -1,3 +1,4 @@
+- project = portfolio_project(portfolio_jumpix_path)
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
@@ -6,7 +7,7 @@ section.hero.d-flex
     .squiggle.mb-5
     .row.justify-content-start.align-items-center
       .col-md-6.col-lg-6
-        h1 Cloud Storage Management Web App
+		h1 = project[:title]
         p.lead
         	| Jumpix is a web-based application designed to help users access and move files across major cloud providers through a single, unified platform. The product simplifies file management across multiple cloud accounts and environments, making access easy regardless of where files are stored.
 		/ .d-inline.mb-5.mb-md-0
@@ -26,72 +27,255 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p HTML/SCSS, Ruby on Rails, Slim Lang, Twitter Bootstrap, Github, Illustrator, After Effects
-section.portfolio-info#info
-	.container-fluid.px-md-0
+
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center From idea to experience.
+				p.lead.text-center.mb-5
+		  			| Helped bring Jumpix from an early-stage concept to a customer-facing digital experience, contributing across strategy, user research, UX/UI, web development, marketing, and launch initiatives.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-lightbulb
+				h5 Product strategy
+				p Collaborated with the team on early brainstorming, planning, positioning, and ideas for how Jumpix could simplify managing multiple cloud accounts.
+			.col-md-3.mb-5
+				i.fad.fa-users-viewfinder
+				h5 User research
+				p Helped conduct an eight-participant focus group at the Art Institute of Houston to gather feedback on the website, application, and future features.
+			.col-md-3.mb-5
+				i.fad.fa-pen-ruler
+				h5 Design & development
+				p Designed website and application experiences and contributed to front-end development across the customer-facing platform.
+			.col-md-3.mb-5
+				i.fad.fa-bullhorn
+				h5 Marketing & growth
+				p Created marketing collateral and supported promotional initiatives, hiring events, and other activities surrounding the growing startup.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
+
+		p.lead.text-mb-5
+		  | As an early-stage product, Jumpix needed to introduce a new concept to users: managing files across multiple cloud storage providers from one centralized platform. The experience needed to make that concept easy to understand while giving users a simple way to connect accounts, organize content, and move files between services.
+
+		p.lead
+		  | The challenge extended beyond the application itself. We were also defining how Jumpix should be positioned, marketed, and introduced to potential users while continuing to learn which features and capabilities mattered most to them.
+
+	  .col-lg-7
+		= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
+			= image_tag "portfolio/jumpix/jumpix-website.webp", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix Website Showcase"
+		p.small.text-center.mt-3.mb-0
+		  | Jumpix marketing website introducing the platform, connected cloud services, and core functionality.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I worked closely with the CEO, founders, and CTO as Jumpix evolved from an early-stage concept into a customer-facing platform. My role spanned strategy, UX/UI, front-end development, user research, and marketing, helping shape both the product experience and how Jumpix was introduced to potential users.
+			.approach-steps
+				.approach-step.mb-4
+					.approach-title
+						i.fad.fa-lightbulb
+						h5 Plan & strategize
+					p Collaborated with the CEO, founders, and CTO on product ideas, positioning, features, marketing initiatives, and the overall direction of the Jumpix experience.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-users-viewfinder
+						h5 Research & learn
+					p Planned and coordinated a focus group at the Art Institute of Houston to evaluate the website and application, gather feedback, and identify opportunities for future features.
+				.approach-step
+					.approach-title
+						i.fad.fa-pen-ruler
+						h5 Design, build & refine
+					p Designed and developed the customer-facing experience using Ruby on Rails, Slim, SCSS, and JavaScript, collaborating closely with the CTO to translate product requirements into an accessible, intuitive interface.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-rocket-launch
+						h5 Support launch & growth
+					p Created marketing collateral and supporting digital assets while contributing to promotional, recruiting, and event initiatives around the startup.
+
+
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 UX/UI + Development
+				h3 Designing the Jumpix experience
+				p.mb-4 Designed the website and application experience to make managing multiple cloud services simple and approachable, while collaborating with the CTO on front-end development and evolving functionality.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
+							= image_tag "portfolio/jumpix/jumpix-dashboard-showcase.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix App - Dashboard"
+						h5.mt-3.mb-2 Cloud Management Dashboard
+					.col-md-6
+
+						= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Mobile concepts for accessing and managing cloud content on the go." do
+							= image_tag "portfolio/jumpix/jumpix-mobile-designs.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Mobile concepts for accessing and managing cloud content on the go."
+						h5.mt-3.mb-2 Mobile App Experience
+
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Brand + Marketing
+				h3 Building the brand & reaching users
+				p.mb-4 Extended the Jumpix experience across marketing and launch initiatives through email, social media, motion graphics, print collateral, and other brand-aligned assets.
+				.row.g-4
+					.col-md-6
+
+						= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
+							button.btn-play.position-absolute.top-50.start-50.translate-middle
+							= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix - Product Motion Graphics"
+						h5.mt-3.mb-2 Jumpix Product Video
+						p.small.mb-0
+							| Motion graphics introducing the Jumpix platform and features.
+
+					.col-md-6
+						= link_to image_path("portfolio/jumpix/jumpix-careers-flyer.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Careers Flyer" do
+							= image_tag "portfolio/jumpix/jumpix-careers-flyer-thumbnail.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix - Careers Flyer"
+
+						h5.mt-3.mb-2 Recruiting & Event Collateral
+						p.small.mb-0 Promotional collateral created for recruiting initiatives.
+/! User research
+section#research.bg-gradient-teal
+	.container
+		.row.mb-3.g-5
+			.col-lg-8
+				h6.mb-3 User research
+				h2 Learning directly from users
+				p.lead
+		  			| I planned and coordinated a focus group with eight participants at the Art Institute of Houston to evaluate both the Jumpix website and application. The research helped us understand how users perceived the experience, which features they valued, and where the platform could continue improving.
+			.col-lg-4
+				.p-4.border.border-2.border-primary.border-opacity-25.rounded-3
+					.d-flex.gap-2
+						i.fad.fa-users
+						h5.mb-2 8 Participants
+					p.small.mb-0 Art Institute of Houston
+					p.small December 14, 2014
+		.row.highlights.g-3
+			.col-md-3
+				.card.h-100.p-3
+					.d-flex.align-items-center.justify-content-between.mb-3
+						h5 8/8
+						i.fad.fa-face-smile
+					p found the website user-friendly
+			.col-md-3
+				.card.h-100.p-3
+					.d-flex.align-items-center.justify-content-between.mb-2
+						i.fad.fa-file-magnifying-glass
+						h5 8/8
+					p wanted the ability to open and view filesl
+			.col-md-3
+				.card.h-100.p-3
+					.d-flex.align-items-center.justify-content-between.mb-2
+						i.fad.fa-mobile-screen-button
+						h5 8/8
+					p said a Jumpix mobile app would be helpful
+			.col-md-3
+				.card.h-100.p-3
+					.d-flex.align-items-center.justify-content-between.mb-2
+						i.fad.fa-thumbs-up
+						h5 7/8
+					p would recommend the application
+
+/! The outcome
+section.portfolio-info#outcome
+	.container-fluid
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p As a brand-new product, Jumpix needed a clear user experience, intuitive interface, and a strong digital presence to introduce the platform to customers. The team required UX, UI, and front-end development support, along with user documentation and marketing materials, to help users understand how the product worked and why it mattered.
-					h6
-						span.badge.text-bg-secondary Process
-					p I collaborated closely with the CTO to help bring Jumpix from concept to launch. Using Ruby on Rails, SCSS, JavaScript, and Slim, I designed and developed the customer-facing interface and shaped the overall user experience. I created mockups for the main website, designed custom iconography, and ensured the product was accessible and intuitive. To support onboarding and engagement, I produced detailed user guides and created animated marketing videos to communicate key features and value.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p Jumpix launched with a cohesive, user-friendly interface and a polished digital presence. The refined UX, clear documentation, and supporting marketing materials helped users quickly understand the platform, boosting engagement and supporting a smooth rollout for the new product.
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1
+					h2 The outcome
+					p.lead.mb-4 Jumpix evolved into a cohesive digital experience that gave users a centralized way to access and manage content across multiple cloud services. The website, application, and supporting marketing materials established a consistent experience across user touchpoints while creating a foundation for continued product growth and new features.
+					div
+						.d-flex.gap-2
+							i.fad.fa-clouds
+							h5 Unified cloud experience
+						p Created a simpler way for users to access and manage multiple cloud services from one platform.
+					div
+						.d-flex.gap-2
+							i.fad.fa-layer-group
+							h5 Consistent digital presence
+						p Extended the Jumpix experience across the application, website, email, social media, motion graphics, and marketing collateral.
+					div
+						.d-flex.gap-2
+							i.fad.fa-users-viewfinder
+							h5 User-informed direction
+						p Focus group feedback validated the platform’s usability while identifying opportunities for mobile access, file viewing, and additional functionality.
+
+					/ p I collaborated closely with the CTO to help bring Jumpix from concept to launch. Using Ruby on Rails, SCSS, JavaScript, and Slim, I designed and developed the customer-facing interface and shaped the overall user experience. I created mockups for the main website, designed custom iconography, and ensured the product was accessible and intuitive. To support onboarding and engagement, I produced detailed user guides and created animated marketing videos to communicate key features and value.
+					/ h6
+					/ 	span.badge.text-bg-secondary Outcome
+					/ p Jumpix launched with a cohesive, user-friendly interface and a polished digital presence. The refined UX, clear documentation, and supporting marketing materials helped users quickly understand the platform, boosting engagement and supporting a smooth rollout for the new product.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
-						= image_tag "portfolio/jumpix/jumpix-dashboard-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App - Dashboard"
-					= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
-						button.btn-play.position-absolute.top-50.start-50.translate-middle
-						= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Video"
+				div.pt-md-10	
+					/!
+						= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
+							button.btn-play.position-absolute.top-50.start-50.translate-middle
+							= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Video"
 					= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
 						= image_tag "portfolio/jumpix/showcase-jumpix.png", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Website Showcase"
+					.colors
+						.container
+							.row
+								.col-lg-12
+									h6 COLORS
+									.col-sm-3.color-palette-container
+										.color-palette style="--color-palette-var: #585094;"
+										p.color-palette-name #585094
+									.col-sm-3.color-palette-container
+										.color-palette style="--color-palette-var: #6CC049;"
+										p.color-palette-name #6CC049
+									.col-sm-3.color-palette-container
+										.color-palette style="--color-palette-var: #CEDE00;"
+										p.color-palette-name #CEDE00
+									.col-sm-3.color-palette-container
+										.color-palette style="--color-palette-var: #000000;"
+										p.color-palette-name #000000
+					.fonts
+						.container
+							.row
+								.col-lg-12
+									h6 TYPOGRAPHY
+							.row
+								.col-md-6
+									= image_tag "typography/open-sans-type.svg", :class=>"img-responsive center-block"
+
+								.col-md-6
+									= image_tag "typography/quicksand-type.svg", :class=>"img-responsive center-block"
+
+					= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
+						= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Icons"
 					= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Mobile Mockups" do
 						= image_tag "portfolio/jumpix/jumpix-mobile-app-mockups.png", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Mobile Mockups"
-					
-					= link_to image_path("portfolio/jumpix/jumpix-login-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Web App - Login Page" do
-						= image_tag "portfolio/jumpix/jumpix-login-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Web App - Login Page"
 
 					= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
 						= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Dashboard - Add Cloud Service"
 
-					= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
-						= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Icons"
-					= link_to image_path("portfolio/jumpix/jumpix-careers-flyer.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Careers Flyer" do
-						= image_tag "portfolio/jumpix/jumpix-careers-flyer.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Careers Flyer"
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3 Working on Jumpix gave me early experience contributing to a digital product from multiple perspectives. Collaborating closely with the CEO, founders, and CTO taught me how business goals, technical requirements, marketing, and user needs influence product decisions. Planning and coordinating user research also reinforced the value of getting direct feedback from users and using those insights to identify opportunities for the experience to evolve.
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical					
 					
-				.colors
-					.container
-						.row
-							.col-lg-12
-								h6 COLORS
-								.col-sm-3.color-palette-container
-									.color-palette style="--color-palette-var: #585094;"
-									p.color-palette-name #585094
-								.col-sm-3.color-palette-container
-									.color-palette style="--color-palette-var: #6CC049;"
-									p.color-palette-name #6CC049
-								.col-sm-3.color-palette-container
-									.color-palette style="--color-palette-var: #CEDE00;"
-									p.color-palette-name #CEDE00
-								.col-sm-3.color-palette-container
-									.color-palette style="--color-palette-var: #000000;"
-									p.color-palette-name #000000
-				.fonts
-					.container
-						.row
-							.col-lg-12
-								h6 TYPOGRAPHY
-						.row
-							.col-md-6
-								= image_tag "typography/open-sans-type.svg", :class=>"img-responsive center-block"
-
-							.col-md-6
-								= image_tag "typography/quicksand-type.svg", :class=>"img-responsive center-block"
+					
+				
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA

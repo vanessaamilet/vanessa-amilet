@@ -1,3 +1,4 @@
+- project = portfolio_project(portfolio_firmatek_path)
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
@@ -6,7 +7,7 @@ section.hero.d-flex
     .squiggle.mb-5
     .row.justify-content-start.align-items-center
       .col-md-6.col-lg-6
-        h1 Geospatial Data & Insights Platform Website
+		h1 = project[:title]
         p.lead.text-mb-5
           | Firmatek is a geospatial analytics company serving the energy, environmental, and mining sectors, providing drone-based data collection and insights that support accurate measurement, operational management, and optimization.
         .d-inline.mb-5.mb-md-0
@@ -27,48 +28,150 @@ section.hero.d-flex
 				h6 Technologies
 				p FigJam, Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS, ACF
 
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center From complexity to clarity.
+				p.lead.text-center.mb-5
+          			| Led the website redesign from strategy through development, working closely with Firmatek’s Marketing Manager and UX Designer to simplify content, strengthen the evolving brand, and create a clearer experience for Firmatek’s growing capabilities and audiences.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-chart-line
+				h5 Evolving business needs
+				p Restructured the website to better support the additional industries Firmatek was targeting and make relevant solutions easier to discover.
+			.col-md-3.mb-5
+				i.fad.fa-people-group
+				h5 Cross-functional collaboration
+				p Partnered with the Marketing Manager and UX Designer throughout strategy, wireframing, design, and development to review ideas, incorporate feedback, and refine the experience.
+			.col-md-3.mb-5
+				i.fad.fa-pen-ruler
+				h5 Content + brand evolution
+				p Simplified existing website content and helped establish an updated visual direction through color exploration, typography, and responsive design.
+			.col-md-3.mb-5
+				i.fad.fa-gears
+				h5 End-to-end execution
+				p Worked across sitemap planning, content refinement, wireframes, responsive design, visual design, and WordPress implementation.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+
+/! Challenge
+section#challenge.challenge
+  .container
+    .row.align-items-center.g-5
+      .col-lg-5
+        h2 The challenge
+        p.lead.text-mb-5
+          | Firmatek’s existing website no longer reflected its evolving brand or the sophistication of its data solutions. The site contained a large amount of content that needed to be simplified, while the structure needed to evolve to support additional industries the company was beginning to target.
+
+        p.lead
+          | Firmatek also wanted to give Kespry greater visibility and make it easier for customers to access relevant product information. The challenge was creating a clearer content structure and refreshed visual system that could communicate Firmatek’s growing capabilities without adding more complexity to the experience.
+
+      .col-lg-7
+        = link_to image_path("portfolio/firmatek/firmatek-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Before and after: The homepage evolved with a simplified content structure, refreshed visual system, and clearer paths to Firmatek’s solutions." do
+          = image_tag "portfolio/firmatek/firmatek-before-after.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Firmatek website homepage before and after the redesign"
+		p.small.text-center.mt-3.mb-0
+          | Before and after: The homepage evolved with a simplified content structure, refreshed visual system, and clearer paths to Firmatek’s solutions.
+
+/! Approach
+section#approach
+  .container
+    .row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I led the redesign from strategy through development, using an iterative process to simplify the site structure, strengthen brand cohesion, and present Firmatek’s technical expertise in a clearer, more user-friendly way.
+			.approach-steps
+				.approach-step
+					.approach-title
+						i.fad.fa-people-group
+						h5 Align & plan
+					p Collaborated with the Marketing Manager and UX Designer to define redesign goals, understand new company priorities, and determine how Kespry should fit within the broader website experience.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-magnifying-glass-chart
+						h5 Audit & strategize
+					p  Audited the existing website to understand its content, structure, and user paths, then developed a refined sitemap and content strategy to simplify the experience and support Firmatek’s expanding industries and offerings.
+				.approach-step
+					.approach-title
+						i.fad.fa-object-group
+						h5 Wireframe & iterate
+					p  Created desktop and mobile wireframes to establish content hierarchy, page structure, and responsive behavior, refining the experience through collaborative reviews and feedback.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-pen-ruler
+						h5 Design, build & launch
+					p  Explored color palette options and translated the approved visual direction into high-fidelity mockups using Firmatek’s typography, imagery, and existing content before developing the responsive WordPress experience.
+
+
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Sitemap
+				h3 Website strategy
+				p.mb-4 Following an audit of the existing website, I developed a new sitemap to simplify the site structure, support Firmatek’s expanding industries, and create clearer paths to resources, solutions, and Kespry. The planning also accounted for content organization, utility navigation, and existing URLs as the site transitioned to the new structure.
+				= link_to image_path("portfolio/firmatek/firmatek-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek website sitemap showing the redesigned information architecture, navigation structure, industries, resources, and Kespry access points" do
+						= image_tag "portfolio/firmatek/firmatek-sitemap.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Firmatek website sitemap showing the redesigned information architecture, navigation structure, industries, resources, and Kespry access points"
+						
+
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Design exploration
+				h3 Establishing the visual direction
+				p.mb-4 Explored color, typography, and responsive layouts to translate Firmatek's evolving brand into a cohesive digital experience.
+
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/firmatek/firmatek-design-exploration.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek visual design exploration showing proposed color palette and typography options for the website redesign" do
+							= image_tag "portfolio/firmatek/firmatek-design-exploration.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Firmatek visual design exploration showing proposed color palette and typography options for the website redesign"
+
+						h5.mt-3.mb-2 Color palette exploration
+						p.small.mb-0
+							| Presented visual direction options to help establish a color system that complemented Firmatek’s existing brand while giving the redesigned website a more modern feel
+
+					.col-md-6
+						= link_to image_path("portfolio/firmatek/firmatek-mobile-wireframes.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek mobile wireframes showing responsive page layouts, content hierarchy, and navigation for the website redesign" do
+							= image_tag "portfolio/firmatek/firmatek-mobile-wireframes.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Firmatek mobile wireframes showing responsive page layouts, content hierarchy, and navigation for the website redesign"
+
+						h5.mt-3.mb-2 Responsive wireframes
+						p.small.mb-0  Designed mobile layouts alongside desktop wireframes to establish content hierarchy and responsive behavior across screen sizes.
+
 /! Portfolio Details
-section.portfolio-info#info
-	.container-fluid.px-md-0
+section.portfolio-info#outcome
+	.container-fluid
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p Firmatek’s existing website no longer reflected their evolving brand or the sophistication of their data solutions. It needed a clearer content structure and a refreshed visual system to better represent Firmatek's growing capabilities.
-					h6
-						span.badge.text-bg-secondary Process
-					p I led the redesign from strategy to development, starting with a refined sitemap and content structure. I designed wireframes and high-fidelity mockups using Firmatek’s updated brand system, then built a custom WordPress theme with modular, reusable blocks. The entire process focused on improving usability, strengthening brand cohesion, and presenting Firmatek’s technical expertise in a clear, user-friendly way.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p The new website is modern, responsive, and strategically structured to guide users through Firmatek’s solutions. The redesign provides Firmatek with a scalable digital foundation that supports ongoing growth and enhances their credibility as an industry leader.
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1
+					h2 The outcome
+					p.lead.mb-4 The redesigned website created a more modern, focused, and user-friendly experience that better reflected Firmatek’s evolving brand and growing capabilities. A simplified site structure made key information easier to navigate, while the expanded industry architecture and clearer access to Kespry gave Firmatek greater flexibility to support different audiences and business needs.
+					div
+						.d-flex.gap-2
+							i.fad.fa-layer-group 
+							h5 More cohesive experience
+						p Simplified content and navigation to create clearer paths through Firmatek’s industries, solutions, resources, and product information.
+					div
+						.d-flex.gap-2
+							i.fad.fa-diagram-project
+							h5 More scalable structure
+						p Created a flexible information architecture that could support Firmatek’s expanding industries, offerings, and future content needs.
+					div
+						.d-flex.gap-2
+							i.fad.fa-eye
+							h5 Stronger product visibility
+						p Gave Kespry a more intentional place within the website experience, making product access and related information easier for customers to find.
 					/ p The redesign provides Firmatek with a scalable digital foundation that supports ongoing growth and enhances their credibility as an industry leader.
-					/ hr.my-4
-					/ .row
-					/ 	.col-md-6
-					/ 		h6 Client
-					/ 		p Firmatek
-					/ 	.col-md-6
-					/ 		h6 Year
-					/ 		p 2025
-					/ .row.mb-3
-					/ 	.col-md-6
-					/ 		h6 Services
-					/ 		p Website Design & Wordpress Development
-					/ 	.col-md-6
-					/ 		h6 Technologies
-					/ 		p Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS, ACF
-					/ .row
-					/ 	= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://firmatek.com/', target: "_blank"
+
 			.col-12.col-md-7
 				div.pt-md-10
                     = link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
 						= image_tag "portfolio/firmatek/firmatek.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website"
-					= link_to image_path("portfolio/firmatek/firmatek-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website Sitemap" do
-						= image_tag "portfolio/firmatek/firmatek-sitemap.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website Sitemap"
-					= link_to image_path("portfolio/firmatek/firmatek-mobile-wireframes.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Mobile Wireframes" do
-						= image_tag "portfolio/firmatek/firmatek-mobile-wireframes.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Mobile Wireframes"
+
 					= link_to image_path("portfolio/firmatek/firmatek-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Homepage" do
 						= image_tag "portfolio/firmatek/firmatek-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Homepage"
 					
@@ -84,7 +187,19 @@ section.portfolio-info#info
 					= link_to image_path("portfolio/firmatek/firmatek-resources-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources Webpage" do
 						= image_tag "portfolio/firmatek/firmatek-resources-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Resources Webpage"
 					
-						
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3
+          			| Working on Firmatek gave me the opportunity to learn more about the drone mapping and data solutions industry and how platforms like Kespry support customers in the field. That understanding helped me make more informed decisions about how Firmatek’s services, industries, and product offerings should be structured and communicated.
+				p.lead.mb-3 The project also reinforced the value of collaboration throughout the design process. Working closely with the Marketing Manager and UX Designer helped me balance business goals, user needs, and feedback while taking the experience from early strategy and wireframes through design and development
+				.d-inline.mb-5.mb-md-0
+					= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://firmatek.com/', target: "_blank"
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical						
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

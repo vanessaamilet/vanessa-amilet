@@ -112,10 +112,10 @@ $radial-gradient:
 $cta-gradient:
   // Lavender — upper left
   radial-gradient(
-    75% 140% at 0% 20%,
-    rgba(217, 212, 247, 1) 0%,
-    rgba(217, 212, 247, 0.7) 35%,
-    transparent 68%
+	75% 140% at 0% 20%,
+	rgba(217, 212, 247, 1) 0%,
+	rgba(217, 212, 247, 0.7) 35%,
+	transparent 68%
   ),
 
 	// Blue-gray — upper right
@@ -128,10 +128,10 @@ $cta-gradient:
 
   // Teal — bottom/center
   radial-gradient(
-    65% 110% at 55% 110%,
-    rgba(77, 185, 172, 0.42) 0%,
-    rgba(77, 185, 172, 0.15) 38%,
-    transparent 68%
+	65% 110% at 55% 110%,
+	rgba(77, 185, 172, 0.42) 0%,
+	rgba(77, 185, 172, 0.15) 38%,
+	transparent 68%
   ),
 
   // Lavender base
@@ -391,6 +391,7 @@ $enable-negative-margins: true;
 
 html {
 	height: 100%;
+	scroll-behavior: smooth;
 	/* The html and body elements cannot have any padding or margin. */
 }
 
@@ -884,6 +885,13 @@ a:has(img){
 	margin-right: auto;
 }
 
+.box-shadow{
+	box-shadow: 0.25rem 0.25rem #000000;
+}
+.box-shadow-teal-right{
+	box-shadow: 12px 12px 0 0 #4db9ac;
+}
+
 /* ### Videos */
 
 .modal-body{
@@ -919,7 +927,7 @@ a:has(img){
 	display: block;
 	margin: 0 auto;
 	width: 5px;
-	height: 100px;
+	height: 60px;
 }
 
 /* ## Animations
@@ -1043,12 +1051,12 @@ a:has(img){
 }
 .form-select{
 	height: 50px;
-    background-color: #fafafa;
-    border: none;
-    outline: 0;
-    font-size: 16px !important;
-    box-shadow: none;
-    padding: .75rem 1.25rem;
+	background-color: #fafafa;
+	border: none;
+	outline: 0;
+	font-size: 16px !important;
+	box-shadow: none;
+	padding: .75rem 1.25rem;
 }
 
 #contact-form {
@@ -1301,6 +1309,85 @@ section{
 			padding: 0;
 		}
 	}
+}
+
+/* ## Backgrounds
+--------------------------------------------- */
+.lighter-purple{
+		background: $lighter-purple;
+}
+.soft-gray{
+	background: $soft-gray-lavender;
+}
+
+// Soft gradient for secondary / middle sections
+.bg-gradient-soft {
+  background:
+	// Soft lavender — upper left
+	radial-gradient(
+	  70% 120% at 0% 0%,
+	  rgba(217, 212, 247, 0.65) 0%,
+	  rgba(217, 212, 247, 0.25) 40%,
+	  transparent 70%
+	),
+
+	// Blue-gray — lower right
+	radial-gradient(
+	  75% 130% at 100% 100%,
+	  rgba(200, 207, 223, 0.75) 0%,
+	  rgba(200, 207, 223, 0.30) 42%,
+	  transparent 72%
+	),
+
+	// Very subtle teal — upper right
+	radial-gradient(
+	  55% 100% at 100% 0%,
+	  rgba(77, 185, 172, 0.14) 0%,
+	  rgba(77, 185, 172, 0.05) 42%,
+	  transparent 68%
+	),
+
+	// Light neutral base
+	#F7F6FF;
+}
+
+// Teal-forward gradient for secondary sections
+.bg-gradient-teal {
+  background:
+	// Teal — upper left
+	radial-gradient(
+	  75% 130% at 0% 0%,
+	  rgba(77, 185, 172, 0.42) 0%,
+	  rgba(77, 185, 172, 0.20) 38%,
+	  transparent 70%
+	),
+
+	// Teal — lower right
+	radial-gradient(
+	  70% 125% at 100% 100%,
+	  rgba(77, 185, 172, 0.32) 0%,
+	  rgba(77, 185, 172, 0.14) 40%,
+	  transparent 70%
+	),
+
+	// Lavender — upper right
+	radial-gradient(
+	  65% 120% at 100% 0%,
+	  rgba(217, 212, 247, 0.70) 0%,
+	  rgba(217, 212, 247, 0.28) 42%,
+	  transparent 72%
+	),
+
+	// Blue-gray — lower left
+	radial-gradient(
+	  60% 110% at 0% 100%,
+	  rgba(200, 207, 223, 0.60) 0%,
+	  rgba(200, 207, 223, 0.22) 42%,
+	  transparent 70%
+	),
+
+	// Light neutral base
+	#F7F6FF;
 }
 
 
@@ -2078,6 +2165,7 @@ i.contact {
 	}
 	.featured{
 		background-color: $white;
+		background-color: $lighter-purple;
 		border-top: 1px solid $black;
 		//border-bottom: 1px solid $black;
 		img{
@@ -2496,6 +2584,12 @@ i.contact {
 			font-weight: $semibold-weight;
 		}
 	}
+	h6{
+		font-family: $proxima-nova !important;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+		//text-align: center;
+	}
 	.portfolio-info{
 		padding: 0;
 		background: $soft-gray-lavender;
@@ -2532,6 +2626,75 @@ i.contact {
 				color: $maroon;
 				font-weight: $semibold-weight;
 			}
+		}
+	}
+	.project-at-a-glance{
+		.highlights{
+			i{
+				color: $red;
+				font-size: 45px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.challenge{
+		background: $lighter-purple;
+	}
+	#approach,
+	.approach{
+		.position-sticky{
+			@media screen and (max-width:991px){
+				height: auto !important;
+				position: relative !important;
+				//padding: 40px;
+			}
+		}
+		.approach-step {
+			.approach-title {
+				display: flex;
+				// align-items: center;
+				gap: 0.75rem;
+
+				i {
+					font-size: 1.5rem;
+					flex-shrink: 0;
+					color: $mint;
+				}
+
+				h5 {
+				margin-bottom: 0;
+				}
+			}
+		}
+	}
+	#research{
+		.highlights{
+			h5{
+				font-size: 45px;
+				color: $blue;
+			}
+			i{
+				color: $mint;
+				font-size: 45px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	#outcome{
+		@media screen and (max-width:991px){
+			padding: 40px;
+		}
+		.position-sticky{
+			@media screen and (max-width:991px){
+				height: auto !important;
+				position: relative !important;
+				//padding: 40px;
+			}
+		}
+		i {
+			font-size: 1.5rem;
+			flex-shrink: 0;
+			color: $mint;
 		}
 	}
 	.browse-more{

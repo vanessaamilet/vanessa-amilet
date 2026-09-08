@@ -1,57 +1,198 @@
+- project = portfolio_project(portfolio_blueprint_path)
 = content_for :body_class, 'portfolio-template'
 
 /!  Begin Page Content
 section.hero.d-flex
   .container-lg
-    .squiggle.mb-5
-    .row.justify-content-start.align-items-center
-      .col-md-6.col-lg-6
-        h1 Data & AI Consulting Website
-        p.lead.text-mb-5
-          | Led the ongoing design, development, and optimization of Blueprint Technologies’ WordPress website while supporting integrated marketing campaigns as brand and go-to-market priorities evolved. Translated new visual elements into responsive web experiences, revamped key pages and templates, and designed and developed solution pages for data, AI, and Databricks initiatives. Contributed to campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine through landing pages, email campaigns, social content, and other digital marketing assets.
-        .d-inline.mb-5.mb-md-0
+	.squiggle.mb-5
+	.row.justify-content-start.align-items-center
+	  .col-md-6.col-lg-6
+	  	h1 = project[:title]
+		p.lead.text-mb-5
+		  | Blueprint Technologies is a technology consulting company helping organizations solve complex challenges through data, AI, cloud, and digital solutions.
+		.d-inline.mb-5.mb-md-0
 			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://bpcs.com/', target: "_blank"
-      .col-md-6.col-lg-6
-        .row.mb-3
+	  .col-md-6.col-lg-6
+		.row.mb-3
 			.col-md-6
 				h6 Client
 				p Blueprint Technologies
 			.col-md-6
 				h6 Year
 				p 2026
-        .row.mb-3
+		.row.mb-3
 			.col-md-6
 				h6 Services
 				p Web Design, UX/UI, WordPress Development, Web Strategy, Digital Marketing.
 			.col-md-6
 				h6 Technologies
 				p FigJam, Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS, ACF, Brevo, ChatGPT/Jasper AI
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center From strategy to impact.
+				p.lead.text-center.mb-5
+		  			| Led the ongoing evolution of a B2B technology website and digital marketing initiatives supporting Blueprint’s growing portfolio of data, AI, and Databricks solutions.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-chart-line
+				h5 Evolving business needs
+				p Adapted the website as new data, AI, and Databricks offerings, brand updates, and go-to-market priorities emerged.
+			.col-md-3.mb-5
+				i.fad.fa-people-group
+				h5 Cross-functional collaboration
+				p Partnered with the CEO, leadership team, Product Manager, UX Designer, and Graphic Designer to align business goals, user needs, and execution.
+			.col-md-3.mb-5
+				i.fad.fa-bullseye-arrow
+				h5 Web + campaign initiatives
+				p Revamped key website experiences and supported campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine.
+			.col-md-3.mb-5
+				i.fad.fa-gears
+				h5 End-to-end execution
+				p Worked across UX/UI, WordPress development, web strategy, SEO, analytics, email, and digital marketing based on each initiative’s needs.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
 
-/! Portfolio Details
-section.portfolio-info#info
-	.container-fluid.px-md-0
+		p.lead.text-mb-5
+		  | Blueprint’s website was continuously evolving rather than undergoing a traditional redesign. As new data and AI offerings launched and the visual brand developed, key pages needed to be updated without disrupting the existing site or creating an inconsistent experience.
+
+		p.lead
+		  | The challenge was balancing changing business and go-to-market priorities with user needs, existing content, and the constraints of an established WordPress site. New initiatives often required determining how complex technical offerings should be structured and communicated while keeping the broader digital experience cohesive.
+
+	  .col-lg-7
+		= link_to image_path("portfolio/blueprint/blueprint-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Website Before & After" do
+		  = image_tag "portfolio/blueprint/blueprint-before-after.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Blueprint website before and after comparison"
+		p.small.text-center.mt-3.mb-0
+		  | Before and after: The homepage evolved to reflect stakeholder priorities, strengthen messaging, and create clearer paths for users to explore Blueprint’s solutions, expertise, and insights.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		/ h2 My approach
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I took a collaborative, iterative approach to evolving Blueprint’s website and supporting key marketing initiatives. Each project required balancing business goals, user needs, and technical constraints while maintaining a cohesive experience across an existing WordPress site.
+			.approach-steps
+				.approach-step
+					.approach-title
+						i.fad.fa-people-group
+						h5 Align & plan
+					p Collaborated with the CEO, leadership team, Product Manager, UX Designer, and Graphic Designer to understand goals, prioritize initiatives, and define requirements.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-magnifying-glass-chart
+						h5 Audit & strategize
+					p  Evaluated existing content, identified gaps, and mapped user journeys to determine the best way to structure and communicate complex offerings.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-pen-ruler
+						h5 Design, build & launch
+					p  Translated evolving brand direction and GTM priorities into responsive web experiences and integrated campaigns. Used insights from GTM and Product Manager meetings, along with Jasper AI, to develop and refine copy for webpages, email campaigns, and social content.
+				.approach-step
+					.approach-title
+						i.fad.fa-chart-line-up
+						h5 Measure & optimize
+					p  Used GA4 insights, SEO performance, stakeholder feedback, and evolving business priorities to identify opportunities and continuously improve the website experience.
+
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Sitemap
+				h3 Resources hub strategy
+				p.mb-4 Developed a proposed sitemap and taxonomy strategy for Blueprint’s growing resource library. Began implementation by cleaning up categories and tags, updating Elementor templates, and creating templates for new content series.
+
+				= link_to image_path("portfolio/blueprint/blueprint-resources-sitemap.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"An information architecture concept developed to consolidate content types and create clearer pathways for discovering resources." do
+					= image_tag "portfolio/blueprint/blueprint-resources-sitemap.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"An information architecture concept developed to consolidate content types and create clearer pathways for discovering resources."
+
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Campaign examples
+				h3 Bringing key initiatives to market
+				p.mb-4 Supported go-to-market campaigns across web, email, social, and supporting digital assets. I developed and refined messaging by translating Blueprint’s brand voice, technical offerings, and audience needs into clear, targeted campaign content.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/blueprint/lho-executive-insights-campaign.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Executive Insights Engine campaign: Developed and refined audience-specific messaging and digital assets across email, web, LinkedIn, and Databricks partner channels to introduce the new LHO capability." do
+							= image_tag "portfolio/blueprint/lho-executive-insights-campaign.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Executive Insights Engine campaign showing audience-specific emails, landing page, LinkedIn post, and Databricks Slack announcement"
+
+						h5.mt-3.mb-2 Executive Insights Engine by LHO
+						p.small.mb-0  Audience-specific campaign supporting the launch across multiple digital touchpoints.
+					.col-md-6
+						= link_to image_path("portfolio/blueprint/lho-genie-integration-campaign.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Genie Integration campaign: Developed and refined messaging across email, web, social, and partner channels to communicate the launch of Databricks Genie within the Executive Insights Engine." do
+							= image_tag "portfolio/blueprint/lho-genie-integration-campaign.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Databricks Genie Integration campaign showing audience-specific emails, website content, LinkedIn and X posts, and Databricks Slack announcement"
+
+						h5.mt-3.mb-2 Genie Integration
+						p.small.mb-0  Multi-channel campaign communicating the launch of the Databricks Genie integration.
+
+	/ .row.mt-5
+	/   .col-12
+	/     .collaboration-note.p-3.text-primary-emphasis.bg-info-subtle.border.border-info-subtle.rounded-3
+	/       .collaboration-note-icon
+	/         i.fad.fa-lightbulb
+
+	/       .collaboration-note-content
+	/         h6.section-eyebrow.mb-1 Working through ambiguity
+	/         p.mb-0
+	/           | Priorities and requirements often evolved as initiatives moved from GTM discussions into execution. I learned to work with incomplete information, ask the right questions, incorporate feedback from multiple stakeholders, and adapt solutions while keeping the overall experience consistent.
+
+
+/! Outcome
+section.portfolio-info#outcome
+	.container-fluid
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p Blueprint's website needed to evolve alongside new branding, service offerings, and go-to-market priorities while making complex data and AI solutions easier to understand.
-					h6
-						span.badge.text-bg-secondary Process
-					p Owned ongoing website design and development while collaborating with the CEO, leadership team, Product Manager, and UX Designer on business and go-to-market priorities. Revamped key pages, implemented new brand elements, and supported campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine through web experiences, email marketing, social content, and campaign strategy.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p Created a more cohesive digital experience and supported integrated campaigns that increased visibility for key offerings, strengthened product storytelling, and provided clearer paths for prospective customers to engage with Blueprint.
-
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1
+					h2 The outcome
+					/ h6
+					/ 	span.badge.text-bg-secondary Problem
+					/ p Blueprint's website needed to evolve alongside new branding, service offerings, and go-to-market priorities while making complex data and AI solutions easier to understand.
+					/ h6
+					/ 	span.badge.text-bg-secondary Process
+					/ p Owned ongoing website design and development while collaborating with the CEO, leadership team, Product Manager, and UX Designer on business and go-to-market priorities. Revamped key pages, implemented new brand elements, and supported campaigns for Genie Readiness, Lakehouse Optimizer, and Executive Insights Engine through web experiences, email marketing, social content, and campaign strategy.
+					/ h6
+					/ 	span.badge.text-bg-secondary Outcome
+					/ p Created a more cohesive digital experience and supported integrated campaigns that increased visibility for key offerings, strengthened product storytelling, and provided clearer paths for prospective customers to engage with Blueprint.
+					p.lead.mb-4 The website evolved into a more cohesive and flexible digital experience that better reflected Blueprint’s growing data and AI capabilities. Updated pages and templates strengthened product storytelling, while new solution experiences and integrated campaigns gave the marketing team more ways to support launches and engage prospective customers.
+					div
+						.d-flex.gap-2
+							i.fad.fa-layer-group 
+							h5 More cohesive experience
+						p Introduced new visual elements across key pages while maintaining consistency with the existing site.
+					div
+						.d-flex.gap-2
+							i.fad.fa-message-lines
+							h5 Clearer solution storytelling
+						p Created clearer experiences for complex data, AI, and Databricks offerings.
+					div
+						.d-flex.gap-2
+							i.fad.fa-bullhorn
+							h5 Greater marketing flexibility
+						p Supported new launches and campaigns across web, email, and social.
+					p Overall, the work helped Blueprint’s digital presence keep pace with a rapidly evolving business. By continuously improving the website while supporting new solutions and go-to-market initiatives, I helped create a more adaptable digital foundation that could evolve alongside the company’s brand, offerings, and marketing priorities.
+					/ .outcome-gallery-cta.mt-5
+					/ 	i.fad.fa-images.me-2
+					/ 	span
+					/ 		| Explore the gallery for a closer look at the final website experiences, campaigns, and digital assets.
 			.col-12.col-md-7
 				div.pt-md-10
-                    = link_to image_path("portfolio/blueprint/blueprint-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Website Before & After" do
-						= image_tag "portfolio/blueprint/blueprint-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Website Before & After"
-					= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint Homepage" do
+					= link_to image_path("portfolio/blueprint/blueprint-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Updated homepage experience incorporating Blueprint’s evolving visual direction and business priorities." do
 						= image_tag "portfolio/blueprint/blueprint-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint Homepage"
 					
-					= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint LHO Executive Insights Engine webpage" do
+					= link_to image_path("portfolio/blueprint/blueprint-executive-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blueprint LHO Executive Insights Engine webpage - New solution experience supporting the launch of Blueprint’s AI-powered offering." do
 						= image_tag "portfolio/blueprint/blueprint-executive-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blueprint LHO Executive Insights Engine webpage"
 
 					= link_to image_path("portfolio/blueprint/blueprint-website-blog.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Bluprint Insights" do
@@ -62,9 +203,19 @@ section.portfolio-info#info
 						= image_tag "portfolio/blueprint/blueprint-blog-templates.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
 					= link_to image_path("portfolio/blueprint/blueprint-blog-templates-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Blog Templates" do
 						= image_tag "portfolio/blueprint/blueprint-blog-templates-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Blog Templates"
-					
-						
-
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				/ .squiggle
+				h2 What I learned
+				p.lead.mb-3 Working at Blueprint deepened my understanding of the data and AI space, including the Databricks ecosystem, Blueprint’s accelerators, and products like Lakehouse Optimizer. Learning how these technologies work and the problems they solve helped me translate complex technical concepts into clearer website experiences, messaging, and campaigns for different audiences.
+				p.lead.mb-3 The experience also strengthened my ability to continuously learn within a highly technical environment. Collaborating with product, leadership, design, and go-to-market teams taught me how to ask the right questions, absorb technical context, and turn that knowledge into thoughtful digital experiences that supported both user and business needs.
+				.d-inline.mb-5.mb-md-0
+					= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'http://bpcs.com/', target: "_blank"
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA
