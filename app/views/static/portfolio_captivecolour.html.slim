@@ -21,26 +21,175 @@ section.hero.d-flex
         .row.mb-3
 			.col-md-6
 				h6 Services
-				p Brand Design, Shopify Website Design & Development, Graphic Design, Social Media, Photography
+				p Brand Strategy, Brand Design, Shopify Website Design & Development, Graphic Design, Social Media, Photography
 			.col-md-6
 				h6 Technologies
 				p Figma, Adobe Creative Cloud, Shopify, Mailchimp, HTML/SCSS, JS, Liquid, Ruby on Rails, Github, Sony Alpha 7
-section.portfolio-info#info
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center From concept to market.
+				p.lead.text-center.mb-5
+		  			| Built CaptiveColour Cosmetics from an early brand concept into a customer-facing cosmetics business, spanning brand strategy, product development, e-commerce, and marketing.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-swatchbook
+				h5 Brand development
+				p Developed the CaptiveColour name, positioning, visual identity, packaging, and supporting brand assets from the ground up.
+			.col-md-3.mb-5
+				i.fad.fa-flask
+				h5 Product research & development
+				p Researched manufacturing partners, explored custom lipstick formulations, and tested product samples before moving into larger production orders.
+			.col-md-3.mb-5
+				i.fad.fa-bag-shopping
+				h5 E-commerce & digital experience
+				p Designed and managed the Shopify experience, creating a cohesive path from brand discovery through product exploration and purchase.
+			.col-md-3.mb-5
+				i.fad.fa-bullhorn
+				h5 Marketing & audience growth
+				p Supported launches through social media, email, influencer and ambassador outreach, events, and promotional campaigns, growing the social audience from 0 to approximately 400 followers.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
+
+		p.lead.text-mb-5
+		  | CaptiveColour Cosmetics was entering a crowded cosmetics market filled with established brands and an abundance of choices for consumers. As a new brand with no existing audience or recognition, the challenge was creating a distinct identity and product experience that could capture attention, build credibility, and give customers a reason to engage.
+
+		p.lead
+		  | At the same time, the brand had to be built from the ground up. From product research and manufacturer selection to packaging, e-commerce, and marketing, each decision needed to work together to create a cohesive experience and successfully introduce CaptiveColour to the market.
+
+	  .col-lg-7
+		= link_to image_path("portfolio/captivecolour/captivecolour-lipsticks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Five CaptiveColour matte liquid lipstick shades displayed in a product lineup" do
+			= image_tag "portfolio/captivecolour/captivecolour-lipsticks.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Five CaptiveColour matte liquid lipstick shades displayed in a product lineup"
+		p.small.text-center.mt-3.mb-0
+		  | Developing and positioning a new cosmetics line within a competitive beauty market.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I took CaptiveColour from an early concept through brand development, product sourcing, ecommerce, and launch. The process combined research, creative direction, product testing, digital design, and marketing to build a cohesive brand and introduce it to a new audience.
+			.approach-steps
+				.approach-step.mb-4
+					.approach-title
+						i.fad.fa-lightbulb
+						h5 Define the concept
+					p Brainstormed the brand direction and name, researched the cosmetics market, and defined how CaptiveColour could establish its own identity within a competitive beauty space.
+				.approach-step
+					.approach-title
+						i.fad.fa-flask-vial
+						h5 Research & develop
+					p Researched manufacturers and labs, evaluated product options, and tested lipstick formulas and samples before selecting products for larger production runs.
+				.approach-step
+					.approach-title
+						i.fad.fa-pen-ruler
+						h5 Build the brand
+					p Developed the visual identity and translated it across packaging, ecommerce, photography, print collateral, social media, and other customer touchpoints.
+				.approach-step
+					.approach-title
+						i.fad.fa-rocket-launch
+						h5 Launch & grow
+					p Built and managed the Shopify experience while supporting launches through social media, email, events, brand ambassadors, influencer outreach, and ongoing marketing content.
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Research product + development
+				h3 From idea to product
+				p.mb-4 Researched manufacturing partners, evaluated product options, and tested formulas and samples to determine what would represent the brand before committing to larger orders.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-formula-testing"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"Compared formulas and samples to evaluate color, finish, and product quality." do
+							= image_tag "portfolio/captivecolour/captivecolour-formula-testing", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour Formula testing"
+						h5.mt-3.mb-2 Formula Testing
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-bottles.jpg"), :class=>"thumbnail","data-fancybox"=>"gallery", "data-caption"=>"Testing lipstick components and packaging options to evaluate how different formulas, shades, and containers worked together before production." do
+							= image_tag "portfolio/captivecolour/captivecolour-bottles.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour liquid lipstick samples in different shades and packaging tested during product development."
+						h5.mt-3.mb-2 Packaging testing
+
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Brand Development
+				h3 Building the CaptiveColour identity
+				/ p.mb-4 Created a visual system that carried across packaging, the Shopify storefront, photography, and customer-facing brand materials.
+				p.mb-4 Developed the visual identity from early logo exploration through packaging, photography, and customer-facing brand materials.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-logo-exploration.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Logo exploration" do
+							= image_tag "portfolio/captivecolour/captivecolour-logo-exploration.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour Logo exploration"
+						h5.mt-3.mb-2 Logo exploration
+
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-packaging-concepts.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipstick Box Concepts" do
+							= image_tag "portfolio/captivecolour/captivecolour-packaging-concepts.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour Lipstick Box Concepts"
+
+						h5.mt-3.mb-2 Liquid Lipstick Box Concepts
+				.row.mt-3
+					.d-inline.mb-5.mb-md-0
+						= link_to 'View Brand Identity Guidelines <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://www.dropbox.com/scl/fi/1uvqvgjpwyzdj1ajvryx0/captive-colour-manual.pdf?rlkey=c1cwijt5izx5ex3k2q1xpajc3&st=qmoq121z&dl=0', target: "_blank"
+	.row.g-5.mt-3
+		.col-lg-6
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Ecommerce
+				h3 Creating the shopping experience
+				p.mb-4 Designed and managed the Shopify storefront, translating the brand into a responsive ecommerce experience that supported product discovery, launches, and ongoing content.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-showcase.jpg"), "data-fancybox"=>"gallery", :class=>"thumbnail", "data-caption"=>"Custom Shopify storefront designed and developed for the CaptiveColour brand." do
+							= image_tag "portfolio/captivecolour/captivecolour-showcase.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour Website Showcase"
+						h5.mt-3.mb-2 Shopify Website
+						p.small.mb-0
+		.col-lg-6
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Marketing + Launch
+				h3 Bringing the brand to market
+				p.mb-4 Built awareness for a new cosmetics brand through social media, email, events, brand ambassadors, influencer outreach, photography, and promotional campaigns.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-poster-2.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Event Poster" do
+							= image_tag "portfolio/captivecolour/captivecolour-poster-2.jpg", :class=>"mg-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"CaptiveColour Event Poster"
+						h5.mt-3.mb-2 Event Promotion
+					.col-md-6
+						= link_to image_path("portfolio/captivecolour/captivecolour-campaign-photography.jpg"), :class=>"thumbnail",  "data-fancybox"=>"gallery", "data-caption"=>"Brand photoshoot created to support product launches and digital marketing." do
+							= image_tag "portfolio/captivecolour/captivecolour-campaign-photography.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Brand photoshoot created to support product launches and digital marketing."
+						h5.mt-3.mb-2 Campaign Photography
+
+section.portfolio-info#outcome
 	.container-fluid.px-md-0
 		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p As a new cosmetics brand, CaptiveColour needed a strong visual identity, cohesive packaging, and an e-commerce presence to introduce their products to the market. They also required marketing support to grow their audience and build brand recognition.
-					h6
-						span.badge.text-bg-secondary Process
-					p I developed the brand identity from the ground up, designing core brand elements, packaging, postcards, and event collateral. I established their e-commerce shop and created ongoing social media content to promote new products. My role also included working with brand ambassadors and supporting early community growth across their digital platforms.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p The result was a cohesive brand and online presence that helped CaptiveColour launch with clarity and confidence. Their polished packaging, marketing assets, and e-commerce site strengthened credibility, supported audience growth, and positioned the brand competitively in the beauty market.
-					
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+				.flex-grow-1
+					h2 The outcome
+					/ p.lead.mb-4 CaptiveColour evolved from an initial idea into a fully launched cosmetics brand with its own product line, visual identity, packaging, ecommerce experience, and growing digital presence. Through organic marketing, events, brand ambassadors, and influencer outreach, I built an early audience and grew the brand’s social following from zero to approximately 385 followers.
+					p.lead.mb-4 CaptiveColour Cosmetics launched with a cohesive brand and customer experience that extended across product, packaging, ecommerce, marketing, and in-person touchpoints. The polished packaging, marketing presence, and ecommerce experience helped establish credibility for a new cosmetics brand, while organic social media, events, partnerships, and community engagement supported early audience growth and positioned CaptiveColour within a competitive beauty market.
+					div
+						.d-flex.gap-2
+							i.fad.fa-rocket-launch
+							h5 Cohesive customer experience
+						p Created a consistent journey from brand discovery and product exploration through purchase, packaging, and product use.
+					div
+						.d-flex.gap-2
+							i.fad.fa-bag-shopping
+							h5 Ecommerce experience launched
+						p Launched a custom Shopify storefront that gave customers a dedicated place to discover the brand, explore products, and purchase online.
+					div
+						.d-flex.gap-2
+							i.fad.fa-chart-line-up
+							h5 Growing brand community
+						p Built the social presence from 0 to approximately 385 followers while expanding awareness through events, ambassadors, influencer outreach, and organic content.
 					
 			.col-12.col-md-7
 				div.pt-md-10
@@ -53,25 +202,26 @@ section.portfolio-info#info
 					= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipsticks Boxes" do
 						= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipstick Boxes"
 
-					= link_to image_path("portfolio/captivecolour/captivecolour-poster-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Event Poster" do
-						= image_tag "portfolio/captivecolour/captivecolour-poster-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Event Poster"
-					= link_to image_path("portfolio/captivecolour/captivecolour-packaging-concepts.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipstick Box Concepts" do
-						= image_tag "portfolio/captivecolour/captivecolour-packaging-concepts.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipstick Box Concepts"
+					
 					= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipstick Boxes" do
 						= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipstick Boxes"
 
-					= link_to image_path("portfolio/captivecolour/captivecolour-lipsticks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipsticks" do
-						= image_tag "portfolio/captivecolour/captivecolour-lipsticks.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipsticks"
+					/ = link_to image_path("portfolio/captivecolour/captivecolour-lipsticks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipsticks" do
+					/ 	= image_tag "portfolio/captivecolour/captivecolour-lipsticks.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipsticks"
 
 					= link_to image_path("portfolio/captivecolour/captivecolour-jelly-lily.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Jelly Highlighter" do
 						= image_tag "portfolio/captivecolour/captivecolour-jelly-lily.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Jelly Highlighter"
 
 					= link_to image_path("portfolio/captivecolour/captivecolour-1year-promo.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour One Year Anniversary" do
 						= image_tag "portfolio/captivecolour/captivecolour-1year-promo.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour One Year Anniversary"
+					= link_to image_path("portfolio/captivecolour/captivecolour-1year-event-1.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Branded event setup created for CaptiveColour’s one-year anniversary celebration." do
+						= image_tag "portfolio/captivecolour/captivecolour-1year-event-1.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Anniversary Event Experience"
+					= link_to image_path("portfolio/captivecolour/captivecolour-1year-event.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"One-year anniversary event planned and hosted to bring customers and the CaptiveColour community together." do
+						= image_tag "portfolio/captivecolour/captivecolour-1year-event.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Anniversary Event Experience"
 					
-					= link_to image_path("portfolio/captivecolour/captivecolour-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Website" do
-						= image_tag "portfolio/captivecolour/captivecolour-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Website Showcase"
-						
+					= link_to image_path("portfolio/captivecolour/captivecolour-poster-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Event Poster" do
+						= image_tag "portfolio/captivecolour/captivecolour-poster-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Event Poster"
+					
 				.colors
 					.container
 						.row
@@ -99,6 +249,20 @@ section.portfolio-info#info
 								= image_tag "typography/gotham-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham"
 							.col-md-6
 								= image_tag "typography/gothambold-type.svg", :class=>"img-responsive center-block", :alt=>"Gotham Bold"
+
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3 Building CaptiveColour Cosmetics gave me firsthand experience with what it takes to turn an idea into a business and bring a physical product to market. I learned how to move from an initial concept through market research, brand development, product sourcing, testing, ecommerce, launch, and ongoing promotion while making decisions across many different parts of the business.
+				p.lead Working directly with manufacturers and cosmetic labs taught me how to evaluate potential partners, communicate product requirements, compare formulas and packaging options, test samples, and refine products before committing to larger orders. It also showed me how interconnected product quality, packaging, branding, pricing, and customer expectations are.
+				p.lead Customer experience became a major part of how I approached the brand. I had to think beyond individual touchpoints and consider the full journey, from discovering CaptiveColour through social media or an event, to exploring products online, placing an order, receiving the packaging, and ultimately using the product. Each interaction needed to feel consistent with the brand while making it easy for customers to understand the products and feel confident purchasing from a new cosmetics company.
+				p.lead Launching and promoting CaptiveColour also expanded my experience in marketing and community building. I coordinated events, developed social and email content, worked with brand ambassadors, researched influencer opportunities, and networked to build awareness from the ground up. This taught me the importance of meeting customers where they are and creating multiple ways for them to discover and engage with a new brand.
+				p.lead Most importantly, CaptiveColour taught me to look at a business as an interconnected experience rather than a collection of individual deliverables. I learned to balance customer needs with creative direction, business goals, budgets, timelines, vendor relationships, and marketing priorities. That broader perspective continues to influence how I approach UX, web design, and digital strategy today.
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical		
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

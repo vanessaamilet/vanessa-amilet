@@ -111,8 +111,6 @@ section#approach
 						i.fad.fa-rocket-launch
 						h5 Support launch & growth
 					p Created marketing collateral and supporting digital assets while contributing to promotional, recruiting, and event initiatives around the startup.
-
-
 		.col-lg-7
 			.card.bg-gradient-soft.p-4.mb-5
 				h6.mb-2 UX/UI + Development
@@ -120,14 +118,17 @@ section#approach
 				p.mb-4 Designed the website and application experience to make managing multiple cloud services simple and approachable, while collaborating with the CTO on front-end development and evolving functionality.
 				.row.g-4
 					.col-md-6
-						= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
+						= link_to image_path("portfolio/jumpix/jumpix-dashboard-showcase.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App - Dashboard" do
 							= image_tag "portfolio/jumpix/jumpix-dashboard-showcase.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix App - Dashboard"
 						h5.mt-3.mb-2 Cloud Management Dashboard
 					.col-md-6
 
-						= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Mobile concepts for accessing and managing cloud content on the go." do
+						= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"Mobile concepts for accessing and managing cloud content on the go." do
 							= image_tag "portfolio/jumpix/jumpix-mobile-designs.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Mobile concepts for accessing and managing cloud content on the go."
 						h5.mt-3.mb-2 Mobile App Experience
+				.row.mt-3
+					.d-inline.mb-5.mb-md-0
+						= link_to 'View Jumpix Guide <i class="fad fa-external-link-alt"></i>'.html_safe, '/jumpix/Jumpix_Get_Started.pdf', target: "_blank"
 
 			.card.bg-gradient-soft.p-4
 				h6.mb-2 Brand + Marketing

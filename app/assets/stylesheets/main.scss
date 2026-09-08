@@ -2666,6 +2666,17 @@ i.contact {
 				}
 			}
 		}
+		a.thumbnail[data-fancybox]{
+			display: block;
+			//width: 330px;
+			height: 230px;
+			img{
+				object-fit: cover;
+				height: 100% !important;
+				width: 100%;
+			}
+		}
+		
 	}
 	#research{
 		.overview{
