@@ -167,10 +167,10 @@ section#approach
 							= image_tag "portfolio/captivecolour/captivecolour-campaign-photography.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Brand photoshoot created to support product launches and digital marketing."
 						h5.mt-3.mb-2 Campaign Photography
 
-section.portfolio-info#outcome
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					/ p.lead.mb-4 CaptiveColour evolved from an initial idea into a fully launched cosmetics brand with its own product line, visual identity, packaging, ecommerce experience, and growing digital presence. Through organic marketing, events, brand ambassadors, and influencer outreach, I built an early audience and grew the brand’s social following from zero to approximately 385 followers.
@@ -192,37 +192,48 @@ section.portfolio-info#outcome
 						p Built the social presence from 0 to approximately 385 followers while expanding awareness through events, ambassadors, influencer outreach, and organic content.
 					
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/captivecolour/captivecolour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Website" do
-						= image_tag "portfolio/captivecolour/captivecolour-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Website Showcase"
+				.pt-md-10
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Custom Shopify website designed and developed to establish CaptiveColour’s e-commerce presence and support the brand’s product launch." do
+								= image_tag "portfolio/captivecolour/captivecolour-website.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour cosmetics Shopify website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-infocard.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Branded information card designed to extend CaptiveColour’s visual identity across customer-facing print materials." do
+								= image_tag "portfolio/captivecolour/captivecolour-infocard.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour branded information card"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Custom lipstick packaging designed to translate CaptiveColour’s visual identity into a cohesive physical product experience." do
+								= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour custom lipstick box packaging"
 
-					= link_to image_path("portfolio/captivecolour/captivecolour-infocard.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Info Card" do
-						= image_tag "portfolio/captivecolour/captivecolour-infocard.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Info Card"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Additional lipstick packaging showcasing the brand system across CaptiveColour’s product line." do
+								= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour branded lipstick packaging designs"
+
+						/ Currently hidden from gallery
+						/ .portfolio-masonry-item
+						/   = link_to image_path("portfolio/captivecolour/captivecolour-lipsticks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour lipstick collection featuring branded product packaging." do
+						/     = image_tag "portfolio/captivecolour/captivecolour-lipsticks.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour lipstick collection and branded packaging"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-jelly-lily.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Product creative developed to showcase CaptiveColour’s Jelly Lily highlighter and support product marketing." do
+								= image_tag "portfolio/captivecolour/captivecolour-jelly-lily.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour Jelly Lily highlighter product creative"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-1year-promo.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Promotional creative designed to build awareness for CaptiveColour’s one-year anniversary celebration." do
+								= image_tag "portfolio/captivecolour/captivecolour-1year-promo.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour one-year anniversary promotional graphic"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-1year-event-1.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Branded event setup created for CaptiveColour’s one-year anniversary celebration." do
+								= image_tag "portfolio/captivecolour/captivecolour-1year-event-1.jpg", class: "img-fluid w-100 h-auto", alt: "Branded setup at the CaptiveColour one-year anniversary event"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-1year-event.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"One-year anniversary event planned and hosted to bring customers and the CaptiveColour community together." do
+								= image_tag "portfolio/captivecolour/captivecolour-1year-event.jpg", class: "img-fluid w-100 h-auto", alt: "Guests at the CaptiveColour one-year anniversary event"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/captivecolour/captivecolour-poster-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Event poster designed as part of CaptiveColour’s promotional materials and ongoing brand marketing." do
+								= image_tag "portfolio/captivecolour/captivecolour-poster-2.jpg", class: "img-fluid w-100 h-auto", alt: "CaptiveColour branded promotional event poster"
 					
-					= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipsticks Boxes" do
-						= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipstick Boxes"
-
-					
-					= link_to image_path("portfolio/captivecolour/captivecolourlipstick-boxes.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipstick Boxes" do
-						= image_tag "portfolio/captivecolour/captivecolourlipstick-boxes.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipstick Boxes"
-
-					/ = link_to image_path("portfolio/captivecolour/captivecolour-lipsticks.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Lipsticks" do
-					/ 	= image_tag "portfolio/captivecolour/captivecolour-lipsticks.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Lipsticks"
-
-					= link_to image_path("portfolio/captivecolour/captivecolour-jelly-lily.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Jelly Highlighter" do
-						= image_tag "portfolio/captivecolour/captivecolour-jelly-lily.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Jelly Highlighter"
-
-					= link_to image_path("portfolio/captivecolour/captivecolour-1year-promo.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour One Year Anniversary" do
-						= image_tag "portfolio/captivecolour/captivecolour-1year-promo.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour One Year Anniversary"
-					= link_to image_path("portfolio/captivecolour/captivecolour-1year-event-1.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Branded event setup created for CaptiveColour’s one-year anniversary celebration." do
-						= image_tag "portfolio/captivecolour/captivecolour-1year-event-1.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Anniversary Event Experience"
-					= link_to image_path("portfolio/captivecolour/captivecolour-1year-event.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"One-year anniversary event planned and hosted to bring customers and the CaptiveColour community together." do
-						= image_tag "portfolio/captivecolour/captivecolour-1year-event.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Anniversary Event Experience"
-					
-					= link_to image_path("portfolio/captivecolour/captivecolour-poster-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"CaptiveColour Event Poster" do
-						= image_tag "portfolio/captivecolour/captivecolour-poster-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"CaptiveColour Event Poster"
-					
-				.colors
+				.colors.rounded-top
 					.container
 						.row
 							.col-lg-12
@@ -239,7 +250,7 @@ section.portfolio-info#outcome
 								.col-sm-3.color-palette-container
 									.color-palette style="--color-palette-var: #fff;"
 									p.color-palette-name White
-				.fonts
+				.fonts.rounded-bottom
 					.container
 						.row
 							.col-lg-12

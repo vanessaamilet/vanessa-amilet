@@ -136,10 +136,10 @@ section#approach
 							= image_tag "portfolio/capitalize/capitalize-ab-test.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Two Capitalize homepage variations created for A/B testing"
 
 /! Outcome				
-section.portfolio-info#outcome
-	.container-fluid
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					p.lead.mb-4 The updated website brought Capitalize’s refreshed brand to life through a more cohesive and responsive digital experience. Reusable WordPress components gave the team greater flexibility to launch new content and experiences, while ongoing testing and optimization supported the website as product and marketing priorities evolved
@@ -161,14 +161,22 @@ section.portfolio-info#outcome
 					p.mt-4 The result was a more scalable digital foundation that could evolve alongside Capitalize’s brand, products, and marketing needs.
 			.col-12.col-md-7
 				div.pt-md-10
-					= link_to image_path("portfolio/capitalize/capitalize-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize Homepage" do
-						= image_tag "portfolio/capitalize/capitalize-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Homepage"
-					= link_to image_path("portfolio/capitalize/capitalize-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize About Page" do
-						= image_tag "portfolio/capitalize/capitalize-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Homepage"
-					= link_to image_path("portfolio/capitalize/capitalize-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize About Page" do
-						= image_tag "portfolio/capitalize/capitalize-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Resources"
-					= link_to image_path("portfolio/capitalize/capitalize-reviews.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize Reviews" do
-						= image_tag "portfolio/capitalize/capitalize-reviews.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Capitalize Reviews"
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/capitalize/capitalize-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Capitalize website experience developed to support the company’s evolving brand, messaging, and digital presence." do
+								= image_tag "portfolio/capitalize/capitalize-showcase.jpg", class: "img-fluid w-100 h-auto", alt: "Capitalize fintech website homepage and page designs"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/capitalize/capitalize-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"About page developed as part of the evolving website experience, using reusable layouts and components for greater content flexibility." do
+								= image_tag "portfolio/capitalize/capitalize-about-page.jpg", class: "img-fluid w-100 h-auto", alt: "Capitalize fintech website About page"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/capitalize/capitalize-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources experience developed to help organize educational content and make financial guidance easier to explore." do
+								= image_tag "portfolio/capitalize/capitalize-resources.jpg", class: "img-fluid w-100 h-auto", alt: "Capitalize website Resources page with educational financial content"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/capitalize/capitalize-reviews.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reviews page developed to showcase customer experiences and strengthen trust throughout the website journey." do
+								= image_tag "portfolio/capitalize/capitalize-reviews.jpg", class: "img-fluid w-100 h-auto", alt: "Capitalize website Reviews page featuring customer testimonials"
 
 /! What I Learned					
 section

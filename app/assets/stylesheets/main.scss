@@ -2719,7 +2719,9 @@ i.contact {
 	.portfolio-masonry {
 		column-count: 3;
 		column-gap: 1.5rem;
-
+		&.two-columns {
+			column-count: 2;
+		}
 		// Tablet
 		@media screen and (max-width: 991px) {
 			column-count: 2;
