@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const industryFilter = document.getElementById('industry-filter');
         const typeFilter = document.getElementById('type-filter');
+        const caseStudyFilter = document.getElementById('case-study-filter');
 
         const portfolioContainer = document.querySelector('.portfolio-grid .container');
 
@@ -189,10 +190,12 @@ document.addEventListener('DOMContentLoaded', function() {
         function filterProjects() {
             const selectedIndustry = industryFilter?.value || 'all';
             const selectedType = typeFilter?.value || 'all';
+            const fullCaseStudyOnly = caseStudyFilter?.checked || false;
 
             const isFiltering =
                 selectedIndustry !== 'all' ||
-                selectedType !== 'all';
+                selectedType !== 'all' ||
+                fullCaseStudyOnly;
 
             if (!isFiltering) {
                 restoreOriginalLayout();
@@ -202,6 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const matchingProjects = projectItems.filter(item => {
                 const industries = item.dataset.industry?.split(' ') || [];
                 const projectTypes = item.dataset.projectType?.split(' ') || [];
+                const hasFullCaseStudy = item.dataset.fullCaseStudy === 'true';
 
                 const industryMatch =
                     selectedIndustry === 'all' ||
@@ -210,8 +214,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 const typeMatch =
                     selectedType === 'all' ||
                     projectTypes.includes(selectedType);
+                
+                const caseStudyMatch =
+                    !fullCaseStudyOnly ||
+                    hasFullCaseStudy;
 
-                return industryMatch && typeMatch;
+                //return industryMatch && typeMatch;
+                return industryMatch && typeMatch && caseStudyMatch;
             });
 
             buildFilteredLayout(matchingProjects);
@@ -222,6 +231,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         industryFilter?.addEventListener('change', filterProjects);
         typeFilter?.addEventListener('change', filterProjects);
+        caseStudyFilter?.addEventListener('change', filterProjects);
     }
 
     /* ## More Projects Section

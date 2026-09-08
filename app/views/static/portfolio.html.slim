@@ -34,7 +34,7 @@ section.portfolio-grid.border-top.border-black
   .container
 	/ Portfolio Filters
     .portfolio-filters
-      .row.g-3.mb-3
+      .row.g-3.mb-3.align-items-center
         .col-sm-6.col-md-3
           label.form-label for="industry-filter" Industry
           select.form-select#industry-filter
@@ -48,7 +48,11 @@ section.portfolio-grid.border-top.border-black
             option value="all" All Project Types
             - portfolio_project_types.each do |label, value|
               option value=value = label
-
+		.col-sm-6.col-md-3
+			.form-check.mt-md-4.pt-md-2
+				input.form-check-input#case-study-filter type="checkbox"
+				label.form-check-label for="case-study-filter"
+				| Full Case Study
 	
 
 	/ Portfolio Projects
@@ -60,6 +64,7 @@ section.portfolio-grid.border-top.border-black
           .col-md-4.portfolio-item[
 			data-industry=project[:industry]&.join(" ")
 			data-project-type=project[:project_type]&.join(" ")
+			data-full-case-study=(project[:full_case_study] ? "true" : "false")
 		]
             = link_to project[:path], class: 'portfolio-card card' do
               = image_tag project[:img], class: "card-img", alt: project[:title]

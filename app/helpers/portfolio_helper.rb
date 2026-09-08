@@ -3,6 +3,16 @@ module PortfolioHelper
 	  [
 		# Row 1
 		{ 
+			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
+			img: "portfolio/portfolio-jumpix.jpg", 
+			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
+			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption." ,
+			project_type: %w[web-app website branding campaign],
+			full_case_study: true,
+  			industry: %w[technology],
+			featured_rank: 1 
+		},
+		{ 
 			title: "Geospatial Data & Insights Platform Website", 
 			path: portfolio_firmatek_path, 
 			img: "portfolio/portfolio-firmatek-website.jpg", 
@@ -11,7 +21,8 @@ module PortfolioHelper
 			services: %w[web-design development],
 			project_type: %w[website],
 			industry: %w[technology construction],
-			featured_rank: 1 
+			full_case_study: true,
+			featured_rank: 2 
 		},
 		{ 
 			title: "Data & AI Consulting Website", 
@@ -22,8 +33,11 @@ module PortfolioHelper
 			services: %w[web-design development],
 			project_type: %w[website campaign],
 			industry: %w[technology professional-services],
+			full_case_study: true,
 			featured_rank: 2 
 		},
+		
+		# Row 2
 		{ 
 			title: "Capitalize - Fintech Website Redesign", 
 			path: portfolio_capitalize_path, 
@@ -32,16 +46,7 @@ module PortfolioHelper
 			desc: "Redesigned to support evolving branding and improve content flexibility.",
 			project_type: %w[website],
 			industry: %w[technology financial],
-			featured_rank: 3 
-		},
-		# Row 2
-		{ 
-			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
-			img: "portfolio/portfolio-jumpix.jpg", 
-			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
-			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption." ,
-			project_type: %w[web-app website branding campaign],
-  			industry: %w[technology],
+			full_case_study: true,
 			featured_rank: 4 
 		},
 		{ 
@@ -52,6 +57,7 @@ module PortfolioHelper
 			desc: "Developed brand identity and e-commerce presence for product launch." ,
 			project_type: %w[website campaign branding ecommerce], 
 			industry: %w[consumer-retail],
+			full_case_study: true,
 			featured_rank: 6 
 		},
 		{ 
@@ -62,6 +68,7 @@ module PortfolioHelper
 			desc: "Rebuilt to support scalable content, modern branding, and product storytelling.",
 			project_type: %w[website],
 			industry: %w[technology],
+			full_case_study: true,
 			featured_rank: 5 
 		},
 		
