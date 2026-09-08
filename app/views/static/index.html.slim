@@ -73,7 +73,15 @@ section.portfolio-grid.browse-more
             .col-lg-7.text-lg-end
                 = link_to 'View All Projects <i class="fad fa-arrow-alt-circle-right"></i>'.html_safe, portfolio_path, class:'view-projects'
 		.row.projects
-			- random_projects(@project_title).each do |project|
+			/ - random_projects(@project_title).each do |project|
+			/ 	.col-md-4
+			/ 		= link_to project[:path], class: 'portfolio-card card' do
+			/ 			= image_tag project[:img], class: 'card-img', alt: project[:title]
+			/ 			.card-body.d-flex.flex-column
+			/ 				h5.card-title = project[:title]
+			/ 				p.card-text.flex-grow-1 = project[:desc]
+			/ 				p.text-lowercase View Project »
+			- featured_projects.each do |project|
 				.col-md-4
 					= link_to project[:path], class: 'portfolio-card card' do
 						= image_tag project[:img], class: 'card-img', alt: project[:title]
