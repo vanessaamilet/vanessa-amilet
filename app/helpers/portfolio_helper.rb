@@ -45,6 +45,16 @@ module PortfolioHelper
 			featured_rank: 4 
 		},
 		{ 
+			title: "Cosmetics Brand & Ecommerce Launch",
+			path: portfolio_captivecolour_path,
+			img: "portfolio/portfolio-captivecolour.jpg",
+			label: "Branding, Web Design + Development (Shopify)",
+			desc: "Developed brand identity and e-commerce presence for product launch." ,
+			project_type: %w[website campaign branding ecommerce], 
+			industry: %w[consumer-retail],
+			featured_rank: 6 
+		},
+		{ 
 			title: "Connected Consumer Insights Platform Website", 
 			path: portfolio_mfour_path, 
 			img: "portfolio/portfolio-mfour.jpg", 
@@ -55,6 +65,7 @@ module PortfolioHelper
 			featured_rank: 5 
 		},
 		
+		# Row 3
 		{ 
 			title: "Inclusive Wellness & Fitness Website", 
 			path: portfolio_outwellness_atx_path, 
@@ -64,7 +75,6 @@ module PortfolioHelper
 			project_type: %w[website], 
 			industry: %w[health-wellness]
 		},
-		# Row 3
 		{ 
 			title: "Nonprofit Foundation Website", 
 			path: portfolio_foundation_website_path, 
@@ -73,15 +83,6 @@ module PortfolioHelper
 			desc: "Designed to highlight mission, programs, and community impact.",
 			project_type: %w[website], 
 			industry: %w[nonprofit-community]
-		},
-		{ 
-			title: "Cosmetics Brand & Ecommerce Launch",
-			path: portfolio_captivecolour_path,
-			img: "portfolio/portfolio-captivecolour.jpg",
-			label: "Branding, Web Design + Development (Shopify)",
-			desc: "Developed brand identity and e-commerce presence for product launch." ,
-			project_type: %w[website campaign branding], 
-			industry: %w[consumer-retail] 
 		},
 		{ 
 			title: "Youth Career Resource Website", 
