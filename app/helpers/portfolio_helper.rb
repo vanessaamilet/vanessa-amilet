@@ -36,6 +36,15 @@ module PortfolioHelper
 		},
 		# Row 2
 		{ 
+			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
+			img: "portfolio/portfolio-jumpix.jpg", 
+			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
+			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption." ,
+			project_type: %w[web-app website branding campaign],
+  			industry: %w[technology],
+			featured_rank: 4 
+		},
+		{ 
 			title: "Connected Consumer Insights Platform Website", 
 			path: portfolio_mfour_path, 
 			img: "portfolio/portfolio-mfour.jpg", 
@@ -45,15 +54,7 @@ module PortfolioHelper
 			industry: %w[technology],
 			featured_rank: 5 
 		},
-		{ 
-			title: "Cloud Storage Management Web App", path: portfolio_jumpix_path, 
-			img: "portfolio/portfolio-jumpix.jpg", 
-			label: "Web Design + Development (Ruby on Rails), UX Design, Media",
-			desc: "Designed the user experience, interface, and marketing assets to support product launch and adoption." ,
-			project_type: %w[web-app website branding campaign],
-  			industry: %w[technology],
-			featured_rank: 4 
-		},
+		
 		{ 
 			title: "Inclusive Wellness & Fitness Website", 
 			path: portfolio_outwellness_atx_path, 
