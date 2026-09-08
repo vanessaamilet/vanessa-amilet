@@ -143,10 +143,10 @@ section#approach
 						p.small.mb-0  Designed mobile layouts alongside desktop wireframes to establish content hierarchy and responsive behavior across screen sizes.
 
 /! Portfolio Details
-section.portfolio-info#outcome
-	.container-fluid
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					p.lead.mb-4 The redesigned website created a more modern, focused, and user-friendly experience that better reflected Firmatek’s evolving brand and growing capabilities. A simplified site structure made key information easier to navigate, while the expanded industry architecture and clearer access to Kespry gave Firmatek greater flexibility to support different audiences and business needs.
@@ -168,24 +168,54 @@ section.portfolio-info#outcome
 					/ p The redesign provides Firmatek with a scalable digital foundation that supports ongoing growth and enhances their credibility as an industry leader.
 
 			.col-12.col-md-7
-				div.pt-md-10
-                    = link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
-						= image_tag "portfolio/firmatek/firmatek.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website"
+				pt-md-10
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
+								= image_tag "portfolio/firmatek/firmatek.jpg", class: "img-fluid w-100", alt: "Firmatek Website"
 
-					= link_to image_path("portfolio/firmatek/firmatek-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Homepage" do
-						= image_tag "portfolio/firmatek/firmatek-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Homepage" do
+								= image_tag "portfolio/firmatek/firmatek-homepage.jpg", class: "img-fluid w-100", alt: "Firmatek Homepage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-about-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek About Webpage" do
+								= image_tag "portfolio/firmatek/firmatek-about-webpage.jpg", class: "img-fluid w-100", alt: "Firmatek About Webpage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-contact-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+								= image_tag "portfolio/firmatek/firmatek-contact-webpage.jpg", class: "img-fluid w-100", alt: "Contact Webpage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-careers-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Careers Webpage" do
+								= image_tag "portfolio/firmatek/firmatek-careers-webpage.jpg", class: "img-fluid w-100", alt: "Careers Webpage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-industries-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Industries Webpage" do
+								= image_tag "portfolio/firmatek/firmatek-industries-webpage.jpg", class: "img-fluid w-100", alt: "Industries Webpage"
+
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/firmatek/firmatek-resources-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources Webpage" do
+								= image_tag "portfolio/firmatek/firmatek-resources-webpage.jpg", class: "img-fluid w-100", alt: "Resources Webpage"
+				/div.pt-md-10
+				
+                    / = link_to image_path("portfolio/firmatek/firmatek.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Website" do
+					/ 	= image_tag "portfolio/firmatek/firmatek.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Website"
+
+					/ = link_to image_path("portfolio/firmatek/firmatek-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek Homepage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek Homepage"
 					
-					= link_to image_path("portfolio/firmatek/firmatek-about-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek About Webpage" do
-						= image_tag "portfolio/firmatek/firmatek-about-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek About Webpage"
+					/ = link_to image_path("portfolio/firmatek/firmatek-about-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Firmatek About Webpage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-about-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Firmatek About Webpage"
 
-					= link_to image_path("portfolio/firmatek/firmatek-contact-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
-						= image_tag "portfolio/firmatek/firmatek-contact-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
-					= link_to image_path("portfolio/firmatek/firmatek-careers-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Careers Webpage" do
-						= image_tag "portfolio/firmatek/firmatek-careers-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Careers Webpage"
-					= link_to image_path("portfolio/firmatek/firmatek-industries-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Industries Webpage" do
-						= image_tag "portfolio/firmatek/firmatek-industries-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Industries Webpage"
-					= link_to image_path("portfolio/firmatek/firmatek-resources-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources Webpage" do
-						= image_tag "portfolio/firmatek/firmatek-resources-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Resources Webpage"
+					/ = link_to image_path("portfolio/firmatek/firmatek-contact-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-contact-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+					/ = link_to image_path("portfolio/firmatek/firmatek-careers-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Careers Webpage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-careers-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Careers Webpage"
+					/ = link_to image_path("portfolio/firmatek/firmatek-industries-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Industries Webpage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-industries-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Industries Webpage"
+					/ = link_to image_path("portfolio/firmatek/firmatek-resources-webpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources Webpage" do
+					/ 	= image_tag "portfolio/firmatek/firmatek-resources-webpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Resources Webpage"
 					
 /! What I Learned					
 section

@@ -2698,6 +2698,7 @@ i.contact {
 		}
 	}
 	#outcome{
+		background: $soft-gray-lavender;
 		@media screen and (max-width:991px){
 			padding: 40px;
 		}
@@ -2714,6 +2715,46 @@ i.contact {
 			color: $mint;
 		}
 	}
+	// Portfolio masonry gallery
+	.portfolio-masonry {
+		column-count: 3;
+		column-gap: 1.5rem;
+
+		// Tablet
+		@media screen and (max-width: 991px) {
+			column-count: 2;
+		}
+
+		// Mobile
+		@media screen and (max-width: 767px) {
+			column-count: 2;
+		}
+	}
+
+	.portfolio-masonry-item {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 1.5rem;
+		break-inside: avoid;
+		overflow: hidden;
+		//border-radius: 0.75rem;
+		border-radius: var(--bs-border-radius-lg)!important;
+		a {
+			display: block;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			transition: transform 0.3s ease;
+		}
+
+		&:hover img {
+			transform: scale(1.02);
+		}
+	}
+	// Browse More section
 	.browse-more{
 		background-color: $lighter-purple;
 		@media screen and (max-width:991px){
