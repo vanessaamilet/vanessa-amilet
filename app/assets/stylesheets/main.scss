@@ -2668,7 +2668,13 @@ i.contact {
 		}
 	}
 	#research{
-		.highlights{
+		.overview{
+			i{
+				color: $blue !important;
+			}
+		}
+		.highlights,
+		.stats{
 			h5{
 				font-size: 45px;
 				color: $blue;
