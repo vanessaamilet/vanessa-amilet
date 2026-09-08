@@ -149,10 +149,10 @@ section#approach
 						h5.mt-3.mb-2 Global Styles
 						p.small.mb-0 Color palette and typography system
 /! The outcome
-section.portfolio-info#outcome
-	.container-fluid
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					p.lead.mb-4 The redesigned website created a more modern, scalable digital experience that better supported MFour’s evolving brand, products, and marketing needs. A modular WordPress system gave the team greater flexibility to create and manage content, while interactive integrations helped bring MFour’s data products and capabilities directly into the website experience.
@@ -175,13 +175,19 @@ section.portfolio-info#outcome
 
 			.col-12.col-md-7
 				div.pt-md-10
+					.portfolio-masonry.two-columns
 
-					= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Homepage" do
-							= image_tag "portfolio/mfour/mfour-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Homepage"
-					= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio Overview" do
-							= image_tag "portfolio/mfour/mfour-studio-overview.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Studio Overview"
-					= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Resources Library" do
-						= image_tag "portfolio/mfour/mfour-website-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"MFour Resources Library"
+						.portfolio-masonry-item
+						= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour homepage redesigned as part of the broader website experience to strengthen product storytelling and support the company’s evolving brand." do
+							= image_tag "portfolio/mfour/mfour-homepage.jpg", class: "img-fluid w-100 h-auto", alt: "Redesigned MFour consumer insights platform website homepage"
+
+						.portfolio-masonry-item
+						= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio experience integrated into WordPress to showcase the platform and connect the product experience with the marketing website." do
+							= image_tag "portfolio/mfour/mfour-studio-overview.jpg", class: "img-fluid w-100 h-auto", alt: "MFour Studio product overview integrated into the WordPress website"
+
+						.portfolio-masonry-item
+						= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources library designed to organize MFour’s growing content and make insights easier for visitors to discover and explore." do
+							= image_tag "portfolio/mfour/mfour-website-resources.jpg", class: "img-fluid w-100 h-auto", alt: "MFour website resources library displaying consumer insights content"
 /! What I Learned					
 section
 	.container
