@@ -76,7 +76,7 @@ section#challenge.challenge
 
 	  .col-lg-7
 		= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
-			= image_tag "portfolio/jumpix/jumpix-website.webp", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix Website Showcase"
+			= image_tag "portfolio/jumpix/showcase-jumpix.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix Website Showcase"
 		p.small.text-center.mt-3.mb-0
 		  | Jumpix marketing website introducing the platform, connected cloud services, and core functionality.
 
@@ -193,10 +193,10 @@ section#research.bg-gradient-teal
 					p would recommend the application
 
 /! The outcome
-section.portfolio-info#outcome
-	.container-fluid
-		.row.justify-content-between.g-0.mx-md-0
-			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-lg-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
 					h2 The outcome
 					p.lead.mb-4 Jumpix evolved into a cohesive digital experience that gave users a centralized way to access and manage content across multiple cloud services. The website, application, and supporting marketing materials established a consistent experience across user touchpoints while creating a foundation for continued product growth and new features.
@@ -220,31 +220,34 @@ section.portfolio-info#outcome
 					/ h6
 					/ 	span.badge.text-bg-secondary Outcome
 					/ p Jumpix launched with a cohesive, user-friendly interface and a polished digital presence. The refined UX, clear documentation, and supporting marketing materials helped users quickly understand the platform, boosting engagement and supporting a smooth rollout for the new product.
-			.col-12.col-md-7
+			.col-12.col-lg-7
 				.pt-md-10	
-					/ .portfolio-masonry
-					/ 	.portfolio-masonry-item
-					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
-					/ 			= image_tag "portfolio/jumpix/showcase-jumpix.png", class: "img-fluid w-100 h-auto", alt: "Jumpix Website Showcase"
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/showcase-jumpix.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
+								= image_tag "portfolio/jumpix/showcase-jumpix.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Website Showcase"
+						
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/jumpix-login-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Login" do
+								= image_tag "portfolio/jumpix/jumpix-login-showcase.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix App Login"
 
-					/ 	.portfolio-masonry-item
-					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
-					/ 			= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix App Icons"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
+								= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix App Icons"
 
-					/ 	.portfolio-masonry-item
-					/ 		= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Mobile App Mockups" do
-					/ 			= image_tag "portfolio/jumpix/jumpix-mobile-app-mockups.png", class: "img-fluid w-100 h-auto", alt: "Jumpix Mobile App Mockups"
-
-					/ 	.portfolio-masonry-item
-					/ 		= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
-					/ 			= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Dashboard - Add Cloud Service"
-					/!
-						= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
-							button.btn-play.position-absolute.top-50.start-50.translate-middle
-							= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Video"
-					= link_to image_path("portfolio/jumpix/showcase-jumpix.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Website" do
-						= image_tag "portfolio/jumpix/showcase-jumpix.png", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Website Showcase"
-					.colors
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
+								= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Dashboard - Add Cloud Service"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/showcase-jumpix-dashboard.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
+								= image_tag "portfolio/jumpix/showcase-jumpix-dashboard.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Dashboard - Add Cloud Service"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/showcase-jumpix-manageprofile.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Manage Profile" do
+								= image_tag "portfolio/jumpix/showcase-jumpix-manageprofile.jpg", class: "img-fluid w-100 h-auto", alt: "Jumpix Dashboard - Manage Profile"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Mobile App Mockups" do
+								= image_tag "portfolio/jumpix/jumpix-mobile-app-mockups.png", class: "img-fluid w-100 h-auto", alt: "Jumpix Mobile App Mockups"
+					.colors.rounded-top
 						.container
 							.row
 								.col-lg-12
@@ -261,7 +264,7 @@ section.portfolio-info#outcome
 									.col-sm-3.color-palette-container
 										.color-palette style="--color-palette-var: #000000;"
 										p.color-palette-name #000000
-					.fonts
+					.fonts.rounded-bottom
 						.container
 							.row
 								.col-lg-12
@@ -272,14 +275,15 @@ section.portfolio-info#outcome
 
 								.col-md-6
 									= image_tag "typography/quicksand-type.svg", :class=>"img-responsive center-block"
+					/!
+						= link_to "https://www.youtube.com/embed/OXDCorXseHk", :class=>"d-block position-relative", "data-fancybox"=>"gallery", "data-caption"=>"Jumpix - Video" do
+							button.btn-play.position-absolute.top-50.start-50.translate-middle
+							= image_tag "portfolio/jumpix/jumpix-animation-video.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix - Video"
+					
+					
+					
 
-					= link_to image_path("portfolio/jumpix/showcase-jumpix-icons.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Icons" do
-						= image_tag "portfolio/jumpix/showcase-jumpix-icons.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Icons"
-					= link_to image_path("portfolio/jumpix/jumpix-mobile-app-mockups.png"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix App Mobile Mockups" do
-						= image_tag "portfolio/jumpix/jumpix-mobile-app-mockups.png", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix App Mobile Mockups"
-
-					= link_to image_path("portfolio/jumpix/showcase-jumpix-addservice.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Jumpix Dashboard - Add Cloud Service" do
-						= image_tag "portfolio/jumpix/showcase-jumpix-addservice.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Jumpix Dashboard - Add Cloud Service"
+					
 
 /! What I Learned					
 section

@@ -2699,9 +2699,9 @@ i.contact {
 	}
 	#outcome{
 		background: $soft-gray-lavender;
-		@media screen and (max-width:991px){
-			padding: 40px;
-		}
+		// @media screen and (max-width:991px){
+		// 	padding: 40px;
+		// }
 		.position-sticky{
 			@media screen and (max-width:991px){
 				height: auto !important;
