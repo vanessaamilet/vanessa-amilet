@@ -3,67 +3,195 @@
 /!  Begin Page Content 
 section.hero.d-flex
   .container-lg
-    .squiggle.mb-5
-    .row.justify-content-start.align-items-center
-      .col-md-6.col-lg-6
-        h1 Youth Career Resource Website
-        p.lead
-        	| A youth-focused workforce initiative that helps Baltimore City students explore career pathways and access occupational training and support.
+	.squiggle.mb-5
+	.row.justify-content-start.align-items-center
+	  .col-md-6.col-lg-6
+		h1 Youth Career Resource Website
+		p.lead
+			| A youth-focused workforce initiative that helps Baltimore City students explore career pathways and access occupational training and support.
 		.d-inline.mb-5.mb-md-0
 			= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://careerbound.baltimorespromise.org/', target: "_blank"
-      .col-md-6.col-lg-6
-        .row.mb-3
+	  .col-md-6.col-lg-6
+		.row.mb-3
 			.col-md-6
 				h6 Client
-				p Drio
+				p Drio Duo
 			.col-md-6
 				h6 Year
 				p 2025
-        .row.mb-3
+		.row.mb-3
 			.col-md-6
 				h6 Services
 				p Website Design & Wordpress Development
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p A youth career initiative in Baltimore needed a standalone digital presence. Previously limited to a single landing page within another organization’s website, they required a dedicated microsite that reflected their brand, shared their story, and guided students toward training opportunities and career resources.
-					h6
-						span.badge.text-bg-secondary Process
-					p Drio Duo partnered with me to design and develop the new website. I created high-fidelity mockups based on their updated brand and messaging, then built a responsive WordPress site focused on simplicity, accessibility, and clear resource pathways for students, educators, and community partners.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p The finished microsite is clean, engaging, and easy to navigate, providing students and stakeholders with a clear, accessible entry point into career training, resources, and support.
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center Designing for access and opportunity.
+				p.lead.text-center.mb-5
+		  			| A Baltimore-based youth career initiative needed a standalone website to communicate its mission, organize its programs and resources, and better serve students, educators, employers, and community partners. I partnered with Drio Duo to design and develop a responsive WordPress experience that extended the client’s brand into a clear and accessible digital platform.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-browser
+				h5 Dedicated digital presence
+				p Expanded the initiative from a single landing page into a standalone website.
+			.col-md-3.mb-5
+				i.fad.fa-code
+				h5 Design + development
+				p Created the high-fidelity mockups and developed the responsive WordPress website.
+			.col-md-3.mb-5
+				i.fad.fa-users
+				h5 Multi-audience experience
+				p Created clear pathways to programs and resources for students, educators, employers, and community partners.
+			.col-md-3.mb-5
+				i.fad.fa-handshake
+				h5 Agency collaboration
+				p Partnered with Drio Duo to translate the client’s branding, messaging, and content needs into the final website experience.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
+		p.lead.text-mb-5
+		  | The client had previously been limited to a single landing page within another organization's website and needed a dedicated digital presence to support its growing youth career initiative.
+
+		p.lead
+		  | The new website needed to communicate the organization's mission, introduce its five core program areas, and guide multiple audiences toward relevant training, resources, and opportunities. The challenge was organizing a significant amount of information without overwhelming users while staying aligned with the client's established branding.
+
+	  .col-lg-7
+		= link_to image_path("portfolio/youth-career-website/youth-career-resources-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Before and after: The website evolved from a single landing page into a dedicated digital experience with clearer content organization, stronger visual storytelling, and more accessible pathways to programs and resources." do
+		  = image_tag "portfolio/youth-career-website/youth-career-resources-before-after.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Before-and-after comparison showing the original landing page and redesigned youth career initiative homepagen"
+		p.small.text-center.mt-3.mb-0
+		  | Before and after: The website evolved from a single landing page into a dedicated digital experience with clearer content organization, stronger visual storytelling, and more accessible pathways to programs and resources.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I partnered with Drio Duo to translate the client’s goals, content, and existing identity into a clear digital experience designed around its programs and audiences.
+			.approach-steps
+				.approach-step
+					.approach-title
+						i.fad.fa-sitemap
+						h5 Structure the experience
+					p Organized the content around the client’s programs and audiences, creating clear pathways to help visitors understand the initiative and find relevant resources.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-swatchbook
+						h5 Extend the visual identity
+					p Worked with the existing logo to establish typography and create bespoke visual elements for the website. I applied the new visual direction throughout the high-fidelity mockups to create a cohesive and engaging experience.
+				.approach-step
+					.approach-title
+						i.fad.fa-laptop-code
+						h5 Design + develop
+					p Translated the approved mockups into a responsive WordPress website, maintaining consistency between the designs and final build while prioritizing usability and accessibility.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-comments
+						h5 Collaborate + refine
+					p Worked with Drio Duo throughout the project to incorporate feedback, refine the experience, and ensure the final website aligned with the client’s content, brand, and communication goals.
+
+
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Design exploration
+				h3 Establishing the visual direction
+				p.mb-4 I explored multiple homepage directions to establish the visual system, refine the content hierarchy, and create a cohesive experience before moving into development.
+				= link_to image_path("portfolio/youth-career-website/youth-career-home-concepts.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Selected homepage iterations showing how the visual direction, content hierarchy, and layout evolved throughout the design process." do
+						= image_tag "portfolio/youth-career-website/youth-career-home-concepts.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Three homepage design concepts showing different visual and layout directions for the youth career initiative website."
+						
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Collaboration + Interation
+				h3 Refining the experience together
+				p.mb-4 I collaborated closely with Drio Duo throughout the design process, using Figma to review concepts, refine the experience, and resolve design and content decisions before translating the approved direction into WordPress.
+
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/youth-career-website/youth-career-website-design-collaboration.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Figma feedback and design discussions showing the collaborative process used to evaluate options, resolve UX and content questions, and refine the final experience." do
+							= image_tag "portfolio/youth-career-website/youth-career-website-design-collaboration.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Figma feedback and design discussions showing the collaborative process used to evaluate options, resolve UX and content questions, and refine the final experience."
+
+						h5.mt-3.mb-2 Design feedback + iteration
+						p.small.mb-0
+							| Collaborated with Drio Duo in Figma to explore layout options, share recommendations, and refine designs through ongoing feedback.
+
+					.col-md-6
+						= link_to image_path("portfolio/youth-career-website/youth-career-website-design-collaboration-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Figma design screens and comments showing collaborative UX, content, and visual design decisionsn" do
+							= image_tag "portfolio/youth-career-website/youth-career-website-design-collaboration-2.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Figma design screens and comments showing collaborative UX, content, and visual design decisionsn"
+
+						h5.mt-3.mb-2 UX + content decisions
+						p.small.mb-0 Worked through UX and content details together, including calls to action, visual placement, and other interface decisions before finalizing the experience.
+/! The outcome
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
+					h2 The outcome
+					p.lead.mb-4 The finished website gave the client a dedicated digital presence that is clean, engaging, and easy to navigate. It provides students and other stakeholders with a clear, accessible entry point into career training, resources, and support while better communicating the initiative’s mission and programs.
+					p.lead The final experience also brought the visual identity established during the design process to life across the website. Typography, bespoke graphic elements, and consistent interface styles created a more cohesive digital presence while building on the client’s existing logo.
+					p.lead For development, I translated the approved designs into a custom WordPress Gutenberg theme with reusable custom blocks. This maintained consistency with the original mockups while giving the client greater flexibility to manage content and expand the website as their needs evolve.
+					/ h6
+					/ 	span.badge.text-bg-secondary Problem
+					/ p A youth career initiative in Baltimore needed a standalone digital presence. Previously limited to a single landing page within another organization’s website, they required a dedicated microsite that reflected their brand, shared their story, and guided students toward training opportunities and career resources.
+					/ h6
+					/ 	span.badge.text-bg-secondary Process
+					/ p Drio Duo partnered with me to design and develop the new website. I created high-fidelity mockups based on their updated brand and messaging, then built a responsive WordPress site focused on simplicity, accessibility, and clear resource pathways for students, educators, and community partners.
+					/ h6
+					/ 	span.badge.text-bg-secondary Outcome
+					/ p The finished microsite is clean, engaging, and easy to navigate, providing students and stakeholders with a clear, accessible entry point into career training, resources, and support.
 
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/youth-career-website/youth-career-resources-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Website Before & After" do
-						= image_tag "portfolio/youth-career-website/youth-career-resources-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Website Before & After"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Website" do
+								= image_tag "portfolio/youth-career-website/youth-career-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-resources-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Mega Menu" do
+								= image_tag "portfolio/youth-career-website/youth-career-resources-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Mega Menu"
+						
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-resources-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Homepage" do
+								= image_tag "portfolio/youth-career-website/youth-career-resources-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-website-program-elements.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Elements Webpage" do
+								= image_tag "portfolio/youth-career-website/youth-career-website-program-elements.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-website-program-element-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Element Webpage" do
+								= image_tag "portfolio/youth-career-website/youth-career-website-program-element-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/youth-career-website/youth-career-resources-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+								= image_tag "portfolio/youth-career-website/youth-career-resources-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
 
-                    / = link_to image_path("portfolio/youth-career-website/youth-career-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Website" do
-					/ 	= image_tag "portfolio/youth-career-website/youth-career-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Website"
-
-					= link_to image_path("portfolio/youth-career-website/youth-career-resources-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Homepage" do
-						= image_tag "portfolio/youth-career-website/youth-career-resources-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Homepage"
-					
-					= link_to image_path("portfolio/youth-career-website/youth-career-website-program-elements.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Elements Webpage" do
-						= image_tag "portfolio/youth-career-website/youth-career-website-program-elements.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
-
-					= link_to image_path("portfolio/youth-career-website/youth-career-website-program-element-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Program Element Webpage" do
-						= image_tag "portfolio/youth-career-website/youth-career-website-program-element-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Program Element Webpage"
-					= link_to image_path("portfolio/youth-career-website/youth-career-resources-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Youth Career Resources Mega Menu" do
-						= image_tag "portfolio/youth-career-website/youth-career-resources-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Youth Career Resources Mega Menu"
-
-					= link_to image_path("portfolio/youth-career-website/youth-career-resources-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
-						= image_tag "portfolio/youth-career-website/youth-career-resources-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
-					
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3 This project reinforced the importance of designing around both audience and information needs, especially when a website serves several groups with different goals. Organizing a large amount of program information challenged me to think carefully about hierarchy, accessibility, and creating clear pathways without overwhelming users.
+				p.lead.mb-3 It also gave me the opportunity to expand an existing identity into a more complete digital visual system. Working from the client’s logo, I explored typography, bespoke graphic elements, layouts, and interface styles that could work cohesively across the website while still feeling connected to the original brand.
+				p.lead.mb-3 Carrying that direction from Figma into a custom Gutenberg theme strengthened the connection between my design and development process. Building reusable custom blocks required me to think beyond individual page designs and consider how the visual system could translate into flexible components that remained consistent as content changed.
+				.d-inline.mb-5.mb-md-0
+					= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://careerbound.baltimorespromise.org/', target: "_blank"
+				.squiggle-vertical					
 						
 
 /!  Browse More Projects

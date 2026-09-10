@@ -176,18 +176,21 @@ section#outcome
 			.col-12.col-md-7
 				div.pt-md-10
 					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour homepage redesigned as part of the broader website experience to strengthen product storytelling and support the company’s evolving brand." do
+								= image_tag "portfolio/mfour/mfour-homepage.jpg", class: "img-fluid w-100 h-auto", alt: "Redesigned MFour consumer insights platform website homepage"
+						
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/mfour/mfour-studio-views.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour homepage redesigned as part of the broader website experience to strengthen product storytelling and support the company’s evolving brand." do
+								= image_tag "portfolio/mfour/mfour-studio-views.jpg", class: "img-fluid w-100 h-auto", alt: "Redesigned MFour consumer insights platform website homepage"
 
 						.portfolio-masonry-item
-						= link_to image_path("portfolio/mfour/mfour-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour homepage redesigned as part of the broader website experience to strengthen product storytelling and support the company’s evolving brand." do
-							= image_tag "portfolio/mfour/mfour-homepage.jpg", class: "img-fluid w-100 h-auto", alt: "Redesigned MFour consumer insights platform website homepage"
+							= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio experience integrated into WordPress to showcase the platform and connect the product experience with the marketing website." do
+								= image_tag "portfolio/mfour/mfour-studio-overview.jpg", class: "img-fluid w-100 h-auto", alt: "MFour Studio product overview integrated into the WordPress website"
 
 						.portfolio-masonry-item
-						= link_to image_path("portfolio/mfour/mfour-studio-overview.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"MFour Studio experience integrated into WordPress to showcase the platform and connect the product experience with the marketing website." do
-							= image_tag "portfolio/mfour/mfour-studio-overview.jpg", class: "img-fluid w-100 h-auto", alt: "MFour Studio product overview integrated into the WordPress website"
-
-						.portfolio-masonry-item
-						= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources library designed to organize MFour’s growing content and make insights easier for visitors to discover and explore." do
-							= image_tag "portfolio/mfour/mfour-website-resources.jpg", class: "img-fluid w-100 h-auto", alt: "MFour website resources library displaying consumer insights content"
+							= link_to image_path("portfolio/mfour/mfour-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Resources library designed to organize MFour’s growing content and make insights easier for visitors to discover and explore." do
+								= image_tag "portfolio/mfour/mfour-website-resources.jpg", class: "img-fluid w-100 h-auto", alt: "MFour website resources library displaying consumer insights content"
 /! What I Learned					
 section
 	.container

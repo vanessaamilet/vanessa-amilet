@@ -98,7 +98,9 @@ module PortfolioHelper
 			label: "Web Design + Development (WordPress)",
 			desc: "Built a dedicated microsite to guide students toward career opportunities.",
 			project_type: %w[website], 
-			industry: %w[nonprofit-community] 
+			industry: %w[nonprofit-community],
+			full_case_study: true,
+			featured_rank: 6  
 		},
 		# Row 4
 		{ 
