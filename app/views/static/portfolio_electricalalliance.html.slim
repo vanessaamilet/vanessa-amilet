@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details 
 					h6
 						span.badge.text-bg-secondary Problem
@@ -43,28 +43,30 @@ section.portfolio-info#info
 					p The new site offers a modern design that aligns with the partnership’s brand and improves accessibility, navigation, and visibility of programs and resources.
 						
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website Before & After" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website Before & After"
-
-                    / = link_to image_path("portfolio/electrical-industry-website/electrical-industry-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website" do
-					/ 	= image_tag "portfolio/electrical-industry-website/electrical-industry-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website"
-
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website - Mega Menu" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website - Mega Menu"
-
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership About Page" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership About Page"
-					
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-program-template.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Program Template Webpage" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-program-template.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Program Template Webpage"
-
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-contractors.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contractors Webpage" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-contractors.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contractors Webpage"
-
-					= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
-						= image_tag "portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website Before & After" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-website-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website Before & After"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership Website - Mega Menu" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-website-megamenu.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership Website - Mega Menu"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Electrical Industry Partnership About Page" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-website-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Electrical Industry Partnership About Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-program-template.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Program Template Webpage" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-program-template.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Program Template Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-contractors.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contractors Webpage" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-contractors.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contractors Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+								= image_tag "portfolio/electrical-industry-website/electrical-industry-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+							
 /!  Portfolio Nav					
 / = render partial: "shared/portfolio_navigation"
 /!  Browse More Projects

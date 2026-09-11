@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details 
 					h6
 						span.badge.text-bg-secondary Problem
@@ -42,22 +42,24 @@ section.portfolio-info#info
 						span.badge.text-bg-secondary Outcome
 					p The final site is clean, structured, and easy to navigate, helping commercial and municipal clients understand product offerings and connect directly with the sales team.
 			.col-12.col-md-7
-				div.pt-md-10
-                    = link_to image_path("portfolio/greenerworld/compost-soil-products-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Compost & Soil Products Website" do
-						= image_tag "portfolio/greenerworld/compost-soil-products-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Compost & Soil Products Website"
-
-					= link_to image_path("portfolio/greenerworld/compost-soil-products-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Compost & Soil Products Website Homepage" do
-						= image_tag "portfolio/greenerworld/compost-soil-products-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Compost & Soil Products Website Homepage"
-					
-					= link_to image_path("portfolio/greenerworld/compost-soil-products-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"About Us Webpage" do
-						= image_tag "portfolio/greenerworld/compost-soil-products-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"About Us Webpage"
-
-					= link_to image_path("portfolio/greenerworld/compost-soil-products-allproducts.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"All Products Webpage" do
-						= image_tag "portfolio/greenerworld/compost-soil-products-allproducts.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"All Products Webpage"
-
-					= link_to image_path("portfolio/greenerworld/compost-soil-products-contact-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
-						= image_tag "portfolio/greenerworld/compost-soil-products-contact-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/greenerworld/compost-soil-products-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Compost & Soil Products Website" do
+								= image_tag "portfolio/greenerworld/compost-soil-products-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Compost & Soil Products Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/greenerworld/compost-soil-products-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Compost & Soil Products Website Homepage" do
+								= image_tag "portfolio/greenerworld/compost-soil-products-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Compost & Soil Products Website Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/greenerworld/compost-soil-products-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"About Us Webpage" do
+								= image_tag "portfolio/greenerworld/compost-soil-products-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"About Us Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/greenerworld/compost-soil-products-allproducts.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"All Products Webpage" do
+								= image_tag "portfolio/greenerworld/compost-soil-products-allproducts.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"All Products Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/greenerworld/compost-soil-products-contact-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+								= image_tag "portfolio/greenerworld/compost-soil-products-contact-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+							
 						
 
 /!  Browse More Projects

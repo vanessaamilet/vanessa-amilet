@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -43,28 +43,30 @@ section.portfolio-info#info
 					p The updated website offers a clearer, more intuitive user experience that helps visitors access key resources and engage more fully with the organization’s mission.
 
 			.col-12.col-md-7
-				div.pt-md-10
-                    = link_to image_path("portfolio/community-impact-website/community-impact-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website" do
-						= image_tag "portfolio/community-impact-website/community-impact-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website"
-
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-home.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Homepage" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-home.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Homepage"
-
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Resources Mockup" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Resources Mockup"
-					
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-donate.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Donation Webpage" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-donate.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Donation Webpage"
-
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-whatwedo.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website What We Do Webpage" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-whatwedo.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website What We Do Webpage"
-
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-mission.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Mission Webpage" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-mission.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Mission Webpage"
-
-					= link_to image_path("portfolio/community-impact-website/community-impact-website-news.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"News Webpage" do
-						= image_tag "portfolio/community-impact-website/community-impact-website-news.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"News Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website" do
+								= image_tag "portfolio/community-impact-website/community-impact-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-home.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Homepage" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-home.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-resources.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Resources Mockup" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-resources.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Resources Mockup"
+						.portfolio-masonry-item	
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-donate.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Donation Webpage" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-donate.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Donation Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-whatwedo.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website What We Do Webpage" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-whatwedo.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website What We Do Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-mission.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Impact Website Mission Webpage" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-mission.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Impact Website Mission Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-impact-website/community-impact-website-news.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"News Webpage" do
+								= image_tag "portfolio/community-impact-website/community-impact-website-news.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"News Webpage"
+							
 						
 
 /!  Browse More Projects
