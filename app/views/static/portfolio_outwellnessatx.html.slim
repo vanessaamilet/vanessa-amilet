@@ -26,10 +26,10 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p FigJam, Figma, Wordpress, Elementor, HTML, PHP, SCSS, JS
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1.py-8.py-md-10
 					h2 Project Details
 					h6
@@ -62,19 +62,26 @@ section.portfolio-info#info
 					/ .row
 					/ 	= link_to 'View Website <i class="fad fa-external-link-alt"></i>'.html_safe, 'https://outwellnessatx.com/', target: "_blank"
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/outwellness-atx/outwellnessatx-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website Before & After" do
-						= image_tag "portfolio/outwellness-atx/outwellnessatx-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Before & After"
-					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website" do
-						= image_tag "portfolio/outwellness-atx/outwellness-atx-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX"
-					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Homepage" do
-						= image_tag "portfolio/outwellness-atx/outwellness-atx-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Homepage"
-					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX About Page" do
-						= image_tag "portfolio/outwellness-atx/outwellness-atx-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX About Page"
-					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Services Page" do
-						= image_tag "portfolio/outwellness-atx/outwellness-atx-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Services Page"
-					= link_to image_path("portfolio/outwellness-atx/outwellness-atx-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Contact Page" do
-						= image_tag "portfolio/outwellness-atx/outwellness-atx-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Contact Page"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellnessatx-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website Before & After" do
+								= image_tag "portfolio/outwellness-atx/outwellnessatx-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Before & After"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellness-atx-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Website" do
+								= image_tag "portfolio/outwellness-atx/outwellness-atx-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellness-atx-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Homepage" do
+								= image_tag "portfolio/outwellness-atx/outwellness-atx-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellness-atx-about.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX About Page" do
+								= image_tag "portfolio/outwellness-atx/outwellness-atx-about.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX About Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellness-atx-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Services Page" do
+								= image_tag "portfolio/outwellness-atx/outwellness-atx-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Services Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/outwellness-atx/outwellness-atx-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"OutWellness ATX Contact Page" do
+								= image_tag "portfolio/outwellness-atx/outwellness-atx-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"OutWellness ATX Contact Page"
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

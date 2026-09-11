@@ -26,9 +26,9 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
+section#outcome
+	.container
+		.row.justify-content-between.g-5
 			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
 				.flex-grow-1.py-8.py-md-10
 					h2 Project Details
@@ -37,34 +37,36 @@ section.portfolio-info#info
 					p A foundation needed a modern website that clearly communicated its mission and highlighted its programs supporting entrepreneurship and skilled trades training.
 					h6
 						span.badge.text-bg-secondary Process
-					p.lead Drio Duo partnered with me to design and develop a new website for their foundation client. I created high-fidelity mockups in Figma and built a custom WordPress site that emphasizes clarity, storytelling, and easy navigation to help users explore programs and understand the foundation’s mission.
+					p Drio Duo partnered with me to design and develop a new website for their foundation client. I created high-fidelity mockups in Figma and built a custom WordPress site that emphasizes clarity, storytelling, and easy navigation to help users explore programs and understand the foundation’s mission.
 					h6
 						span.badge.text-bg-secondary Outcome
 					p The new site offers a welcoming, intuitive experience that elevates program visibility and strengthens the foundation’s digital presence.
 
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/foundation-website/nonprofit-foundation-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Before & After" do
-						= image_tag "portfolio/foundation-website/nonprofit-foundation-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Before & After"
-
-                    = link_to image_path("portfolio/foundation-website/foundation-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website" do
-						= image_tag "portfolio/foundation-website/foundation-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Showcase"
-
-					= link_to image_path("portfolio/foundation-website/nonprofit-website-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Homepage" do
-						= image_tag "portfolio/foundation-website/nonprofit-website-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Homepage"
-					
-					= link_to image_path("portfolio/foundation-website/nonprofit-website-ourstory.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Our Story Webpage" do
-						= image_tag "portfolio/foundation-website/nonprofit-website-ourstory.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Our Story Webpage"
-
-					= link_to image_path("portfolio/foundation-website/nonprofit-website-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit News Page" do
-						= image_tag "portfolio/foundation-website/nonprofit-website-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Page"
-
-					= link_to image_path("portfolio/foundation-website/nonprofit-website-grants.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Grants Webpage" do
-						= image_tag "portfolio/foundation-website/nonprofit-website-grants.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Webpage"
-					
-					= link_to image_path("portfolio/foundation-website/nonprofit-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Contact Us Webpage" do
-						= image_tag "portfolio/foundation-website/nonprofit-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Contact Us Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/foundation-website/nonprofit-foundation-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Before & After" do
+								= image_tag "portfolio/foundation-website/nonprofit-foundation-before-after.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Before & After"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/foundation-website/foundation-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website" do
+								= image_tag "portfolio/foundation-website/foundation-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/foundation-website/nonprofit-website-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Homepage" do
+								= image_tag "portfolio/foundation-website/nonprofit-website-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Homepage"
+						.portfolio-masonry-item	
+							= link_to image_path("portfolio/foundation-website/nonprofit-website-ourstory.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Website Our Story Webpage" do
+								= image_tag "portfolio/foundation-website/nonprofit-website-ourstory.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Website Our Story Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/foundation-website/nonprofit-website-insights.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit News Page" do
+								= image_tag "portfolio/foundation-website/nonprofit-website-insights.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/foundation-website/nonprofit-website-grants.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Grants Webpage" do
+								= image_tag "portfolio/foundation-website/nonprofit-website-grants.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit News Webpage"
+						.portfolio-masonry-item	
+							= link_to image_path("portfolio/foundation-website/nonprofit-website-contactus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Nonprofit Contact Us Webpage" do
+								= image_tag "portfolio/foundation-website/nonprofit-website-contactus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Nonprofit Contact Us Webpage"
+							
 						
 
 /!  Browse More Projects
