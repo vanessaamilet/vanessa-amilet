@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -43,19 +43,21 @@ section.portfolio-info#info
 					p The new website establishes a welcoming digital presence that aligns with the organization’s brand and mission. It provides a clear, engaging way for visitors to discover local businesses, building excitement and visibility ahead of the retail storefront’s opening.
 					
 			.col-12.col-md-7
-				div.pt-md-10
-                    = link_to image_path("portfolio/community-retail-showcase/community-market-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Retail Showcase Website" do
-						= image_tag "portfolio/community-retail-showcase/community-market-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Retail Showcase Website"
-
-					= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Retail Showcase Homepage" do
-						= image_tag "portfolio/community-retail-showcase/community-retail-showcase-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Retail Showcase Homepage"
-					
-					= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-joinus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Join Us Webpage" do
-						= image_tag "portfolio/community-retail-showcase/community-retail-showcase-joinus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Join Us Webpage"
-
-					= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
-						= image_tag "portfolio/community-retail-showcase/community-retail-showcase-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-retail-showcase/community-market-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Retail Showcase Website" do
+								= image_tag "portfolio/community-retail-showcase/community-market-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Retail Showcase Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Community Retail Showcase Homepage" do
+								= image_tag "portfolio/community-retail-showcase/community-retail-showcase-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Community Retail Showcase Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-joinus.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Join Us Webpage" do
+								= image_tag "portfolio/community-retail-showcase/community-retail-showcase-joinus.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Join Us Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/community-retail-showcase/community-retail-showcase-contact.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Contact Webpage" do
+								= image_tag "portfolio/community-retail-showcase/community-retail-showcase-contact.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Contact Webpage"
+							
 						
 
 /!  Browse More Projects

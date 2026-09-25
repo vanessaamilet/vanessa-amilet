@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Studiopress Genesis Framework, HTML, PHP, CSS, JS
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -42,22 +42,24 @@ section.portfolio-info#info
 						span.badge.text-bg-secondary Outcome
 					p The new website provides IGCO with a polished digital presence that highlights their work, clearly communicates services, and supports future growth with an easy-to-manage, scalable platform.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/igco/igco-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website Design" do
-						= image_tag "portfolio/igco/igco-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Design"
-
-					= link_to image_path("portfolio/igco/igco-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website" do
-						= image_tag "portfolio/igco/igco-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Showcase"
-					
-					= link_to image_path("portfolio/igco/igco-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website" do
-						= image_tag "portfolio/igco/igco-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Showcase"
-
-					= link_to image_path("portfolio/igco/igco-portfolio.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Portfolio Page" do
-						= image_tag "portfolio/igco/igco-portfolio.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Portfolio Page"
-					
-					= link_to image_path("portfolio/igco/igco-showcase-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website Design" do
-						= image_tag "portfolio/igco/igco-showcase-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Design"
-						
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/igco/igco-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website Design" do
+								= image_tag "portfolio/igco/igco-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Design"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/igco/igco-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website" do
+								= image_tag "portfolio/igco/igco-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/igco/igco-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website" do
+								= image_tag "portfolio/igco/igco-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/igco/igco-portfolio.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Portfolio Page" do
+								= image_tag "portfolio/igco/igco-portfolio.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Portfolio Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/igco/igco-showcase-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IGCO Website Design" do
+								= image_tag "portfolio/igco/igco-showcase-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IGCO Website Design"
+								
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

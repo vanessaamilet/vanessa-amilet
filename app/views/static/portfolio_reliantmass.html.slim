@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Adobe XD, Adobe Illustrator, Adobe After Effects, SDL Tridion, HTML, CSS, Tachyons Framework
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -42,19 +42,23 @@ section.portfolio-info#info
 						span.badge.text-bg-secondary Outcome
 					p The campaign delivered targeted, market-specific landing pages that supported Reliant’s broader 2021 marketing strategy. The Hispanic Market pages provided a clear, engaging entry point for customers, helping promote key plans while aligning with the overall campaign vision.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass - Pick Your Free Landing Page (Spanish)" do
-						= image_tag "portfolio/reliant-mass/reliant-mass-landingpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"HCSS Website"
-
-					= link_to image_path("portfolio/reliant-mass/reliant-mass-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Pages (Spanish)" do
-						= image_tag "portfolio/reliant-mass/reliant-mass-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Pages"
-					= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-eligetuplan.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Page (Spanish)" do
-						= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-eligetuplan.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Page - Elige tu Plan"
-					= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-flexdays.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Truly Free Flex Days Landing Page (Spanish)" do
-						= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-flexdays.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Truly Free Flex Days Landing Page"
-
-					= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Page - Truly Free Weekends (Spanish)" do
-						= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Page - Truly Free Weekends (Spanish)"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass - Pick Your Free Landing Page (Spanish)" do
+								= image_tag "portfolio/reliant-mass/reliant-mass-landingpage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"HCSS Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/reliant-mass/reliant-mass-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Pages (Spanish)" do
+								= image_tag "portfolio/reliant-mass/reliant-mass-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Pages"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-eligetuplan.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Page (Spanish)" do
+								= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-eligetuplan.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Page - Elige tu Plan"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-flexdays.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Truly Free Flex Days Landing Page (Spanish)" do
+								= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-flexdays.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Truly Free Flex Days Landing Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/reliant-mass/reliant-mass-landingpage-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Reliant 2021 Mass Landing Page - Truly Free Weekends (Spanish)" do
+								= image_tag "portfolio/reliant-mass/reliant-mass-landingpage-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Reliant 2021 Mass Landing Page - Truly Free Weekends (Spanish)"
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

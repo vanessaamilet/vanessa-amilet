@@ -272,25 +272,25 @@ module PortfolioHelper
 			industry: %w[arts-entertainment] 
 		},
 		# Row 10
-		{ 
-			title: "Creative Studio Website Design", 
-			path: portfolio_igco_path, 
-			img: "portfolio/portfolio-igco.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Designed and developed a website to showcase work, services, and creative expertise.",
-			project_type: %w[website], 
-			industry: %w[professional-services]
-		},
+		# { 
+		# 	title: "Creative Studio Website Design", 
+		# 	path: portfolio_igco_path, 
+		# 	img: "portfolio/portfolio-igco.jpg", 
+		# 	label: "Web Design + Development (WordPress)",
+		# 	desc: "Designed and developed a website to showcase work, services, and creative expertise.",
+		# 	project_type: %w[website], 
+		# 	industry: %w[professional-services]
+		# },
 		
-		{ 
-			title: "North Bloom - Commercial Construction Website", 
-			path: portfolio_northbloom_path, 
-			img: "portfolio/portfolio-northbloom.jpg", 
-			label: "Web Design + Development (WordPress)",
-			desc: "Developed a custom construction website to showcase services and project experience.",
-			project_type: %w[website], 
-			industry: %w[construction]
-		},
+		# { 
+		# 	title: "North Bloom - Commercial Construction Website", 
+		# 	path: portfolio_northbloom_path, 
+		# 	img: "portfolio/portfolio-northbloom.jpg", 
+		# 	label: "Web Design + Development (WordPress)",
+		# 	desc: "Developed a custom construction website to showcase services and project experience.",
+		# 	project_type: %w[website], 
+		# 	industry: %w[construction]
+		# },
 	  ]
 	end
 

@@ -30,11 +30,9 @@ Rails.application.routes.draw do
   get '/portfolio/compost-products-website' => 'static#portfolio_greenerworld', as: 'portfolio_greenerworld'
   get '/portfolio/electrical-industry-website' => 'static#portfolio_electricalalliance', as: 'portfolio_electricalalliance'
   get '/portfolio/genie-creates' => 'static#portfolio_genie', as: 'portfolio_genie'
-  get '/portfolio/north-bloom' => 'static#portfolio_northbloom', as: 'portfolio_northbloom'
   get '/portfolio/betty-boujee' => 'static#portfolio_bettyboujee', as: 'portfolio_bettyboujee'
   get '/portfolio/agency-website' => 'static#portfolio_agency', as: 'portfolio_agency'
   get '/portfolio/community-retail-showcase' => 'static#portfolio_community', as: 'portfolio_community'
-  get '/portfolio/igco' => 'static#portfolio_igco'
   get '/portfolio/expertly-sanitized' => 'static#portfolio_expertlysanitized', as: 'portfolio_expertly'
   get '/portfolio/universal-control-systems' => 'static#portfolio_ucs', as: 'portfolio_ucs'
   get '/portfolio/marysol-wellness' => 'static#portfolio_marysol', as: 'portfolio_marysol'
@@ -56,6 +54,8 @@ Rails.application.routes.draw do
 
   # Old Pages (Redirects Created in Controller)
   # get '/portfolio/crossroads-decision' => 'static#portfolio_crossroads_decision'
+  get '/portfolio/igco' => 'static#portfolio_igco'
+  get '/portfolio/north-bloom' => 'static#portfolio_northbloom', as: 'portfolio_northbloom'
   get '/portfolio/apg' => 'static#portfolio_apg'
   get '/portfolio/hcss' => 'static#portfolio_hcss'
   get '/portfolio/artofgreenwood' => 'static#portfolio_greenwood'

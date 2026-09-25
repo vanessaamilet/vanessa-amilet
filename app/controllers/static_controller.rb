@@ -86,11 +86,13 @@ class StaticController < ApplicationController
 	end
 
 	def portfolio_northbloom
+		redirect_to :root
 		@page_title = 'North Bloom Construction'
 		@page_description = 'Custom WordPress site developed for North Bloom Construction Group, showcasing services and project portfolio to establish a strong online presence.'
 	end
 
 	def portfolio_igco
+		redirect_to :root
 		@page_title = 'IGCO'
 		@page_description = 'Check out this custom Wordpress website I developed for IGCO, a small team of creatives based in Houston, Texas.'
 	end

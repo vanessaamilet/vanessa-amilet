@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -43,19 +43,21 @@ section.portfolio-info#info
 					p The updated website features a clean, modern design with improved functionality and flexibility, offering a user-friendly experience that better represents the agency’s brand and services.
 
 			.col-12.col-md-7
-				div.pt-md-10
-                    = link_to image_path("portfolio/agency/agency-website-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Website" do
-						= image_tag "portfolio/agency/agency-website-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Website Showcase"
-
-					= link_to image_path("portfolio/agency/agency-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Homepage" do
-						= image_tag "portfolio/agency/agency-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Homepage"
-					
-					= link_to image_path("portfolio/agency/agency-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency About Webpage" do
-						= image_tag "portfolio/agency/agency-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency About Webpage"
-
-					= link_to image_path("portfolio/agency/agency-marketing-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Services Webpage" do
-						= image_tag "portfolio/agency/agency-marketing-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Services Webpage"
-					
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/agency/agency-website-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Website" do
+								= image_tag "portfolio/agency/agency-website-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/agency/agency-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Homepage" do
+								= image_tag "portfolio/agency/agency-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/agency/agency-about-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency About Webpage" do
+								= image_tag "portfolio/agency/agency-about-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency About Webpage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/agency/agency-marketing-services.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Agency Services Webpage" do
+								= image_tag "portfolio/agency/agency-marketing-services.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Agency Services Webpage"
+							
 						
 
 /!  Browse More Projects

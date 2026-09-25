@@ -28,11 +28,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Shopfy, HTML, Liquid, CSS, JS, Adobe XD
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -45,25 +45,28 @@ section.portfolio-info#info
 					p The refreshed website offers a more polished, user-friendly experience that showcases their expanded services, differentiates them from competitors, and better resonates with their target audience.
 
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/picnics/picnicsinthecity-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
-						= image_tag "portfolio/picnics/picnicsinthecity-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+								= image_tag "portfolio/picnics/picnicsinthecity-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+								= image_tag "portfolio/picnics/picnicsinthecity-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
+								= image_tag "portfolio/picnics/picnicsinthecity-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
 
-					= link_to image_path("portfolio/picnics/picnicsinthecity-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
-						= image_tag "portfolio/picnics/picnicsinthecity-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
-
-					= link_to image_path("portfolio/picnics/picnicsinthecity-homepage-design.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Homepage" do
-						= image_tag "portfolio/picnics/picnicsinthecity-homepage-design.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Homepage"
-
-					= link_to image_path("portfolio/picnics/picnicsinthecity-event-planning.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Event Planning Page" do
-						= image_tag "portfolio/picnics/picnicsinthecity-event-planning.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Event Planning Page"
-
-					= link_to image_path("portfolio/picnics/picnicsinthecity-picnics-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City All Picnics Page" do
-						= image_tag "portfolio/picnics/picnicsinthecity-picnics-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City All Picnics Page"
-
-					= link_to image_path("portfolio/picnics/picnicsinthecity-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Website" do
-						= image_tag "portfolio/picnics/picnicsinthecity-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Website Showcase"
-
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-homepage-design.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Homepage" do
+								= image_tag "portfolio/picnics/picnicsinthecity-homepage-design.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-event-planning.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City Event Planning Page" do
+								= image_tag "portfolio/picnics/picnicsinthecity-event-planning.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City Event Planning Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/picnics/picnicsinthecity-picnics-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Picnics in the City All Picnics Page" do
+								= image_tag "portfolio/picnics/picnicsinthecity-picnics-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Picnics in the City All Picnics Page"
+						
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA

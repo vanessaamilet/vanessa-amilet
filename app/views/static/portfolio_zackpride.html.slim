@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Studiopress Genesis Framework, HTML, PHP, CSS, JS, Adobe Illustrator
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-4.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -43,19 +43,26 @@ section.portfolio-info#info
 					p The updated site and CD design present a unified, professional brand that highlights Zack’s career, strengthens his online presence, and makes it easy for audiences to stay informed about his upcoming performances.
 
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/zack-pride/zack-pride-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Showcase" do
-						= image_tag "portfolio/zack-pride/zack-pride-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Showcase"
-					= link_to image_path("portfolio/zack-pride/zack-pride-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Homepage" do
-						= image_tag "portfolio/zack-pride/zack-pride-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Homepage"
-                    = link_to image_path("portfolio/zack-pride/zack-pride-about-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride About Page" do
-						= image_tag "portfolio/zack-pride/zack-pride-about-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride About Page"
-					= link_to image_path("portfolio/zack-pride/zack-pride-performances.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Performances Page" do
-						= image_tag "portfolio/zack-pride/zack-pride-performances.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Performances Page"
-                    = link_to image_path("portfolio/zack-pride/zack-pride-contact-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Contact Page" do
-						= image_tag "portfolio/zack-pride/zack-pride-contact-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Contact Page"
-                    = link_to image_path("portfolio/zack-pride/zack-pride-album.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Album Design" do
-						= image_tag "portfolio/zack-pride/zack-pride-album.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Album Design"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Showcase" do
+								= image_tag "portfolio/zack-pride/zack-pride-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Showcase"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-homepage.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Homepage" do
+								= image_tag "portfolio/zack-pride/zack-pride-homepage.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Homepage"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-about-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride About Page" do
+								= image_tag "portfolio/zack-pride/zack-pride-about-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride About Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-performances.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Performances Page" do
+								= image_tag "portfolio/zack-pride/zack-pride-performances.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Performances Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-contact-pg.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Contact Page" do
+								= image_tag "portfolio/zack-pride/zack-pride-contact-pg.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Contact Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/zack-pride/zack-pride-album.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Zack Pride Album Design" do
+								= image_tag "portfolio/zack-pride/zack-pride-album.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"Zack Pride Album Design"
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
 /!  Portfolio CTA
