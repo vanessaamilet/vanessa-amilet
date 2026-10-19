@@ -8,17 +8,18 @@ class StaticController < ApplicationController
 		# very simple code to grab all posts so they can be
 		# displayed in the Index view (index.html.slim)
 		# @page_title = 'Website & Graphic Design Services in Houston, TX'
-		@page_description = 'Captivating designs and online journeys for mission-driven individuals, businesses, and brands seeking to establish an authentic online presence.'
+		@page_title = 'Web & UX/UI Designer + Front-End Developer'
+		@page_description = 'Web design, UX/UI design, and front-end development for businesses and brands. Creating thoughtful digital experiences that balance creativity and function.'
 	end
 	
 	def about
-		@page_title = 'About'
-		@page_description = 'Vanessa Amilet Santos is a web designer & developer based in Atlanta, Georgia providing custom website design services to businesses, creatives, and ecommerce brands nationwide.'
+		@page_title = 'About | Web & UX/UI Designer'
+		@page_description = 'Vanessa Amilet Santos is an Atlanta-based web designer and front-end developer specializing in UX/UI design, custom WordPress websites, and web strategy.'
 	end
 
 	def services
 		@page_title = 'Website Design & Development Services'
-		@page_description = 'Expand your business outreach beyond the known and create an engaging online ecosystem that elevates your mission and client experience.'
+		@page_description = 'Custom website design, UX/UI design, and front-end development services for businesses and brands. Creating intuitive, responsive websites with purpose..'
 	end
 
 	def contact
@@ -28,16 +29,16 @@ class StaticController < ApplicationController
 	end
 	
 	def portfolio
-		@page_title = 'Portfolio'
-		@page_description = 'Explore a selection of projects that involved helping businesses, creatives, and ecommerce brands with their web presence and branding.'
+		@page_title = 'Web Design & Development Portfolio'
+		@page_description = 'Explore web design, UX/UI design, and front-end development projects across technology, fintech, wellness, and other industries, from concept to launch.'
 	end
 
 	# def portfolio_ecmg
 	# end
 
 	def portfolio_blueprint
-		@page_title = 'Blueprint Technologies Website'
-		@page_description = 'Ongoing UX/UI design and WordPress development for Blueprint Technologies, including key page revamps, new solution experiences, SEO, and website optimization.'
+		@page_title = 'B2B Tech Website Design & WordPress'
+		@page_description = 'Explore my UX/UI design, WordPress development, and web strategy work for Blueprint Technologies, supporting B2B data, AI, and Databricks solutions.'
 	end
 
 	def portfolio_mfour
@@ -46,7 +47,7 @@ class StaticController < ApplicationController
 	end
 
 	def portfolio_capitalize
-		@page_title = 'Capitalize'
+		@page_title = 'Fintech Website & WordPress Development'
 		@page_description = 'Developed a custom WordPress theme for Capitalize, supporting their rebrand with Tailwind CSS, SEO optimization, and ongoing site maintenance.'
 	end
 
@@ -131,8 +132,8 @@ class StaticController < ApplicationController
 	end
 
 	def portfolio_jumpix
-		@page_title = 'Jumpix'
-		@page_description = 'Checkout the different items I developed for Jumpix, a cloud-based software. These different items included UX design, website design, motion graphic videos, front-end development for their software, and much more.'
+		@page_title = 'SaaS Web App UX/UI Design & Development'
+		@page_description = 'Explore how I designed and developed the UX/UI for Jumpix, a cloud storage SaaS application, from user interfaces to front-end development and branding.'
 	end
 
 	def portfolio_cia
