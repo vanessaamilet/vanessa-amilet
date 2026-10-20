@@ -1,0 +1,19 @@
+
+- schema = {
+    "@context" => "https://schema.org",
+    "@type" => "CreativeWork",
+    "name" => project[:name],
+    "description" => project[:description],
+    "url" => project[:url],
+    "genre" => "Website Design Case Study",
+    "keywords" => project[:keywords],
+    "creator" => {
+      "@type" => "Person",
+      "@id" => "https://www.vanessaamilet.com/#person",
+      "name" => "Vanessa Amilet Santos",
+      "url" => "https://www.vanessaamilet.com/"
+    }
+  }
+
+script type="application/ld+json"
+  == raw(json_escape(schema.to_json))
