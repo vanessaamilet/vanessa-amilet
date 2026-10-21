@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Studiopress Genesis Framework, HTML, PHP, CSS, JS
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -38,14 +38,18 @@ section.portfolio-info#info
 					h6
 						span.badge.text-bg-secondary Process
 					p I designed and developed a custom WordPress website using their existing brand colors and newly selected typography. The layout focused on concise messaging, strong visual hierarchy, and a clear flow of information to engage visitors and clearly communicate the firm’s value.
+					h6
 						span.badge.text-bg-secondary Outcome
 					p The landing page reestablished The Leeward Team’s digital presence with a clean, professional design. It provides a focused, engaging introduction to the firm while serving as a scalable starting point for future website growth.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/leeward-team/leeward-team-landing-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"The Leeward Team Landing Page" do
-						= image_tag "portfolio/leeward-team/leeward-team-landing-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"The Leeward Team Landing Page"
-					= link_to image_path("portfolio/leeward-team/leeward-team-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"The Leeward Team Landing Page" do
-						= image_tag "portfolio/leeward-team/leeward-team-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"The Leeward Team Landing Page"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/leeward-team/leeward-team-landing-page.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"The Leeward Team Landing Page" do
+								= image_tag "portfolio/leeward-team/leeward-team-landing-page.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"The Leeward Team Landing Page"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/leeward-team/leeward-team-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"The Leeward Team Landing Page" do
+								= image_tag "portfolio/leeward-team/leeward-team-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"The Leeward Team Landing Page"
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"

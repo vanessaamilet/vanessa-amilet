@@ -26,11 +26,11 @@ section.hero.d-flex
 			.col-md-6
 				h6 Technologies
 				p Adobe XD, HTML/SCSS, Wordpress, Studiopress Genesis Framework, ACF
-section.portfolio-info#info
-	.container-fluid.px-md-0
-		.row.justify-content-between.g-0.mx-md-0
-			.summary.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0.px-lg-5
-				.flex-grow-1.py-8.py-md-10
+section#outcome
+	.container
+		.row.justify-content-between.g-5
+			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
+				.flex-grow-1
 					h2 Project Details
 					h6
 						span.badge.text-bg-secondary Problem
@@ -42,15 +42,20 @@ section.portfolio-info#info
 						span.badge.text-bg-secondary Outcome
 					p The new website provides a modern, easy-to-navigate experience that highlights members, showcases construction projects, and better supports the organization’s mission. The custom directories strengthened discoverability and made ongoing content updates far more efficient for the team.
 			.col-12.col-md-7
-				div.pt-md-10
-					= link_to image_path("portfolio/iba/iba-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"I Build America Website" do
-						= image_tag "portfolio/iba/iba-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"I Build America Website"
-					= link_to image_path("portfolio/iba/iba-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
-						= image_tag "portfolio/iba/iba-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Website"
-					= link_to image_path("portfolio/iba/iba-caw-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
-						= image_tag "portfolio/iba/iba-caw-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
-					= link_to image_path("portfolio/iba/iba-caw-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Construction Appreciation Week Website" do
-						= image_tag "portfolio/iba/iba-caw-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
+				.pt-md-10
+					.portfolio-masonry.two-columns
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/iba/iba-showcase.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"I Build America Website" do
+								= image_tag "portfolio/iba/iba-showcase.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"I Build America Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/iba/iba-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
+								= image_tag "portfolio/iba/iba-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/iba/iba-caw-website.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Website" do
+								= image_tag "portfolio/iba/iba-caw-website.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
+						.portfolio-masonry-item
+							= link_to image_path("portfolio/iba/iba-caw-website-2.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"IBA Construction Appreciation Week Website" do
+								= image_tag "portfolio/iba/iba-caw-website-2.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"IBA Construction Appreciation Week Website"
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
