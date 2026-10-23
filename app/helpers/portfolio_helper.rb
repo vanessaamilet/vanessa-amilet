@@ -119,7 +119,8 @@ module PortfolioHelper
 			label: "Website Development (WordPress)",
 			desc: "Restructured to improve navigation and access to essential resources.",
 			project_type: %w[website], 
-			industry: %w[nonprofit-community] 
+			industry: %w[nonprofit-community],
+			full_case_study: true, 
 		},
 		{ 
 			title: "Compost & Soil Products Website", 

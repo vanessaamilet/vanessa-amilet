@@ -18,29 +18,154 @@ section.hero.d-flex
 				p Drio Duo
 			.col-md-6
 				h6 Year
-				p 2024
+				p 2024 - Present
         .row.mb-3
 			.col-md-6
 				h6 Services
-				p Website Design & Wordpress Development
+				p WordPress Development, UX/UI Implementation, Website Optimization, Design System Development
 			.col-md-6
 				h6 Technologies
 				p Figma, Wordpress, Gutenberg, HTML, PHP, SCSS, JS, ACF
+/! Project Summary
+section.project-at-a-glance
+	.container
+		.row
+			.col-lg-12
+				.squiggle
+				h6.text-center.mb-3 Project at a glance
+				h2.text-center From design challenges to a functional digital experience.
+				p.lead.text-center.mb-5
+		  			| Brought in by Drio Duo to help overcome development challenges and bring an approved nonprofit website redesign to life. My work focused on WordPress development, usability, performance, and implementing updated brand standards to support a cohesive, maintainable digital experience.
+		.row.highlights
+			.col-md-3.mb-5
+				i.fad.fa-screwdriver-wrench
+				h5 Development challenges
+				p Stepped in after the initial implementation encountered challenges, helping translate approved designs into a functional, responsive WordPress website.
+			.col-md-3.mb-5
+				i.fad.fa-laptop-code
+				h5 User experience + functionality
+				p Translated designs into responsive WordPress pages and components with a focus on usability, navigation, and performance.
+			.col-md-3.mb-5
+				i.fad.fa-palette
+				h5 Brand evolution
+				p Supported the transition to United Way's updated national branding across the regional website.
+			.col-md-3.mb-5
+				i.fad.fa-swatchbook
+				h5 Design system foundation
+				p Created a Figma style guide to establish reusable visual standards for future website designs and updates.
+		.row
+			.text-center
+				= link_to "#challenge", class: "anchor-link" do
+					| explore full project
+					i.fad.fa-arrow-down.ms-2
+/! Challenge
+section#challenge.challenge
+  .container
+	.row.align-items-center.g-5
+	  .col-lg-5
+		h2 The challenge
+
+		p.lead.text-mb-5
+		  | United Way of Central Maryland needed a redesigned website that made it easier for visitors to explore programs, access community resources, and engage with the organization's mission. While the visual direction had been established, the initial development effort struggled to translate the approved designs into a functional, responsive, and optimized WordPress experience.
+
+		p.lead
+		  | Drio Duo brought me into the project to help overcome these implementation challenges and move the website forward. The work required balancing design fidelity, usability, performance, and the flexibility needed to manage a content-rich nonprofit website.
+		p.lead As the project evolved, an additional challenge emerged: incorporating United Way's updated national branding into the regional website while maintaining consistency across existing pages and future design initiatives.
+
+	  .col-lg-7
+		= link_to image_path("portfolio/community-impact-website/communityimpact-before-after.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"A comparison of the homepage before and after the redesign, highlighting updated branding, a more engaging visual experience, and improved content organization." do
+			= image_tag "portfolio/community-impact-website/communityimpact-before-after.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Community Impact Website Before & After"
+		p.small.text-center.mt-3.mb-0
+		  | Before and after: A refreshed homepage with updated branding, improved visual hierarchy, and clearer pathways to community resources.
+
+/! Approach
+section#approach
+  .container
+	.row.g-5
+		.col-lg-5.position-sticky.mx-auto.top-0.vh-100
+			h2 My approach
+			p.lead.mb-4
+				| I partnered with Drio Duo to resolve development challenges and bring the approved designs to life in WordPress, focusing on usability, performance, and responsive design. I also helped implement updated branding and created a Figma style guide to support future website initiatives.
+			.approach-steps
+				.approach-step.mb-4
+					.approach-title
+						i.fad.fa-magnifying-glass-chart
+						h5 Assess & troubleshoot
+					p Reviewed the existing implementation and approved designs to identify development challenges, usability concerns, and opportunities to improve the website's structure and functionality.
+
+				.approach-step
+					.approach-title
+						i.fad.fa-laptop-code
+						h5 Develop & optimize
+					p Translated the approved designs into responsive WordPress experiences using Gutenberg, ACF, PHP, SCSS, and JavaScript, with attention to functionality, performance, and content management.
+				.approach-step
+					.approach-title
+						i.fad.fa-palette
+						h5 Align with new brand standards
+					p Helped implement United Way's updated national visual identity across the regional website, adapting existing pages and components to the new branding.
+				.approach-step
+					.approach-title
+						i.fad.fa-swatchbook
+						h5 Document & standardize
+					p Created a Figma style guide to document typography, colors, and reusable visual standards, providing a foundation for consistent future design mockups and website updates.
+		.col-lg-7
+			.card.bg-gradient-soft.p-4.mb-5
+				h6.mb-2 Wordpress Development
+				h3 Bringing the redesign to life
+				p.mb-4 Drio Duo brought me in to continue the first iteration of the website redesign after the initial development encountered challenges. I worked to translate the approved designs into a responsive, functional WordPress experience, addressing implementation issues while focusing on design accuracy, usability, and performance.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/community-impact-website/communityimpact-initial-redesign.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"The first iteration of the website redesign included updated layouts for the homepage, programs, About Us, and blog. I was brought in by Drio Duo to continue development, address implementation challenges, and ensure the WordPress experience closely reflected the approved designs." do
+							= image_tag "portfolio/community-impact-website/communityimpact-initial-redesign.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix App - Dashboard"
+						h5.mt-3.mb-2 Initial website redesign
+					.col-md-6
+
+						= link_to image_path("portfolio/community-impact-website/community-impact-website.jpg"), :class=>"thumbnail", "data-fancybox"=>"gallery", "data-caption"=>"Mobile concepts for accessing and managing cloud content on the go." do
+							= image_tag "portfolio/community-impact-website/community-impact-website.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Mobile concepts for accessing and managing cloud content on the go."
+						h5.mt-3.mb-2 WordPress implementation
+
+			.card.bg-gradient-soft.p-4
+				h6.mb-2 Brand Implementation
+				h3 Adapting to the new United Way identity
+				p.mb-4 Translated updated national branding into a Figma style guide and website designs, establishing consistent visual standards across components, page layouts, and future initiatives.
+				.row.g-4
+					.col-md-6
+						= link_to image_path("portfolio/community-impact-website/communityimpact-design-system.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Created a Figma style guide documenting typography, colors, buttons, and reusable components to support consistent future website designs." do
+							= image_tag "portfolio/community-impact-website/communityimpact-design-system.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Jumpix - Careers Flyer"
+
+						h5.mt-3.mb-2 Website design system
+						p.small.mb-0 Figma style guide for consistent website design and development.
+					.col-md-6
+						= link_to image_path("portfolio/community-impact-website/communityimpact-resources-design-concepts.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"Explored layout variations for the Resources page, applying updated brand standards while refining content organization and visual hierarchy." do
+							= image_tag "portfolio/community-impact-website/communityimpact-resources-design-concepts.jpg", :class=>"img-fluid w-100 h-auto border border-2 border-dark rounded-3 box-shadow", :alt=>"Explored layout variations for the Resources page, applying updated brand standards while refining content organization and visual hierarchy."
+
+						h5.mt-3.mb-2 Resources redesign exploration
+						p.small.mb-0 Explored page layouts using updated branding and improved visual hierarchy.
+
+/! The outcome
 section#outcome
 	.container
 		.row.justify-content-between.g-5
 			.col-12.col-md-5.position-sticky.d-flex.align-items-center.vh-100.mx-auto.top-0
 				.flex-grow-1
-					h2 Project Details
-					h6
-						span.badge.text-bg-secondary Problem
-					p A nonprofit needed a redesigned website that made it easier for visitors to find resources, understand programs, and engage with its mission around education, financial security, and health equity.
-					h6
-						span.badge.text-bg-secondary Process
-					p.lead Drio Duo partnered with me to support the WordPress development for the redesign. I restructured the site to improve navigation, performance, and overall usability, ensuring the content was easier to explore and the structure aligned with the organization’s goals.
-					h6
-						span.badge.text-bg-secondary Outcome
-					p The updated website offers a clearer, more intuitive user experience that helps visitors access key resources and engage more fully with the organization’s mission.
+					h2 The outcome
+					p.lead.mb-3 The result was a more functional, cohesive, and user-friendly WordPress experience that brought United Way of Central Maryland's redesigned website to life. The updated implementation provided clearer pathways to programs, resources, and opportunities to get involved, while supporting the organization's ongoing content needs.
+					p.lead Beyond the initial redesign, the adoption of United Way's updated national branding and the creation of a dedicated Figma style guide established a stronger foundation for visual consistency across future website initiatives.
+					div
+						.d-flex.gap-2
+							i.fad.fa-route
+							h5 Improved user experience
+						p Created a more intuitive, responsive website with clearer navigation and pathways to programs, resources, and opportunities to get involved.
+					div
+						.d-flex.gap-2
+							i.fad.fa-palette
+							h5 Cohesive brand experience
+						p Integrated updated national branding across the website, creating a more consistent visual experience throughout key pages and components.
+					div
+						.d-flex.gap-2
+							i.fad.fa-layer-group
+							h5 Scalable design foundation
+						p Established reusable WordPress components and Figma style standards to support consistent design, easier content management, and future website updates.
 
 			.col-12.col-md-7
 				.pt-md-10
@@ -67,7 +192,17 @@ section#outcome
 							= link_to image_path("portfolio/community-impact-website/community-impact-website-news.jpg"), "data-fancybox"=>"gallery", "data-caption"=>"News Webpage" do
 								= image_tag "portfolio/community-impact-website/community-impact-website-news.jpg", :class=>"img-fluid w-100 h-auto", :alt=>"News Webpage"
 							
-						
+/! What I Learned					
+section
+	.container
+		.row
+			.col-lg-12
+				h2 What I learned
+				p.lead.mb-3 Working on United Way of Central Maryland reinforced how important the relationship between design and development is to creating a successful digital experience. Joining a project after the initial implementation encountered challenges required me to understand the existing work, identify what wasn't functioning as intended, and determine how to move forward while respecting the approved designs and project goals.
+				p.lead The experience strengthened my ability to troubleshoot complex WordPress implementations, balance design fidelity with technical requirements, and think critically about how website structure, performance, and functionality influence the user experience. It also reinforced the importance of building flexible solutions that support the people responsible for maintaining and updating the website. Supporting the transition to United Way's updated national branding gave me another opportunity to work at the intersection of visual design, development, and design systems. Creating the Figma style guide showed how documenting standards can help bridge the gap between design and implementation, improve consistency, and make future collaboration more efficient.
+				p.lead Most importantly, the project reinforced that delivering a successful website involves more than reproducing a design. It requires understanding the organization's goals, anticipating user and content needs, solving technical challenges, and creating an experience that can continue evolving after launch.
+				//.squiggle.justify-content-start.align-items-start
+				.squiggle-vertical							
 
 /!  Browse More Projects
 = render :partial => "shared/portfolio_browsemore"
