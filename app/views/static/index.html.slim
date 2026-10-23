@@ -105,11 +105,12 @@ section.reviews
 			.col-md-3.col-6
 				= link_to image_tag('client-logos/client-ucs.svg', alt: 'Universal Control Systems'), 'https://universalcontrol.com/', target: "_blank"
 		#testimonials.carousel.carousel-dark.slide data-bs-ride="carousel"
-			.carousel-indicators.d-lg-none.d-xl-none
+			.carousel-indicators
 				button.active aria-current="true" aria-label=("Slide 1") data-bs-slide-to="0" data-bs-target="#testimonials" type="button" 
     			button aria-label=("Slide 2") data-bs-slide-to="1" data-bs-target="#testimonials" type="button" 
     			button aria-label=("Slide 3") data-bs-slide-to="2" data-bs-target="#testimonials" type="button" 
 				button aria-label=("Slide 4") data-bs-slide-to="3" data-bs-target="#testimonials" type="button" 
+				button aria-label=("Slide 5") data-bs-slide-to="4" data-bs-target="#testimonials" type="button" 
 			.carousel-inner
 				.carousel-item.active data-bs-interval="10000" 
 					.row.justify-content-center.pt-5.pb-5
@@ -121,6 +122,16 @@ section.reviews
 								h6 
 									| - Julyan Lee, Founder of 
 									= link_to "The Leeward Team", "http://leewardteam.com/", target: "_blank"
+				.carousel-item
+					.row.justify-content-center.pt-5.pb-5
+						.col-lg-10
+							.quote
+								= image_tag 'icons/icon-quote.svg', :class=>"img-fluid", alt: 'quote'
+								p.lead
+									| "I’ve had the pleasure of working with Vanessa on design and web projects in the last decade, and she’s nothing short of fantastic. She has an incredible eye for detail and consistently keeps projects on schedule. One of her biggest strengths is how well she takes and applies feedback: she listens and improves on ideas and makes them better. On top of all that, she’s genuinely fun to collaborate with, which makes the whole process smooth and enjoyable. I’d recommend her to anyone looking for a reliable, talented designer and web builder."
+								h6 
+									| - Amy Tarkington, Founder and CMO of 
+									= link_to "Chien Industries", "https://chienindustries.com/", target: "_blank"
 				.carousel-item data-bs-interval="10000" 
 					.row.justify-content-center.pt-5.pb-5
 						.col-lg-10
